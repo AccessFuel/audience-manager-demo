@@ -164,7 +164,15 @@
     <!-- include common/_scripts -->
     <!-- Core Scripts -->
     <script src="../dist/js/lib/require.js"></script>
-    
+
+    <script>
+        requirejs(['../dist/js/common.js'], function (common) {
+            requirejs(['app/static'], function (app) {
+                app();
+            });
+        });
+    </script>
+
     <!-- Intercom Scripts -->
     <script src="../dist/js/app/intercom.js"></script>
             
