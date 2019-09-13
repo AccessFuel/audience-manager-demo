@@ -1,0 +1,35 @@
+/*
+    Event Navigation
+    ================
+*/
+
+.af-event-navigation {
+
+
+    &.af--bottom-border {
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+
+        border-bottom: solid 1px $border-color;
+    }
+}
+
+.af-event-navigation__icon {
+    float: left;
+    margin-right: .25em;
+
+    font-size: $font-size-large;
+
+    &.af--xlarge {
+        font-size: 40px;
+    }
+}
+
+.af-event-navigation__title {
+    margin: 0 0 $space/5;
+    line-height: 1;
+}
+
+.af-event-navigation__info {
+    color: $text-color-pale;
+}

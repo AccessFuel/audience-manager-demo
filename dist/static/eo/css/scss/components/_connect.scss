@@ -1,0 +1,106 @@
+/*
+    Connect Apps
+    ============
+*/
+
+.af-connect {
+    margin: 0 (-$space/2);
+
+    text-align: center;
+
+    .af-connect__item {
+        @include default-border-radius;
+
+        position: relative;
+        display: inline-block;
+
+        padding-bottom: 45%;
+        width: 45%;
+
+        min-height: 90px;
+        min-width: 90px;
+
+        margin: 1%;
+
+        background: $grey-95;
+
+        &:hover {
+            background: $grey-90;
+        }
+
+        big {
+            @include data-font-large;
+            position: absolute;
+            bottom: 33%;
+
+            display: block;
+            width: 100%;
+
+            @media (min-width: 960px) {
+                // Resize font based on viewport size
+                font-size: 3.6vw;
+            }
+        }
+
+        small {
+            position: absolute;
+            bottom: 15%;
+
+            display: block;
+            width: 100%;
+
+            font-size: $font-size-xxxsmall;
+            letter-spacing: .05em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &.af--inactive {
+            big {
+                @include data-font-xlarge;
+                font-weight: 100;
+                line-height: .9;
+            }
+        }
+
+        &.af--active {
+            &,
+            &:hover {
+                color: white;
+            }
+
+            // Color scheme
+            .af-color-scheme.af--events & {
+                background: $brand-green;
+
+                &:hover {
+                    background: $brand-green-dark;
+                }
+            }
+
+            .af-color-scheme.af--audience & {
+                background: $brand-blue;
+
+                &:hover {
+                    background: $brand-blue-dark;
+                }
+            }
+
+            .af-color-scheme.af--marketing & {
+                background: $brand-red;
+
+                &:hover {
+                    background: $brand-red-dark;
+                }
+            }
+
+            .af-color-scheme.af--sponsors & {
+                background: $brand-purple;
+
+                &:hover {
+                    background: $brand-purple-dark;
+                }
+            }
+        }
+    }
+}

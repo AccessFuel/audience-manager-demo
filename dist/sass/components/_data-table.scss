@@ -1,0 +1,26 @@
+/*
+    Data Tables
+    ===========
+*/
+.af-data-table {
+    tr {
+
+    }
+
+    td {
+        padding: $space $space/2;
+        vertical-align: middle;
+
+        h4 {
+            margin: 0 0 .5em;
+        }
+
+        h6 {
+            margin: 1em 0 0;
+        }
+    }
+}
+
+.af-data-table__status--Processing {
+    opacity:.5;
+}

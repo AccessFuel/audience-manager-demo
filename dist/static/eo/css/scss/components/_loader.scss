@@ -1,0 +1,19 @@
+/*
+    Loader
+    ======
+*/
+
+.af-loader {
+
+    &.af--page {
+        padding: 20% 0;
+        text-align: center;
+        opacity: .33;
+    }
+
+    &.af--block {
+        padding: 5em;
+        text-align: center;
+        opacity: .66;
+    }
+}

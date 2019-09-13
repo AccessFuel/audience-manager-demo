@@ -1,0 +1,32 @@
+/*
+    Persona Cards
+    =============
+*/
+
+.af-persona-card {
+    position: relative;
+    min-height: 80px;
+
+    padding: $space;
+    overflow: hidden;
+    font-size: $font-size-xsmall;
+}
+
+.af-persona-card__avatar {
+    position: absolute;
+    left: $space*0.8;
+    bottom: $space*1.1;
+    width: 66px;
+}
+
+.af-persona-card__name {
+    margin: 0 0 $space/3;
+    margin-left: 75px;
+    font-size: $font-size;
+}
+.af-persona-card__info {
+    margin-left: 75px;
+    margin-bottom: 0;
+    font-size: $font-size-xsmall;
+    line-height: 1.4;
+}

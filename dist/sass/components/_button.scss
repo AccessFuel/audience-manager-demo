@@ -1,0 +1,73 @@
+/*
+    Buttons
+    =======
+*/
+.af-button {
+    display: inline-block;
+    @include default-border-radius;
+    padding: .75em 2em;
+
+    background: $grey-95;
+    border: solid 1px $border-color-light;
+
+    color: $brand-dark;
+    font-weight: normal;
+
+    &[disabled] {
+        pointer-events: none;
+        opacity: .33;
+    }
+
+    &.af--primary {
+        background: $brand-green;
+        border-color: $brand-green;
+        color: white;
+        font-weight: bold;
+    }
+
+    &.af--secondary {
+        background: $brand-dark;
+        border: $brand-dark;
+        color: white;
+    }
+
+    &.af--danger {
+        background: $color-error;
+        border-color: $color-error;
+        color: white;
+        font-weight: bold;
+    }
+
+    &.af--blank {
+        background: transparent;
+        border: none;
+        color: inherit;
+    }
+
+    &.af--wide {
+        width: 100%;
+    }
+
+    &.af--small {
+        padding: .25em 1em;
+        font-size: $font-size-xsmall;
+    }
+
+    &.af--large {
+        padding: .5em 2em;
+        font-size: 105%;
+        font-weight: 500;
+    }
+
+    &.af--xlarge {
+        font-size: $font-size-medium;
+        padding: .75em 1em;
+    }
+
+    .fa.fa-pull-left {
+        margin: .2em .5em 0 0;
+    }
+    .fa.fa-pull-right {
+        margin: .2em 0 0 .5em;
+    }
+}

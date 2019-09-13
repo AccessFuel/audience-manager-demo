@@ -1,0 +1,25 @@
+/*
+    Stack
+    =====
+
+*/
+
+.af-stack {
+
+}
+
+.af-stack__item {
+    padding: $space * 2 0;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    & + .af-stack__item {
+        border-top: solid 1px $border-color;
+    }
+}

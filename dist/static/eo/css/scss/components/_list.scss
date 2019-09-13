@@ -1,0 +1,204 @@
+/*
+    Lists
+    =====
+*/
+
+.af-list {
+    padding: 0;
+    list-style: none;
+
+    & > li,
+    .af-list__item  {
+        padding: $space/4 0;
+        font-size: $font-size-medium;
+
+        h3,
+        h4,
+        h5 {
+            margin: 0;
+        }
+
+        a {
+            color: $text-color;
+        }
+
+        em {
+            color: $text-color-pale;
+            font-size: $font-size-xsmall;
+            font-style: normal;
+        }
+    }
+
+    // Collapsed list
+    &.af--collapsed {
+        .af-list__item:nth-of-type(n+9) {
+            display: none;
+        }
+    }
+
+    &.af--separated {
+        .af-list__item {
+            padding: $space/2 0;
+            border-bottom: solid 1px $border-color-light;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            input[type="checkbox"],
+            input[type="radio"],
+            .fa {
+                margin-right: .5em;
+            }
+
+            .af-label {
+                float: right;
+            }
+        }
+    }
+
+    &.af--drill {
+        .af-list__item {
+            a:after {
+                @include icon-angle-right;
+
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -.5em;
+
+                color: $text-color-pale;
+                font-size: $font-size-xxlarge;
+            }
+        }
+    }
+
+    &.af--events {
+        .af-list__item {
+            padding: 0;
+
+            a {
+                display: block;
+                position: relative;
+                padding: $space/2 0;
+
+                h3 {
+                    font-size: $font-size-small;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    // Files list
+    &.af--files {
+        .af-list__item {
+            position: relative;
+            overflow: hidden;
+
+            padding-right: 250px;
+
+            .af-list__actions,
+            .af-list__data {
+                position: absolute;
+                right: 0;
+
+                transition: all .5s .1s;
+                transform: translateZ(0);
+
+                padding: .5em 0;
+            }
+
+            .af-list__actions {
+                top: 101%;
+                opacity: 0;
+                padding: .75em 0;
+            }
+            .af-list__data {
+                top: 0;
+                opacity: 1;
+            }
+
+            &:hover,
+            &:active {
+                .af-list__actions {
+                    top: 0%;
+                    opacity: 1;
+                }
+                .af-list__data {
+                    top: -101%;
+                    opacity: 0;
+                }
+            }
+        }
+
+
+        ul.af-list__data  {
+            @include kill-list;
+            color: $text-color-pale;
+
+            li {
+                display: inline-block;
+                padding: 0 .5em;
+
+                font-size: $font-size;
+                text-align: center;
+
+                & + li {
+                    border-left: solid 1px $border-color-light;
+                }
+            }
+
+
+
+            small {
+                display: block;
+                font-size: $font-size-xxsmall;
+            }
+        }
+    }
+
+    // Sponsors list
+    &.af--sponsors {
+        .af-list__item {
+            position: relative;
+            padding-right: 100px;
+
+            h3 {
+                font-weight: normal;
+            }
+
+            .fa {
+                color: $text-color-pale;
+            }
+
+            .af-list__actions,
+            .af-list__data {
+                position: absolute;
+                right: 0;
+                top: 0;
+
+                padding: .75em 0;
+            }
+
+            .af-list__data {
+                padding: 1em 0;
+                color: $text-color-pale;
+                font-weight: 300;
+            }
+
+            &.af--active {
+                .fa {
+                    color: $text-color;
+                }
+            }
+            &.af--complete {
+                * {
+                    color: $brand-green;
+                }
+            }
+        }
+    }
+
+
+}

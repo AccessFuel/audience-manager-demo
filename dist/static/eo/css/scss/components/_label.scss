@@ -1,0 +1,45 @@
+/*
+    Labels
+    ======
+*/
+
+.af-label {
+
+    &.af--quality {
+        opacity: .66;
+        transition: all 1s;
+
+        width: 3.1rem;
+        padding: 3px 0;
+
+        font-size: $font-size-xxxsmall;
+        line-height: 1;
+
+        &:after {
+            content: '%';
+        }
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &.af--pdf {
+        display: inline-block;
+        padding: 3px 5px;
+        margin-bottom: 4px;
+        vertical-align: middle;
+    }
+
+    &.af--good {
+        background-color: $color-success;
+        color: white;
+    }
+    &.af--avg {
+        background-color: $color-warning;
+        color: white;
+    }
+    &.af--poor {
+        background-color: $color-error;
+        color: white;
+    }
+}

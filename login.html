@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AccessFuel Audience Manager</title>
+
+    <!-- include ../common/_meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="robots" content="noindex">
+
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./dist/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="./dist/css/animate.css" rel="stylesheet" />
+    <link href="./dist/css/style.min.css" rel="stylesheet" />
+    <link href="./dist/css/accessfuel.css" rel="stylesheet" />
+</head>
+
+<body class="af af-login__bg">
+    <section class="middle-box text-center loginscreen  animated fadeInDown af-login">
+        <div class="af-login__container">
+            <header>
+                <img src="./dist/images/logo/accessfuel-logo-tagline-white.png" alt="AccessFuel" class="af-login__logo" />
+                <h6 class="af-login__version">BETA</h6>
+            </header>
+            <form action="./index.html" class="m-t" id="loginForm" role="form">
+                <div class="form-group af-login__form-group">
+                    <input type="email" value="" class="form-control" name="username" placeholder="Email Address" required />
+                </div>
+                <div class="form-group af-login__form-group">
+                    <input type="password" value="" class="form-control" name="password" placeholder="Password" required />
+                    
+                    <a class="af-login__forgot-password" href="./forgot.html">
+                        <small>Forgot password?</small>
+                    </a>
+                </div>
+
+                <div class="alert alert-danger js-auth-error" hidden></div>
+                <button type="submit" class="af-button af--primary af--wide af--xlarge m-b">Login</button>
+                
+                <p class="af-login__alternative-cta">
+                    <span>New to AccessFuel? </span>
+                    <a class="af-login__alternative-cta-link" href="./register.html">Create your free account</a>
+                </p>
+            </form>
+        </div>
+        <footer data-reactid=".1qbs0qigw00.1.1">Copyright Accessfuel © 2016—2018</footer>
+    </section>
+
+    <script src="./dist/js/lib/require.js"></script>
+    <script>
+        requirejs(['./dist/js/common.js'], function (common) {
+            requirejs(['app/auth'], function (auth) { auth.login(); });
+        });
+    </script>
+</body>
+
+</html>

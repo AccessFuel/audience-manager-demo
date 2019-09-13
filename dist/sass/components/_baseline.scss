@@ -1,0 +1,60 @@
+/*
+    Baseline Data Points
+    ====================
+*/
+.af-baseline {
+    margin: $space 0 (-$space);
+    padding: $space/2 $space;
+    background: $grey-95;
+    font-size: $font-size-xsmall;
+    text-align: left;
+}
+
+.af-baseline__header {
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+}
+
+.af-baseline__toggle {
+    .af-baseline__toggle-collapsed {
+        display: none;
+    }
+    .af-baseline__toggle-expanded {
+        display: inline;
+    }
+}
+
+.af-baseline__toggle.collapsed {
+    .af-baseline__toggle-collapsed {
+        display: inline;
+    }
+    .af-baseline__toggle-expanded {
+        display: none;
+    }
+}
+
+.af-baseline__content {
+    margin-top: $space/2;
+    border-top:solid 1px $grey-90;
+}
+
+.af-baseline__title {
+    margin-top: $space;
+}
+
+.af-baseline__list {
+    list-style: decimal;
+    margin: 0 0 0 $space;
+    padding: 0;
+}
+.af-baseline__item {
+    padding: $space/4 0;
+
+   .af-report__quality {
+        margin: 0 .5em 0 0;
+
+        font-size: 8px;
+        vertical-align: baseline;
+   }
+}

@@ -1,0 +1,94 @@
+/*
+    Reports
+    =======
+*/
+.af-report {
+    outline: none;
+    position: relative;
+    height: 600px !important;
+    overflow: hidden;
+}
+
+.af-report__caption {
+    position: absolute;
+    left: $space*3;
+    top: 75%;
+    z-index: 10;
+
+    width: 50%;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.af-report__title {
+    font-size: $font-size-superlarge;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.af-report__quality {
+    display: inline-block;
+
+    margin-left: 1em;
+    padding: .1em .5em;
+
+    background: $brand-green;
+    border-radius: 3px;
+
+    color: white;
+    font-size: $font-size-xxxsmall;
+    vertical-align: super;
+
+    &.af--medium {
+        background: $color-warning;
+    }
+    &.af--low {
+        background: $color-error;
+    }
+}
+
+.af-report__canvas {
+    width: 100%;
+    height: 100%;
+
+    &.af--chart {
+        position: relative;
+        width: 90%;
+        height: 70%;
+        top: 2%;
+        left: 2%;
+        right: 2%;
+    }
+
+    &.af--map {
+        position: relative;
+        width: 80%;
+        height: 80%;
+        top: 5%;
+        margin-left: 15%;
+    }
+
+    &.af--wordcloud {
+        position: relative;
+        width: 80%;
+        height: 70%;
+        top: 5%;
+        margin-left: 20%;
+    }
+}
+
+// Google map
+.af-report.af--zip_code {
+    .af-report__caption {
+        left: 0;
+        bottom: 0;
+
+        width: 100%;
+        max-width: none;
+        margin-top: -$space;
+        padding-top: $space;
+        padding-left: $space*3;
+
+        background: rgba(white,.75);
+    }
+}

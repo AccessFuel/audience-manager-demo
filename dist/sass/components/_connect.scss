@@ -1,0 +1,33 @@
+/*
+    Connect Section
+    ===============
+*/
+
+.af-connect {
+
+    &.af--full {
+        margin: $space*3 $space;
+
+        .af-connect__inner {
+            max-width: 520px;
+            margin: 0 auto;
+        }
+    }
+
+
+    .af-connect__logo {
+        float: left;
+        margin: $space/4 2% 2em 0;
+    }
+
+    .af-connect__action {
+        display: block;
+        font-size: $font-size-medium;
+    }
+
+    .af-connect__comming-soon {
+        margin-top: 1em;
+        opacity: 0.75;
+        font-weight: 500;
+    }
+}

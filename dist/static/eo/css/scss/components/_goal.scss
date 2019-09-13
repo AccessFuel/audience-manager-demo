@@ -1,0 +1,41 @@
+/*
+    Goal
+    ====
+*/
+
+.af-goal {
+    & + .af-goal {
+        margin-top: $space;
+        padding-top: $space;
+        border-top: solid 1px $border-color-light;
+    }
+}
+
+.af-goal__progress {
+    position: relative;
+
+    padding: $space/3 $space;
+    overflow: hidden;
+
+    background: $brand-green;
+    border-radius: $space;
+
+    vertical-align: middle;
+}
+
+.af-goal__progress-bar {
+    position: absolute;
+    background: $brand-green-dark;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.af-goal__progress-label {
+    position: relative;
+    z-index: 1;
+}
+
+.af-goal__info {
+    font-size: $font-size-small;
+}

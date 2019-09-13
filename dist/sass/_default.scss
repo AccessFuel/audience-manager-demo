@@ -1,0 +1,13 @@
+/*
+    Normalize default styling
+    (overwrite style.css)
+*/
+
+html {
+    -webkit-font-smoothing: antialiased;
+    min-width: 600px;
+}
+
+body {
+    background: white;
+}

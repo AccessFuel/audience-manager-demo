@@ -1,0 +1,133 @@
+/*
+    Reports
+    =======
+*/
+.af-report {
+    outline: none;
+    position: relative;
+    height: 86vh;
+    min-height: 86vh;
+    overflow: hidden;
+}
+
+.af-report__caption {
+    position: absolute;
+    left: $space*3;
+    top: 75%;
+    z-index: 10;
+
+    width: 70%;
+    min-width: 360px;
+    max-width: 640px;
+
+    background: rgba(white, .33);
+
+    p {
+        font-size: $font-size;
+    }
+}
+
+.af-report__title {
+    font-size: $font-size-xxxlarge;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.af-report__quality {
+    display: inline-block;
+
+    margin-left: 1em;
+    padding: .1em .5em;
+
+    background: $grey-70;
+    border-radius: 3px;
+
+    color: white;
+    font-size: $font-size-xsmall;
+    font-weight: bold;
+    vertical-align: super;
+
+    &.af--low {
+        background: $color-error;
+    }
+
+    &.af--medium {
+        background: $color-warning;
+    }
+
+    &.af--high {
+        background: $brand-green;
+    }
+}
+
+.af-report__canvas {
+    width: 100%;
+    height: 75%;
+}
+
+.af-report {
+    // Custom chart
+    &.af--chart {
+
+    }
+
+    // Google map
+    &.af--google-map {
+        .af-report__caption {
+            left: 0;
+            bottom: 0;
+
+            width: 100%;
+            max-width: none;
+            margin-top: -$space;
+            padding-top: $space;
+            padding-left: $space*3;
+
+            background: rgba(white,.75);
+        }
+        .af-report__canvas {
+            height: 100%;
+        }
+        .af-google-map {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // Highcharts map
+    &.af--map {
+        .af-map {
+            margin: $space;
+            height: 100%;
+        }
+    }
+
+    // Wordcloud
+    &.af--wordcloud {
+        .af-wordcloud {
+            margin: $space auto;
+            position: relative;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .af-report {
+        min-height: 90vh;
+    }
+    .af-report__caption {
+        width: 100%;
+        min-width: none;
+    }
+}
+@media (max-width: 480px) {
+    .af-report {
+        min-height: 120vh;
+    }
+}
+@media (max-width: 320px) {
+    .af-report {
+        min-height: 180vh;
+    }
+}
+

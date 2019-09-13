@@ -1,0 +1,19 @@
+.af-connect-services {
+    li h4 {
+        margin: 0;
+        padding: $unit*1.6 $space $unit;
+        border-top: solid 1px $grey-95;
+        text-align: center;
+    }
+
+    .af-connect-services__item {
+        &.af--disabled {
+            opacity: .5;
+            pointer-events: none;
+        }
+
+        img {
+            margin-right: 1em;
+        }
+    }
+}

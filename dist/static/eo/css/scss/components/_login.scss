@@ -1,0 +1,49 @@
+/*
+    Login/Register form
+    ===================
+*/
+.af-login {
+    width: auto !important;
+    min-width: 300px;
+    max-width: 480px;
+
+    .af-login__container {
+        padding: $space*2;
+        box-shadow: rgba(black, .1) 0 0 30px;
+        background: #fbfbfb;
+        border: solid 1px $border-color-light;
+
+        @media (max-width: 480px) {
+            padding: $space;
+            box-shadow: none;
+            background: transparent;
+            border: none;
+        }
+    }
+
+    .af-login__logo {
+        width: 160px;
+        margin-bottom: $space;
+    }
+
+
+    input {
+        margin: 1em 0;
+        padding: 1.4em 1em;
+        font-size: $font-size-medium;
+        font-weight: 100;
+    }
+
+    header {
+        h1 {
+            font-size: $font-size-xxlarge;
+            font-weight: 100;
+        }
+    }
+
+    footer {
+        margin-top: $space;
+        padding-top: $space;
+        border-top: solid 1px $border-color-light;
+    }
+}

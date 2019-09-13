@@ -1,0 +1,55 @@
+.af-header {
+    position: relative;
+    z-index: 99;
+    box-shadow: 0 0px 3px rgba(black, .33);
+
+    .navbar-fixed-top,
+    .navbar-static-top {
+        background: $brand-green;
+    }
+}
+
+&.af-fixed-header .af-header,
+.af-header.af--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 99;
+    @include transform(translzteZ(0));
+}
+
+.af-header__logo {
+    display: block;
+    padding: $unit * 1.6 $space;
+    background: $brand-green;
+
+    img {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+.af-header__title {
+    display: inline-block;
+    margin: 0 $space;
+    padding: $unit*1.6 3vw;
+    background: $brand-green-dark;
+    color: white;
+    font-weight: 100;
+    line-height: 32px;
+    text-align: center;
+}
+
+.af-header__menu {
+    margin: 0;
+    padding: $unit * 1.6 $space;
+
+    background: transparent;
+    font-size: $font-size-xlarge;
+}
+
+&.af-fixed-header #page-wrapper {
+    padding-top: 64px;
+}

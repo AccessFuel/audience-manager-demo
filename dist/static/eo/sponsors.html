@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessFuel Insights</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/gsdk-base.css" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style-clean.css" rel="stylesheet">
+    <link href="css/accessfuel.css" rel="stylesheet">
+    <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet"> -->
+    <!-- Font Awesome -->
+    <!--    <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>-->
+    <!-- DataTable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+</head>
+<!-- https://accessfuel.com/assets/images/background/bg-header-4.jpg -->
+<!-- http://static1.squarespace.com/static/53d69e23e4b02e0f77c54779/t/53e93e95e4b06490f4cbbb73/1407794895078/data+analytics.jpg?format=1500w -->
+<!-- http://www.shiftcomm.com/wp-content/uploads/2015/04/ThinkstockPhotos-180521689-1.jpg -->
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="af_img/rob.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Rob Imrie</strong>
+                             </span> <span class="text-muted text-xs block">Administrator<b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">Profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            AF
+                        </div>
+                    </li>
+                    <li>
+                        <a href="home.html"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
+                    </li>
+                    <!--li class="">
+                        <a href="events.html"><i class="fa fa-calendar"></i> <span class="nav-label">Events</span></a>
+                    </li-->
+                    <li>
+                        <a href="upload.html"><i class="fa fa-cloud-upload"></i> <span class="nav-label">Upload</span></a>
+                    </li>
+                    <li>
+                        <a href="reports.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Reports</span></a>
+                    </li>
+                    <li>
+                        <a href="marketing.html"><i class="fa fa-rocket"></i><span class="nav-label">Marketing</span><span class="label label-info pull-right">NEW</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="sponsors.html"><i class="fa fa-money"></i> <span class="nav-label">Sponsors</span></a>
+                    </li>
+                    <li>
+                        <a href="apps.html"><i class="fa fa-plug"></i> <span class="nav-label">Apps</span></a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="fa fa-envelope"></i> <span class="nav-label">Contact</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to Accessfuel Admin Dashboard</span>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-sm-4">
+                    <br />
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <strong>Sponsors</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div-->
+
+            <div class="wrapper wrapper-content animated fadeInUp af-color-scheme af--sponsors">
+                <section class="widget text-center af-welcome af--light-text af--sponsors">
+                    <h1>Sponsors</h1>
+                    <p>We support your sales activities by generating the data you need to sell sponsorships faster.</p>
+                </section>
+
+                <section class="row">
+                    <div class="col-md-3">
+                        <aside class="widget af-widget af--knob af--sponsors" data-widget="offersClosed">
+                             <div class="af-knob af--loading js-knob" data-widget-knob="0" data-knob-format="share" data-knob-label="Offers Closed"></div>
+                        </aside>
+                    </div>
+
+                    <div class="col-md-3">
+                        <aside class="widget af-widget af--data af--sponsors" data-widget="collectedRevenue">
+                            <h2>Collected</h2>
+                            <div class="af-data af--currency" data-widget-field="0">0</div>
+                            <label  data-widget-field="1">1 Commited Sponsor</label>
+                        </aside>
+                    </div>
+
+                    <div class="col-md-3">
+                        <aside class="widget af-widget af--data af--sponsors" data-widget="pendingRevenue">
+                            <h2>Pending</h2>
+                            <div class="af-data af--currency" data-widget-field="0">0</div>
+                            <label data-widget-field="1">4 Sponsors Negotiating</label>
+                        </aside>
+                    </div>
+
+                    <div class="col-md-3">
+                        <aside class="widget af-widget af--promo af--sponsors">
+                            <p>We have 200+ <br/>
+                                active sponsors <br/>
+                                in our database.
+                            </p>
+                            <footer>
+                                <a href="sponsors.html" class="btn af-button af--white af--wide">Scan your Events</a>
+                            </footer>
+                        </aside>
+                    </div>
+                </section>
+
+                <section class="row">
+                    <div class="col-md-3">
+                        <section class="ibox af-box">
+                            <header class="ibox-title af-box__title">
+                                <h3>Sponsorship Documents</h3>
+                            </header>
+                            <article class="ibox-content">
+                                <p class="row"><img src="af_img/thumbs/sponsor-docs@2x.jpg" width="100%" /></p>
+
+                                <p>Engage new sponsors by showing them the enhanced value you provide!</p>
+                            </article>
+                            <footer class="af-box__footer text-center">
+                                <a href="#">Send</a> <small>or</small> <a href="#">Download <span class="label af-label af--pdf af-color-scheme__background">PDF</span></a>
+                            </footer>
+                        </section>
+
+                        <section class="ibox af-box">
+                            <header class="ibox-title af-box__title af--empty"></header>
+                            <article class="ibox-content">
+                                <p>Quickly generate and send proposals to sponsors.</p>
+                            </article>
+                            <footer class="af-box__footer text-center">
+                                <a href="#">Create Proposal</a>
+                            </footer>
+                        </section>
+                    </div>
+
+                    <div class="col-md-6">
+                        <section class="ibox af-box">
+                            <header class="ibox-title af-box__title af--empty"></header>
+                            <article class="ibox-content">
+                                <nav class="af-event-navigation af--bottom-border">
+                                    <i class="fa fa-calendar af-event-navigation__icon"></i>
+                                    <h2 class="af-event-navigation__title af-select-inline">
+                                        Launch Festival
+                                    </h2>
+                                    <small class="af-event-navigation__info">March 16, 2016 (San Francisco, CA)</small>
+                                </nav>
+
+                                <ul class="af-list af--separated af--sponsors">
+                                    <li class="af-list__item af--complete">
+                                        <h3><i class="fa fa-check"></i>Silicon Valley Bank</h3>
+                                        <em>Collected</em>
+                                        <span class="af-list__data">$750k</span>
+                                    </li>
+                                    <li class="af-list__item af--active">
+                                        <h3><i class="fa fa-reply"></i>Verizon Ventures</h3>
+                                        <em>Accepted Insights</em>
+                                        <span class="af-list__actions">
+                                            <a href="#" class="btn btn-sm af-button">Send Proposal</a>
+                                        </span>
+                                    </li>
+                                    <li class="af-list__item af--inactive">
+                                        <h3><i class="fa fa-share"></i>SalesForce for startups</h3>
+                                        <em>Waiting for decision</em>
+                                        <span class="af-list__data">$3.3M</span>
+                                    </li>
+                                    <li class="af-list__item af--inactive">
+                                        <h3><i class="fa fa-share"></i>Atlassian HipChat</h3>
+                                        <em>Waiting for decision</em>
+                                        <span class="af-list__data">$1.4M</span>
+                                    </li>
+                                    <li class="af-list__item af--inactive">
+                                        <h3><i class="fa fa-share"></i>Microsoft</h3>
+                                        <em>Waiting for decision</em>
+                                        <span class="af-list__data">$1.2M</span>
+                                    </li>
+                                    <li class="af-list__item af--inactive">
+                                        <h3><i class="fa fa-share"></i>Red Bull</h3>
+                                        <em>Waiting for decision</em>
+                                        <span class="af-list__data">$800k</span>
+                                    </li>
+                                    <li class="af-list__item af--inactive">
+                                        <h3><i class="fa fa-share"></i>TRUECar</h3>
+                                        <em>Waiting for decision</em>
+                                        <span class="af-list__data"></span>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+                    </div>
+
+                    <div class="col-md-3">
+                        <section class="ibox af-box">
+                            <header class="ibox-title af-box__title af--empty"></header>
+                            <article class="ibox-content">
+                                <p>Based on your audience we’ve found these <strong>2&nbsp;sponsors</strong> who is looking to sponsor an event like yours:</p>
+
+                                <div class="text-center">
+                                    <div class="col-md-6">
+                                        <img src="af_img/logos/sponsors-ibm@2x.png" alt="IBM" width="75px" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="af_img/logos/sponsors-magneto@2x.png" alt="Magneto" width="75px" align="right" />
+                                    </div>
+                                </div>
+
+                                <p>There are an additional <strong>18&nbsp;sponsors</strong> that would be interested in reaching your audience.</p>
+                            </article>
+                            <footer class="af-box__footer text-center">
+                                <a href="#" class="btn af-button af--wide">Invite Sponsors</a>
+                            </footer>
+                        </section>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- highcarts -->
+    <!-- API -->
+    <script src="js/accessfuel-api.js"></script>
+    <script src="js/utils/global.js"></script>
+
+    <!--   plugins   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="js/plugins/knob/jquery.knob.min.js"></script>
+
+    <!-- UI -->
+    <script src="js/components/knob.js"></script>
+    <script src="js/components/widget.js"></script>
+    <script src="js/controllers/sponsors.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+/*
+    Widgets
+    =======
+*/
+.af-widget {
+    &.af--data {
+        text-align: center;
+
+        header {}
+        footer {
+            margin-top: $space;
+        }
+
+        h2 {
+            margin-bottom: $space/2;
+            font-size: $font-size-xxlarge;
+            font-weight: 100;
+        }
+
+        label {
+            display: block;
+            font-size: $font-size-xsmall;
+            font-weight: 300;
+            letter-spacing: .05em;
+            line-height: $line-height;
+        }
+
+        .af-button {
+            box-shadow: 0 3px 2px rgba(black, .3);
+        }
+
+        .af-data {
+            @include data-font-large;
+            padding: $space/2 0;
+        }
+
+        &.af--data-large .af-data {
+            @include data-font-large;
+        }
+
+        &.af--data-xlarge .af-data {
+            @include data-font-xlarge;
+            padding: 0 0 $space/2;
+            line-height: .9;
+        }
+
+        &.af--data-xxlarge .af-data {
+            @include data-font-xxlarge;
+            padding: 0 0 $space/2;
+            line-height: .75;
+        }
+    }
+
+    &.af--promo {
+        p {
+            margin: 0 0 $space/3;
+            font-size: $font-size-xlarge;
+            font-weight: 100;
+            line-height: $line-height;
+        }
+    }
+
+    &.af--knob {
+        .af-knob__inner {
+            margin: -$space / 5;
+            margin-bottom: -$space / 2;
+        }
+
+        .af-knob__label {
+            padding-top:.5em;
+            opacity: 1;
+        }
+
+        .af-knob__value {
+            @include data-font-medium;
+            font-weight: 300;
+        }
+    }
+
+    &.af--audience {
+        background-color: $brand-blue;
+        color: white;
+
+        .af-button {
+            color: $brand-blue;
+        }
+    }
+
+    &.af--events {
+        background-color: $brand-green;
+        color: white;
+
+        .af-button {
+            color: $brand-green;
+        }
+    }
+
+    &.af--marketing {
+        background-color: $brand-red;
+        color: white;
+
+        .af-button {
+            color: $brand-red;
+        }
+    }
+
+    &.af--sponsors {
+        background-color: $brand-purple;
+        color: white;
+
+        .af-button {
+            color: $brand-purple;
+        }
+    }
+}
+
+// Widget progress bar
+.af-widget__progress {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    margin: $space*0.6 0 $space*0.25;
+
+    border-radius: 6px;
+    background: rgba(white, .25);
+
+    line-height: 0;
+    font-size: 0;
+    text-align: left;
+    overflow: hidden;
+}
+
+.af-widget__progress-bar {
+    display: inline-block;
+    height: 7px;
+
+    background: white;
+}

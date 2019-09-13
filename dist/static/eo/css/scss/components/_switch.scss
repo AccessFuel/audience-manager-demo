@@ -1,0 +1,85 @@
+/*
+    Switch
+    ======
+    <label class="af-switch">
+        <input type="ceckbox" class="af-switch__input" />
+        <span class="af-switch__knob">
+    </label>
+*/
+
+.af-switch {
+    position: relative;
+    display: inline-block;
+    margin-right: $space/2;
+
+    background: white;
+    border: solid 1px $border-color-light;
+    border-radius: 5px;
+    box-shadow: rgba(black, .1) 0 1px 1px;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 1;
+    vertical-align: text-top;
+
+    &:before,
+    &:after {
+        display: inline-block;
+        width: 50%;
+        padding: $space/3;
+        font-size: $font-size-xsmall;
+        font-weight: bold;
+        text-shadow: rgba(black,.25) 0 1px 1px;
+        text-transform: uppercase;
+    }
+
+    &:before {
+        content: 'On';
+        padding-left: $space/2;
+        background: linear-gradient(#95d33f, #73b11d);
+        color: white;
+    }
+
+    &:after {
+        content: 'Off';
+        padding-right: $space/2;
+        background: $grey-70;
+        color: white;
+    }
+
+
+    &.af--small {
+        &:before,
+        &:after {
+            padding: $space/4;
+            font-size: $font-size-xxxsmall;
+        }
+
+        &:before {
+            padding-left: $space/3;
+        }
+        &:after {
+            padding-right: $space/3;
+        }
+    }
+}
+
+.af-switch__input {
+    display: none;
+}
+
+.af-switch__knob {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 52%;
+
+    background: linear-gradient($grey-95, $grey-90);
+    border: solid 1px $border-color;
+    border-radius: 5px;
+
+    transition: all 0.15s;
+}
+.af-switch input:checked+.af-switch__knob {
+    left: 48%;
+}

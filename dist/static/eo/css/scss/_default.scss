@@ -1,0 +1,16 @@
+/*
+    Normalize default styling
+    (overwrite style.css)
+*/
+
+body {
+    color: $text-color;
+}
+h2 {
+    font-size: $font-size-xlarge;
+    font-weight: normal;
+}
+
+*[hidden] {
+    display: none !important;
+}

@@ -1,0 +1,39 @@
+/*
+    Data representation
+    ===================
+*/
+
+.af-data {
+    // Vary font sizes
+    &.af--medium {
+        @include data-font-medium;
+    }
+    &.af--large {
+        @include data-font-large;
+    }
+    &.af--xlarge {
+        @include data-font-xlarge;
+    }
+    &.af--xxlarge {
+        @include data-font-xxlarge;
+    }
+
+    &.af--share {
+        sub {
+            font-size: 40%;
+            vertical-align: baseline;
+            bottom: 0;
+        }
+    }
+
+    &.af--percent {
+        &:after {
+            content: '%';
+
+            margin-left: .1em;
+            margin-right: -.5em;
+            font-size: 50%;
+            vertical-align: super;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+/*
+    Profile Cards
+    =============
+*/
+
+.af-profile-cards-list {
+    @include kill-list;
+    overflow: auto;
+
+    .af-profile-card {
+        float: left;
+        width: 45%;
+        margin: $space 0;
+
+        &:nth-of-type(odd) {
+            margin-right: 10%;
+            clear: both;
+        }
+    }
+}
+
+.af-profile-card {
+    font-size: $font-size-xsmall;
+}
+
+.af-profile-card__avatar {
+    float: left;
+    height: 90px;
+    width: 90px;
+    margin: 0 $space $space/2 0;
+}
+
+.af-profile-card__name {
+    margin-top: 0;
+    margin-bottom: $space/5;
+    font-weight: bold;
+}
+
+.af-profile-card__link {
+    color: $text-color !important;
+    font-weight: 600;
+}
+.af-profile-card__address {
+    margin-left: $space/4;
+    font-weight: 300;
+}
+.af-profile-card__info {
+    clear: both;
+    color: $grey-50;
+    font-size: $font-size-xsmall;
+}
+
+.af-profile-card__stats {
+    @include kill-list;
+    overflow: hidden;
+
+    li {
+        float: left;
+        width: 33%;
+        margin: $space/2 0;
+        text-align: center;
+
+        &:first-of-type {
+            text-align: left;
+        }
+        &:last-of-type {
+            text-align: right;
+        }
+    }
+}

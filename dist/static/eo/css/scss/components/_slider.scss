@@ -1,0 +1,73 @@
+/*
+    Slick (reports) slider
+    ======================
+
+*/
+
+.af-slider {
+    position: relative;
+
+    background: white;
+    box-shadow: $border-color 0 1px 4px;
+
+
+    .slick-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+
+        height: 40px;
+
+        overflow: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+        background: $brand-green;
+
+        list-style: none;
+        white-space: nowrap;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    .slick-list {
+        padding-top: 38px;
+    }
+}
+
+.af-slider__tab {
+    padding: 10px 1em;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+.slick-active .af-slider__tab {
+    color: $brand-dark;
+}
+
+.af-slider__control {
+    position: absolute;
+    top: 75%;
+    z-index: 100;
+
+    padding: 0;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: $font-size-xhuge;
+    font-weight: 100;
+    line-height: 1;
+
+    &.af--previous {
+        left: $space;
+    }
+    &.af--next {
+        right: $space;
+    }
+}

@@ -1,0 +1,15 @@
+/*
+    Dropdown Select
+    ===============
+*/
+
+.af-select-inline {
+    &:after {
+        @include icon-sort-down;
+        margin-left: .5em;
+        font-size: $font-size-medium;
+        vertical-align: top;
+    }
+}
+
+

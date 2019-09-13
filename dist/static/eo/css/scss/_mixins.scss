@@ -1,0 +1,39 @@
+/* Typography */
+
+@mixin data-font-medium {
+    font-size: $font-size-xxxlarge;
+    font-weight: 300;
+    line-height: $line-height-short;
+}
+
+@mixin data-font-large {
+    font-size: $font-size-huge;
+    font-weight: 100;
+    line-height: $line-height-short;
+}
+
+
+@mixin data-font-xlarge {
+    font-size: $font-size-xhuge;
+    font-weight: 100;
+    line-height: $line-height-short;
+}
+
+@mixin data-font-xxlarge {
+    font-size: $font-size-xxhuge;
+    font-weight: 100;
+    line-height: 1;
+}
+
+
+/* Borders */
+@mixin default-border-radius {
+    @include border-radius(2px);
+}
+
+/* Resets */
+@mixin kill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

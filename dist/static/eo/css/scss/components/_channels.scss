@@ -1,0 +1,131 @@
+/*
+    Channels custom bar chart
+    =========================
+*/
+
+.af-channels {
+}
+
+.af-channels__list {
+    @include kill-list;
+
+    .af-channels__item {
+        margin: $space/2 0;
+        padding: 0 15% 0 $space*2.5;
+    }
+}
+
+.af-channels__item {
+    position: relative;
+    height: $space*2.5;
+    vertical-align: middle;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        width: $space *2;
+        padding: $space/4;
+
+        font-size: $font-size-xxlarge !important;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: $space/2;
+    }
+
+    &.af--facebook {
+        .af-channels__bar {
+            background: #3f5c96;
+        }
+
+        &:before {
+            @include icon-facebook;
+            color: #3f5c96;
+        }
+    }
+
+    &.af--email {
+        .af-channels__bar {
+            background: $brand-red;
+        }
+
+        &:before {
+            @include icon-email;
+            color: $brand-red;
+        }
+    }
+
+    &.af--twitter {
+        .af-channels__bar {
+            background: #61aadb;
+        }
+
+        &:before {
+            @include icon-twitter;
+            color: #61aadb;
+        }
+    }
+
+    &.af--more {
+        .af-channels__bar {
+            background: $grey-60;
+        }
+
+        &:before {
+            @include icon-ellipsis;
+            color: $grey-60;
+        }
+    }
+}
+
+.af-channels__chart {
+    h2 {
+        margin-bottom: $space;
+    }
+}
+
+.af-channels__budget {
+    border-left: dashed 1px $border-color;
+    text-align: right;
+
+    h4 {
+        margin: 0;
+    }
+
+    .af-channels__item {
+        padding: 10% 0;
+        font-size: $font-size-medium;
+        line-height: 1;
+        vertical-align: middle;
+    }
+}
+
+
+.af-channels__bar {
+    position: relative;
+    display: inline-block;
+    padding: $space/2;
+
+    background: $grey-60;
+
+    color: white;
+    text-align: right;
+}
+
+.af-channels__bar-value {
+    color: white;
+    font-size: $font-size-medium;
+    line-height: $font-size-medium;
+}
+.af-channels__bar-label {
+    position: absolute;
+    left: 100%;
+
+    padding-left: $space/2;
+
+    color: $grey-50;
+    font-size: $font-size;
+    font-weight: 100;
+    line-height: $font-size-large;
+}

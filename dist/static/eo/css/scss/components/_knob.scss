@@ -1,0 +1,77 @@
+/*
+    Knob Chart
+    ==========
+*/
+.af-knob {
+    text-align: center;
+
+    &.af--empty {
+        .af-knob__label {
+            top: auto;
+            bottom: 30%;
+
+            color: $grey-60;
+        }
+
+        .af-knob__legend {
+            font-size: $font-size-small;
+        }
+    }
+}
+
+.af-knob__inner {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.af-knob__input {
+    display: none;
+}
+.af-knob__label {
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    right: 20%;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    opacity: .5;
+    -webkit-backface-visibility: hidden;
+}
+
+.af-knob__legend {
+    display: block;
+    margin-top: $space;
+    border: none;
+
+    color: $grey-50;
+    font-size: $font-size-xsmall;
+}
+
+.af-knob__link {
+    display: block;
+
+    * {
+        color: $brand-blue !important;
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.af-knob__value {
+    position: absolute;
+    bottom: 45%;
+    left: 20%;
+    right: 20%;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: $font-size-xlarge;
+    font-weight: 600;
+    line-height: $line-height-short;
+    text-align: center;
+}

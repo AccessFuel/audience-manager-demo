@@ -1,0 +1,117 @@
+/*
+    Login/Register form
+    ===================
+*/
+.af-login {
+    width: auto !important;
+    min-width: 300px;
+    max-width: 480px;
+
+    .af-login__container {
+        padding: $space*2;
+        box-shadow: rgba(black, .2) 0 0 30px;
+        //background: ;
+        background: rgba(#5f7182, .5);
+
+        @media (max-width: 480px) {
+            padding: $space;
+            box-shadow: none;
+            background: transparent;
+            border: none;
+        }
+    }
+
+    .af-login__logo {
+        width: 160px;
+        margin-bottom: $space/2;
+    }
+
+    .af-login__form-group {
+        position: relative;
+    }
+
+    .af-login__forgot-password {
+        position: absolute;
+        top: 50%;
+        right: $unit * 3;
+        line-height: 1;
+    }
+
+    .af-login__version {
+        margin: 0;
+        margin-bottom: $space;
+
+        color: white;
+        font-size: $font-size-xsmall;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+
+    .af-login__alternative-cta {
+        color: white;
+
+        a {
+            color: white;
+            margin: 0 .5em;
+        }
+    }
+
+    .af-login__alternative-cta-link {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+
+    input[type=email],
+    input[type=text],
+    input[type=password],
+    input[type=tel] {
+        height: auto;
+        margin: 1em 0;
+        padding: .7em 1em;
+        font-size: $font-size-medium;
+        font-weight: 100;
+    }
+
+    label {
+        color: white;
+
+        a {
+            color: white;
+            text-decoration:  underline;
+        }
+
+        [class*="icheckbox"] + span {
+            display: inline-block;
+            margin-left: .5em;
+            vertical-align: middle;
+        }
+    }
+
+    header {
+        color: $brand-green;
+
+        h1 {
+            font-size: $font-size-xxlarge;
+            font-weight: 100;
+        }
+    }
+
+    footer {
+        padding: $space;
+        opacity: .3;
+        color: white;
+    }
+}
+
+.af-login__error {
+    margin-top: -$unit;
+}
+
+// background
+&.af-login__bg {
+    min-height: 100%;
+    background: $brand-dark url(../images/background/auth.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+}

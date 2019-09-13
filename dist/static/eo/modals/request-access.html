@@ -1,0 +1,33 @@
+<div class="modal-dialog">
+    <section class="modal-content animated fadeInDown">
+        <header class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <img src="af_img/icons/request-access@2x.png" width="100" height="100" alt="Request Access" />
+            <h4 class="modal-title">Request Access to Your Attendees List</h4>
+            <small class="font-bold">Send an email to your team requesting a dump of your user database.</small>
+        </header>
+        <article class="modal-body">
+            <p>To create your audience reports you need to upload your attendees list first in one of the supported formats (XLS or SCV). If you don't have an access to youruser database, you may request your team members to forward you such file or even to upload it for you.</p>
+
+            <div class="form-group">
+                <label for="requestAccessModalEmail">To:</label>
+                <input id="requestAccessModalEmail" type="email" placeholder="Enter your team members email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="requestAccessModalSubject">Subject:</label>
+                <input id="requestAccessModalSubject" type="text" placeholder="Subject" value="User Database Request" class="form-control">
+            </div>
+            <div class="form-group">
+                <textarea type="text" rows="5" class="form-control">
+Hi, I'm creating an insight report with AccessFuel for our next event to analyze our audience, but I need an access to our users data. Could you please email me back a copy of our userbase either in CSV or XLS format?
+
+Thank you.
+                </textarea>
+            </div>
+        </article>
+        <footer class="modal-footer">
+            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </footer>
+    </section>
+</div>

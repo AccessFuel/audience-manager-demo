@@ -1,0 +1,106 @@
+/*
+    Boxes
+    =====
+*/
+
+.af-box {
+    box-shadow: $border-color 0 1px 4px;
+
+    & + .af-box {
+        margin-top: $space*0.75;
+    }
+
+    .af-box__title {
+        min-height: auto;
+        padding: $space/2 $space;
+
+        color: white;
+        border: none;
+
+        &.af--empty {
+            min-height: 4px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        h1, h2, h3, h4 {
+            margin: $space/4 0 $space/10;
+        }
+
+        h2 {
+            font-size: $font-size-medium;
+            font-weight: 600;
+        }
+
+        .af-button {
+            margin-top: -2px;
+            box-shadow: 0 3px 2px rgba(black, .3);
+        }
+    }
+
+    .ibox-content {
+        padding: $space;
+    }
+
+    .af-box__footer {
+        padding: 0 $space $space;
+        background: white;
+        font-size: $font-size;
+    }
+
+    // Box Carousel
+
+    .af-box__carousel {
+        @include kill-list;
+        border-top: solid 1px white !important;
+
+        li {
+            overflow: hidden;
+        }
+    }
+
+    .af-box__footer.af-box__carousel-controls {
+        padding: $space/2 $space;
+        text-align: center;
+    }
+
+    .af-box__carousel-control {
+        display: inline-block;
+        width: $space*0.6;
+        height: $space*0.6;
+
+        margin: 0 $space*0.1;
+        text-indent: 100%;
+
+        background: $grey-95;
+        border-radius: 50%;
+
+        box-shadow: inset 0 1px 1px rgba(black, .4);
+
+        overflow: hidden;
+
+        &.af--active {
+            background: $brand-red;
+            box-shadow: 0 1px 1px rgba(black, .1);
+        }
+    }
+
+
+
+    // Color scheme
+    .af-color-scheme.af--events & .af-box__title {
+        background: $brand-green;
+    }
+
+    .af-color-scheme.af--audience & .af-box__title {
+        background: $brand-blue;
+    }
+
+    .af-color-scheme.af--marketing & .af-box__title {
+        background: $brand-red;
+    }
+
+    .af-color-scheme.af--sponsors & .af-box__title {
+        background: $brand-purple;
+    }
+}

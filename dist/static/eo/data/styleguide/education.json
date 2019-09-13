@@ -1,0 +1,45 @@
+{
+    "summary": {
+        "title": "Education",
+        "description": "(Chicago, IL)",
+        "quality": 0.12,
+        "favourite": true,
+        "type": "wordcloud"
+    },
+
+    "data": [{
+            "label": "Bachelor",
+            "value": 122
+        },{
+            "label": "Colledge",
+            "value": 24
+        },{
+            "label": "Computer Science",
+            "value": 22
+        },{
+            "label": "Degree",
+            "value": 33
+        },{
+            "label": "Graduate",
+            "value": 44
+        },{
+            "label": "High School",
+            "value": 4
+        },{
+            "label": "Master",
+            "value": 90
+        },{
+            "label": "MBA",
+            "value": 40
+        },{
+            "label": "School",
+            "value": 24
+        },{
+            "label": "PH.D.",
+            "value": 19
+        },{
+            "label": "University",
+            "value": 99
+        }
+    ]
+}

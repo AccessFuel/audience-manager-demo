@@ -1,0 +1,135 @@
+/*
+    Upload UI
+    =========
+*/
+
+.af-upload {
+    position: relative;
+
+    .af-upload__inner {
+        min-height: 240px;
+        margin: 0 -20px;
+        padding: 3em $space 4em;
+
+        background: $grey-95;
+        border-bottom: solid 1px $border-color-light;
+
+        font-size: $font-size;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &.af--hidden {
+        height: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    small {
+        -webkit-backface-visibility: hidden;
+        opacity: .75;
+        font-size: $font-size-small;
+        font-weight: 100;
+    }
+
+    strong {
+        font-weight: normal;
+    }
+
+    .af-upload__overlay,
+    .af-upload__overlay-drop {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+    }
+
+    .af-upload__overlay {
+        @include transform(translateZ(0));
+        background: $brand-green;
+    }
+    .af-upload__overlay-text {
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 30%;
+
+        color: white;
+        font-size: $font-size-xlarge;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .af-upload__button {
+        position: relative;
+        z-index: 10;
+
+        margin: 0 0 $space/2;
+    }
+
+    // Drop Over mode
+    &.af--dropover {
+        .af-upload__overlay {
+            z-index: 1000;
+            position: fixed;
+            opacity: 1;
+            box-shadow: inset 0 0 5em rgba(black, .2);
+            transition: opacity .5s, box-shadow 2s;
+        }
+    }
+}
+
+// Sample File
+.af-upload__sample {
+    position: relative;
+    z-index: 10;
+    max-width: 300px;
+    margin: $space*2 auto 0;
+    padding-top: $space;
+
+    border-top: dashed 1px $grey-70;
+
+    .af-upload__sample-file {
+        float: left;
+        margin: $unit/2 $space;
+        color: $brand-green;
+
+        .af-upload__sample-file-icon {
+            font-size: 36px;
+        }
+
+        &.af--dragging {
+            color: white;
+        }
+    }
+
+    .af-upload__sample-content {
+        font-size: $font-size-small;
+        text-align: left;
+    }
+}
+
+// Separator
+.af-upload__separator {
+    position: relative;
+    z-index: 10;
+    height: 60px;
+    width: 60px;
+
+    margin: (-$space*3.5) auto $space;
+    background: $grey-95;
+    border-radius: 30px;
+    box-shadow: 0 2px 0px $border-color-light;
+
+    color: $grey-60;
+    font-size: $font-size-medium;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: center;
+}

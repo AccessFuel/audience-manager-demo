@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AccessFuel Event Marketer</title>
+
+    <!-- include ../common/_meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="robots" content="noindex">
+    
+    <!-- Global CSS -->
+    <!-- include ../common/_styles -->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./dist/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./dist/css/animate.css" rel="stylesheet">
+    <link href="./dist/css/style.min.css" rel="stylesheet">
+    <link href="./dist/css/accessfuel.css" rel="stylesheet">
+
+    <link href="./dist/css/em.css" rel="stylesheet">
+</head>
+
+<body class="af af-fixed-header top-navigation" id="em">
+    <div id="wrapper">
+        <div id="page-wrapper" class="white-bg">
+            <!-- Hedaer -->
+            <!-- include common/header -->
+            <header class="af-header">
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle af-header__menu collapsed"
+                            type="button">
+                            <i class="fa fa-reorder"></i>
+                        </button>
+            
+                        <a href="./home.html" class="af-header__logo">
+                            <img src="./dist/images/logo/accessfuel-logo-white.png" />
+                        </a>
+                    </div>
+            
+                    <div class="af-navbar navbar-collapse collapse" id="navbar">
+                        <ul class="af-nav nav navbar-nav">
+                            <li class="af-nav__item">
+                                <a aria-expanded="false" role="button" href="./home.html">
+                                    Audience
+                                </a>
+                            </li>
+                            <li class="af-nav__item dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-flask"></i> Lab
+                                    <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu af-nav__dropdown">
+                                    <li>
+                                        <a href="https://api.accessfuel.com/engine/account_manager/" target="_blank">
+                                            Account Manager
+                                            <i class="fa fa-external-link pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h4>Event Marketers</h4>
+                                    </li>
+                                    <li>
+                                        <a href="./em/dashboard.html" target="_blank">
+                                            Dashboard
+                                            <i class="fa fa-dashboard pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>Event Organizers</h4>
+                                    </li>
+                                    <li>
+                                        <a href="./dist/static/eo/marketing.html" target="_blank">
+                                            Marketing
+                                            <i class="fa fa-external-link pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./dist/static/eo/sponsors.html" target="_blank">
+                                            Sponsors
+                                            <i class="fa fa-external-link pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#insightsSampleModalContent" data-content="./dist/static/modals/insights-sample-salesforce-modal.html"
+                                            class="js-insights-sample-toggle">
+                                            Insights
+                                            <i class="fa fa-bookmark-o pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+            
+                        <ul class="af-nav nav navbar-nav navbar-right">
+                            <li class="af-nav__item dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle af-user-nav af--multiline">
+                                    <b class="caret"></b>
+                                    <img src="./dist/images/misc/profile/rob-imrie.png" class="af-user-avatar" alt="Rob Imrie, AccessFuel" />
+            
+                                    <i class="fa fa-user"></i>
+            
+                                    <strong>
+                                        Rob Imrie
+                                    </strong>
+            
+                                    <small>AccessFuel</small>
+                                </a>
+            
+                                <ul class="dropdown-menu af-nav__dropdown">
+                                    <li>
+                                        <a href="./index.html" class="js-logout">
+                                            Log out
+                                            <i class="fa fa-sign-out"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+            
+                            <li class="af-nav__item">
+                                <a href="https://support.accessfuel.com/portal/home" target="_blank">
+                                    Help Center
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <h1 class="af-header__title">
+                            Audience Manager
+                        </h1>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="af-main animated fadeInDown wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-sm-8" style="padding-right: 40px;">
+                        <!-- include em-widget-summary -->
+                        <section class="ibox af-widget">
+                            <header class="ibox-title">
+                                <h2>Sponsorship Portfolio</h2>
+                                <div class="ibox-tools">
+                                    <small>Click to view details</small>
+                                </div>
+                            </header>
+                        
+                            <article class="ibox-content">
+                                <div class="row af-summary-widget">
+                                    <div class="col-xs-4">
+                                        <dl class="af-summary-widget__item js-events-toggle" data-target="#events-sponsored">
+                                            <dt class="af-summary-widget__primary">
+                                                <i class="fa fa-calendar-check-o af-summary-widget__icon"></i>
+                                                <span class="af-summary-widget__primary-value" style="text-indent:-.15em;">12</span>
+                                                <span class="af-summary-widget__primary-label">Sponsored
+                                                    <br/> Events</span>
+                                            </dt>
+                                            <dd class="af-summary-widget__secondary">
+                                                $2.27M
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <dl class="af-summary-widget__item af--active js-events-toggle" data-target="#events-upcoming">
+                                            <dt class="af-summary-widget__primary">
+                                                <i class="fa fa-calendar af-summary-widget__icon"></i>
+                                                <span class="af-summary-widget__primary-value">2</span>
+                                                <span class="af-summary-widget__primary-label">Upcoming
+                                                    <br/> Events</span>
+                                            </dt>
+                                            <dd class="af-summary-widget__secondary">
+                                                $85K
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <dl class="af-summary-widget__item js-events-toggle" data-target="#events-pending">
+                                            <dt class="af-summary-widget__primary">
+                                                <i class="fa fa-hourglass-half af-summary-widget__icon"></i>
+                                                <span class="af-summary-widget__primary-value" style="text-indent:-.15em;">1</span>
+                                                <span class="af-summary-widget__primary-label">Pending
+                                                    <br/> Investments</span>
+                                            </dt>
+                                            <dd class="af-summary-widget__secondary">
+                                                $50K
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+
+                        <!-- include em-widget-events-sponsored -->
+                        <section class="ibox af-widget js-events-widget" id="events-sponsored" hidden>
+                            <header class="ibox-title">
+                                <h2>Sponsored (Past) Events</h2>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                </div>
+                            </header>
+                        
+                            <div class="animated fadeIn js-events-widget-loader" data-navigation="loader">
+                                <div class="af-loader af--page">
+                                    <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
+                                </div>
+                            </div>
+                        
+                            <article class="ibox-content animated fadeIn js-sort js-events-widget-content" hidden>
+                                <header class="row af-events-list__sort">
+                                    <div class="col-xs-6 af-events-list__sort-item js-sort-toggle" data-sort="date">
+                                        Event (date)
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="attendees">
+                                        Audience
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="investment">
+                                        Investment
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="match">
+                                        Quality
+                                    </div>
+                                </header>
+                                <ul class="af-events-list js-sort-list">
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-e3-expo-2016.html"
+                                        data-date="9201606" data-attendees="40000" data-investment="250000" data-match="40">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">
+                                                <i class="fa fa-star u-brand-color" title="AF Recommended"></i> E3 Expo 2016</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, June 2016</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">40,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$250K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">40%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201606" data-attendees="7000" data-investment="150000" data-match="45">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">Silicon Beach Festival</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, June 2016</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">7,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$150K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">45%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                        
+                        
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next-2015.html"
+                                        data-date="9201509" data-attendees="1000" data-investment="350000" data-match="81">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">
+                                                <i class="fa fa-star u-brand-color" title="AF Recommended"></i> REACH Next 2015</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, September 2015</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">1,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$350K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">81%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201606" data-attendees="5000" data-investment="50000" data-match="31">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">BizBash Live</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, July 2016</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">5,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$50K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--low">31%</span>
+                                            <span class="af-events-list__item-label af--low">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201506" data-attendees="3000" data-investment="40000" data-match="28">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">Adobe MAX</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, October 2015</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">3,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$40K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--low">28%</span>
+                                            <span class="af-events-list__item-label af--low">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-techweek.html"
+                                        data-date="201511" data-attendees="20000" data-investment="750000" data-match="69">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">TechWeek LA (2015)</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, November 2015</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">20,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$750K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">69%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201511" data-attendees="6000" data-investment="90000" data-match="45">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">LA Hacks</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, November 2015</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">6,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$90K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">45%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201511" data-attendees="2500" data-investment="100000" data-match="39">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">EventTech</h3>
+                                            <address class="af-events-list__item-info">Las Vegas, November 2015</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">2,500</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$100K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">39%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201501" data-attendees="1500" data-investment="10000" data-match="10">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">Los Angeles Job Fair</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, January 2015</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">1,500</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$10K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--low">10%</span>
+                                            <span class="af-events-list__item-label af--low">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201411" data-attendees="20000" data-investment="400000" data-match="69">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">TechWeek LA (2014)</h3>
+                                            <address class="af-events-list__item-info">Los Angeles, November 2014</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">20,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$400K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">69%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201409" data-attendees="3000" data-investment="15000" data-match="40">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">HubSpot</h3>
+                                            <address class="af-events-list__item-info">Santa Monica, September 2014</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">3,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$15K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">40%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="201404" data-attendees="1000" data-investment="50000" data-match="82">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">Digital Hollywood</h3>
+                                            <address class="af-events-list__item-info">Marina del Rey, April 2014</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">1,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$50K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">82%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <!-- include em-widget-events-upcoming -->
+                        <section class="ibox af-widget js-events-widget" id="events-upcoming">
+                            <header class="ibox-title">
+                                <h2>Upcoming Events</h2>
+                                <div class="ibox-tools">
+                                    <small>The next sponsored event is in 7 days in Los Angeles. CA</small>
+                                </div>
+                            </header>
+
+                            <div class="animated fadeIn js-events-widget-loader" data-navigation="loader">
+                                <div class="af-loader af--page">
+                                    <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
+                                </div>
+                            </div>
+
+                            <article class="ibox-content animated fadeIn js-sort js-events-widget-content" hidden>
+                                <header class="row af-events-list__sort">
+                                    <div class="col-xs-6 af-events-list__sort-item js-sort-toggle" data-sort="date">
+                                        Event (date)
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="attendees">
+                                        Audience
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="investment">
+                                        Investment
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="match">
+                                        Quality
+                                    </div>
+                                </header>
+                                <ul class="af-events-list js-sort-list">
+                                    <li class="row af-events-list__item js-sort-item js-event-item"
+                                        data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="20160922" data-attendees="10000" data-investment="35000" data-match="55">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title"><i class="fa fa-star u-brand-color" title="AF Recommended"></i> REACH Next 2016</h3>
+                                            <address class="af-events-list__item-info">September 22, 2016 | Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">1,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$35K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">81%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="row af-events-list__item js-sort-item js-event-item"
+                                        data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-e3-expo-2017.html"
+                                        data-date="20170613" data-attendees="50000" data-investment="50000" data-match="78">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title"><i class="fa fa-star u-brand-color" title="AF Recommended"></i> E3 Expo 2017</h3>
+                                            <address class="af-events-list__item-info">June 13–15, 2017 | Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">50,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">$50K</span>
+                                            <span class="af-events-list__item-label">Invested</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">38%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <!-- include em-widget-events-pending -->
+                        <section class="ibox af-widget js-events-widget" id="events-pending" hidden>
+                            <header class="ibox-title">
+                                <h2>Pending Events</h2>
+                                <div class="ibox-tools">
+                                    <small>Waiting for event organizer to accept your offer</small>
+                                </div>
+                            </header>
+                        
+                            <div class="animated fadeIn js-events-widget-loader" data-navigation="loader">
+                                <div class="af-loader af--page">
+                                    <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
+                                </div>
+                            </div>
+                        
+                            <article class="ibox-content animated fadeIn js-sort js-events-widget-content" hidden>
+                                <header class="row af-events-list__sort">
+                                    <div class="col-xs-6 af-events-list__sort-item js-sort-toggle" data-sort="date">
+                                        Event (date)
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="attendees">
+                                        Audience
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="investment">
+                                        Investment
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="match">
+                                        Quality
+                                    </div>
+                                </header>
+                                <ul class="af-events-list">
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-tedx-santamonica.html"
+                                        data-date="20160922" data-attendees="10000" data-investment="35000" data-match="55">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">
+                                                <i class="fa fa-star u-brand-color" title="AF Recommended"></i> TEDx SantaMonica</h3>
+                                            <address class="af-events-list__item-info">October 17, 2016 | Santa Monica, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">20,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">
+                                                <i class="fa fa-lock"></i> $50K</span>
+                                            <span class="af-events-list__item-label">Offered</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">77%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <!-- include em-widget-events-search -->
+                        <section class="ibox af-widget js-events-widget" id="events-search" hidden>
+                            <header class="ibox-title">
+                                <h2>Events Search Results</h2>
+                                <div class="ibox-tools">
+                                    <small>Search filters:</small>
+                                    <button class="af-event-search-filter">
+                                        <i class="fa fa-users"></i> 2,000+
+                                    </button>
+                                    <button class="af-event-search-filter">
+                                        <i class="fa fa-location-arrow"></i> Los Angeles, CA (300 mi)
+                                    </button>
+                                </div>
+                            </header>
+                        
+                            <div class="animated fadeIn js-events-widget-loader" data-navigation="loader">
+                                <div class="af-loader af--page">
+                                    <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
+                                </div>
+                            </div>
+                        
+                            <article class="ibox-content animated fadeIn js-sort js-events-widget-content" hidden>
+                                <header class="row af-events-list__sort">
+                                    <div class="col-xs-6 af-events-list__sort-item js-sort-toggle" data-sort="date">
+                                        Event (date)
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="attendees">
+                                        Audience
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="investment">
+                                        Investment
+                                    </div>
+                                    <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="match">
+                                        Quality
+                                    </div>
+                                </header>
+                                <ul class="af-events-list js-sort-list">
+                        
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-techweek.html"
+                                        data-date="920161114" data-attendees="50000" data-investment="6" data-match="84">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">
+                                                <i class="fa fa-star u-brand-color" title="AF Recommended"></i> Techweek LA</h3>
+                                            <address class="af-events-list__item-info">November 14—20, 2016 | Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">50,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">6</span>
+                                            <span class="af-events-list__item-label">Programs</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">84%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-ces.html"
+                                        data-date="920170105" data-attendees="177000" data-investment="0" data-match="67">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">
+                                                <i class="fa fa-star u-brand-color" title="AF Recommended"></i> CES 2017</h3>
+                                            <address class="af-events-list__item-info">January 5—8, 2017 | Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">177,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">--</span>
+                                            <span class="af-events-list__item-label">By Inquiry</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">67%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-techspo.html"
+                                        data-date="920170614" data-attendees="4000" data-investment="0" data-match="79">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">
+                                                <i class="fa fa-star u-brand-color" title="AF Recommended"></i> TECHSPO Technology Expo</h3>
+                                            <address class="af-events-list__item-info">June 14—15, 2017 | Santa Monica, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">4,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">--</span>
+                                            <span class="af-events-list__item-label">By Inquiry</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">79%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="20161018" data-attendees="18000" data-investment="3" data-match="68">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">“&amp;then” 2016 The DMA Annual Event</h3>
+                                            <address class="af-events-list__item-info">October 16–18, 2016 | Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">18,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">3</span>
+                                            <span class="af-events-list__item-label">Tiers</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">68%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="20170104" data-attendees="2000" data-investment="11" data-match="69">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">Digital Hollywood at CES®2017</h3>
+                                            <address class="af-events-list__item-info">January 4—6, 2017 | Las Vegas, NV</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">2,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">11</span>
+                                            <span class="af-events-list__item-label">Tiers</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--hi">69%</span>
+                                            <span class="af-events-list__item-label af--hi">Match</span>
+                                        </div>
+                                    </li>
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="20170824" data-attendees="3000" data-investment="2" data-match="63">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">The Montgomery Summit</h3>
+                                            <address class="af-events-list__item-info">March 8-9, 2017 | Santa Monica, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">3,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">2</span>
+                                            <span class="af-events-list__item-label">Tiers</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">63%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="20170824" data-attendees="2000" data-investment="7" data-match="51">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">Silicon Beach Fest</h3>
+                                            <address class="af-events-list__item-info">August 24-27, 2017 | Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">2,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">7</span>
+                                            <span class="af-events-list__item-label">Tiers</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">59%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="20161114" data-attendees="2000" data-investment="17" data-match="49">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">EventTech</h3>
+                                            <address class="af-events-list__item-info">November 14—16, 2016 | Las Vegas, NV</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">2,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">17</span>
+                                            <span class="af-events-list__item-label">Tiers</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">58%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                                    <li class="row af-events-list__item js-sort-item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html"
+                                        data-date="20160918" data-attendees="60000" data-investment="5" data-match="32">
+                                        <div class="col-xs-6">
+                                            <h3 class="af-events-list__item-title">Oracle OpenWorld</h3>
+                                            <address class="af-events-list__item-info">September 18—22, 2016 | San Francisco, CA</address>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">60,000</span>
+                                            <span class="af-events-list__item-label">Attendees</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value">5</span>
+                                            <span class="af-events-list__item-label">Tiers</span>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <span class="af-events-list__item-value af--med">55%</span>
+                                            <span class="af-events-list__item-label af--med">Match</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                        
+                                <footer class="u-align-center u-margin-top-md">
+                                    <button class="af-button">Find more…</button>
+                                </footer>
+                            </article>
+                        </section>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <!-- include em-widget-persona -->
+                        <section class="ibox af-widget">
+                            <header class="ibox-title">
+                                <h2>Target Persona</h2>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-cog"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-persona">
+                                        <li>
+                                            <a href="#">Update Primary Persona (The Executive)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Create Secondary Persona</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                        
+                            <article class="ibox-content af-persona-widget">
+                                <img src="./dist/images/em/persona/executive.png" class="af-persona-widget__image" />
+                                <h3 class="af-persona-widget__title">The Executive</h3>
+                        
+                                <p class="af-persona-widget__primary">
+                                    Male, 36 – 47 y/o
+                                    <br/> C-Level, VP’s, Directors
+                                    <br/> Southern California
+                                </p>
+                        
+                                <p class="af-persona-widget__secondary">
+                                    Educational background in Business
+                                    <br/> Works in Finance
+                                </p>
+                            </article>
+                        
+                            <footer>
+                                <button class="af-button af--primary af-find-events__cta js-events-toggle js-events-search-button" data-target="#events-search"
+                                    data-style="expand-left" type="button">
+                                    Find Events to Sponsor
+                                </button>
+                            </footer>
+                        </section>
+
+                        <!-- include em-widget-events-survey -->
+                        <section class="ibox af-widget">
+                            <header class="ibox-title">
+                                <h2>Past Events Survey</h2>
+                                <div class="ibox-tools">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-cog"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-persona">
+                                        <li>
+                                            <a href="#">Create New Survey</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Edit List</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </header>
+                        
+                            <article class="ibox-content af-persona-widget">
+                                <p>
+                                    To set up a baseline in often subjective ROI for your events, run a survey among your team members to see how they fill the
+                                    past events performed.
+                                </p>
+                        
+                                <ul class="af-events-list af--compact js-sort-list">
+                                    <li class="row af-events-list__item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html">
+                                        <div class="col-xs-5">
+                                            <h3 class="af-events-list__item-title">BizBash Live</h3>
+                                            <address class="af-events-list__item-info">July 14, 2016
+                                                <br/> Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <span class="af-events-list__item-value">4/9</span>
+                                            <span class="af-events-list__item-label">Team Members
+                                                <br/> Responded</span>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <span class="af-events-list__item-value af--low">20%</span>
+                                            <span class="af-events-list__item-label af--low">ROI
+                                                <br/> Satisfaction</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-reach-next.html">
+                                        <div class="col-xs-5">
+                                            <h3 class="af-events-list__item-title">Adobe MAX</h3>
+                                            <address class="af-events-list__item-info">Oct. 31 — Nov. 4, 2015
+                                                <br/> Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <span class="af-events-list__item-value">8/9</span>
+                                            <span class="af-events-list__item-label">Team Members
+                                                <br/> Responded</span>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <span class="af-events-list__item-value af--low">25%</span>
+                                            <span class="af-events-list__item-label af--low">ROI
+                                                <br/> Satisfaction</span>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="row af-events-list__item js-event-item" data-toggle="modal" data-target=".js-event-modal" data-content="./dist/static/em/modal-event-techweek.html">
+                                        <div class="col-xs-5">
+                                            <h3 class="af-events-list__item-title">Techweek LA</h3>
+                                            <address class="af-events-list__item-info">November 9—14, 2015
+                                                <br/> Los Angeles, CA</address>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <span class="af-events-list__item-value af--hi">9/9</span>
+                                            <span class="af-events-list__item-label af--hi">Team Members
+                                                <br/> Responded</span>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <span class="af-events-list__item-value af--hi">80%</span>
+                                            <span class="af-events-list__item-label af--hi">ROI
+                                                <br/> Satisfaction</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        
+                            <footer class="af-widget__footer af--bordered">
+                                <a href="#">
+                                    Create New Event Survey
+                                </a>
+                            </footer>
+                        </section>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <!-- include common/footer -->
+            <footer class="footer af-footer">
+                <div class="pull-right">
+                    <a href="https://support.accessfuel.com/portal/home" target="_blank">
+                        Help Center
+                    </a> |
+                    <a href="https://accessfuel.com/terms.html" target="_blank">
+                        Terms of Use
+                    </a> |
+                    <a href="https://accessfuel.com/privacy-policy.html" target="_blank">
+                        Privacy Policy
+                    </a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Accessfuel © 2016—2018
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Teamplates -->
+
+    <!-- Modals -->
+    <div hidden>
+        <!-- Enhance modal options -->
+        <!-- include ../common/modals/insights-sample-modal -->
+        <div class="modal inmodal fade" id="insightsSampleModalContent" role="dialog" aria-hidden="true" tabindex="-1" hidden>
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">
+                                <i class="fa fa-close"></i>
+                            </span>
+                            <span class="sr-only">Close</span>
+                        </button>
+        
+                        <h4 class="modal-title">Insights Report</h4>
+                        <small>View or download full 20-page insights report in PDF format.</small>
+                    </header>
+        
+                    <article class="modal-body js-insights-sample-modal-content" data-loadede="false">
+                        <div class="af-loader af--page">
+                            <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
+                        </div>
+                    </article>
+        
+                    <footer class="modal-footer">
+                        <div class="text-center">
+                            <button type="button" class="af-button" data-dismiss="modal">Close</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <!-- include modals/event-modal -->
+        <div class="modal inmodal js-event-modal" role="dialog" aria-hidden="true" tabindex="-1" hidden>
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content animated bounceInUp af-event-modal">
+                    <div class="animated fadeIn js-event-modal-content" hidden>
+                    </div>
+        
+                    <div class="af-loader af--page animated fadeIn js-event-modal-loader">
+                        <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
+                    </div>
+        
+                    <div class="animated fadeIn u-error-text js-event-modal-error" hidden>
+                        <header class="modal-header u-padding-v-lg">
+                            <i class="fa fa-warning modal-icon"></i>
+                            <h2>Could not get event details.</h2>
+                            <p>Please close the modal and try again.</p>
+                        </header>
+        
+                        <footer class="modal-footer u-padding-v">
+                            <div class="text-center">
+                                <button type="button" class="af-button" data-dismiss="modal">Close</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- include ../common/_scripts -->
+
+    <!-- Core Scripts -->
+    <script src="./dist/js/lib/require.js"></script>
+
+    <script>
+        requirejs(['./dist/js/common.js'], function (common) {
+            requirejs(['app/em'], function(app) {
+                app();
+            });
+        });
+    </script>
+
+    <!-- Intercom Scripts -->
+    <script>
+        window.apiURL = "./";
+    </script>
+
+    <script>
+        window.intercomSettings = {
+            app_id: "m1mtd42w",
+            name: 'Rob Imrie', // Full name
+            email: "rob@accessfuel.com", // Email address
+            created_at: '1516863800000' // Signup date as a Unix timestamp
+        };
+    </script>
+    <script>(function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/m1mtd42w';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();
+    </script>
+
+</body>
+
+</html>

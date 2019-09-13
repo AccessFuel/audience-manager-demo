@@ -1,0 +1,72 @@
+/*
+    Slick (reports) slider
+    ======================
+
+*/
+$slick-control-size: 40px;
+
+.af-slider {
+
+    .slick-prev,
+    .slick-next {
+        -webkit-appearance: none;
+        position: absolute;
+        top: 50%;
+        z-index:20;
+
+        height: $slick-control-size;
+        width: $slick-control-size;
+        outline: none;
+
+        margin-top: -$slick-control-size/2;
+        padding: 0;
+
+        background: transparent;
+        border: none;
+        border-radius: 40px;
+        color: transparent;
+
+        &:before {
+            display: block;
+            height: $slick-control-size;
+            width: $slick-control-size;
+            color: $text-color;
+            font-family: 'FontAwesome';
+            font-size: $font-size-xlarge;
+            line-height: $slick-control-size;
+            text-align: center;
+        }
+
+        &.slick-disabled:before {
+            color: $text-color-pale;
+        }
+    }
+
+    .slick-prev {
+        left: -$slick-control-size/2;
+
+        &:before {
+            content: "\f053";
+            text-indent: -5px;
+        }
+    }
+    .slick-next {
+        right: -$slick-control-size/2;
+
+        &:before {
+            content: "\f054";
+            text-indent: 5px;
+        }
+    }
+
+}
+
+.af-slider__slide {
+    margin: 10px $slick-control-size/2;
+
+    img {
+        display: block;
+        width: 100%;
+        box-shadow: 0 1px 20px rgba(black, .2);
+    }
+}

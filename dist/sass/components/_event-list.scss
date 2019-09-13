@@ -1,0 +1,120 @@
+/*
+    Event List
+    ==========
+*/
+
+// Events list
+.af-events-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .af-events-list__item {
+        position: relative;
+        margin: 0;
+        padding: $unit*2 0;
+
+        & + .af-events-list__item {
+            border-top: solid 1px $border-color-light;
+        }
+
+        &:hover {
+            background: rgba($brand-green, .05);
+        }
+    }
+
+    .af-events-list__item-link {
+        color: inherit;
+    }
+
+    .af-events-list__item-title {
+        margin: 0;
+        padding: 0 0 $unit/2;
+        overflow: hidden;
+
+        color: $grey-10;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        .fa {
+            margin-right: $unit/3;
+            font-size: 75%;
+            vertical-align: 2px;
+        }
+    }
+    .af-events-list__item-info {
+        margin: 0;
+        color: $text-color-med;
+        font-size: $font-size-xxsmall;
+    }
+    .af-events-list__item-value {
+        display: block;
+        margin: $unit/3 0;
+        font-size: $font-size;
+        line-height: 1;
+        text-align: center;
+
+        small {
+            color: $grey-60;
+            font-size: $font-size-xxsmall;
+        }
+    }
+    .af-events-list__item-label {
+        display: block;
+        font-size: $font-size-min-caps;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .af-events-list__item-actions {
+        font-size: $font-size-large;
+        line-height: 1;
+    }
+
+    &.af--compact {
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5 {
+            padding: 0;
+        }
+    }
+}
+
+.af-events-list__sort {
+    margin: -$unit*1.5 0 0;
+    background: $grey-95;
+}
+.af-events-list__sort-item {
+    padding-top: $unit;
+    padding-bottom: $unit;
+
+    font-size: $font-size-min-caps;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &.af--active {
+        color: $text-color-black;
+        font-weight: 600;
+    }
+
+    &.af--asc:after,
+    &.af--desc:after {
+        margin-left: $unit/2;
+        font-family: 'FontAwesome';
+        font-size: 8px;
+
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    &.af--asc:after {
+        content: "\f0d8";
+    }
+    &.af--desc:after {
+        content: "\f0d7";
+    }
+
+    &.af--center {
+        text-align: center;
+    }
+}

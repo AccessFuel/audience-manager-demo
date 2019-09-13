@@ -1,0 +1,21 @@
+/*
+    Data Output
+    ===========
+*/
+.af-data {
+    output {
+        font-size: $font-size-small;
+        font-weight: 600;
+    }
+
+    label {
+        margin-top: .5em;
+        font-size: $font-size-xsmall;
+        font-weight: 300;
+    }
+
+    small {
+        font-size: $font-size-xxsmall;
+        font-weight: 300;
+    }
+}

@@ -1,0 +1,91 @@
+.af-navbar {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.af-nav {
+    .af-nav__item {
+        h4 {
+            margin: 0;
+            padding: $unit*1.6 $space $unit;
+            border-top: solid 1px $grey-95;
+        }
+        > a {
+            padding: $unit*1.6 $space;
+            line-height: 32px;
+            vertical-align: middle;
+
+            &,
+            &:active,
+            &:link,
+            &:visited {
+                background: transparent;
+                color: white;
+            }
+
+            &:hover {
+                background: rgba($grey-90, .33);
+                color: white;
+            }
+        }
+
+        &.af--active > a {
+            font-weight: bold;
+        }
+
+        &.af--disabled > a {
+            color: rgba(white, .33);
+            pointer-events: none;
+        }
+    }
+
+    .af-nav__dropdown {
+        @include box-shadow(0 5px 6px $grey-70);
+        min-width: 100%;
+
+        a {
+            &:hover {
+                background: rgba($grey-90, .33);
+                color: $brand-dark;
+            }
+        }
+
+        .fa {
+            margin: 7px 0 0 .5em;
+        }
+    }
+
+    // User Navigation
+    // -----
+    .af-user-nav {
+        display: inline-block;
+        text-align: left;
+
+        &.af--multiline {
+            line-height: $line-height-short !important;
+        }
+
+        .caret {
+            float: right;
+            margin-top: $unit*1.6;
+            margin-left: $unit;
+        }
+
+        strong:after {
+            content: '\A';
+            white-space: pre;
+        }
+
+        small {
+            font-size: $font-size-xsmall;
+            font-weight: 300;
+        }
+    }
+
+    .af-user-avatar {
+        float: left;
+        height: 32px;
+        width: 32px;
+        margin-right: $unit;
+    }
+}

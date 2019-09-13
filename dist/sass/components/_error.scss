@@ -1,0 +1,19 @@
+/*
+    Errors
+    ======
+*/
+.af-error {
+    padding: 15% $space 5%;
+    color: $color-error;
+}
+
+@media (max-width: 480px) {
+    .af-error {
+        padding-top: 35%;
+    }
+}
+
+
+.af-error-message {
+    color: $color-error;
+}

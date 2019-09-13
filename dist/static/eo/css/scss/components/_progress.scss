@@ -1,0 +1,88 @@
+/*
+    Upload Progress UI
+    ==================
+*/
+
+.af-progress {
+    .af-progress__bar {
+        position: relative;
+        margin: 3em 0;
+        text-align: center;
+    }
+
+    .af-progress__bar-input {
+        display: none;
+    }
+
+    .af-progress__bar-value {
+        @include data-font-xxlarge;
+
+        position: absolute;
+        bottom: 40%;
+        width: 100%;
+    }
+
+    .af-progress__bar-label {
+        position: absolute;
+        bottom: 25%;
+        width: 100%;
+
+        color: $grey-60;
+        font-style: italic;
+        font-size: $font-size-medium;
+    }
+
+    .af-progress__steps {
+        padding-top: 5em;
+        padding-left: 1.5em;
+
+        .af-progress__step {
+            opacity: .1;
+            transition: all 1s .1s;
+
+            font-size: $font-size-large;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                width: 1em;
+                height: 1em;
+
+                margin-left: -1.5em;
+                margin-right: 0.5em;
+
+                vertical-align: middle;
+
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            &.af--active {
+                opacity: 1;
+
+                &:before {
+                    background-image: url(../af_img/loaders/events-loader@2x.gif);
+                }
+            }
+
+            &.af--complete {
+                opacity: 1;
+                color: $brand-green;
+
+                &:before {
+                    background-image: url(../af_img/icons/check@2x.png);
+                }
+            }
+
+            &.af--error {
+                opacity: 1;
+                color: $color-error;
+
+                &:before {
+                    background-image: url(../af_img/icons/error@2x.png);
+                }
+            }
+        }
+    }
+}

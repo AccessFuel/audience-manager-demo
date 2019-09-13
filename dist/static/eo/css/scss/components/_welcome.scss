@@ -1,0 +1,129 @@
+/*
+    Welcome Widget
+    ==============
+*/
+.af-welcome {
+    box-shadow: $border-color 0 1px 3px;
+
+    &,
+    & .widget-head-color-box {
+        background-color: white;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        margin: .2em 0;
+
+        font-size: $font-size-huge;
+        font-weight: 100;
+
+        strong {
+            font-weight: 500;
+        }
+    }
+
+    h6 {
+        margin: 2em 0 1em;
+
+        font-size: $font-size-large;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 0;
+        font-size: $font-size;
+        line-height: 1.8;
+    }
+
+    .btn {
+        vertical-align: baseline;
+    }
+
+    // Modifiers
+    .af--light-text,
+    &.af--light-text,
+    &.af--light-text h1 {
+        color: white;
+    }
+
+    .af--dark-text,
+    &.af--dark-text,
+    &.af--dark-text h1 {
+        color: $text-color;
+    }
+
+    /* Intro */
+    &.af--intro {
+        margin-bottom: 1em;
+        background: transparent;
+
+        .widget-head-color-box {
+            margin: 0;
+            margin-top: -2px;
+            background-color: $grey-90;
+            background-image:  url('../af_img/welcome/events@2x.jpg');
+            background-position: center top;
+        }
+    }
+
+    /* Audience */
+    &.af--audience {
+        background-color: $brand-blue;
+        background-image:  url('../af_img/welcome/audience@2x.jpg');
+    }
+
+    /* Events */
+    &.af--events {
+        background-color: $brand-green;
+        background-image:  url('../af_img/welcome/events@2x.jpg');
+    }
+
+    /* Marketing */
+    &.af--marketing {
+        .widget-head-color-box {
+            margin: 0;
+            margin-top: -2px;
+            background-color: $brand-red;
+            background-image:  url('../af_img/welcome/marketing@2x.jpg');
+            background-position: center center;
+        }
+
+        .widget-text-box {
+            text-align: left;
+        }
+    }
+
+    /* Sponsors */
+    &.af--sponsors {
+        background-color: $brand-purple;
+        background-image:  url('../af_img/welcome/sponsors@2x.jpg');
+    }
+
+    /* Floating widget */
+    &.af--float {
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0);
+
+        position: fixed;
+        top: 50%;
+        left: 7%;
+        right: 7%;
+        z-index: 999;
+
+        margin-top: -200px;
+        margin-left: 220px;
+
+        box-shadow: $grey-60 0 5px 10px;
+
+        @media (max-width: 1024px) {
+            left: $space;
+            right: $space;
+        }
+
+        @media (max-width: 768px) {
+            margin-left: 0;
+        }
+    }
+}

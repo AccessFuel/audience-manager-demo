@@ -1,0 +1,85 @@
+/*
+    Spacing
+    =======
+*/
+
+
+// Top
+.u-margin-top-0 {
+    margin-top: 0;
+}
+.u-margin-top-sm {
+    margin-top: $space/5;
+}
+.u-margin-top-md {
+    margin-top: $space/2;
+}
+.u-margin-top {
+    margin-top: $space;
+}
+.u-margin-top-lg {
+    margin-top: $space*2;
+}
+
+
+// Bottom
+.u-margin-bottom-0 {
+    margin-bottom: 0;
+}
+.u-margin-bottom-sm {
+    margin-bottom: $space/5;
+}
+.u-margin-bottom-md {
+    margin-bottom: $space/2;
+}
+.u-margin-bottom {
+    margin-bottom: $space;
+}
+.u-margin-bottom-lg {
+    margin-bottom: $space*2;
+}
+
+// Left
+.u-margin-left-sm {
+    margin-left: $space/5;
+}
+
+.u-margin-left-md {
+    margin-left: $space/2;
+}
+
+// Right
+.u-margin-right-md {
+    margin-right: $space/2;
+}
+.u-margin-right-lg {
+    margin-right: $space*2;
+}
+
+
+// Padding
+.u-padding {
+    padding: $space;
+}
+.u-padding-h {
+    padding-left: $space;
+    padding-right: $space;
+}
+.u-padding-v {
+    padding-top: $space;
+    padding-bottom: $space;
+}
+.u-padding-v-md {
+    padding-top: $space/2;
+    padding-bottom: $space/2;
+}
+.u-padding-v-lg {
+    padding-top: $space*2;
+    padding-bottom: $space*2;
+}
+
+// Border
+.u-border-top {
+    padding-top: $space;
+    border-top: solid 1px $border-color-light;
+}

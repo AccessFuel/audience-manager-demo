@@ -1,0 +1,103 @@
+/*
+    Stats Block
+    ===========
+*/
+.af-stats-block-container {
+    @include display-flex;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+}
+
+.af-stats-block {
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(space-around);
+
+    position: relative;
+
+    height: 120px;
+    width: 120px;
+
+    margin: $unit;
+    padding: $space $unit;
+
+    background: $grey-90;
+    color: $grey-10;
+    line-height: $line-height;
+}
+
+.af-stats-block__label {
+    display: block;
+    font-size: $font-size-xsmall;
+}
+
+.af-stats-block__value {
+    display: block;
+
+    font-family: 'Abel', sans-serif;
+    font-size: $font-size-xxxlarge;
+}
+
+// Share Badge
+// -----------
+.af-stats-block__share {
+    position: absolute;
+    top: -$unit/2;
+    right: -$unit/2;
+
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: $brand-dark;
+
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: $font-size-xxsmall;
+    font-weight: bold;
+    line-height: 26px;
+    vertical-align: middle;
+    text-align: center;
+
+    &.af--share-low {
+        background: $color-error;
+    }
+    &.af--share-med {
+        background: $color-warning;
+    }
+    &.af--share-hi {
+        background: $color-success;
+    }
+}
+
+// Modifiers
+// ---------
+.af-stats-block.af--audience {
+    background: $brand-blue;
+    color: white;
+}
+
+.af-stats-block.af--totalRows,
+.af-stats-block.af--duplicateRows,
+.af-stats-block.af--emptyRows {
+    background: $brand-blue-light;
+}
+
+
+.af-stats-block.af--usefulAttributes {
+    background: $brand-dark;
+    color: white;
+}
+
+.af--quality {
+    color: white;
+}
+.af--quality-hi {
+    background-color: $brand-green;
+}
+.af--quality-med {
+    background-color: $color-warning;
+}
+.af--quality-low {
+    background-color: $color-error;
+}

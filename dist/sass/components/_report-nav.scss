@@ -1,0 +1,140 @@
+/*
+    Reports Navigation
+    ==================
+*/
+.af-report-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+
+    &.af--primary {
+        position: relative;
+        margin-bottom: 58px;
+        background: $brand-green;
+    }
+
+    &.af--secondary {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background: $grey-95;
+        z-index: 10;
+    }
+
+    &.af--fast {
+        padding: $space/2;
+        background: $grey-95;
+        color: $grey-50;
+        font-size: $font-size-small;
+        font-weight: 100;
+        text-align: center;
+    }
+}
+
+.af-report-nav__item {
+    display: inline-block;
+
+    a, span {
+        display: block;
+        padding: $space;
+        color: white;
+    }
+
+    a:hover {
+        background: rgba(white, .1);
+    }
+
+    &.af--active {
+        a {
+            color: $brand-dark;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+
+        .af-report-nav.af--secondary {
+            display: block;
+        }
+    }
+
+    &.af--disabled {
+        opacity: .5;
+    }
+
+    &.af--icon {
+        padding: 0 0 0 $space;
+
+        color: $brand-green;
+        font-size: $font-size-xlarge;
+        vertical-align: middle;
+    }
+}
+
+// Secondary panel
+.af-report-nav.af--secondary {
+    .af-report-nav__item {
+        a {
+            color: $brand-dark;
+        }
+        span {
+            color: $text-color-pale;
+        }
+
+        &.af--active {
+            a {
+                // box-shadow:inset 0px  -3px 0px $brand-green;
+                color: $brand-green;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Prev / Next buttons
+.af-report-nav__prev,
+.af-report-nav__next {
+    position: absolute;
+    top: 40%;
+    z-index: 99;
+    padding: $space;
+    color: $grey-30;
+
+    &.af--disabled {
+        pointer-events: none;
+        color: $grey-90;
+    }
+}
+.af-report-nav__prev {
+    left: 0;
+}
+.af-report-nav__next {
+    right: 0;
+}
+
+// Mobile
+@media (max-width: 640px) {
+    .af-report-nav.af--fast {
+        padding: 0;
+    }
+    .af-report-nav__prev,
+    .af-report-nav__next {
+        top: 0;
+    }
+    .af-report-nav__prev {
+        float: left;
+    }
+    .af-report-nav__next {
+        float: right;
+    }
+    .af-report-nav__current {
+        display: block;
+        padding: $space*2;
+        margin: 0 $space*4;
+
+        font-size: $font-size-medium;
+    }
+}

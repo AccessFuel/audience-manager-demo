@@ -1,0 +1,46 @@
+/*
+    Labels
+    ======
+*/
+
+.af-nav-widget {
+    width: 100%;
+
+    margin-top: $space*2;
+    padding: $space;
+    padding-left: $space*1.25;
+    overflow: hidden;
+
+    background: #3b5063;
+    color: $text-color-nav;
+
+    transition: all .3s;
+    box-shadow: -10px 0 10px rgba(black, .2);
+
+    h3 {
+        font-weight: bold;
+    }
+
+    ul {
+        @include kill-list;
+        margin-bottom: $space;
+
+        li {
+            margin: $space/2 0;
+        }
+    }
+
+    &.af--sticky {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+
+        width: 220px;
+        box-shadow: -5px -5px 5px rgba(black, .1);
+        transform: translateZ(0);
+    }
+
+    .mini-navbar & {
+        opacity: 0;
+    }
+}

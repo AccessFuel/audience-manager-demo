@@ -1,0 +1,49 @@
+{
+    "summary": {
+        "title": "Company",
+        "description": "Popular companies include: <strong>72andsunny.com</strong>, <strong>surfair.com</strong>, <strong>usc.edu</strong>, <strong>google.com</strong>, <strong>thrdplace.com</strong>.",
+        "extra": "Most of them are startups.",
+        "quality": 0.43,
+        "favourite": true,
+        "type": "wordcloud"
+    },
+
+    "data": [{
+            "label": "72andsunny.com",
+            "value": 122
+        },{
+            "label": "surfair.com",
+            "value": 87
+        },{
+            "label": "usc.edu",
+            "value": 34
+        },{
+            "label": "Google",
+            "value": 24
+        },{
+            "label": "thrdplace.com",
+            "value": 12
+        },{
+            "label": "getty.edu",
+            "value": 8
+        },{
+            "label": "holiber.com",
+            "value": 3
+        },{
+            "label": "zefr.com",
+            "value": 12
+        },{
+            "label": "mobify.com",
+            "value": 1
+        },{
+            "label": "uber.com",
+            "value": 4
+        },{
+            "label": "Microsoft",
+            "value": 33
+        },{
+            "label": "Apple",
+            "value": 7
+        }
+    ]
+}

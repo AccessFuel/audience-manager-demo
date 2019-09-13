@@ -1,0 +1,59 @@
+/*
+    File Details
+    ============
+*/
+.af-file {
+    max-width: 640px;
+    margin: 0 auto $space*2;
+    text-align: center;
+}
+.af-file__title {
+    font-size: $font-size-xlarge;
+    font-weight: 700;
+}
+.af-file__summary {
+    margin: $space*2 0 $space*2;
+    padding: $space 0;
+
+    border-top: solid 1px $border-color-light;
+    border-bottom: solid 1px $border-color-light;
+
+    &.af--loading {
+        padding: $space*2 $space;
+        color: $text-color-pale;
+    }
+}
+.af-file__actions {
+    font-size: $font-size-medium;
+    vertical-align: middle;
+
+    small {
+        font-size: $font-size-xxsmall;
+        vertical-align: middle;
+    }
+}
+.af-file__report {
+    margin: $space*2 0;
+
+    dt {
+        margin: $space 0 $space/2;
+        font-size: $font-size-medium;
+    }
+    dd {
+        margin: $space/2 0 $space;
+        line-height: $line-height-normal;
+        text-align: left;
+    }
+    em {
+        font-style: normal;
+        font-weight: 300;
+    }
+}
+
+.af-file__cta {
+    margin-top: $space*2;
+
+    .af-button {
+        padding: .5em 1em;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessfuel - Register</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style-clean.css" rel="stylesheet">
+    <link href="css/accessfuel.css" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+
+    <section class="middle-box text-center loginscreen  animated fadeInDown af-login">
+
+        <div class="af-login__container">
+            <header>
+                <img src="af_img/AF-logo-icon-stacked-tagline.png" alt="AccessFuel" class="af-login__logo" />
+                <h1>Register for Accessfuel</h1>
+            </header>
+
+            <!--<p>Create account to see it in action.</p>-->
+            <form class="m-t" role="form" action="login.html">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" required="">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required="">
+                </div>
+                <div class="form-group">
+                        <div class="checkbox i-checks"><label> <input type="checkbox"><i></i> Agree the terms and policy </label></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg block full-width m-b">Register</button>
+
+                <p class="text-muted text-center"><small>Already have an account?</small></p>
+                <a class="btn btn-sm btn-white btn-block" href="login.html">Login</a>
+            </form>
+        </div>
+
+        <footer class="row u-text-pale">
+            <div class="col-md-6 text-left">
+                Copyright Accessfuel
+            </div>
+            <div class="col-md-6 text-right">
+               <small>© 2015</small>
+            </div>
+        </footer>
+
+    </section>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</body>
+
+</html>

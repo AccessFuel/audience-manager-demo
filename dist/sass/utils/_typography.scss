@@ -1,0 +1,28 @@
+/*
+    Text styling utilities
+    ======================
+*/
+.u-align-center {
+    text-align: center;
+}
+.u-align-left {
+    text-align: left;
+}
+.u-normal {
+    font-weight: normal;
+}
+.u-bold {
+    font-weight: bold;
+}
+
+.u-top-align {
+    vertical-align: top;
+}
+
+.u-kill-list {
+    list-style: none;
+}
+
+.u-text-small {
+    font-size: $font-size-xsmall;
+}

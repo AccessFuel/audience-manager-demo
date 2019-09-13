@@ -1,0 +1,29 @@
+/*
+    Color styling utilities
+    =======================
+*/
+
+.u-error-text,
+.u-important-text {
+    color: $color-error;
+}
+
+.u-brand-color {
+    color: $brand-green;
+}
+
+// Neutral colors
+.u-color-grey-80 {
+    color: $grey-80;
+}
+
+// Quality modifiers
+.af--hi {
+    color: $brand-green;
+}
+.af--med {
+    color: $color-warning;
+}
+.af--low {
+    color: $color-error;
+}

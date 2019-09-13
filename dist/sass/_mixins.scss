@@ -1,0 +1,19 @@
+/* Reset */
+@mixin border-box {
+    box-sizing: border-box;
+}
+@mixin content-box {
+    box-sizing: content-box;
+}
+
+/* Borders */
+@mixin default-border-radius {
+    @include border-radius(2px);
+}
+
+/* Resets */
+@mixin kill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,26 @@
+/*
+    Visibility
+    ==========
+*/
+
+.u-block {
+    display: block;
+}
+
+.u-opacity-0 {
+    opacity: 0;
+}
+.u-opacity-20 {
+    opacity: 0.2;
+}
+.u-opacity-50 {
+    opacity: 0.5;
+}
+.u-opacity-100 {
+    opacity: 1;
+}
+
+.u-blur-2 {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}

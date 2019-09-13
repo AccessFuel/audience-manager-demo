@@ -1,0 +1,65 @@
+/*
+    Sidebar panel
+    ===================
+*/
+.af-panel {
+    padding-left: 4vw;
+    margin-left: 1vw;
+    border-left: solid 1px $border-color-light;
+    font-size: $font-size-xsmall;
+}
+
+.af-panel__item {
+    display: inline-block;
+    width: 100%;
+
+    & + .af-panel__item {
+        padding-top: 5vh;
+        border-top: solid 1px $border-color-light;
+    }
+}
+
+.af-panel__item-header {
+    font-weight: 600;
+    line-height: $line-height;
+
+    strong {
+        display: block;
+
+        color: $grey-10;
+        font-size: $font-size-xsmall;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.af-panel__item-image {
+    width: 100%;
+    margin-bottom: $space;
+
+    &.af--aside {
+        float: right;
+        width: 15vw;
+        max-height: 100px;
+
+        margin-left: $space;
+        margin-right: -100px;
+    }
+
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.af-panel__item-list {
+    @include kill-list;
+    margin: $space 0;
+
+    li {
+        &::before {
+            content: '—';
+            padding-right: .5em;
+        }
+    }
+}

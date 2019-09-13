@@ -1,0 +1,28 @@
+/*
+    Report Persona
+    ==============
+*/
+.af-report-persona {
+
+    .af-report-persona__inner {
+        position: relative;
+        max-height: 90vh;
+        max-width: 100%;
+        margin: $unit auto -5vw;
+        overflow-y: auto;
+    }
+
+    .af-report-persona__caption {
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+    
+    .af-report-persona__title {
+        font-size: 3vw;
+    }
+
+    .af-report-persona__image {
+        width: 100%;
+    }
+}

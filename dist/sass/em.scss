@@ -1,0 +1,298 @@
+@charset "utf-8";
+@import "compass";
+@import "compass/css3/flexbox";
+@import "variables";     // Global variables
+@import "mixins";        // Global Mixins
+
+// Components
+.af {
+    @import "components/event-list";
+}
+
+html {
+    min-width: 0;
+}
+#em {
+    .ibox {
+        .ibox-title {
+            display: inline-block;
+            min-height: 0;
+            width: 100%;
+            padding: $unit/2 $unit/4;
+            border-top: none;
+            border-bottom: solid 3px $brand-green;
+            color: $text-color-black;
+
+            h2 {
+                float: left;
+                margin: 0;
+            }
+        }
+        .ibox-tools {
+            margin-top: 4px;
+            color: $text-color-med;
+            font-size: $font-size;
+
+            small {
+                font-size: $font-size-xsmall;
+            }
+        }
+        .ibox-content {
+            padding: $unit 0;
+            border-top: none;
+        }
+    }
+
+    // Widgets
+    // -------
+    .af-widget{}
+    .af-widget__footer {
+        &.af--bordered {
+            padding-top: $unit;
+            border-top: solid 1px $border-color-light;
+        }
+    }
+
+    // Summary Widget
+    .af-summary-widget {
+        .col-xs-4 {
+            &:first-child {
+                padding-right: 0;
+            }
+            &:last-child {
+                padding-left: 0;
+            }
+            &:not(:first-child):not(:last-child) {
+                padding: 0 $unit/2;
+            }
+        }
+
+        .af-summary-widget__item {
+            position: relative;
+            overflow: hidden;
+            margin-top: -$unit;
+            padding: $unit $unit*2.5;
+            background: $grey-95;
+            color: $grey-50;
+            text-align: left;
+            cursor: pointer;
+
+            -webkit-transition: background .5s;
+            transition: background .5s;
+
+            &:not(.af--active):hover {
+                background: white;
+            }
+
+            &.af--active {
+                background: $brand-green;
+                color: white;
+            }
+        }
+        .af-summary-widget__icon {
+            position: absolute;
+            z-index: 0;
+            font-size: 90px;
+            left: 100%;
+            bottom: 10%;
+            margin-left: -95px;
+            opacity: .25;
+
+            // font-size: 42px;
+            // margin-right: $unit;
+        }
+        .af-summary-widget__primary {
+            margin: 0;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+            -webkit-align-items: flex-end;
+            align-items: flex-end;
+        }
+        .af-summary-widget__primary-value {
+            margin: 0 $unit 0 0;
+            padding: 0;
+            font-size: 42pt;
+            font-weight: 100;
+            letter-spacing: -0.1em;
+            line-height: 0.9;
+        }
+        .af-summary-widget__primary-label {
+            font-size: $font-size-min-caps;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        .af-summary-widget__secondary {
+            margin-top: $unit;
+            opacity: .7;
+            font-size: $font-size-xlarge;
+        }
+    }
+
+    // Persona Widget
+    .af-persona-widget {
+        .af-persona-widget__image {
+            float: right;
+            max-width: 150px;
+            width: 40%;
+        }
+        .af-persona-widget__title {
+            color: $grey-10;
+        }
+        .af-persona-widget__primary {
+            color: $grey-10;
+            font-size: $font-size;
+        }
+        .af-persona-widget__secondary {
+            font-size: $font-size-xsmall;
+        }
+    }
+
+    .af-find-events__cta {
+        display: block;
+        min-width: 75%;
+        margin: $unit auto $space*2;
+        padding: .5em 2em;
+        outline: none;
+
+        -webkit-transition: 1s;
+        transition: 1s;
+
+        &.af--active {
+            pointer-events: none;
+        }
+    }
+
+    // Search filters
+    .af-event-search-filter {
+        margin-left: $unit/2;
+        padding: 3px $unit/2;
+        background: $grey-90;
+        border: none;
+        border-radius: 3px;
+
+        color: $text-color;
+        font-size: $font-size-xxsmall;
+        vertical-align: middle;
+
+        i.fa {
+            margin-right: .3em;
+        }
+    }
+
+    // Event Modal
+    .af-event-modal {
+
+    }
+    .af-event-modal__header {
+        display: inline-block;
+        width: 100%;
+        padding: $space*2 $space*2 $space;
+        text-align: left;
+    }
+    .af-event-modal__content {
+        padding: $space $space*2;
+        background: $grey-98;
+    }
+    .af-event-modal__logo {
+        float: left;
+        max-height: 110px;
+        max-width: 40%;
+        margin-right: 5%;
+        margin-bottom: $space;
+    }
+    .af-event-modal__title {
+        margin: .2em 0;
+        color: $text-color-black;
+        font-size: $font-size-xxlarge;
+        font-weight: bold;
+    }
+    .af-event-modal__date {
+        margin: 0;
+        font-size: $font-size;
+    }
+    .af-event-modal__info {
+        clear: both;
+        margin-top: $space;
+        color: $text-color;
+        font-size: $font-size;
+        font-weight: 300;
+    }
+    .af-event-modal__venue {
+        text-align: right;
+
+        address {
+            color: $text-color-med;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+    }
+    .af-event-modal__persona {
+        p {
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+    }
+    .af-event-modal__quality {
+        position: relative;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+
+        label {
+            position: absolute;
+            left: 0;
+            right: 0;
+
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .af-event-modal__quality-value {
+            top: 30%;
+            font-size: $font-size-medium;
+        }
+        .af-event-modal__quality-label {
+            top: 52%;
+            font-size: $font-size-xsmall;
+            text-transform: uppercase;
+        }
+    }
+    .af-event-modal__footer {
+        text-align: center;
+
+        h2 {
+            line-height: 1.3;
+        }
+    }
+    .af-event-modal__packages-list {
+        max-width: 360px;
+        padding: 0;
+        margin: $unit*2 auto 0;
+        list-style: none;
+        text-align: left;
+
+        li {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: $unit;
+        }
+
+        a {
+            font-size: $font-size-xxsmall;
+            text-decoration: underline;
+        }
+    }
+    .af-event-modal__packages-title {
+        margin: $unit/2 0 0;
+        color: $text-color-black;
+    }
+    .af-event-modal__packages-action {
+        float: left;
+        width: 70px;
+        padding: $unit;
+        margin-right: $space;
+    }
+}

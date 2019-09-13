@@ -1,0 +1,60 @@
+/*
+    Font Icons
+    ==========
+*/
+
+@mixin icon {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0, 0);
+}
+
+@mixin icon-angle-right {
+    @include icon;
+    content: "\f105";
+}
+
+@mixin icon-ellipsis {
+    @include icon;
+    content: "\f141";
+}
+
+@mixin icon-email {
+    @include icon;
+    content: "\f0e0";
+}
+
+
+@mixin icon-facebook {
+    @include icon;
+    content: "\f09a";
+}
+
+@mixin icon-sort-down {
+    @include icon;
+    content: "\f0dd";
+}
+
+@mixin icon-twitter {
+    @include icon;
+    content: "\f099";
+}
+
+
+
+/*
+    Sprite Icons
+    ============
+*/
+
+.af-icon-unlock {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    margin: -10px 0 -5px -5px;
+    background: url(../af_img/icons/lock@2x.png) no-repeat center center;
+    background-size: contain;
+
+    vertical-align: middle;
+}

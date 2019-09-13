@@ -1,0 +1,47 @@
+/*
+    Label/Value stats block
+    =======================
+
+*/
+
+.af-stats {
+    display: inline-block;
+
+    line-height: $line-height;
+    text-align: center;
+}
+
+.af-stats__label {
+    display: block;
+}
+
+.af-stats__value {
+    display: block;
+    font-size: $font-size-xlarge;
+
+    big {
+        line-height: 0.1;
+        font-size: $font-size-huge;
+        font-weight: 300;
+        vertical-align: sub;
+    }
+}
+
+.af-stats.af--social {
+    .af-stats__label {
+        font-size: $font-size-xxxsmall;
+        text-transform: uppercase;
+    }
+    .af-stats__value {
+        color: $color-social;
+        font-size: $font-size-medium;
+    }
+}
+
+.af-stats.af--large {
+    .af-stats__value {
+        font-size: $font-size-xxlarge;
+        font-weight: 100;
+        line-height: 1.3;
+    }
+}

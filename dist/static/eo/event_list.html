@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessfuel - Home</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/plugins/dropzone/basic.css" rel="stylesheet">
+    <link href="css/plugins/dropzone/dropzone.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="af_img/rob.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Rob Imrie</strong>
+                             </span> <span class="text-muted text-xs block">Administrator<b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        AF
+                    </div>
+                </li>
+                <li>
+                    <a href="home.html"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
+                </li>
+                <!--li class="active">
+                    <a href="events.html"><i class="fa fa-calendar"></i> <span class="nav-label">Events</span></a>
+                </li-->
+                <li>
+                    <a href="upload.html"><i class="fa fa-cloud-upload"></i> <span class="nav-label">Upload</span></a>
+                </li>
+                <li>
+                    <a href="reports.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Reports</span></a>
+                </li>
+                <li>
+                    <a href="marketing.html"><i class="fa fa-rocket"></i><span class="nav-label">Marketing</span><span class="label label-info pull-right">NEW</span></a>
+                </li>
+                <li>
+                    <a href="sponsors.html"><i class="fa fa-money"></i> <span class="nav-label">Sponsors</span></a>
+                </li>
+                <li>
+                    <a href="apps.html"><i class="fa fa-plug"></i> <span class="nav-label">Apps</span></a>
+                </li>
+                <li>
+                    <a href="contact.html"><i class="fa fa-envelope"></i> <span class="nav-label">Contact</span></a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+    <div class="row border-bottom">
+    <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <!--
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+            -->
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li>
+                <span class="m-r-sm text-muted welcome-message">Welcome to Accessfuel Admin Dashboard</span>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i> Log out
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-4">
+            <br />
+            <ol class="breadcrumb">
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li class="active">
+                    <strong>Event List</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="wrapper wrapper-content animated fadeInUp">
+
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="m-b-md">
+                                    <button type="button" data-toggle="modal" data-target="#edit-date-modal" class="btn btn-white btn-xs pull-right"><i class="fa fa-wrench"></i> Edit</button>
+                                    <h2>Techweek 2014</h2>
+                                </div>
+                                <dl class="dl-horizontal">
+                                    <dt>Status:</dt> <dd><span class="label label-primary">Active</span></dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <dl class="dl-horizontal">
+                                    <dt>Created by:</dt> <dd>Rob Imrie</dd>
+                                    <dt>Created:</dt> <dd> May 6, 2015 - 23:36:57 </dd>
+                                    <dt>Last Updated:</dt> <dd> May 6, 2015 - 12:15:57</dd>
+                                    <dt>Client:</dt> <dd><a href="#" class="text-navy"> ACME Company</a> </dd>
+                                    <dt>Organizer:</dt> <dd><a href="#" class="text-navy"> Cross Campus</a> </dd>
+                                    <dt>Sponsor:</dt> <dd><a href="#" class="text-navy"> Activision</a> </dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <dl class="dl-horizontal">
+                                    <dt>Completed:</dt>
+                                    <dd>
+                                        <div class="progress progress-striped active m-b-sm">
+                                            <div style="width: 60%;" class="progress-bar"></div>
+                                        </div>
+                                        <small>Project completed in <strong>60%</strong>. Remaining close the project, sign a contract and invoice.</small>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="row m-t-sm">
+                            <div class="col-lg-12">
+                                <div class="panel blank-panel">
+                                    <div class="panel-heading">
+                                        <div class="panel-options">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a href="#tab-2" data-toggle="tab">Event List</a></li>
+                                                <li class=""><a href="#tab-3" data-toggle="tab">Projects</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel-body">
+
+                                        <div class="tab-content">
+
+                                            <div class="tab-pane active" id="tab-2">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
+                                    <button type="button" class="btn btn-sm btn-primary"> Go!</button> </span></div>
+                                                    </div>
+                                                </div>
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Status</th>
+                                                        <th>Title</th>
+                                                        <th>Start Date</th>
+                                                        <th></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="label label-success"><i class="fa fa-check"></i> Completed</span>
+                                                        </td>
+                                                        <td>
+                                                            New York City, Times Square
+                                                        </td>
+                                                        <td>
+                                                            12.07.2014
+                                                        </td>
+                                                        <td>
+                                                            <a href="event_details.html" class="btn btn-sm btn-white" <i class="fa fa-pencil"></i> View</a>
+                                                            <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#reports-modal"><i class="fa fa-file-pdf-o"></i> Reports</button>
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="label label-warning">In Progress</span>
+                                                        </td>
+                                                        <td>
+                                                            Los Angeles, Convention Center
+                                                        </td>
+                                                        <td>
+                                                            12.07.2014
+                                                        </td>
+                                                        <td>
+                                                            <a href="event_details.html" class="btn btn-sm btn-white" <i class="fa fa-pencil"></i> View</a>
+                                                            <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#reports-modal"><i class="fa fa-file-pdf-o"></i> Reports</button>
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="label label-information">Upcoming</span>
+                                                        </td>
+                                                        <td>
+                                                            Santa Monica, Cross Campus
+                                                        </td>
+                                                        <td>
+                                                            12.07.2014
+                                                        </td>
+                                                        <td>
+                                                            <a href="event_details.html" class="btn btn-sm btn-white" <i class="fa fa-pencil"></i> View</a>
+                                                            <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#reports-modal"><i class="fa fa-file-pdf-o"></i> Reports</button>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane" id="tab-3">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="input-group">
+                                                            <input type="text" placeholder="Search" class="input-sm form-control">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-sm btn-primary"> Go!</button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="project-list">
+
+                                                    <table class="table table-hover">
+                                                        <tbody>
+                                                        <tr>
+                                                            <td class="project-status">
+                                                                <span class="label label-primary">Active</span>
+                                                            </td>
+                                                            <td class="project-title">
+                                                                <a href="project_detail.html">Contract with Zender Company</a>
+                                                                <br/>
+                                                                <small>Created 14.08.2014</small>
+                                                            </td>
+                                                            <td class="project-completion">
+                                                                <small>Completion with: 48%</small>
+                                                                <div class="progress progress-mini">
+                                                                    <div style="width: 48%;" class="progress-bar"></div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="project-actions">
+                                                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="project-status">
+                                                                <span class="label label-primary">Active</span>
+                                                            </td>
+                                                            <td class="project-title">
+                                                                <a href="project_detail.html">There are many variations of passages</a>
+                                                                <br/>
+                                                                <small>Created 11.08.2014</small>
+                                                            </td>
+                                                            <td class="project-completion">
+                                                                <small>Completion with: 28%</small>
+                                                                <div class="progress progress-mini">
+                                                                    <div style="width: 28%;" class="progress-bar"></div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="project-actions">
+                                                                <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="wrapper wrapper-content project-manager">
+                <h4>Event description</h4>
+                <!--<img src="img/zender_logo.png" class="img-responsive">-->
+                <p class="small">
+                    This is the event description.  This is for the event itself and not for individual event instances. You can add all the event description that you want...
+                </p>
+                <!--
+                <p class="small font-bold">
+                    <span><i class="fa fa-circle text-warning"></i> High priority</span>
+                </p>
+                -->
+                <!--
+                <h5>Project tag</h5>
+                <ul class="tag-list" style="padding: 0">
+                    <li><a href=""><i class="fa fa-tag"></i> Zender</a></li>
+                    <li><a href=""><i class="fa fa-tag"></i> Lorem ipsum</a></li>
+                    <li><a href=""><i class="fa fa-tag"></i> Passages</a></li>
+                    <li><a href=""><i class="fa fa-tag"></i> Variations</a></li>
+                </ul>
+                -->
+                <h5>Project files</h5>
+                <ul class="list-unstyled project-files">
+                    <li><a href=""><i class="fa fa-file-picture-o"></i> Event_Logo.jpg</a></li>
+                    <li><a href=""><i class="fa fa-file"></i> Contract_20_11_2014.docx</a></li>
+                    <li><a href=""><i class="fa fa-file"></i> Billing.docx</a></li>
+                </ul>
+                <div class="text-center m-t-md">
+                    <a href="#" data-toggle="modal" data-target="#upload-files-modal" class="btn btn-xs btn-primary">Add files</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <!--
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            -->
+            <div>
+                <strong>Copyright</strong> Accessfuel &copy; 2015
+            </div>
+        </div>
+
+        <div class="modal inmodal fade" id="reports-modal" tabindex="-1" role="dialog"  aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Event Reports</h4>
+                        <small class="font-bold">All the event reports can be download from here...</small>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Filename</th>
+                                        <th>Date</th>
+                                        <th>Upload By</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-file-excel-o"></i> PDF</td>
+                                        <td><a href="">Final_Report.pdf</a></td>
+                                        <td>May 4, 2015</td>
+                                        <td>Rob Imrie</td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> Delete</button>
+                                            <button type="button" class="btn btn-sm btn-warning"><i class="fa fa-refresh"></i> Replace</button>
+                                            <button type="button" class="btn btn-sm btn-success"><i class="fa fa-cloud-download"></i> Download</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-file-excel-o"></i> PDF</td>
+                                        <td><a href="">Amended_Report</a></td>
+                                        <td>May 3, 2015</td>
+                                        <td>Rob Imrie</td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> Delete</button>
+                                            <button type="button" class="btn btn-sm btn-warning"><i class="fa fa-refresh"></i> Replace</button>
+                                            <button type="button" class="btn btn-sm btn-success"><i class="fa fa-cloud-download"></i> Download</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal inmodal fade" id="edit-date-modal" tabindex="-1" role="dialog"  aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Edit Event Date</h4>
+                        <small class="font-bold">Edit the event date data here...</small>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal inmodal fade" id="upload-files-modal" tabindex="-1" role="dialog"  aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Upload Event Files</h4>
+                        <small class="font-bold">Upload event files here...</small>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <form id="my-awesome-dropzone" class="dropzone" action="#">
+                                    <div class="dropzone-previews"></div>
+                                    <button type="submit" class="btn btn-primary pull-right">Upload Files!</button>
+                                </form>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- DROPZONE -->
+    <script src="js/plugins/dropzone/dropzone.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            Dropzone.options.myAwesomeDropzone = {
+
+                autoProcessQueue: false,
+                uploadMultiple: true,
+                parallelUploads: 100,
+                maxFiles: 100,
+
+                / Dropzone settings
+                init: function() {
+                    var myDropzone = this;
+
+                    this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        myDropzone.processQueue();
+                    });
+                    this.on("sendingmultiple", function() {
+                    });
+                    this.on("successmultiple", function(files, response) {
+                    });
+                    this.on("errormultiple", function(files, response) {
+                    });
+                }
+
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>

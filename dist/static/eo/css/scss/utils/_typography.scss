@@ -1,0 +1,18 @@
+/*
+    Text styling utilities
+    ======================
+*/
+
+.u-text-huge {
+    font-size: $font-size-huge !important;
+}
+
+// Weight
+.u-text-lite {
+    font-weight: 100;
+}
+
+// Color
+.u-text-pale {
+    color: $text-color-pale;
+}

@@ -1,0 +1,23 @@
+/*
+    Filters
+    =======
+*/
+.af-filter {
+    margin-left: -$space/5;
+    margin-right: -$space/5;
+}
+.af-filter__item {
+    padding-left: $space/5;
+    padding-right: $space/5;
+}
+.af-filter__input,
+.af-filter__select {
+    background: $grey-95;
+    border: solid 1px $grey-95;
+}
+
+.af-filter__no-results {
+    padding: $space*3 $space;
+    font-style: italic;
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+/* Colors */
+
+// Brand
+// -----
+$brand-dark: #2f4050;
+
+$brand-green: #81c684;
+$brand-green-dark: #2c9e52;
+
+$brand-blue: #43b8c8;
+$brand-blue-dark: #11a0b1;
+
+$brand-purple: #a284bf;
+$brand-purple-dark: #9065ba;
+
+$brand-red: #df7f86;
+$brand-red-dark: #cd3741;
+
+$color-success: $brand-green;
+$color-warning: #f0ad4e;
+$color-error: #ed5565;
+
+$twitter-color: #62aadb;
+
+
+// Neutrals
+// --------
+$grey-10: #111;
+$grey-30: #333;
+$grey-40: #444;
+$grey-50: #777;
+$grey-60: #aaa;
+$grey-70: #bbb;
+$grey-80: #ccc;
+$grey-90: #E5E5E5;
+$grey-95: #f2f2f2;
+
+// Borders
+$border-color: $grey-60;
+$border-color-light: $grey-90;
+
+
+// Font Colors
+$text-color: $grey-30;
+$text-color-pale: $grey-70;
+$text-color-nav: #a7b1c2;
+
+// Custom
+$color-female: #ed66cf;
+$color-male: $brand-blue;
+$color-social: #61aadb;
+
+/* Typography */
+$font-size-small-caps: 8px;
+$font-size-xxxsmall: 10px;
+$font-size-xxsmall: 11px;
+$font-size-xsmall: 12px;
+$font-size-small: 14px;
+$font-size: 16px;
+$font-size-medium: 18px;
+$font-size-large: 21px;
+$font-size-xlarge: 24px;
+$font-size-xxlarge: 30px;
+$font-size-xxxlarge: 36px;
+$font-size-superlarge: 40px;
+
+$font-size-huge: 48px;
+$font-size-xhuge: 60px;
+$font-size-xxhuge: 100px;
+
+$line-height: 1.3;
+$line-height-short: 1.1;
+
+/* Spacing */
+$space: 20px;

@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import "compass";
+@import "compass/css3/flexbox";
+@import "variables";     // Global variables
+@import "mixins";        // Global Mixins
+@import "default";       // Normalize default styling
+
+// Utilities
+@import "utils/colors";
+@import "utils/spacing";
+@import "utils/typography";
+@import "utils/visibility";
+
+// Plugins
+@import "../js/plugins/sweetalert/dev/sweetalert";
+@import "../js/plugins/slick/slick";
+
+// Components
+.af {
+    @import "overrides";     // Overwrite bootstrap, theme and plugins properties
+
+    @import "components/baseline";
+    @import "components/button";
+    @import "components/chart";
+    @import "components/connect";
+    @import "components/connect-services";
+    @import "components/data";
+    @import "components/data-table";
+    @import "components/error";
+    @import "components/event-list";
+    @import "components/file";
+    @import "components/filter";
+    @import "components/footer";
+    @import "components/form";
+    @import "components/header";
+    @import "components/loader";
+    @import "components/login";
+    @import "components/navigation";
+    @import "components/panel";
+    @import "components/progress";
+    @import "components/report";
+    @import "components/report-nav";
+    @import "components/report-persona";
+    @import "components/report-promo";
+    @import "components/slider";
+    @import "components/stats-block";
+    @import "components/upload";
+}

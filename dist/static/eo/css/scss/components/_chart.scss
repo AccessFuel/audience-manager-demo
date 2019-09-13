@@ -1,0 +1,583 @@
+/*
+    Custom Data Visualization
+    =========================
+*/
+
+.af-chart {
+    position: absolute;
+    font-family: 'Helvetica';
+
+    * {
+        -webkit-text-size-adjust: none;
+        font-size-adjust: none;
+    }
+}
+
+.af-chart__bar {
+    padding: $space/2 $space;
+    background: $brand-green;
+
+    // Conditional modifiers
+    &.af--weight-10,
+    &.af--weight-9 {
+        background: $brand-green;
+    }
+
+    &.af--weight-8,
+    &.af--weight-7 {
+        background: lighten($brand-green, 5%);
+    }
+
+    &.af--weight-6,
+    &.af--weight-5 {
+        background: lighten($brand-green, 10%);
+    }
+
+    &.af--weight-4,
+    &.af--weight-3 {
+        background: lighten($brand-green, 15%);
+    }
+
+    &.af--weight-2,
+    &.af--weight-1 {
+        background: lighten($brand-green, 20%);
+    }
+
+    &.af--weight-0 {
+        display: none;
+    }
+
+    &:hover {
+        box-shadow: 0px 0 10px rgba($brand-green, .5);
+    }
+}
+
+.af-chart__label,
+.af-chart__value {
+    padding: 0;
+    margin: 0;
+    color: $brand-dark;
+}
+
+.af-chart__label {
+    font-size: $font-size-medium;
+}
+.af-chart__value {
+    font-size: $font-size-large;
+}
+
+
+// Horizontal chart
+// ----------------
+.af-chart.af--horizontal {
+    right: 0;
+    top: 15%;
+
+    height: 40%;
+    width: 88%;
+
+    text-align: right;
+
+    .af-chart__bar {
+        position: relative;
+        clear: right;
+        float: right;
+
+        margin: 2px 0;
+    }
+
+    .af-chart__label,
+    .af-chart__value {
+        position: absolute;
+
+        color: $brand-dark;
+    }
+
+    .af-chart__label {
+        top: 50%;
+        right: $space;
+        left: $space;
+        margin-top: -.75em;
+        line-height: 1.5em;
+        overflow: hidden;
+
+        font-size: $font-size;
+        font-weight: 500;
+        line-height: $font-size-xlarge;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        vertical-align: top;
+        white-space: nowrap;
+
+        &.af--medium-text {
+            font-size: $font-size-small;
+            line-height: $font-size-large;
+        }
+        &.af--long-text {
+            font-size: $font-size-xsmall;
+            line-height: $font-size-large;
+        }
+    }
+    .af-chart__value {
+        right: 100%;
+        top: 50%;
+        margin-right: .5em;
+
+        font-size: $font-size-xlarge;
+        font-weight: 100;
+        line-height: 0;
+        vertical-align: middle;
+    }
+
+    // Conditional stiling
+    .af-chart__bar.af--weight-4 {
+        .af-chart__label {
+            font-size: $font-size-small;
+            line-height: $font-size-large;
+        }
+    }
+
+    .af-chart__bar.af--weight-3 {
+        .af-chart__label {
+            font-size: $font-size-xsmall;
+            line-height: $font-size-large;
+        }
+    }
+
+    .af-chart__bar.af--weight-2,
+    .af-chart__bar.af--weight-1 {
+         .af-chart__label {
+            left: auto;
+            right: 100%;
+            max-width: none;
+            margin-right: 6em;
+            overflow: visible;
+
+            color: rgba($brand-dark, .75);
+            font-size: $font-size-xxxsmall;
+            line-height: $font-size-xlarge;
+
+            &:after {
+                content: ':';
+            }
+         }
+    }
+}
+
+
+// Vertical chart
+// --------------
+.af-chart.af--vertical {
+    height: 50%;
+    top: 15%;
+    right: 7%;
+
+    max-width: 75%;
+
+    .af-chart__bar {
+        position: relative;
+        bottom: 0;
+
+        display: inline-block;
+        padding: 0;
+        vertical-align: bottom;
+    }
+
+    .af-chart__label,
+    .af-chart__value {
+        position: absolute;
+        bottom: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .af-chart__value {
+        margin-bottom: 1em;
+    }
+
+    // Conditional modifiers
+    .af-chart__bar.af--weight-axis {
+        &.af--weight-1 {
+            .af-chart__label,
+            .af-chart__value {
+                zoom: 10%;
+            }
+        }
+
+        &.af--weight-2 {
+            .af-chart__label,
+            .af-chart__value {
+                zoom: 20%;
+            }
+        }
+
+        &.af--weight-3,
+        &.af--weight-4 {
+            .af-chart__label,
+            .af-chart__value {
+                zoom: 30%;
+            }
+        }
+
+        &.af--weight-5,
+        &.af--weight-6 {
+            .af-chart__label,
+            .af-chart__value {
+                zoom: 50%;
+            }
+        }
+        &.af--weight-7,
+        &.af--weight-8 {
+            .af-chart__label,
+            .af-chart__value {
+                zoom: 75%;
+            }
+        }
+    }
+}
+
+// Age chart
+// --------------
+.af-chart.af--age {
+    width: 75%;
+    right: 12%;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        bottom: -18px;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &:before {
+        right: 103%;
+        background-image: url('../af_img/icons/report-age-baby@2x.png');
+    }
+    &:after {
+        left: 103%;
+        height: 48px;
+        width: 32px;
+        margin-bottom: -8px;
+        background-image: url('../af_img/icons/report-age-old@2x.png');
+    }
+
+    .af-chart__label {
+        bottom: 50%;
+
+        height: auto;
+        line-height: $line-height;
+        overflow: hidden;
+
+        text-indent: -10000px;
+
+        &:after {
+            display: block;
+
+            color: white;
+            font-weight: 100;
+            text-indent: 0;
+            white-space: pre;
+        }
+    }
+    .af-chart__value {
+        margin-bottom: 0;
+        font-size: $font-size-xlarge;
+        font-weight: 100;
+    }
+
+    .af-chart__bar {
+        border-right: solid 1px white;
+
+        &.af--weight-1,
+        &.af--weight-2,
+        &.af--weight-3,
+        &.af--weight-4 {
+            .af-chart__label {
+                display: none;
+            }
+        }
+
+        &.af--weight-1 .af-chart__value {
+            display: none;
+        }
+
+        // Scale
+        &:after {
+            position: absolute;
+            left: 100%;
+            top: 100%;
+
+            margin-left: -.5em;
+            margin-top: 5px;
+            font-size: $font-size-xxxsmall;
+        }
+        &.af--0-20 {
+            &:after {
+                content: '20';
+            }
+
+            .af-chart__label:after {
+                content: 'Teens';
+            }
+        }
+
+        &.af--20-30 {
+            &:after {
+                content: '30';
+            }
+            .af-chart__label:after {
+                content: 'Millennials,\aIn their 20s';
+            }
+        }
+
+        &.af--30-40 {
+            &:after {
+                content: '40';
+            }
+            .af-chart__label:after {
+                content: 'Millennials,\aIn their 30s';
+            }
+        }
+
+        &.af--40-50 {
+            &:after {
+                content: '50';
+            }
+            .af-chart__label:after {
+                content: 'In their 40s';
+            }
+        }
+
+        &.af--50-60 {
+            &:after {
+                content: '60';
+            }
+            .af-chart__label:after {
+                content: 'Millenials';
+            }
+        }
+
+        &.af--60-70 {
+            &:after {
+                content: '70+';
+                margin-left: 0;
+            }
+            .af-chart__label:after {
+                content: 'In their 60s';
+            }
+        }
+
+        &.af--70 {
+            .af-chart__label:after {
+                content: 'In their 70s';
+            }
+        }
+    }
+}
+
+// Gender chart
+// --------------
+.af-chart.af--gender {
+    bottom: 0;
+    top: 20%;
+    right: 5%;
+
+    height: 80%;
+    width: 45%;
+    min-width: 250px;
+
+    .af-chart__bar {
+        margin: 0 1px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            right: 60%;
+            bottom: 100%;
+
+            height: 120px;
+            width: 30%;
+
+            max-width: 50px;
+            min-width: 40px;
+
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: contain;
+        }
+    }
+
+    .af-chart__label,
+    .af-chart__value {
+        left: 45%;
+        right: 0;
+        width: auto;
+
+        text-align: left;
+    }
+
+    .af-chart__label {
+        margin-bottom: .25em;
+        font-size: $font-size-large;
+        text-transform: capitalize;
+    }
+    .af-chart__value {
+        margin-bottom: 1em;
+        font-size: $font-size-xxlarge;
+        font-weight: 600;
+    }
+
+    .af-chart__bar{
+        &.af--female {
+            background: #ed66cf;
+
+            &:before {
+                background-image: url(../af_img/icons/report-gender-female@2x.png);
+            }
+
+            .af-chart__label,
+            .af-chart__value {
+                color: #ed66cf;
+            }
+        }
+
+        &.af--male {
+            background: #43b8c8;
+
+            &:before {
+                background-image: url(../af_img/icons/report-gender-male@2x.png);
+            }
+
+            .af-chart__label,
+            .af-chart__value {
+                color: #43b8c8;
+            }
+        }
+    }
+}
+
+// Twitter chart
+// --------------
+.af-chart.af--twitter {
+
+    .af-chart__bar {
+        border-right: solid 1px white;
+
+        .af-chart__label {
+            display: none;
+        }
+
+        .af-chart__value {
+            margin-bottom: 0;
+        }
+
+        // Scale
+        &:before,
+        &:after {
+            position: absolute;
+            left: 100%;
+            top: 100%;
+
+            margin-left: -.5em;
+            margin-top: 5px;
+            font-size: $font-size-xxxsmall;
+        }
+
+        &:before {
+            left: auto;
+            right: 70%;
+        }
+
+        &.af--0-10 {
+            width: 3% !important;
+            background-color: lighten($twitter-color, 30%);
+
+            &:before {
+                content: 'Followers:';
+            }
+
+            &:after {
+                content: '10';
+            }
+
+            .af-chart__value {
+                zoom: 25%;
+            }
+        }
+
+        &.af--10-100 {
+            width: 7% !important;
+            background-color: lighten($twitter-color, 25%);
+
+            &:after {
+                content: '100';
+            }
+
+            .af-chart__value {
+                zoom: 50%;
+            }
+        }
+
+        &.af--100-1000 {
+            width: 15% !important;
+            background-color: lighten($twitter-color, 20%);
+
+            &:after {
+                content: '1K';
+            }
+
+            .af-chart__value {
+                zoom: 75%;
+            }
+        }
+
+        &.af--1000-10000 {
+            width: 25% !important;
+            background-color: lighten($twitter-color, 10%);
+
+            &:after {
+                content: '10K';
+            }
+
+            .af-chart__value {
+                zoom: 100%;
+            }
+        }
+        &.af--10000 {
+            width: 50% !important;
+            background-color: $twitter-color;
+
+            .af-chart__value {
+                width: 100%;
+                padding-top: 25%;
+                padding-bottom: 20%;
+
+                background: url(../af_img/icons/report-twitter@2x.png) no-repeat center bottom;
+                background-size: contain;
+
+                color: white;
+                font-size: $font-size-xlarge;
+                line-height: 1;
+
+                &:after {
+                    content: 'Influitive';
+                    display: block;
+                    font-size: $font-size-small-caps;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+            }
+
+            &:after {
+                content: 'Highly Influitive';
+                left: auto;
+                right: 0;
+                margin-right: .5em;
+            }
+        }
+    }
+}

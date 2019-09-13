@@ -1,0 +1,78 @@
+{
+    "summary": {
+        "title": "Skills",
+        "description": "The vast majority of your audience is Educated. For example, 95% have a Bachelor Degree and 10% have a Master Degree.",
+        "quality": 0.47,
+        "favourite": true,
+        "type": "wordcloud"
+    },
+
+    "data": [{
+            "label": "Adobe",
+            "value": 1
+        },{
+            "label": "Analysis",
+            "value": 7
+        },{
+            "label": "Building Management",
+            "value": 3
+        },{
+            "label": "Business",
+            "value": 230
+        },{
+            "label": "CSS",
+            "value": 200
+        },{
+            "label": "Design",
+            "value": 140
+        },{
+            "label": "Development",
+            "value": 210
+        },{
+            "label": "Enterpreneurship",
+            "value": 10
+        },{
+            "label": "Financial",
+            "value": 27
+        },{
+            "label": "HTML",
+            "value": 248
+        },{
+            "label": "Java Script",
+            "value": 151
+        },{
+            "label": "Manager",
+            "value": 1248
+        },{
+            "label": "Marketing",
+            "value": 730
+        },{
+            "label": "Microsoft",
+            "value": 30
+        },{
+            "label": "Photoshop",
+            "value": 11
+        },{
+            "label": "Product",
+            "value": 279
+        },{
+            "label": "Project Management",
+            "value": 411
+        },{
+            "label": "Research",
+            "value": 9
+        },{
+            "label": "Sales",
+            "value": 19
+        },{
+            "label": "Social",
+            "value": 58
+        },{
+            "label": "Strategy",
+            "value": 4
+        },{
+            "label": "Technology",
+            "value": 14
+        }
+    ]
+}

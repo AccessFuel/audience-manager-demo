@@ -1,0 +1,72 @@
+/*
+    Locked Reports List
+    ===================
+*/
+.af-locked-reports {
+    padding: 0;
+    margin: 0;
+
+    .af-locked-reports__item {
+        display: inline-block;
+        width: 30%;
+
+        margin: $space/2 0;
+        margin-left: 4%;
+        padding: $space/2 $space;
+
+        box-shadow: $border-color 0 1px 3px;
+        text-align: center;
+
+        &:nth-child(3n+1) {
+            margin-left: 0;
+        }
+
+        h3 {
+            padding: $space/2;
+            border-bottom: solid 1px $border-color-light;
+            color: $text-color;
+            font-size: $font-size-large;
+            font-weight: 100;
+        }
+
+        big {
+            @include data-font-large;
+        }
+
+        .af-locked-reports__thumbnail {
+            display: block;
+            width: 100%;
+            padding-bottom:50%;
+
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &.af--job_title .af-locked-reports__thumbnail {
+            background-image: url(../af_img/reports/thumbnails/job_title@2x.jpg);
+        }
+        &.af--education .af-locked-reports__thumbnail {
+            background-image: url(../af_img/reports/thumbnails/education@2x.jpg);
+        }
+        &.af--location .af-locked-reports__thumbnail {
+            background-image: url(../af_img/reports/thumbnails/location@2x.jpg);
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .af-locked-reports__item {
+            width: 48%;
+            margin-left: 3%;
+        }
+
+        .af-locked-reports__item:nth-child(3n+1) {
+            margin-left: 4%;
+        }
+
+        .af-locked-reports__item:nth-child(odd) {
+            margin-left: 0;
+        }
+    }
+}

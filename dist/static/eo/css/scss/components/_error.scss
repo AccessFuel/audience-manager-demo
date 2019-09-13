@@ -1,0 +1,22 @@
+/*
+    Errors
+    =======
+*/
+.af-error {
+    margin-bottom:  1em;
+    color: $color-error;
+
+    a {
+        color: $brand-blue !important;
+        text-decoration: underline;
+
+        &:hover {
+            color: $brand-blue-dark !important;
+        }
+
+        &:before {
+            content: '\a';
+            white-space: pre;
+        }
+    }
+}

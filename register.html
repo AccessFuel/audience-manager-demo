@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AccessFuel Audience Manager — Create Account</title>
+
+    <!-- include ../common/_meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="robots" content="noindex">
+
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./dist/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="./dist/css/animate.css" rel="stylesheet" />
+    <link href="./dist/css/style.min.css" rel="stylesheet" />
+    <link href="./dist/css/accessfuel.css" rel="stylesheet" />
+</head>
+
+<body class="af af-login__bg">
+    <section class="middle-box text-center loginscreen  animated fadeInDown af-login">
+        <div class="af-login__container">
+            <header>
+                <img src="./dist/images/logo/accessfuel-logo-tagline-white.png" alt="AccessFuel" class="af-login__logo" />
+                <h6 class="af-login__version">BETA</h6>
+                <h1>Register for AccessFuel</h1>
+            </header>
+                    
+            <form class="m-t" id="registerForm" role="form" disabled>
+                <div class="form-group">
+                    <input type="text" name="name" value="" class="form-control" placeholder="Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" name="username" value="" class="form-control" placeholder="Email" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="tel" name="phone" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" class="form-control" placeholder="Phone Number">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" name="password" value="" class="form-control" placeholder="Password" required>
+                </div>
+                        
+                <div class="form-group">
+                    <input type="password" name="confirmPassword" value="" class="form-control" placeholder="Confirm Password" required>
+                </div>
+                        
+                <div class="form-group">
+                    <input type="text" name="token" value="" class="form-control" placeholder="Access Token" required>
+                </div>
+                        
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" name="agreed" value="false" required>
+                        <span>I Agree to the </span>
+                        <a href="https://accessfuel.com/terms.html" target="_blank">Terms of Use</a>
+                        <span> and </span>
+                        <a target="_blank" href="https://accessfuel.com/privacy-policy.html">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <div class="alert alert-danger js-auth-error" hidden></div>
+                
+                <button type="submit" class="af-button af--primary af--wide af--xlarge m-b">Register</button>
+                <p class="af-login__alternative-cta">
+                    <span>Already have an account? </span>
+                    <a class="af-login__alternative-cta-link" href="./login.html">Login here</a>
+                </p>
+            </form>
+        </div>
+        
+        <footer>Copyright Accessfuel © 2016—2018</footer>
+    </section>
+    
+    <script src="./dist/js/lib/require.js"></script>
+    <script>
+        requirejs(['./dist/js/common.js'], function (common) {
+            requirejs(['app/auth'], function (auth) { auth.register(); });
+        });
+    </script>
+</body>
+
+</html>

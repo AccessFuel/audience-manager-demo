@@ -1,0 +1,48 @@
+/*
+    Upload UI
+    =========
+*/
+
+.af-upload {
+    position: relative;
+    min-height: 240px;
+    margin: 2em -20px;
+
+    background: $grey-95;
+    //border: 2px dashed $border-color;
+
+    .af-upload__overlay {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+
+        background: red;
+        opacity: 0;
+    }
+
+    .af-upload__inner {
+        padding: 3em;
+
+        font-size: $font-size-medium;
+        text-align: center;
+
+        small {
+            display: block;
+            margin: .5em 0;
+
+            color: $grey-60;
+        }
+    }
+
+    .af-upload__button {
+        position: relative;
+        z-index: 11;
+
+        margin: .5em 0;
+    }
+}

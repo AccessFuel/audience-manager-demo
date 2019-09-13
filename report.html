@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Audience Report</title>
+
+    <!-- include common/_meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="robots" content="noindex">
+
+    <!-- Global CSS -->
+    <!-- include common/_styles -->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./dist/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./dist/css/animate.css" rel="stylesheet">
+    <link href="./dist/css/style.min.css" rel="stylesheet">
+    <link href="./dist/css/accessfuel.css" rel="stylesheet">
+</head>
+
+<body class="af top-navigation">
+    <div id="wrapper">
+        <div class="white-bg">
+            <!-- Hedaer -->
+            <!-- include common/header -->
+            <header class="af-header">
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <div class="navbar-header">
+                        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle af-header__menu collapsed"
+                            type="button">
+                            <i class="fa fa-reorder"></i>
+                        </button>
+            
+                        <a href="./home.html" class="af-header__logo">
+                            <img src="./dist/images/logo/accessfuel-logo-white.png" />
+                        </a>
+                    </div>
+            
+                    <div class="af-navbar navbar-collapse collapse" id="navbar">
+                        <ul class="af-nav nav navbar-nav">
+                            <li class="af-nav__item">
+                                <a aria-expanded="false" role="button" href="./home.html">
+                                    Audience
+                                </a>
+                            </li>
+                            <li class="af-nav__item dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-flask"></i> Lab
+                                    <span class="caret"></span>
+                                </a>
+                                <ul role="menu" class="dropdown-menu af-nav__dropdown">
+                                    <li>
+                                        <a href="https://api.accessfuel.com/engine/account_manager/" target="_blank">
+                                            Account Manager
+                                            <i class="fa fa-external-link pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h4>Event Marketers</h4>
+                                    </li>
+                                    <li>
+                                        <a href="./em-dashboard.html" target="_blank">
+                                            Dashboard
+                                            <i class="fa fa-dashboard pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <h4>Event Organizers</h4>
+                                    </li>
+                                    <li>
+                                        <a href="./dist/static/eo/marketing.html" target="_blank">
+                                            Marketing
+                                            <i class="fa fa-external-link pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./dist/static/eo/sponsors.html" target="_blank">
+                                            Sponsors
+                                            <i class="fa fa-external-link pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#insightsSampleModalContent" data-content="./dist/static/modals/insights-sample-salesforce-modal.html"
+                                            class="js-insights-sample-toggle">
+                                            Insights
+                                            <i class="fa fa-bookmark-o pull-right u-margin-top-md"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+            
+                        <ul class="af-nav nav navbar-nav navbar-right">
+                            <li class="af-nav__item dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle af-user-nav af--multiline">
+                                    <b class="caret"></b>
+                                    <img src="./dist/images/misc/profile/rob-imrie.png" class="af-user-avatar" alt="Rob Imrie, AccessFuel" />
+            
+                                    <i class="fa fa-user"></i>
+            
+                                    <strong>
+                                        Rob Imrie
+                                    </strong>
+            
+                                    <small>AccessFuel</small>
+                                </a>
+            
+                                <ul class="dropdown-menu af-nav__dropdown">
+                                    <li>
+                                        <a href="./index.html" class="js-logout">
+                                            Log out
+                                            <i class="fa fa-sign-out"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+            
+                            <li class="af-nav__item">
+                                <a href="https://support.accessfuel.com/portal/home" target="_blank">
+                                    Help Center
+                                </a>
+                            </li>
+                        </ul>
+            
+                        <h1 class="af-header__title">
+                            Audience Manager
+                        </h1>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Initial page loader -->
+            <!-- include common/navigation-loader -->
+            <section class="animated fadeIn" data-navigation="loader">
+                <div class="af-loader af--page">
+                    <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
+                </div>
+            </section>
+
+            <main class="af-main animated fadeInDown" data-navigation="report" id="report" hidden>
+                <nav id="report-nav"></nav>
+                <section id="report-content"></section>
+            </main>
+
+            <!-- Footer -->
+            <!-- include common/footer -->
+            <footer class="footer af-footer">
+                <div class="pull-right">
+                    <a href="https://support.accessfuel.com/portal/home" target="_blank">
+                        Help Center
+                    </a> |
+                    <a href="https://accessfuel.com/terms.html" target="_blank">
+                        Terms of Use
+                    </a> |
+                    <a href="https://accessfuel.com/privacy-policy.html" target="_blank">
+                        Privacy Policy
+                    </a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> Accessfuel © 2016—2018
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Teamplates -->
+    <!-- include handlebars/error -->
+    <script id="template-error" type="text/x-handlebars-template">
+        <div class="af-error text-center">
+            <h2><i class="fa fa-warning"></i> Error</h2>
+            <p>
+                {{#if TypeError}}
+                    {{TypeError}}
+                {{else if responseJSON}}
+                    {{responseJSON.error}}
+                {{else if msg}}
+                    {{msg}}
+                {{else if statusText}}
+                    {{statusText}}
+                {{else}}
+                    {{error}}
+                {{/if}}
+            <p class="u-margin-top-lg">
+                <button class="af-button js-reload">Try again</button>
+                or <a href="mailto:rob@accessfuel.com?subject=Problems%20with%20Audience%20Manager">Contact Us</a> for help.
+            </p>
+        </div>
+    </script>
+
+    <!-- include handlebars/report-canvas -->
+    <script id="template-report-canvas" type="text/x-handlebars-template">
+        <figure class="af-report af--{{summary.id}} js-report-container">
+            <figcaption class="af-report__caption">
+                <h3 class="af-report__title">
+                    {{summary.title}}
+    
+                    <span class="af-report__quality {{qualityClass summary.quality_pct}}">
+                        {{formatPercent summary.quality_pct}}
+                    </span>
+                </h3>
+    
+                <p class="af-report__description">
+                    {{summary.description}}
+                </p>
+            </figcaption>
+    
+            <div class="af-report__canvas js-report-canvas">
+    
+            </div>
+        </figure>
+    </script>
+
+    <!-- include handlebars/report-nav -->
+    <script id="template-report-nav" type="text/x-handlebars-template">
+        <nav class="af-report-nav af--fast">
+            <span class="js-report-current af-report-nav__current">
+                Loading report…
+            </span>
+    
+            <a class="js-report-prev af-report-nav__prev af--disabled">
+                <i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>
+            </a>
+            <a class="js-report-next af-report-nav__next af--disabled">
+                <i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>
+            </a>
+        </nav>
+    </script>
+
+
+    <!-- include handlebars/report-promo-start -->
+    <script id="template-report-promo-start" type="text/x-handlebars-template">
+        <div class="af-report af-report-promo">
+            <header class="af-report-promo__header">
+                <h1>Your Audience Personas are Ready!</h1>
+                <p>
+                    We have enhanced and visualized your audience data.
+                </p>
+
+                <img src="./dist/images/personas/8-prone-engine-persona@2x.png" class="af-report-promo__image" alt="We found 3 key personas and 10 useful datapoint in your data." />
+            </header>
+
+            <div class="af-report-promo__summary">
+                <h2>
+                    We found 3 key personas and 10 useful datapoint in your data.
+                    <br/><a href="#">Take a look!</a>
+                </h2>
+
+                <p>
+                    While this provides a basic look into your existing data,
+                    <br/> you need to <a href="#" class="js-enhance" data-toggle="modal" data-target="#enhanceModalContent">enhance your data</a> before unlocking insights and new revenues.
+                </p>
+            </div>
+    
+            <div class="af-report-promo__inner af--hint">
+                <h2><i class="fa fa-lightbulb-o"></i> Things to Learn from Your Initial Preview</h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Understanding Data Quality</h3>
+                        <p>
+                            While playing around with your initial data visualization,
+                            keep an eye on your data quality badge:
+                            the higher the value,the more representative your data is.
+                        </p>
+                        <p class="clearfix">
+                            No worries if it is too low, AccessFuel can <a href="#" class="js-enhance" data-toggle="modal" data-target="#enhanceModalContent">enhance your data</a> finding the missing info
+                            for your attendees in public and private databases and filling the gaps.
+                        </p>
+                    </div>
+    
+                    <div class="col-md-6 col-sm-12">
+                        <h3>Data Enhancement</h3>
+    
+                            {{#ifCond dataLength '==' 1}}
+                                <p>
+                                    <strong>We found only one useful datapoint in your file.</strong><br/>
+                                    Perhabs you data is not very structured or id doen’t have much statistically valuable information.
+                                </p>
+                                <p>
+                                    Anyways if your users or attendees haven’t provided more information about themself, it doesn’t mean you  can’t&nbsp;get&nbsp;it.
+                                </p>
+                            {{else ifCond dataLength '<' 6}}
+                                <p>
+                                    <strong>We found only <big>{{dataLength}}</big> useful datapoint in your file.</strong><br/> That doesn’t sound too exciting, eh?<br/>
+                                </p>
+                                <p>
+                                    But guess what, if your users or attendees haven’t provided more information about themself, it doesn’t mean you can’t&nbsp;get&nbsp;it.
+                                </p>
+                            {{else}}
+                                <p>
+                                    <strong>3 personas and <big>{{dataLength}}</big> datapoints is a pretty good start!</strong><br/>
+                                </p>
+                                <p>
+                                    But you can do even better than that! If your users or attendees haven’t provided some information about themself, it doesn’t mean you can’t&nbsp;get&nbsp;it.
+                                </p>
+                            {{/ifCond}}
+                        </p>
+                        <p>
+                            In AccessFuel we call this <strong>Data Enhancement</strong>:
+                            with our secure proprietery engine we can search public and private databases to append upto 30+ datapoints
+                            about each of your attendee.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <footer class="af-report-promo__footer text-center">
+                <h3>
+                    Contact us to request about your data enhancement options:<br/>
+                    <big><i class="fa fa-phone"></i>&nbsp; 323-844-3839</big>
+                </h3>
+            </footer>
+        </figure>
+    </script>
+
+    <!-- include handlebars/report-promo-start -->
+    <script id="template-report-persona-1" type="text/x-handlebars-template">
+        <div class="af-report af-report-persona">
+            <div class="af-report-persona__inner">
+                <figcaption class="af-report-persona__caption">
+                    <h3 class="af-report__title af-report-persona__title">
+                        Persona #1
+
+                        <span class="af-report__quality af--high">
+                            21%
+                        </span>
+                    </h3>
+                    <p class="af-report__description">
+                        Best match in your data, based on peak gender, age and city / state
+                    </p>
+                </figcaption>
+
+                <img src="./dist/images/personas/uncompromising-executive.png" class="af-report-persona__image" alt="Uncompromising Executive" />
+            </div>
+        </div>
+    </script>
+
+    <script id="template-report-persona-2" type="text/x-handlebars-template">
+        <div class="af-report af-report-persona">
+            <div class="af-report-persona__inner">
+                <figcaption class="af-report-persona__caption">
+                    <h3 class="af-report__title af-report-persona__title">
+                        Persona #2
+
+                        <span class="af-report__quality af--medium">
+                            13%
+                        </span>
+                    </h3>
+
+                    <p class="af-report__description">
+                        Second best match in your data, based on gender, age, state, job title and education.
+                    </p>
+                </figcaption>
+
+                <img src="./dist/images/personas/aspirational-urbanite-male.jpg" class="af-report-persona__image" alt="Aspirational Urbanite (male, 25–34 years old from the West Coast)" />
+            </div>
+        </div>
+    </script>
+
+    <script id="template-report-persona-3" type="text/x-handlebars-template">
+        <div class="af-report af-report-persona">
+            <div class="af-report-persona__inner">
+                <figcaption class="af-report-persona__caption">
+                    <h3 class="af-report__title af-report-persona__title">
+                        Persona #3
+
+                        <span class="af-report__quality af--low">
+                            8%
+                        </span>
+                    </h3>
+
+                    <p class="af-report__description">
+                        Another statistically signifficant profile match in your data.
+                    </p>
+                </figcaption>
+                <img src="./dist/images/personas/festive-millennial-female.jpg" class="af-report-persona__image" alt="Festive Millennial (female, 25-34 years old from Hollywood)" />
+            </div>
+        </div>
+    </script>
+
+    <script id="template-report-crm" type="text/x-handlebars-template">
+            <div class="af-report af-report-persona">
+                <div class="af-report-persona__inner">
+                    <img src="./dist/images/misc/crm-data-query.png" class="af-report-persona__image" alt="CRM Data Query" />
+                </div>
+            </div>
+        </script>
+
+    <!-- include handlebars/report-promo-end -->
+    <script id="template-report-promo-end" type="text/x-handlebars-template">
+        <div class="af-report af-report-promo">
+            <header class="af-report-promo__header">
+                <h1>What’s Next?</h1>
+                <h2>
+                    The next step in unlocking insights and new revenues is to engage AccessFuel.
+                </h2>
+                <p>
+                    You provide us with your files (including registration, crm, email and others)<br/>
+                    and we will enhance, visualize, unlock insights and provide you with a detailed report<br/>
+                    that you can take immediate action!
+                </p>
+            </header>
+    
+            <footer class="af-report-promo__footer af--accent">
+                <h2>
+                    Contact us to begin monetizing your data:
+                </h2>
+    
+                <p>
+                    <a href="mailto:rob@accessfuel.com?subject=Data%20Enhancement%20Request">
+                        <img src="./dist/images/misc/rob-vcard@2x.png" alt="Rob Imrie, CEO: 323-844-3839" width="300" />
+                    </a>
+                </p>
+                <p>
+                    <a class="af-button af--primary af--large" href="mailto:rob@accessfuel.com?subject=Data%20Enhancement%20Request">
+                        Unlock Your Insights Now
+                    </a>
+                </p>
+            </footer>
+        </figure>
+    </script>
+
+
+
+    <!-- Modals -->
+    <div hidden>
+        <!-- Enhance modal options -->
+        <!-- include common/modals/enhance-modal -->
+        <div class="modal inmodal fade" id="enhanceModalContent" role="dialog" aria-hidden="true" tabindex="-1" hidden>
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form action="." class="js-enhance-request-form">
+                        <header class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">×</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <h4 class="modal-title">
+                                <i class="fa fa-rocket u-margin-right-md"></i>
+                                Enhance your Audience Report
+                            </h4>
+                            <small>Our editors will analyze your initial audience report and suggest several options
+                                <br/>to acquire meaningful in-depth insights for your event.</small>
+                        </header>
+        
+                        <article class="modal-body js-enhance-request">
+                            <h2 class="u-margin-top u-margin-bottom text-center">What data is the most essential for understanding your audience?</h2>
+        
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <fieldset>
+                                        <label>
+                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="demographics" checked />
+                                            <strong>
+                                                Demographics
+                                                <i class="fa fa-users u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list af--nested">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="gender" checked /> Gender
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="age" checked /> Age
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="income" checked /> Income
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+        
+                                    <fieldset>
+                                        <label>
+                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="psychographics" checked />
+                                            <strong>
+                                                Psychographics
+                                                <i class="fa fa-heartbeat u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list af--nested">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="interest" checked /> Interests
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="bio" checked /> Bio
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+        
+                                <div class="col-sm-4">
+                                    <fieldset>
+                                        <label>
+                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="location" checked />
+                                            <strong>
+                                                Location
+                                                <i class="fa fa-street-view u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list af--nested">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="city" checked /> City
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="state" checked /> State
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="zip_code" checked /> Zip Code
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+        
+                                    <fieldset>
+                                        <label>
+                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="education" checked />
+                                            <strong>
+                                                Education
+                                                <i class="fa fa-mortar-board u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list af--nested">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="university" checked /> University
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="degree" checked /> Degree
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="major" checked /> Major
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+        
+                                <div class="col-sm-4">
+                                    <fieldset>
+                                        <label>
+                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="occupation" checked />
+                                            <strong>
+                                                Occupation
+                                                <i class="fa fa-briefcase u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list af--nested">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="industry" checked /> Industry
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="company" checked /> Company
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="job_title" checked /> Job Title
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="skills" checked /> Skills
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+        
+                                    <fieldset>
+                                        <label>
+                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="influence" checked />
+                                            <strong>
+                                                Influence
+                                                <i class="fa fa-share-alt u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list af--nested">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-points[]" value="twitter_followers" checked /> Twitter Followers
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+        
+                                    <fieldset>
+                                        <label>
+                                            <input type="checkbox" class="js-enhance-request-select-all" checked />
+                                            <strong>
+                                                All
+                                                <i class="fa fa-check-circle u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+                                    </fieldset>
+                                </div>
+                            </div>
+        
+                            <hr/>
+        
+                            <h2 class="u-margin-top u-margin-bottom  text-center">What are your data sources?</h2>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <fieldset>
+                                        <label>
+                                            <strong>
+                                                Social
+                                                <i class="fa fa-share-alt u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Twiiter" /> Twitter
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Facebook" /> Faceboook
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Instagram" /> Instagram
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="YouTube" /> YouTube
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Pinterest" /> Pinterest
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+        
+                                <div class="col-sm-4">
+                                    <fieldset>
+                                        <label>
+                                            <strong>
+                                                CRM
+                                                <i class="fa fa-dashboard u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Salesforce" /> Salesforce
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+        
+                                    <fieldset>
+                                        <label>
+                                            <strong>
+                                                Ticketing
+                                                <i class="fa fa-ticket u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Eventbrite" /> Eventbrite
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="TicketMaster" /> TicketMaster
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+        
+                                    <fieldset>
+                                        <label>
+                                            <strong>
+                                                Email
+                                                <i class="fa fa-envelope-open u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Mailchimp" /> Mailchimp
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+        
+                                <div class="col-sm-4">
+                                    <fieldset>
+                                        <label>
+                                            <strong>
+                                                Music
+                                                <i class="fa fa-music u-margin-left-sm"></i>
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Apple" /> Apple
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Spotify" /> Spotify
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox" name="data-sources[]" value="Soundcloud" /> Soundcloud
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+        
+                                    <fieldset>
+                                        <label>
+                                            <strong>
+                                                Other…
+                                            </strong>
+                                        </label>
+        
+                                        <ul class="af-checkboxes-list">
+                                            <li>
+                                                <textarea rows="2" name="data-source-custom" value="" placehoder="Please type" class="u-align-left"></textarea>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+        
+                                </div>
+                            </div>
+        
+                            <hr/>
+        
+                            <h2 class="u-margin-top u-margin-bottom  text-center">Give us some context for your data…</h2>
+                            <input type="text" name="evantName" value="" placeholder="Type your organization or event name" class="af-large-input" />
+                        </article>
+        
+                        <footer class="modal-footer">
+                            <div class="text-center">
+                                <button type="reset" class="af-button" data-dismiss="modal">Close</button>
+                                <button type="button" class="af-button af--primary js-enhance-request-submit" data-dismiss="modal">Request Enhancement</button>
+                            </div>
+                        </footer>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- include common/modals/insights-sample-modal -->
+        <div class="modal inmodal fade" id="insightsSampleModalContent" role="dialog" aria-hidden="true" tabindex="-1" hidden>
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">
+                                <i class="fa fa-close"></i>
+                            </span>
+                            <span class="sr-only">Close</span>
+                        </button>
+        
+                        <h4 class="modal-title">Insights Report</h4>
+                        <small>View or download full 20-page insights report in PDF format.</small>
+                    </header>
+        
+                    <article class="modal-body js-insights-sample-modal-content" data-loadede="false">
+                        <div class="af-loader af--page">
+                            <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
+                        </div>
+                    </article>
+        
+                    <footer class="modal-footer">
+                        <div class="text-center">
+                            <button type="button" class="af-button" data-dismiss="modal">Close</button>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- include common/_scripts -->
+    <!-- Core Scripts -->
+    <script src="./dist/js/lib/require.js"></script>
+    
+    <!-- Intercom Scripts -->
+    <script>
+        window.apiURL = "./";
+    </script>
+            
+    <script>
+        requirejs(['./dist/js/common.js'], function (common) {
+
+            var Project = {
+                id: '<%= projectId %>',
+                status: '<%= projectStatus %>'
+            };
+
+            requirejs(['app/report'], function(app) {
+                app(Project);
+            });
+        });
+    </script>
+
+    <script>
+        window.intercomSettings = {
+            app_id: "m1mtd42w",
+            name: 'Rob Imrie', // Full name
+            email: "rob@accessfuel.com", // Email address
+            created_at: '1516863800000' // Signup date as a Unix timestamp
+        };
+    </script>
+    <script>(function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/m1mtd42w';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })();
+    </script>
+
+</body>
+
+</html>

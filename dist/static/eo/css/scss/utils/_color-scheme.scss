@@ -1,0 +1,98 @@
+.af-color-scheme {
+    &.af--events {
+        a,
+        .af-button.af--white,
+        .af-brand-color {
+            color: $brand-green;
+        }
+
+        a:hover,
+        .af-button.af--white {
+            color: $brand-green-dark;
+        }
+
+        .af-color-scheme__background,
+        .af-button:not(.af--white) {
+            background-color: $brand-green;
+            border-color: $brand-green;
+            color: white;
+        }
+        .af-color-scheme__background-dark,
+        .af-button:not(.af--white):hover {
+            background-color: $brand-green-dark;
+            border-color: $brand-green-dark;
+            color: white;
+        }
+    }
+
+    &.af--audience {
+        a,
+        .af-brand-color {
+            color: $brand-blue;
+        }
+
+        .af-color-scheme__background,
+        .af-button:not(.af--white)  {
+            background-color: $brand-blue;
+            border-color: $brand-blue;
+            color: white;
+        }
+        .af-color-scheme__background-dark,
+        .af-button:not(.af--white):hover {
+            background-color: $brand-blue-dark;
+            border-color: $brand-blue-dark;
+            color: white;
+        }
+    }
+
+     &.af--marketing {
+        a,
+        .af-brand-color {
+            color: $brand-red;
+        }
+
+        a:hover,
+        .af-button.af--white {
+            color: $brand-red-dark;
+        }
+
+
+        .af-color-scheme__background,
+        .af-button:not(.af--white) {
+            background-color: $brand-red;
+            border-color: $brand-red;
+            color: white;
+        }
+        .af-color-scheme__background-dark,
+        .af-button:not(.af--white):hover {
+            background-color: $brand-red-dark;
+            border-color: $brand-red-dark;
+            color: white;
+        }
+    }
+
+    &.af--sponsors {
+        a,
+        .af-brand-color {
+            color: $brand-purple;
+        }
+
+        a:hover,
+        .af-button.af--white {
+            color: $brand-purple-dark;
+        }
+
+        .af-color-scheme__background,
+        .af-button:not(.af--white) {
+            background-color: $brand-purple;
+            border-color: $brand-purple;
+            color: white;
+        }
+        .af-color-scheme__background-dark,
+        .af-button:not(.af--white):hover {
+            background-color: $brand-purple-dark;
+            border-color: $brand-purple-dark;
+            color: white;
+        }
+    }
+}
