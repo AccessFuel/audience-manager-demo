@@ -209,6 +209,11 @@ body {
   font-size: 9pt;
 }
 
+/* line 30, ../sass/utils/_typography.scss */
+.u-text-medium {
+  font-size: 14pt;
+}
+
 /*
     Visibility
     ==========
@@ -3503,27 +3508,28 @@ body.stop-scrolling {
   margin: 5px;
   padding: 20px 10px;
   background: #E5E5E5;
+  border-radius: 4px;
   color: #111;
   line-height: 1.3;
 }
-/* line 30, ../sass/components/_stats-block.scss */
+/* line 31, ../sass/components/_stats-block.scss */
 .af .af-stats-block__label {
   display: block;
   font-size: 9pt;
 }
-/* line 35, ../sass/components/_stats-block.scss */
+/* line 36, ../sass/components/_stats-block.scss */
 .af .af-stats-block__value {
   display: block;
   font-family: 'Abel', sans-serif;
   font-size: 40pt;
   white-space: nowrap;
 }
-/* line 42, ../sass/components/_stats-block.scss */
+/* line 43, ../sass/components/_stats-block.scss */
 .af .af-stats-block__value small {
   margin-left: -.4em;
   font-size: 18pt;
 }
-/* line 50, ../sass/components/_stats-block.scss */
+/* line 51, ../sass/components/_stats-block.scss */
 .af .af-stats-block__share {
   position: absolute;
   top: -5px;
@@ -3540,47 +3546,47 @@ body.stop-scrolling {
   vertical-align: middle;
   text-align: center;
 }
-/* line 68, ../sass/components/_stats-block.scss */
+/* line 69, ../sass/components/_stats-block.scss */
 .af .af-stats-block__share.af--share-low {
   background: #ed5565;
 }
-/* line 71, ../sass/components/_stats-block.scss */
+/* line 72, ../sass/components/_stats-block.scss */
 .af .af-stats-block__share.af--share-med {
   background: #f0ad4e;
 }
-/* line 74, ../sass/components/_stats-block.scss */
+/* line 75, ../sass/components/_stats-block.scss */
 .af .af-stats-block__share.af--share-hi {
   background: #4dbc72;
 }
-/* line 81, ../sass/components/_stats-block.scss */
+/* line 82, ../sass/components/_stats-block.scss */
 .af .af-stats-block.af--audience {
   background: #3d85c6;
   color: white;
 }
-/* line 86, ../sass/components/_stats-block.scss */
+/* line 87, ../sass/components/_stats-block.scss */
 .af .af-stats-block.af--totalRows,
 .af .af-stats-block.af--duplicateRows,
 .af .af-stats-block.af--emptyRows {
   background: #cfe2f3;
 }
-/* line 93, ../sass/components/_stats-block.scss */
+/* line 94, ../sass/components/_stats-block.scss */
 .af .af-stats-block.af--usefulAttributes {
   background: #2f4050;
   color: white;
 }
-/* line 98, ../sass/components/_stats-block.scss */
+/* line 99, ../sass/components/_stats-block.scss */
 .af .af--quality {
   color: white;
 }
-/* line 101, ../sass/components/_stats-block.scss */
+/* line 102, ../sass/components/_stats-block.scss */
 .af .af--quality-hi {
   background-color: #4dbc72;
 }
-/* line 104, ../sass/components/_stats-block.scss */
+/* line 105, ../sass/components/_stats-block.scss */
 .af .af--quality-med {
   background-color: #f0ad4e;
 }
-/* line 107, ../sass/components/_stats-block.scss */
+/* line 108, ../sass/components/_stats-block.scss */
 .af .af--quality-low {
   background-color: #ed5565;
 }
