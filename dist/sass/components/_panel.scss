@@ -4,6 +4,7 @@
 */
 .af-panel {
     padding-left: 4vw;
+    margin-top: 120px;
     margin-left: 1vw;
     border-left: solid 1px $border-color-light;
     font-size: $font-size-xsmall;
@@ -39,16 +40,17 @@
 
     &.af--aside {
         float: right;
-        width: 15vw;
-        max-height: 100px;
+        width: 12vw;
 
+        margin-top: -2em;
         margin-left: $space;
-        margin-right: -100px;
+        margin-right: -90px;
     }
 
-
     img {
+        display: block;
         max-width: 100%;
+        opacity: .5;
     }
 }
 

@@ -3,8 +3,8 @@
     ============
 */
 .af-file {
-    max-width: 640px;
-    margin: 0 auto $space*2;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 .af-file__title {
@@ -12,11 +12,10 @@
     font-weight: 700;
 }
 .af-file__summary {
-    margin: $space*2 0 $space*2;
+    margin: $space*2 0;
     padding: $space 0;
 
     border-top: solid 1px $border-color-light;
-    border-bottom: solid 1px $border-color-light;
 
     &.af--loading {
         padding: $space*2 $space;

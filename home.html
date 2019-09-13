@@ -13,7 +13,7 @@
 
     <!-- Core Scripts -->
     <script src="./dist/js/lib/require.js"></script>
-    
+
     <script>
         requirejs(['./dist/js/common.js'], function (common) {
             requirejs(['app/file-manager'], function (app) {
@@ -147,7 +147,7 @@
             <section data-navigation="files-empty, files" hidden>
                 <form class="af-upload js-upload-form">
                     <div class="af-upload__inner">
-                        <h2 class="u-normal u-promo">Visualize Your Event Data</h2>
+                        <h2 class="u-normal u-promo">What is your Data Health Score?</h2>
                         <p class="u-margin-bottom-lg">
                             Accessfuel is a unique platform that combines all of your event data from multiple sources
                             <br/> and then enables you to
@@ -385,18 +385,6 @@
     
         <hr/>
     
-    
-        <article class="text-center u-padding-v">
-            <h2>You don’t have any files uploaded yet.</h2>
-            <p>
-                Upload a CSV file of your list (attendees, newsletter, subscribers or your database), <br/>
-                AccessFuel will analyze, enhance and visualize your audience data <br/>
-                using our propriatery secure platform.
-            </p>
-        </article>
-    
-        <hr/>
-    
         <article class="row u-padding-v-lg">
             <div class="col-md-3 col-sm-6 text-left">
                 <h3>
@@ -528,6 +516,53 @@
         </article>
     </script>
 
+    <!-- Upload Progress Bar Template -->
+    <!-- include handlebars/upload-progress -->
+    <script id="template-progress" type="text/x-handlebars-template">
+        <section class="row af-progress" id="progressCanvas">
+            <header class="af-progress__header">
+                <h4 class="af-progress__title">
+                    {{#if icon}}
+                        <i class="fa fa-{{icon}} u-margin-right-md"></i>
+                    {{/if}}
+
+                    {{title}}
+
+                    {{#if fileName}}
+                        <strong>{{fileName}}</strong>
+                    {{/if}}
+                </h4>
+                <span>Please wait while we analyze your file, clean data and generate initial reports.</span>
+            </header>
+
+            <div class="col-sm-7">
+                <div class="js-progress__bar af-progress__bar">
+                    <input value="0" class="js-progress__bar-input af-progress__bar-input" />
+
+                    <div class="js-progress__bar-value af-progress__bar-value af-data af--percent"></div>
+                    <p class="js-progress__bar-label af-progress__bar-label"></p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="js-progress__steps af-progress__steps"></div>
+            </div>
+
+            <div id="uploadProgressErrorTemplate" hidden>
+                <p>
+                    <strong class="js-upload-progress-error-label"></strong>
+                    <span class="js-upload-progress-error-message"></span>
+                </p>
+                <p>
+                    <a href="." class="af-button af--small">
+                        Try again
+                    </a>
+                    or
+                    <a href="mailto:rob@accessfuel.com?subject=File%20Upload%20Problems">Contact us</a> for help.
+                </p>
+            </div>
+        </section>
+    </script>
+
     <!-- include handlebars/file-stats-item -->
     <script id="template-file-stats-item" type="text/x-handlebars-template">
         {{#if error}}
@@ -601,10 +636,11 @@
                         <i class="fa fa-spinner fa-spin u-margin-right-md"></i> Loading project info…
                     </div>
     
-                    <footer class="af-file__cta text-center">
+                    <div class="af-file__cta text-center">
                         {{#if_eq fileInfo.status 'Initial Upload'}}
     
                         {{else if_eq fileInfo.status 'Enhanced'}}
+                            <hr/>
                             <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" data-toggle="dropdown" class="af-button dropdown-toggle" aria-expanded="true">
@@ -627,17 +663,17 @@
                                 </div>
                             </div>
                         {{/if_eq}}
-    
-                        <p class="u-margin-top-md text-center">
-                            <hr/>
-                            <a href="#"><i class="fa fa-angle-left u-margin-right-md js-files-list"></i> Back to Files List</a>
-                        </p>
-                    </footer>
+                    </div>
                 </article>
             </div>
     
             <div class="col-lg-4 col-md-5">
                 <aside class="af-panel">
+                    <h4 class="af-panel__item-header">
+                        <strong>Next Steps:</strong>
+                    </h4>
+                    <p>Drill down into your data</p>
+                    <hr/>
                     <dl class="af-panel__item af--report">
                         <dt>
                             <h4 class="af-panel__item-header">
@@ -648,9 +684,7 @@
                             </h4>
                         </dt>
                         <dd class="af-panel__item-image af--aside">
-                            <a href="./report.html?{{fileInfo.project_id}}/upload#crm">
-                                <img alt="View Master Data" src="./dist/images/misc/crm@2x.png" />
-                            </a>    
+                            <img alt="View Master Data" src="./dist/images/misc/crm@2x.png" /> 
                         </dd>
                         <dd>
                             <p>
@@ -669,9 +703,7 @@
                             </h4>
                         </dt>
                         <dd class="af-panel__item-image af--aside">
-                            <a href="./report.html?{{fileInfo.project_id}}/upload">
-                                <img alt="View Initial Audience Report" src="./dist/images/misc/report@2x.png" />
-                            </a>
+                            <img alt="View Initial Audience Report" src="./dist/images/misc/report@2x.png" />
                         </dd>
                         <dd>
                             <p>
@@ -680,46 +712,11 @@
                             </p>
                         </dd>
                     </dl>
-    
-                    <dl class="af-panel__item af--sponsors-report">
-                        <dt>
-                            <h4 class="af-panel__item-header">
-                                <strong>Next Step:</strong>
-                                <a href="#" class="js-enhance" data-toggle="modal" data-target="#enhanceModalContent">
-                                    Get Your Detailed Audience Summary Report for Sponsors
-                                </a>
-                            </h4>
-                        </dt>
-    
-                        <!--dd class="af-panel__item-image af--aside">
-                            <img alt="Get Your Detailed Audience Summary Report for Sponsors" src="./dist/images/misc/sponsor-report@2x.png" />
-                        </dd-->
-    
-                        <dd>
-                            <p>
-                                Summarize your customer data and unlock opportunities.
-                                Our Insight Reports enable data-driven decisions that are meaningful,
-                                measurable, monetizable, and most importantly, actionable:
-                            </p>
-    
-                            <ul class="af-panel__item-list">
-                                <li>Increase Customer Intelligence</li>
-                                <li>Optimize Acquisition Channels</li>
-                                <li>Unlock new revenue streams</li>
-                                <li>Assess and Improve Marketing ROI</li>
-                            </ul>
-    
-                            <button type="button" class="af-button af--primary js-enhance u-margin-top-md" data-toggle="modal" data-target="#enhanceModalContent">
-                                Enhance you Audience Report
-                                <i class="fa fa-lg fa-rocket u-margin-left-md"></i>
-                            </button>
-                        </dd>
-    
-    
-                    </dl>
                 </aside>
             </div>
         </div>
+
+        <div class="row js-file-datapoints"></div>
     </script>
 
     <!-- include handlebars/file-stats -->
@@ -740,6 +737,10 @@
                                 {{else}}
                                     {{formatNumber value}}
                                 {{/if}}
+
+                                {{#if baseValue}}
+                                    <small>/{{baseValue}}</small>
+                                {{/if}}
                             </span>
     
                             <span class="af-stats-block__label">
@@ -754,114 +755,83 @@
                         </div>
                     {{/each}}
                 </div>
-    
-                {{#if dataPoints}}
-                    <dl class="af-baseline" id="js-file-baseline" >
-                        <dt class="af-baseline__header">
-                            We found <strong>{{formatNumber dataPoints.matched.length}} of {{formatNumber dataPoints.total}} data points</strong> useful to create audience insights.
-                            <a href="#js-file-baseline-list" data-toggle="collapse" class="af-baseline__toggle pull-right collapsed">
-                                <span class="af-baseline__toggle-collapsed">View All <i class="fa fa-chevron-down"></i></span>
-                                <span class="af-baseline__toggle-expanded">Hide <i class="fa fa-chevron-up"></i></span>
-                            </a>
-                        </dt>
-    
-                        <dd class="af-baseline__content collapse" id="js-file-baseline-list">
-    
-                            <p class="u-margin-top-md">
-                                We performed an automatic file scanning and AccessFuel Engine did it best to recognize your file attributes based on data and column name, matching those to the attributes that are usually helpful for insights and creating personas. If file structure is more complicated than usual or if your specific case require non-standard analytics approach, we’ll cach that with manual data enhancement should you chose to enhance your data.
-                            </p>
-    
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h3 class="af-baseline__title">{{formatNumber dataPoints.matched.length}} Matched {{pluralize 'Field' dataPoints.matched.length true}}:</h3>
-                                    <ul class="af-baseline__list">
-                                        {{#each dataPoints.matched}}
-                                            <li class="af-baseline__item">
-                                                <span class="af-report__quality {{qualityClass quality}}">
-                                                    {{formatPercent quality}}
-                                                </span>
-    
-                                                <strong>{{title}}</strong>:
-                                                [{{label}}]
-                                            </li>
-                                        {{/each}}
-                                    </ul>
-    
-                                    <div class="u-margin-top">
-                                        <p>
-                                            You can improve your data quality by filling the gaps and even adding new data points with AccessFuel proprietary engine:
-                                        </p>
-                                        <button type="button" class="af-button af--wide af--primary u-margin-top-md js-enhance" data-toggle="modal" data-target="#enhanceModalContent">
-                                            Enhance Your Data
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h3 class="af-baseline__title">{{formatNumber dataPoints.unmatched.length}} Unmatched {{pluralize 'Field' dataPoints.unmatched.length true}}:</h3>
-                                    <ul class="af-baseline__list">
-                                        {{#each dataPoints.unmatched}}
-                                            <li class="af-baseline__item af--{{qualityClass}}">
-                                                <span class="af-report__quality {{qualityClass quality}}">
-                                                    {{formatPercent quality}}
-                                                </span>
-                                                {{label}}
-                                            </li>
-                                        {{/each}}
-                                    </ul>
-                                </div>
-                            </div>
-                        </dd>
-                    </dl>
-                {{/if}}
+
+                <hr>
+                <div>
+                    <p><strong>Data Health Score</strong> identifies the completlyness of your data: the more gaps you have, the lower this value will be. 
+                        On average we consider score of <strong>6.5</strong> or higher a healthy, statistically meaningfull and actionable data.
+                        Don't worry if your data health score is too low, we can supercharge your data with missing data, as well as some brand new data attributes.
+                    </p>
+
+                    <button type="button" class="af-button af--primary js-enhance u-margin-top-md" data-toggle="modal" data-target="#enhanceModalContent">
+                        Increase your Data Health Score
+                        <i class="fa fa-lg fa-rocket u-margin-left-md"></i>
+                    </button>
+                </div>
             {{/if}}
         </div>
     </script>
 
-    <!-- Upload Progress Bar Template -->
-    <!-- include handlebars/upload-progress -->
-    <script id="template-progress" type="text/x-handlebars-template">
-        <section class="row af-progress" id="progressCanvas">
-            <header class="af-progress__header">
-                <h4 class="af-progress__title">
-                    {{#if icon}}
-                        <i class="fa fa-{{icon}} u-margin-right-md"></i>
-                    {{/if}}
-    
-                    {{title}}
-    
-                    {{#if fileName}}
-                        <strong>{{fileName}}</strong>
-                    {{/if}}
-                </h4>
-                <span>Please wait while we analyze your file, clean data and generate initial reports.</span>
-            </header>
-    
-            <div class="col-sm-7">
-                <div class="js-progress__bar af-progress__bar">
-                    <input value="0" class="js-progress__bar-input af-progress__bar-input" />
-    
-                    <div class="js-progress__bar-value af-progress__bar-value af-data af--percent"></div>
-                    <p class="js-progress__bar-label af-progress__bar-label"></p>
-                </div>
-            </div>
-            <div class="col-sm-5">
-                <div class="js-progress__steps af-progress__steps"></div>
-            </div>
-    
-            <div id="uploadProgressErrorTemplate" hidden>
-                <p>
-                    <strong class="js-upload-progress-error-label"></strong>
-                    <span class="js-upload-progress-error-message"></span>
-                </p>
-                <p>
-                    <a href="." class="af-button af--small">
-                        Try again
+    <!-- include handlebars/file-stats -->
+    <script id="template-file-datapoints" type="text/x-handlebars-template">
+        {{#if dataPoints}}
+            <dl class="af-baseline" id="js-file-baseline" >
+                <dt class="af-baseline__header">
+                    We found <strong>{{formatNumber dataPoints.matched.length}} of {{formatNumber dataPoints.total}} data points</strong> useful to create audience insights.
+                    <a href="#js-file-baseline-list" data-toggle="collapse" class="af-baseline__toggle pull-right collapsed">
+                        <span class="af-baseline__toggle-collapsed">View All <i class="fa fa-chevron-down"></i></span>
+                        <span class="af-baseline__toggle-expanded">Hide <i class="fa fa-chevron-up"></i></span>
                     </a>
-                    or
-                    <a href="mailto:rob@accessfuel.com?subject=File%20Upload%20Problems">Contact us</a> for help.
-                </p>
-            </div>
-        </section>
+                </dt>
+
+                <dd class="af-baseline__content collapse" id="js-file-baseline-list">
+
+                    <p class="u-margin-top-md">
+                        We performed an automatic file scanning and AccessFuel Engine did it best to recognize your file attributes based on data and column name, matching those to the attributes that are usually helpful for insights and creating personas. If file structure is more complicated than usual or if your specific case require non-standard analytics approach, we’ll cach that with manual data enhancement should you chose to enhance your data.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3 class="af-baseline__title">{{formatNumber dataPoints.matched.length}} Matched {{pluralize 'Field' dataPoints.matched.length true}}:</h3>
+                            <ul class="af-baseline__list">
+                                {{#each dataPoints.matched}}
+                                    <li class="af-baseline__item">
+                                        <span class="af-report__quality {{qualityClass quality}}">
+                                            {{formatPercent quality}}
+                                        </span>
+
+                                        <strong>{{title}}</strong>:
+                                        [{{label}}]
+                                    </li>
+                                {{/each}}
+                            </ul>
+
+                            <div class="u-margin-top u-margin-right">
+                                <p>
+                                    You can improve your data quality by filling the gaps and even adding new data points with AccessFuel proprietary engine:
+                                </p>
+                                <button type="button" class="af-button af--wide af--primary u-margin-top-md js-enhance" data-toggle="modal" data-target="#enhanceModalContent">
+                                    Enhance Your Data
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3 class="af-baseline__title">{{formatNumber dataPoints.unmatched.length}} Unmatched {{pluralize 'Field' dataPoints.unmatched.length true}}:</h3>
+                            <ul class="af-baseline__list">
+                                {{#each dataPoints.unmatched}}
+                                    <li class="af-baseline__item af--{{qualityClass}}">
+                                        <span class="af-report__quality {{qualityClass quality}}">
+                                            {{formatPercent quality}}
+                                        </span>
+                                        {{label}}
+                                    </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        {{/if}}
     </script>
 
 
@@ -1263,53 +1233,7 @@
     <!-- include common/_scripts -->
     
     <!-- Intercom Scripts -->
-    <script>
-        window.apiURL = "https://filemanager.accessfuel.com/";
-    </script>
-
-
-
-    <script>
-        window.intercomSettings = {
-            app_id: "m1mtd42w",
-            name: 'Rob Imrie', // Full name
-            email: "rob@accessfuel.com", // Email address
-            created_at:  '1516863800000' // Signup date as a Unix timestamp
-        };
-    </script>
-    <script>(function () {
-            var w = window;
-            var ic = w.Intercom;
-            if (typeof ic === "function") {
-                ic('reattach_activator');
-                ic('update', intercomSettings);
-            } else {
-                var d = document;
-                var i = function () {
-                    i.c(arguments)
-                };
-                i.q = [];
-                i.c = function (args) {
-                    i.q.push(args)
-                };
-                w.Intercom = i;
-                function l() {
-                    var s = d.createElement('script');
-                    s.type = 'text/javascript';
-                    s.async = true;
-                    s.src = 'https://widget.intercom.io/widget/m1mtd42w';
-                    var x = d.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                }
-
-                if (w.attachEvent) {
-                    w.attachEvent('onload', l);
-                } else {
-                    w.addEventListener('load', l, false);
-                }
-            }
-        })();
-    </script>
+    <script src="./dist/js/app/intercom.js"></script>
 </body>
 
 </html>

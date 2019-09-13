@@ -3,10 +3,11 @@
     ====================
 */
 .af-baseline {
-    margin: $space 0 (-$space);
-    padding: $space/2 $space;
+    max-width: 1400px;
+    margin: 0 auto $space*2;
+    padding: $space;
     background: $grey-95;
-    font-size: $font-size-xsmall;
+    font-size: $font-size;
     text-align: left;
 }
 
@@ -50,10 +51,9 @@
 }
 .af-baseline__item {
     padding: $space/4 0;
+    margin-right: 5%;
 
    .af-report__quality {
-        margin: 0 .5em 0 0;
-
         font-size: 8px;
         vertical-align: baseline;
    }

@@ -21,7 +21,9 @@ define(function (require) {
 
     // Templates
     // ---------
+
     var Templates = {
+        fileDatapoints: Handlebars.compile($("#template-file-datapoints").html()),
         fileDetails: Handlebars.compile($("#template-file-details").html()),
         fileStats: Handlebars.compile($("#template-file-stats").html()),
         fileStatsItem: Handlebars.compile($("#template-file-stats-item").html()),
@@ -136,10 +138,11 @@ define(function (require) {
                     value: 0
                 },
                 quality: {
-                    label: 'Overall Data Quality',
+                    label: 'Data Health Score',
                     pluralize: false,
                     value: dataQuality,
-                    formattedValue: Utils.formatPercent(dataQuality, true) + '%',
+                    formattedValue: (dataQuality * 10).toFixed(1),
+                    baseValue: 10,
                     modifier: 'af--quality-' + dataQualityModifier,
                     valueModifier: 'af--' + dataQualityModifier
                 }
@@ -211,6 +214,7 @@ define(function (require) {
             .then(function(data) {
                 showFileDetails(data, showSuccessMessage);
                 showFileDetailsStats(data.project_id, showSuccessMessage);
+                showFileDetailsDatapoints(data.project_id);
             }).catch(function() {
                 Error({
                     error: 'File not found.'
@@ -226,6 +230,15 @@ define(function (require) {
                 var $statsContainer = $('#js-file-manager__file-details .js-file-stats');
                 Utils.renderTemplate($statsContainer, Templates.fileStats, templateData);
                 $statsContainer.removeClass('af--loading');
+            });
+    };
+
+    var showFileDetailsDatapoints = function(projectID, isJustUploaded) {
+        return _getFileStats(projectID)
+            .then(function(templateData) {
+                var $datapointsContainer = $('#js-file-manager__file-details .js-file-datapoints');
+                Utils.renderTemplate($datapointsContainer, Templates.fileDatapoints, templateData);
+                $datapointsContainer.removeClass('af--loading');
             });
     };
 

@@ -17,9 +17,9 @@
     position: relative;
 
     height: 120px;
-    width: 120px;
+    width: 160px;
 
-    margin: $unit;
+    margin: $unit/2;
     padding: $space $unit;
 
     background: $grey-90;
@@ -37,6 +37,12 @@
 
     font-family: 'Abel', sans-serif;
     font-size: $font-size-xxxlarge;
+    white-space: nowrap;
+
+    small {
+        margin-left: -.4em;
+        font-size: $font-size-xlarge;
+    }
 }
 
 // Share Badge
