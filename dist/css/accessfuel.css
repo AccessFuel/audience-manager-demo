@@ -60,111 +60,117 @@ body {
     Spacing
     =======
 */
-/* line 8, ../sass/utils/_spacing.scss */
+/* line 5, ../sass/utils/_spacing.scss */
+.u-margin-h {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 12, ../sass/utils/_spacing.scss */
 .u-margin-top-0 {
   margin-top: 0;
 }
 
-/* line 11, ../sass/utils/_spacing.scss */
+/* line 15, ../sass/utils/_spacing.scss */
 .u-margin-top-sm {
   margin-top: 4px;
 }
 
-/* line 14, ../sass/utils/_spacing.scss */
+/* line 18, ../sass/utils/_spacing.scss */
 .u-margin-top-md {
   margin-top: 10px;
 }
 
-/* line 17, ../sass/utils/_spacing.scss */
+/* line 21, ../sass/utils/_spacing.scss */
 .u-margin-top {
   margin-top: 20px;
 }
 
-/* line 20, ../sass/utils/_spacing.scss */
+/* line 24, ../sass/utils/_spacing.scss */
 .u-margin-top-lg {
   margin-top: 40px;
 }
 
-/* line 26, ../sass/utils/_spacing.scss */
+/* line 30, ../sass/utils/_spacing.scss */
 .u-margin-bottom-0 {
   margin-bottom: 0;
 }
 
-/* line 29, ../sass/utils/_spacing.scss */
+/* line 33, ../sass/utils/_spacing.scss */
 .u-margin-bottom-sm {
   margin-bottom: 4px;
 }
 
-/* line 32, ../sass/utils/_spacing.scss */
+/* line 36, ../sass/utils/_spacing.scss */
 .u-margin-bottom-md {
   margin-bottom: 10px;
 }
 
-/* line 35, ../sass/utils/_spacing.scss */
+/* line 39, ../sass/utils/_spacing.scss */
 .u-margin-bottom {
   margin-bottom: 20px;
 }
 
-/* line 38, ../sass/utils/_spacing.scss */
+/* line 42, ../sass/utils/_spacing.scss */
 .u-margin-bottom-lg {
   margin-bottom: 40px;
 }
 
-/* line 43, ../sass/utils/_spacing.scss */
+/* line 47, ../sass/utils/_spacing.scss */
 .u-margin-left-sm {
   margin-left: 4px;
 }
 
-/* line 47, ../sass/utils/_spacing.scss */
+/* line 51, ../sass/utils/_spacing.scss */
 .u-margin-left-md {
   margin-left: 10px;
 }
 
-/* line 52, ../sass/utils/_spacing.scss */
+/* line 56, ../sass/utils/_spacing.scss */
 .u-margin-right-md {
   margin-right: 10px;
 }
 
-/* line 55, ../sass/utils/_spacing.scss */
+/* line 59, ../sass/utils/_spacing.scss */
 .u-margin-right {
   margin-right: 20px;
 }
 
-/* line 58, ../sass/utils/_spacing.scss */
+/* line 62, ../sass/utils/_spacing.scss */
 .u-margin-right-lg {
   margin-right: 40px;
 }
 
-/* line 64, ../sass/utils/_spacing.scss */
+/* line 68, ../sass/utils/_spacing.scss */
 .u-padding {
   padding: 20px;
 }
 
-/* line 67, ../sass/utils/_spacing.scss */
+/* line 71, ../sass/utils/_spacing.scss */
 .u-padding-h {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 71, ../sass/utils/_spacing.scss */
+/* line 75, ../sass/utils/_spacing.scss */
 .u-padding-v {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 75, ../sass/utils/_spacing.scss */
+/* line 79, ../sass/utils/_spacing.scss */
 .u-padding-v-md {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 79, ../sass/utils/_spacing.scss */
+/* line 83, ../sass/utils/_spacing.scss */
 .u-padding-v-lg {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* line 85, ../sass/utils/_spacing.scss */
+/* line 89, ../sass/utils/_spacing.scss */
 .u-border-top {
   padding-top: 20px;
   border-top: solid 1px #E5E5E5;
@@ -1347,6 +1353,10 @@ body.stop-scrolling {
       ===================
   */
   /*
+      Bootstrap Modal Facelifting
+      ===========================
+  */
+  /*
       Sidebar panel
       ===================
   */
@@ -1427,7 +1437,7 @@ body.stop-scrolling {
 /* line 5, ../sass/components/_baseline.scss */
 .af .af-baseline {
   max-width: 1400px;
-  margin: 0 auto 40px;
+  margin-bottom: 40px;
   padding: 20px;
   background: #f2f2f2;
   font-size: 12pt;
@@ -1477,7 +1487,7 @@ body.stop-scrolling {
 }
 /* line 56, ../sass/components/_baseline.scss */
 .af .af-baseline__item .af-report__quality {
-  font-size: 8px;
+  font-size: 10px;
   vertical-align: baseline;
 }
 /* line 5, ../sass/components/_button.scss */
@@ -2425,26 +2435,25 @@ body.stop-scrolling {
 }
 /* line 6, ../sass/components/_form.scss */
 .af label {
-  font-size: 90%;
   font-weight: 300;
 }
-/* line 11, ../sass/components/_form.scss */
+/* line 10, ../sass/components/_form.scss */
 .af input[type=checkbox],
 .af input[type=radio] {
   margin-right: .5em;
 }
-/* line 16, ../sass/components/_form.scss */
+/* line 15, ../sass/components/_form.scss */
 .af textarea {
   width: 100%;
   border-color: #E5E5E5;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
 }
-/* line 29, ../sass/components/_form.scss */
+/* line 28, ../sass/components/_form.scss */
 .af .user-error {
   border-color: #ed5565;
   box-shadow: inset 0 0 2px #ed5565;
 }
-/* line 34, ../sass/components/_form.scss */
+/* line 33, ../sass/components/_form.scss */
 .af .af-checkboxes-list {
   list-style: none;
   margin: 0;
@@ -2452,11 +2461,11 @@ body.stop-scrolling {
   margin-bottom: 10px;
   padding-left: 0;
 }
-/* line 39, ../sass/components/_form.scss */
+/* line 38, ../sass/components/_form.scss */
 .af .af-checkboxes-list.af--nested {
   padding-left: 1.7em;
 }
-/* line 44, ../sass/components/_form.scss */
+/* line 43, ../sass/components/_form.scss */
 .af .af-large-input {
   display: block;
   width: 50%;
@@ -2466,7 +2475,7 @@ body.stop-scrolling {
   font-weight: 500;
   text-align: center;
 }
-/* line 54, ../sass/components/_form.scss */
+/* line 53, ../sass/components/_form.scss */
 .af .af-large-input::-webkit-input-placeholder {
   font-weight: 300;
 }
@@ -2651,6 +2660,31 @@ body.stop-scrolling {
   background: #2f4050 url(../images/background/auth.jpg) center center;
   background-size: cover;
   background-attachment: fixed;
+}
+/* line 27, ../sass/components/_modal.scss */
+.af .modal-header {
+  padding: 20px 40px;
+  text-align: left;
+  border-bottom: none;
+}
+/* line 33, ../sass/components/_modal.scss */
+.af .modal-header h2,
+.af .modal-header h3,
+.af .modal-header h4 {
+  color: #333;
+  font-size: 32px;
+  font-weight: 400;
+}
+/* line 40, ../sass/components/_modal.scss */
+.af .modal-header .close {
+  opacity: .75;
+  color: #333;
+  line-height: 32px;
+}
+/* line 45, ../sass/components/_modal.scss */
+.af .modal-header .close .fa-close:before,
+.af .modal-header .close .fa-close-thin:before {
+  content: '\00d7';
 }
 /* line 1, ../sass/components/_navigation.scss */
 .af .af-navbar {

@@ -6,8 +6,8 @@ define(function (require) {
 
     var Navigation = require('components/navigation');
 
-   var init = function() {
-        setTimeout(() => Navigation.navigate('main'), 500);
+   var init = function(timeout = 500) {
+        setTimeout(() => Navigation.navigate('main'), timeout);
     };
 
     return init;

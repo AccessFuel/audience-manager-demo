@@ -84,8 +84,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" data-toggle="modal" data-target="#insightsSampleModalContent" data-content="../dist/static/modals/insights-sample-salesforce-modal.html"
-                                            class="js-insights-sample-toggle">
+                                        <a href="#" data-toggle="modal" data-target="#remoteModal" data-content="../dist/static/modals/insights-sample-salesforce-modal.html">
                                             Insights
                                             <i class="fa fa-bookmark-o pull-right u-margin-top-md"></i>
                                         </a>
@@ -147,9 +146,25 @@
                 </section>
 
                 <section class="animated fadeIn" id="js-file-manager__main" data-navigation="main" hidden>
-                    <a href="./enhance.html">
-                        <img src="./images/crm-initial-data.png" width="100%"/>
+                    <a href="/home.html">
+                        <img src="./images/crm-initial-title.png" width="100%"/>
                     </a>
+
+                    <a href="#" data-toggle="modal" data-target="#remoteModal" data-content="./modals/enhance.html">
+                        <img src="./images/crm-initial-summary.png" width="100%"/>
+                    </a>
+
+                    <div class="af-baseline u-margin-h" id="js-file-baseline">
+                        <div class="af-baseline__header">
+                            We found <strong>12 actional data attributes</strong> of 104 total in your data.
+                            <a href="#" data-toggle="modal" data-target="#remoteModal" data-content="./modals/data-attributes.html" class="af-baseline__toggle pull-right collapsed">
+                                <span class="af-baseline__toggle-collapsed">View All</span>
+                            </a>
+                        </div>
+                    </div>
+            
+                    
+                    <img src="./images/crm-initial-data.png" width="100%"/>
                 </section>
             </main>
 
@@ -174,6 +189,15 @@
         </div>
     </div>
 
+    <!-- Modals -->
+    <div hidden>
+        <div class="modal inmodal fade" id="remoteModal" role="dialog" aria-hidden="true" tabindex="-1" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- include common/_scripts -->
     <!-- Core Scripts -->
@@ -182,7 +206,7 @@
     <script>
         requirejs(['../dist/js/common.js'], function (common) {
             requirejs(['app/static'], function (app) {
-                app();
+                app(1000);
             });
         });
     </script>

@@ -1,0 +1,48 @@
+/*
+    Bootstrap Modal Facelifting
+    ===========================
+*/
+// .modal.fade .modal-dialog {
+//     -webkit-transform: scale(0.1);
+//     -moz-transform: scale(0.1);
+//     -ms-transform: scale(0.1);
+//     transform: scale(0.1);
+//     top: 300px;
+//     opacity: 0;
+//     -webkit-transition: all 0.3s;
+//     -moz-transition: all 0.3s;
+//     transition: all 0.3s;
+// }
+
+// .modal.fade.in .modal-dialog {
+//    -webkit-transform: scale(1);
+//    -moz-transform: scale(1);
+//    -ms-transform: scale(1);
+//    transform: scale(1);
+//    -webkit-transform: translate3d(0, -300px, 0);
+//    transform: translate3d(0, -300px, 0);
+//    opacity: 1;
+// }
+
+.modal-header {
+    padding: $space $space*2;
+    text-align: left;
+    border-bottom: none;
+}
+
+.modal-header h2,
+.modal-header h3,
+.modal-header h4 {
+    color: #333;
+    font-size: 32px;
+    font-weight: 400;
+}
+.modal-header .close {
+    opacity: .75;
+    color: #333;
+    line-height: 32px;
+}
+.modal-header .close .fa-close:before,
+.modal-header .close .fa-close-thin:before {
+    content: '\00d7';
+}

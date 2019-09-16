@@ -84,8 +84,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" data-toggle="modal" data-target="#insightsSampleModalContent" data-content="./dist/static/modals/insights-sample-salesforce-modal.html"
-                                            class="js-insights-sample-toggle">
+                                            <a href="#" data-toggle="modal" data-target="#remoteModal" data-content="./dist/static/modals/insights-sample-salesforce-modal.html">
                                             Insights
                                             <i class="fa fa-bookmark-o pull-right u-margin-top-md"></i>
                                         </a>
@@ -252,7 +251,7 @@
 
                 <p>
                     While this provides a basic look into your existing data,
-                    <br/> you need to <a href="#" class="js-enhance" data-toggle="modal" data-target="#enhanceModalContent">enhance your data</a> before unlocking insights and new revenues.
+                    <br/> you need to <a href="#" class="js-enhance" data-toggle="modal" data-target="#remoteModal" data-content="/crm/modals/enhance.html">enhance your data</a> before unlocking insights and new revenues.
                 </p>
             </div>
     
@@ -267,7 +266,7 @@
                             the higher the value,the more representative your data is.
                         </p>
                         <p class="clearfix">
-                            No worries if it is too low, AccessFuel can <a href="#" class="js-enhance" data-toggle="modal" data-target="#enhanceModalContent">enhance your data</a> finding the missing info
+                            No worries if it is too low, AccessFuel can <a href="#" class="js-enhance" data-toggle="modal" data-target="#remoteModal" data-content="/crm/modals/enhance.html">enhance your data</a> finding the missing info
                             for your attendees in public and private databases and filling the gaps.
                         </p>
                     </div>
@@ -382,14 +381,6 @@
         </div>
     </script>
 
-    <script id="template-report-crm" type="text/x-handlebars-template">
-            <div class="af-report af-report-persona">
-                <div class="af-report-persona__inner">
-                    <img src="./dist/images/misc/crm-data-query.png" class="af-report-persona__image" alt="CRM Data Query" />
-                </div>
-            </div>
-        </script>
-
     <!-- include handlebars/report-promo-end -->
     <script id="template-report-promo-end" type="text/x-handlebars-template">
         <div class="af-report af-report-promo">
@@ -428,395 +419,9 @@
 
     <!-- Modals -->
     <div hidden>
-        <!-- Enhance modal options -->
-        <!-- include common/modals/enhance-modal -->
-        <div class="modal inmodal fade" id="enhanceModalContent" role="dialog" aria-hidden="true" tabindex="-1" hidden>
+        <div class="modal inmodal fade" id="remoteModal" role="dialog" aria-hidden="true" tabindex="-1" >
             <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <form action="." class="js-enhance-request-form">
-                        <header class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">
-                                <span aria-hidden="true">×</span>
-                                <span class="sr-only">Close</span>
-                            </button>
-                            <h4 class="modal-title">
-                                <i class="fa fa-rocket u-margin-right-md"></i>
-                                Enhance your Audience Report
-                            </h4>
-                            <small>Our editors will analyze your initial audience report and suggest several options
-                                <br/>to acquire meaningful in-depth insights for your event.</small>
-                        </header>
-        
-                        <article class="modal-body js-enhance-request">
-                            <h2 class="u-margin-top u-margin-bottom text-center">What data is the most essential for understanding your audience?</h2>
-        
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <fieldset>
-                                        <label>
-                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="demographics" checked />
-                                            <strong>
-                                                Demographics
-                                                <i class="fa fa-users u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list af--nested">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="gender" checked /> Gender
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="age" checked /> Age
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="income" checked /> Income
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-        
-                                    <fieldset>
-                                        <label>
-                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="psychographics" checked />
-                                            <strong>
-                                                Psychographics
-                                                <i class="fa fa-heartbeat u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list af--nested">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="interest" checked /> Interests
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="bio" checked /> Bio
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-        
-                                <div class="col-sm-4">
-                                    <fieldset>
-                                        <label>
-                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="location" checked />
-                                            <strong>
-                                                Location
-                                                <i class="fa fa-street-view u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list af--nested">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="city" checked /> City
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="state" checked /> State
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="zip_code" checked /> Zip Code
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-        
-                                    <fieldset>
-                                        <label>
-                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="education" checked />
-                                            <strong>
-                                                Education
-                                                <i class="fa fa-mortar-board u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list af--nested">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="university" checked /> University
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="degree" checked /> Degree
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="major" checked /> Major
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-        
-                                <div class="col-sm-4">
-                                    <fieldset>
-                                        <label>
-                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="occupation" checked />
-                                            <strong>
-                                                Occupation
-                                                <i class="fa fa-briefcase u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list af--nested">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="industry" checked /> Industry
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="company" checked /> Company
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="job_title" checked /> Job Title
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="skills" checked /> Skills
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-        
-                                    <fieldset>
-                                        <label>
-                                            <input class="js-enhance-request-group" type="checkbox" name="data-points[]" value="influence" checked />
-                                            <strong>
-                                                Influence
-                                                <i class="fa fa-share-alt u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list af--nested">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-points[]" value="twitter_followers" checked /> Twitter Followers
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-        
-                                    <fieldset>
-                                        <label>
-                                            <input type="checkbox" class="js-enhance-request-select-all" checked />
-                                            <strong>
-                                                All
-                                                <i class="fa fa-check-circle u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-                                    </fieldset>
-                                </div>
-                            </div>
-        
-                            <hr/>
-        
-                            <h2 class="u-margin-top u-margin-bottom  text-center">What are your data sources?</h2>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <fieldset>
-                                        <label>
-                                            <strong>
-                                                Social
-                                                <i class="fa fa-share-alt u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Twiiter" /> Twitter
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Facebook" /> Faceboook
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Instagram" /> Instagram
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="YouTube" /> YouTube
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Pinterest" /> Pinterest
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-        
-                                <div class="col-sm-4">
-                                    <fieldset>
-                                        <label>
-                                            <strong>
-                                                CRM
-                                                <i class="fa fa-dashboard u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Salesforce" /> Salesforce
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-        
-                                    <fieldset>
-                                        <label>
-                                            <strong>
-                                                Ticketing
-                                                <i class="fa fa-ticket u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Eventbrite" /> Eventbrite
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="TicketMaster" /> TicketMaster
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-        
-                                    <fieldset>
-                                        <label>
-                                            <strong>
-                                                Email
-                                                <i class="fa fa-envelope-open u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Mailchimp" /> Mailchimp
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-                                </div>
-        
-                                <div class="col-sm-4">
-                                    <fieldset>
-                                        <label>
-                                            <strong>
-                                                Music
-                                                <i class="fa fa-music u-margin-left-sm"></i>
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list">
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Apple" /> Apple
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Spotify" /> Spotify
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label>
-                                                    <input type="checkbox" name="data-sources[]" value="Soundcloud" /> Soundcloud
-                                                </label>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-        
-                                    <fieldset>
-                                        <label>
-                                            <strong>
-                                                Other…
-                                            </strong>
-                                        </label>
-        
-                                        <ul class="af-checkboxes-list">
-                                            <li>
-                                                <textarea rows="2" name="data-source-custom" value="" placehoder="Please type" class="u-align-left"></textarea>
-                                            </li>
-                                        </ul>
-                                    </fieldset>
-        
-                                </div>
-                            </div>
-        
-                            <hr/>
-        
-                            <h2 class="u-margin-top u-margin-bottom  text-center">Give us some context for your data…</h2>
-                            <input type="text" name="evantName" value="" placeholder="Type your organization or event name" class="af-large-input" />
-                        </article>
-        
-                        <footer class="modal-footer">
-                            <div class="text-center">
-                                <button type="reset" class="af-button" data-dismiss="modal">Close</button>
-                                <button type="button" class="af-button af--primary js-enhance-request-submit" data-dismiss="modal">Request Enhancement</button>
-                            </div>
-                        </footer>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <!-- include common/modals/insights-sample-modal -->
-        <div class="modal inmodal fade" id="insightsSampleModalContent" role="dialog" aria-hidden="true" tabindex="-1" hidden>
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <header class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span aria-hidden="true">
-                                <i class="fa fa-close"></i>
-                            </span>
-                            <span class="sr-only">Close</span>
-                        </button>
-        
-                        <h4 class="modal-title">Insights Report</h4>
-                        <small>View or download full 20-page insights report in PDF format.</small>
-                    </header>
-        
-                    <article class="modal-body js-insights-sample-modal-content" data-loadede="false">
-                        <div class="af-loader af--page">
-                            <i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color"></i>
-                        </div>
-                    </article>
-        
-                    <footer class="modal-footer">
-                        <div class="text-center">
-                            <button type="button" class="af-button" data-dismiss="modal">Close</button>
-                        </div>
-                    </footer>
-                </div>
+                <div class="modal-content"></div>
             </div>
         </div>
     </div>
@@ -825,6 +430,20 @@
     <!-- include common/_scripts -->
     <!-- Core Scripts -->
     <script src="./dist/js/lib/require.js"></script>
+
+    <script>
+        requirejs(['./dist/js/common.js'], function (common) {
+
+            var Project = {
+                id: '<%= projectId %>',
+                status: '<%= projectStatus %>'
+            };
+
+            requirejs(['app/report'], function(app) {
+                app(Project);
+            });
+        });
+    </script>
     
     <!-- Intercom Scripts -->
     <script src="./dist/js/app/intercom.js"></script>

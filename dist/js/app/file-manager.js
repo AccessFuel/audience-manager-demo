@@ -15,7 +15,6 @@ define(function (require) {
         Navigation = require('components/navigation'),
         UploadProgress = require('components/uploadProgress'),
         Sort = require('components/sort'),
-        SweetAlert = require('sweetAlert'),
         Uploader = require('components/uploader'),
         Utils = require('utils/global');
 
@@ -380,8 +379,9 @@ define(function (require) {
             if (!response.success && response.error) {
                 Error(response);
             } else {
+                window.location.pathname = '/crm/initial.html';
                 window.location.hash = response.project_id;
-                loadFileDetails(response.uuid, true);
+                // loadFileDetails(response.uuid, true);
             }
         })
         .catch(function(response) {

@@ -84,7 +84,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" data-toggle="modal" data-target="#insightsSampleModalContent" data-content="../dist/static/modals/insights-sample-salesforce-modal.html"
+                                            <a href="#" data-toggle="modal" data-target="#remoteModal" data-content="../dist/static/modals/insights-sample-salesforce-modal.html">
                                             class="js-insights-sample-toggle">
                                             Insights
                                             <i class="fa fa-bookmark-o pull-right u-margin-top-md"></i>
@@ -136,7 +136,7 @@
             <main class="af-main animated fadeIn">
                 <!-- Progress -->
                 <section class="animated fadeInDown">
-                    <a href="./enhance.html">
+                    <a href="./enhanced.html">
                         <img src="./images/progress/step-3.png" width="100%"/>
                     </a>
                 </section>
@@ -150,7 +150,10 @@
 
                 <section class="animated fadeIn" id="js-file-manager__main" data-navigation="main" hidden>
                     <a href="./apply.html">
-                        <img src="./images/crm-analyze-data.png" width="100%"/>
+                        <img src="./images/crm-personas-title.png" width="100%"/>
+                    </a>
+                    <a href="./apply.html">
+                        <img src="./images/crm-personas-data.png" width="100%"/>
                     </a>
                 </section>
             </main>
@@ -177,6 +180,17 @@
     </div>
 
 
+    <!-- Modals -->
+    <div hidden>
+        <div class="modal inmodal fade" id="remoteModal" role="dialog" aria-hidden="true" tabindex="-1" >
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content"></div>
+            </div>
+        </div>
+    </div>
+    
+
+
     <!-- include common/_scripts -->
     <!-- Core Scripts -->
     <script src="../dist/js/lib/require.js"></script>
@@ -184,7 +198,7 @@
     <script>
         requirejs(['../dist/js/common.js'], function (common) {
             requirejs(['app/static'], function (app) {
-                app();
+                app(2000);
             });
         });
     </script>

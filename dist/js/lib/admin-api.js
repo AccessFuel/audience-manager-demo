@@ -4,7 +4,7 @@ define(function (require) {
     var State = require('state');
 
     var $ = require('jquery');
-    var API = "./dist/static/data/api/";
+    var API = "/dist/static/data/api/";
     var Debug = true;
     var Defaults = {
         contentType: false,

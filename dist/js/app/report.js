@@ -112,9 +112,6 @@ define(function (require) {
             Handlebars.compile($("#template-report-persona-2").html()),
             Handlebars.compile($("#template-report-persona-3").html())
         ],
-        reportPromoCRM: [
-            Handlebars.compile($("#template-report-crm").html())
-        ],
         reportPromoEnd: Handlebars.compile($("#template-report-promo-end").html())
     };
 
@@ -289,19 +286,13 @@ define(function (require) {
         switch (promoID) {
             default: return;
             case 'start':
-                nextID = 'crm';
+                nextID = 'persona1';
                 navigationText = '<a href="#' + ReportData.data[0].summary.id + '">View Audience Report <small><i class="fa fa-play"></i></small><a>';
                 promoTemplate = Templates.reportPromoStart;
                 break;
-            case 'crm':
-                nextID = 'persona1';
-                previousID = 'start';
-                navigationText = '<a href="#' + ReportData.data[0].summary.id + '">View Audience Report <small><i class="fa fa-play"></i></small><a>';
-                promoTemplate = Templates.reportPromoCRM[0];
-                break;
             case 'persona1':
                 nextID = 'persona2';
-                previousID = 'crm';
+                previousID = 'start';
                 navigationText = 'Persona #1 of 3';
                 promoTemplate = Templates.reportPersonas[0];
                 break;
@@ -353,7 +344,7 @@ define(function (require) {
             reportID = 'start';
         } 
         
-        if (reportID === 'start' || reportID === 'crm' || reportID === 'persona1' || reportID === 'persona2' || reportID === 'persona3' || reportID === 'end') {
+        if (reportID === 'start' || reportID === 'persona1' || reportID === 'persona2' || reportID === 'persona3' || reportID === 'end') {
             setReportNavItem(false);
             showPromo(reportID);
         } else {
