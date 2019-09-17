@@ -315,37 +315,32 @@
         </section>
     
         <hr/>
+
+        <div class="af-connect af--full">
+            <div class="af-connect__inner clearfix">
+                <a class="js-connect-eventbrite">
+                    <img src="./dist/images/logo/eventbrite-logo.png" alt="Eventbrite" title="Eventbrite" height="40" class="af-connect__logo" />
+                </a>
     
-        <article class="row u-padding-v-lg">
-            <div class="col-md-3 col-sm-6 text-left">
-                <h3>
-                    <i class="fa fa-sort-amount-desc fa-pull-left"></i> Analyze</h3>
-                <p>Using our proprietary engine, we perform a 32 point scan and analysis of your data to identify patterns, detect gaps,
-                    remove duplicates and visually display top line trends.</p>
-                <p>We will provide you with a Database Analysis and Opportunities Report (DAOR) that acts as a roadmap to unlocking
-                    new revenues.</p>
+                <a class="af-connect__action js-connect-eventbrite">Connect to Eventbrite</a>
+                <p>
+                    You can pull in and analyze all of your audience data at once.
+                </p>
+
+                <h4 class="af-connect__comming-soon">Coming soon: 
+                    <img src="./dist/images/logo/mailchimp-logo.png" alt="MailChimp" title="MailChimp" height="20" />
+                    <img src="./dist/images/logo/salesforce-logo.png" alt="SalesForce" title="SalesForce" height="20" />
+                    <img src="./dist/images/logo/google-drive-logo.png" alt="Google Drive" title="Google Drive" height="20" />
+                </h4>
             </div>
-            <div class="col-md-3 col-sm-6 text-left">
-                <h3>
-                    <i class="fa fa-search-plus fa-pull-left"></i> Enhance</h3>
-                <p>Once your data has been analyzed, AccessFuel enhances your audience data by appending each record with up to 40 key
-                    attributesthat unlock insights and drive new revenues. Turn your raw data into validated “personas” you can use
-                    to sell more tickets, sell more sponsorships and produce better events.</p>
-            </div>
-            <div class="col-md-3 col-sm-6 text-left">
-                <h3>
-                    <i class="fa fa-pie-chart fa-pull-left"></i> Visualize &amp; Unlock Insights</h3>
-                <p>To help you get actionable insights out of your data and assess your event ROI, AccessFuel provides more than 21
-                    “out-of-the-box” visualizations of your event and attendee data including, ticket sales, marketing reports, personas,
-                    audience details and even sponsor insights — all built just for you.</p>
-            </div>
-            <div class="col-md-3 col-sm-6 text-left">
-                <h3>
-                    <i class="fa fa-magnet fa-pull-left"></i> Sponsor Revenue</h3>
-                <p>We'll summarize your audience in a 2 page overview that your sales team can include in your pitch decks. We will
-                    also recommend up to 20 sponsors who are interested in events (and audiences) like yours.</p>
-            </div>
-        </article>
+        </div>
+
+        <hr/>
+
+        <p class="text-center u-margin-v">
+            <img src="/crm/images/modals/enhance-how-it-works.png" width="100%" style="max-width: 960px;" />
+        </p>
+    
     </script>
 
     <!-- Empty Files List Template -->
@@ -451,17 +446,17 @@
     <script id="template-files-list" type="text/x-handlebars-template">
         <article class="animated fadeIn js-files-list-sort">
             <header class="row af-events-list__sort">
-                <div class="col-xs-5 col-lg-7 af-events-list__sort-item js-sort-toggle" data-sort="name">
+                <div class="col-xs-5 af-events-list__sort-item js-sort-toggle" data-sort="name">
                     File / Event Name
                 </div>
-                <div class="col-xs-2 col-lg-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="audience">
+                <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="audience">
                     Audience
                 </div>
-                <div class="col-xs-2 col-lg-1 af-events-list__sort-item af--center js-sort-toggle" data-sort="attributes">
-                    Data Points
+                <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="attributes">
+                    Data Attributes
                 </div>
-                <div class="col-xs-2 col-lg-1 af-events-list__sort-item af--center js-sort-toggle" data-sort="quality">
-                    Quality
+                <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="quality">
+                    Data Health Score
                 </div>
                 <div class="col-xs-1 af-events-list__sort-item af--center" data-sort="quality">
                 </div>
@@ -471,7 +466,7 @@
                     <li class="row af-events-list__item js-sort-item" id="file-{{fileInfo.uuid}}" data-name="{{fileInfo.fileName}}">
                         <!-- <a href="#{{fileInfo.uuid}}" class="af-events-list__item-link" data-uuid="{{fileInfo.uuid}}"> -->
                         <a href="/crm/enhanced.html#{{fileInfo.uuid}}" class="af-events-list__item-link">
-                            <div class="col-xs-5 col-lg-7">
+                            <div class="col-xs-5">
                                 <h3 class="af-events-list__item-title" data-filter="file-name">
                                     <i class="fa fa-file-text-o"></i>
                                     {{fileInfo.fileName}}
@@ -483,12 +478,12 @@
                             </div>
                             <div class="col-xs-2 u-align-center js-file-stats-audiece">
                             </div>
-                            <div class="col-xs-2 col-lg-1 u-align-center js-file-stats-attributes">
+                            <div class="col-xs-2 u-align-center js-file-stats-attributes">
                                 <div class="af-loader u-margin-top-md u-margin-bottom-md">
                                     <i class="fa fa-refresh fa-spin u-color-grey-80"></i>
                                 </div>
                             </div>
-                            <div class="col-xs-2 col-lg-1 u-align-center js-file-stats-quality">
+                            <div class="col-xs-2 u-align-center js-file-stats-quality">
                             </div>
                             <div class="col-xs-1 u-padding-v-md u-align-center af-events-list__item-actions">
                                 <a href="./report.html?{{fileInfo.project_id}}/upload" class="u-color-grey-80" title="View Initial Audience Report">

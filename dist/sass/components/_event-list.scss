@@ -29,10 +29,11 @@
 
     .af-events-list__item-title {
         margin: 0;
-        padding: 0 0 $unit/2;
+        margin: $unit 0;
         overflow: hidden;
 
         color: $grey-10;
+        font-size: 14pt;
         text-overflow: ellipsis;
         white-space: nowrap;
 
@@ -45,18 +46,18 @@
     .af-events-list__item-info {
         margin: 0;
         color: $text-color-med;
-        font-size: $font-size-xxsmall;
+        font-size: $font-size-xsmall;
     }
     .af-events-list__item-value {
         display: block;
-        margin: $unit/3 0;
-        font-size: $font-size;
+        margin: $unit 0;
+        font-size: $font-size-medium;
         line-height: 1;
         text-align: center;
 
         small {
             color: $grey-60;
-            font-size: $font-size-xxsmall;
+            font-size: $font-size-small;
         }
     }
     .af-events-list__item-label {
@@ -67,8 +68,10 @@
     }
     
     .af-events-list__item-actions {
-        font-size: $font-size-large;
+        padding: $unit 0;
+        font-size: $font-size-xlarge;
         line-height: 1;
+        text-align: center;
     }
 
     &.af--compact {
@@ -81,14 +84,14 @@
 }
 
 .af-events-list__sort {
-    margin: -$unit*1.5 0 0;
     background: $grey-95;
 }
 .af-events-list__sort-item {
-    padding-top: $unit;
-    padding-bottom: $unit;
+    padding: $unit*1.5;
+    padding-bottom: $unit*1.5;
 
-    font-size: $font-size-min-caps;
+    font-size: $font-size-xxsmall;
+    line-height: 1.3;
     text-transform: uppercase;
     cursor: pointer;
 

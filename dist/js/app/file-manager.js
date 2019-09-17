@@ -269,7 +269,7 @@ define(function (require) {
                     },
                     quality: {
                         error: !data.stats.quality,
-                        label: 'Data Quality',
+                        label: 'Health Score',
                         pluralize: false,
                         value: data.stats.quality.value,
                         formattedValue: data.stats.quality.formattedValue,

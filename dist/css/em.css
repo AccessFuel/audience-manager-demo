@@ -38,74 +38,77 @@
 /* line 30, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-title {
   margin: 0;
-  padding: 0 0 5px;
+  margin: 10px 0;
   overflow: hidden;
   color: #111;
+  font-size: 14pt;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 39, ../sass/components/_event-list.scss */
+/* line 40, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-title .fa {
   margin-right: 3.33333px;
   font-size: 75%;
   vertical-align: 2px;
 }
-/* line 45, ../sass/components/_event-list.scss */
+/* line 46, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-info {
   margin: 0;
   color: #777;
-  font-size: 8pt;
+  font-size: 9pt;
 }
-/* line 50, ../sass/components/_event-list.scss */
+/* line 51, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-value {
   display: block;
-  margin: 3.33333px 0;
-  font-size: 12pt;
+  margin: 10px 0;
+  font-size: 14pt;
   line-height: 1;
   text-align: center;
 }
-/* line 57, ../sass/components/_event-list.scss */
+/* line 58, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-value small {
   color: #aaa;
-  font-size: 8pt;
+  font-size: 10pt;
 }
-/* line 62, ../sass/components/_event-list.scss */
+/* line 63, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-label {
   display: block;
   font-size: 7pt;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 69, ../sass/components/_event-list.scss */
+/* line 70, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-actions {
-  font-size: 16pt;
+  padding: 10px 0;
+  font-size: 18pt;
   line-height: 1;
+  text-align: center;
 }
-/* line 75, ../sass/components/_event-list.scss */
+/* line 78, ../sass/components/_event-list.scss */
 .af .af-events-list.af--compact .col-xs-3,
 .af .af-events-list.af--compact .col-xs-4,
 .af .af-events-list.af--compact .col-xs-5 {
   padding: 0;
 }
-/* line 83, ../sass/components/_event-list.scss */
+/* line 86, ../sass/components/_event-list.scss */
 .af .af-events-list__sort {
-  margin: -15px 0 0;
   background: #f2f2f2;
 }
-/* line 87, ../sass/components/_event-list.scss */
+/* line 89, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 7pt;
+  padding: 15px;
+  padding-bottom: 15px;
+  font-size: 8pt;
+  line-height: 1.3;
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 95, ../sass/components/_event-list.scss */
+/* line 98, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--active {
   color: #111;
   font-weight: 600;
 }
-/* line 100, ../sass/components/_event-list.scss */
+/* line 103, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--asc:after, .af .af-events-list__sort-item.af--desc:after {
   margin-left: 5px;
   font-family: 'FontAwesome';
@@ -114,15 +117,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 110, ../sass/components/_event-list.scss */
+/* line 113, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--asc:after {
   content: "\f0d8";
 }
-/* line 113, ../sass/components/_event-list.scss */
+/* line 116, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--desc:after {
   content: "\f0d7";
 }
-/* line 117, ../sass/components/_event-list.scss */
+/* line 120, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--center {
   text-align: center;
 }
