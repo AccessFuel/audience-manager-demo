@@ -1,8 +1,9 @@
 define(function (require) {
     var $ = require('jquery');
 
-    // Template scripts
     require('global');
+    require('chart');
+    require('knob');
 
     var Navigation = require('components/navigation');
 

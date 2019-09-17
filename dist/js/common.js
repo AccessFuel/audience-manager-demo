@@ -25,6 +25,7 @@ requirejs.config({
 
         // Data Visualization plugins
         //cssCharts: '../plugins/reports/csscharts/jquery.chart.min',
+        chart: '../plugins/reports/chart/Chart.min',
         highCharts: '../plugins/reports/highcharts/highcharts',
         highMapCore: '../plugins/reports/highcharts/map',
         highMapUS: '../plugins/reports/highcharts/maps/us-all',

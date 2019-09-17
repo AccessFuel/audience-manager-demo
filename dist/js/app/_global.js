@@ -11,6 +11,11 @@ define(function (require) {
     require('inspinia');
     require('slick');
 
+    const $commonLoader = $('<div>', {
+        class: 'af-loader af--page',
+        html: '<i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color" />',
+    });
+
     var _bindConnectEventbride = function() {
         $('body').on('click', '.js-connect-eventbrite', function() {
             swal({
@@ -135,8 +140,7 @@ define(function (require) {
         var $container = $modal.find('.modal-content');
         var $loader = $('<div>', {
             class: 'modal-body',
-            html: '<div class="af-loader af--page"><i class="fa fa-circle-o-notch fa-spin fa-5x af-brand-color" /></div>',
-        });
+        }).append($commonLoader.clone());
 
         $('body').on('click', '[data-target="#remoteModal"][data-content]', function() {
             $container.empty().append($loader);
@@ -163,6 +167,35 @@ define(function (require) {
         });
     }
 
+    var _bindTabs = function() {
+        const showTab = ($tab) => {
+            // Ajax loader
+            if ($tab.data('toggle') === 'ajaxTab') {
+                const loadurl = $tab.attr('href');
+                const target = $tab.data('target');
+                const $target = $(target);
+                
+                // Show loader
+                $target.empty().append($commonLoader.clone());
+                
+                setTimeout(() => $.get(loadurl, function(data) {
+                    $target.html(data);
+                }), 100);
+            }
+
+            $tab.tab('show');
+        }
+
+        $('.nav-tabs a').on('click', function (e) {
+            e.preventDefault();
+            showTab($(this));
+        });
+
+        $('.nav-tabs').each((_, tabset) => {
+            showTab($(tabset).find('.nav-item a').first())
+        });
+    }
+
     var _isLogin = function() {
         if (!State.get('isAuthorized')) {
             window.location.href = "./login.html";
@@ -175,6 +208,7 @@ define(function (require) {
         _bindEnhanceRequest();
         _bindRemoteModal();
         _bindLogout();
+        _bindTabs();
     };
 
     init();

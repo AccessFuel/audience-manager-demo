@@ -1,0 +1,371 @@
+<div class="animated fadeInUp af-color-scheme af--marketing">
+    <p class="u-margin-top-md">
+        <label class="af-switch af--small">
+            <input type="checkbox" class="af-switch__input" checked />
+            <span class="af-switch__knob">
+        </label>
+
+        <small>Send daily summary reports</small>
+    </p>
+
+    <section class="row">
+        <div class="col-sm-3">
+            <aside class="widget af-widget af--data af--marketing" data-widget="daysLeft">
+                <header>
+                    <h2>Days Left</h2>
+                </header>
+                <div class="af-data" data-widget-field="0">0</div>
+                <label><span data-widget-field="1">0</span> Weeks</label>
+                <div class="af-widget__progress" title="29% since marketing capmaigns started">
+                    <span class="af-widget__progress-bar" style="width:29%;"></span>
+                </div>
+            </aside>
+        </div>
+
+        <div class="col-sm-3">
+                <aside class="widget af-widget af--knob af--marketing" data-widget="ticketsSold">
+                    <div class="af-knob af--loading js-knob" data-widget-knob="0" data-knob-format="share" data-knob-label="Tickets Sold"></div>
+            </aside>
+        </div>
+
+        <div class="col-sm-3">
+            <aside class="widget af-widget af--data af--marketing" data-widget="ticketsRevenue">
+                <header>
+                    <h2>Revenue</h2>
+                </header>
+                <div class="af-data af--currency" data-widget-field="0">0</div>
+                <label>From ticket sale</label>
+                <div class="af-widget__progress" title="45% of target revenue ($250k) earned">
+                    <span class="af-widget__progress-bar" style="width:41%;"></span>
+                </div>
+            </aside>
+        </div>
+
+        <div class="col-sm-3">
+            <aside class="widget af-widget af--data af--data-xlarge af--marketing" data-widget="marketingChannels">
+                <h2>Channels</h2>
+                <div class="af-data" data-widget-field="0">0</div>
+                <label>Sources <br/>of tickets distribution</label>
+            </aside>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-md-9">
+            <section class="ibox af-box">
+                <header class="ibox-title af-box__title af--empty"></header>
+                <article class="ibox-content af-stack">
+                    <div class="af-stack__item">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <h2 class="u-margin-bottom-sm">Launch Festival Tickets Sales</h2>
+                                <p><span class="af-brand-color">Actual</span> vs <span class="u-text-pale">Projected</span>: <big class="u-margin-left-md af-brand-color">-8%</big></p>
+                            </div>
+                            <div class="col-sm-3 text-right">
+                                <div class="af-stats af-brand-color af--large u-margin-top-sm">
+                                    <span class="af-stats__value">2,743</span>
+                                    <span class="af-stats__label">Tickets Remaining</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <canvas id="ticketSalesChart" height="200" width="600"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="af-stack__item">
+                        <div class="row af-channels">
+                            <div class="col-sm-9 af-channels__chart">
+                                <h2>Top Distribution Channels</h2>
+                                <ul class="af-channels__list">
+                                    <li class="af-channels__item af--facebook">
+                                        <div class="af-channels__bar" style="width: 100%" title="35% tickets were sold via Facebook with 19% margin.">
+                                            <span class="af-channels__bar-value">815</span>
+                                            <span class="af-channels__bar-label">$40.7k</span>
+                                        </div>
+                                    </li>
+                                    <li class="af-channels__item af--email">
+                                        <div class="af-channels__bar" style="width: 84.417%" title="30% tickets were sold via Email Campaigns with 15% margin.">
+                                            <span class="af-channels__bar-value">688</span>
+                                            <span class="af-channels__bar-label">$34.4k</span>
+                                        </div>
+                                    </li>
+                                    <li class="af-channels__item  af--twitter">
+                                        <div class="af-channels__bar" style="width: 58.037%" title="21% tickets were sold via Twitter with 17% margin.">
+                                            <span class="af-channels__bar-value">473</span>
+                                            <span class="af-channels__bar-label">$23.6k</span>
+                                        </div>
+                                    </li>
+                                    <li class="af-channels__item  af--more">
+                                        <div class="af-channels__bar" style="width: 34.478%" title="12% tickets were sold via other channels with 20% average margin.">
+                                            <span class="af-channels__bar-value">281</span>
+                                            <span class="af-channels__bar-label">$14k</span>
+                                        </div>
+                                        <footer>
+                                            <a href="#">View All</a>
+                                        </footer>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 af-channels__budget">
+                                <h4>Current Budget</h4>
+                                <small>as % of Revenue</small>
+
+                                <ul class="af-channels__list">
+                                    <li class="af-channels__item">19%</li>
+                                    <li class="af-channels__item">15%</li>
+                                    <li class="af-channels__item">17%</li>
+                                    <li class="af-channels__item">20%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="af-stack__item">
+                        <h2 class="u-margin-bottom-sm">Top Influencers on
+                            <a href="#" class="af-select-inline">Twitter</a>
+                        </h2>
+
+                        <ul class="af-profile-cards-list">
+                            <li class="af-profile-card">
+                                <img src="../dist/static/eo/af_img/profiles/sample-marketing-twitter-1@2x.jpg" class="af-profile-card__avatar" alt="" />
+                                <h3 class="af-profile-card__name">Brian Clark</h3>
+                                <div>
+                                    <a href="https://twitter.com/brianclark" target="_blank" class="af-profile-card__link">@brianclark</a>
+                                    <addr class="af-profile-card__address">Boulder, Colorado</addr>
+                                </div>
+
+                                <ul class="af-profile-card__stats">
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Followers</span>
+                                            <span class="af-stats__value">177K</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Referrals</span>
+                                            <span class="af-stats__value">31</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Purchases</span>
+                                            <span class="af-stats__value">0</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <p class="af-profile-card__info">
+                                    Habitual entrepreneur. Host of <a href="http://unemployable.com" target="_blank">http://unemployable.com</a>, founder of <a href="http://copyblogger.com" target="_blank">http://copyblogger.com</a>, curator of <a href="http://further.net" target="_blank">http://further.net</a>, other stuff at the link below.
+                                </p>
+
+                            </li>
+                            <li class="af-profile-card">
+                                <img src="../dist/static/eo/af_img/profiles/sample-marketing-twitter-2@2x.jpg" class="af-profile-card__avatar" alt="" />
+                                <h3 class="af-profile-card__name">Tina Seitzinger</h3>
+                                <div>
+                                    <a href="https://twitter.com/TinaSeitzinger" target="_blank" class="af-profile-card__link">@TinaSeitzinger</a>
+                                    <addr class="af-profile-card__address">East Coast</addr>
+                                </div>
+
+                                <ul class="af-profile-card__stats">
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Followers</span>
+                                            <span class="af-stats__value">11.6K</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Referrals</span>
+                                            <span class="af-stats__value">14</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Purchases</span>
+                                            <span class="af-stats__value">0</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <p class="af-profile-card__info">
+                                    Founder of Life Without Pink - a mom's guide to <a href="https://twitter.com/hashtag/RaisingBoys" target="_blank">#RaisingBoys</a> | Family + Travel + Adventure | Cofounder <a href="https://twitter.com/SpeakMediaLLC" target="_blank">@SpeakMediaLLC</a> + <a href="https://twitter.com/girlslunchout" target="_blank">@girlslunchout</a> | Influencer Specialist
+                                </p>
+                            </li>
+                            <li class="af-profile-card">
+                                <img src="../dist/static/eo/af_img/profiles/sample-marketing-twitter-3@2x.jpg" class="af-profile-card__avatar" alt="" />
+                                <h3 class="af-profile-card__name">The LA Girl</h3>
+
+                                <div>
+                                    <a href="https://twitter.com/thelagirl" target="_blank" class="af-profile-card__link">@thelagirl</a>
+                                    <addr class="af-profile-card__address">Los Angeles, CA</addr>
+                                </div>
+
+                                <ul class="af-profile-card__stats">
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Followers</span>
+                                            <span class="af-stats__value">21.6K</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Referrals</span>
+                                            <span class="af-stats__value">12</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Purchases</span>
+                                            <span class="af-stats__value">0</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <p class="af-profile-card__info">
+                                    Los Angeles blogger &amp; curator of all things LA. I tweet about events, food, fashion, fitness and stuff I love. <a href="https://twitter.com/hashtag/LAMyLove" target="_blank">#LAMyLove</a>
+                                </p>
+                            </li>
+                            <li class="af-profile-card">
+                                <img src="../dist/static/eo/af_img/profiles/sample-marketing-twitter-4@2x.jpg" class="af-profile-card__avatar" alt="" />
+                                <h3 class="af-profile-card__name">Jessica Abelson</h3>
+                                <div>
+                                    <a href="https://twitter.com/JessicaAbelson" target="_blank" class="af-profile-card__link">@JessicaAbelson</a>
+                                    <addr class="af-profile-card__address">San Francisco, CA</addr>
+                                </div>
+
+                                <ul class="af-profile-card__stats">
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Followers</span>
+                                            <span class="af-stats__value">1,956</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Referrals</span>
+                                            <span class="af-stats__value">1</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="af-stats af--social">
+                                            <span class="af-stats__label">Purchases</span>
+                                            <span class="af-stats__value">24</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <p class="af-profile-card__info">
+                                    Associate Product Marketing Manager <a href="https://twitter.com/HipChat" target="_blank">@HipChat</a>. Loves yoga, travel, dogs, puns.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div class="col-md-3">
+            <section class="ibox af-box">
+                <header class="ibox-title af-box__title">
+                    <h2>Connect Apps</h2>
+                </header>
+                <article class="ibox-content">
+                    <div class="af-connect">
+                        <a href="apps.html" class="af-connect__item af--active">
+                            <big>1</big>
+                            <small>Registration</small>
+                        </a>
+                        <a href="apps.html" class="af-connect__item af--inactive">
+                            <big>+</big>
+                            <small>CRM</small>
+                        </a>
+                        <a href="apps.html" class="af-connect__item af--inactive">
+                            <big>+</big>
+                            <small>Surveys</small>
+                        </a>
+                        <a href="apps.html" class="af-connect__item af--active">
+                            <big>3</big>
+                            <small>Social</small>
+                        </a>
+                        <a href="apps.html" class="af-connect__item af--active">
+                            <big>2</big>
+                            <small>Analytics</small>
+                        </a>
+                        <a href="apps.html" class="af-connect__item af--inactive">
+                            <big>+</big>
+                            <small>Email</small>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="ibox af-box">
+                <header class="ibox-title af-box__title">
+                    <h2>Persona Development</h2>
+                </header>
+
+                <ul class="af-box__carousel af-color-scheme__background">
+                    <li class="af-persona-card">
+                        <img src="../dist/static/eo/af_img/profiles/marketing-persona-male@2x.png" class="af-persona-card__avatar" alt="Male, 38 years old" />
+                        <h3 class="af-persona-card__name">Typical Attendee</h3>
+                        <p class="af-persona-card__info">
+                            Male, 38 years<br/>
+                            Business Development<br/>
+                            San Diego, CA
+                        </p>
+                    </li>
+                </ul>
+
+                <footer class="af-box__footer af-box__carousel-controls">
+                    <a href="#" class="af-box__carousel-control af--bullit af--active">1</a>
+                    <a href="#" class="af-box__carousel-control af--bullit">2</a>
+                    <a href="#" class="af-box__carousel-control af--bullit">3</a>
+                    <a href="#" class="af-box__carousel-control af--bullit">4</a>
+                </footer>
+
+            </section>
+
+
+            <section class="ibox af-box">
+                <header class="ibox-title af-box__title">
+                    <h2>2 Marketing Goals</h2>
+                </header>
+                <article class="ibox-content">
+                    <div class="af-goal">
+                        <h3 class="af-goal__progress af-color-scheme__background">
+                            <span class="af-goal__progress-label">5,000 Tickets Sold</span>
+                            <span class="af-goal__progress-bar af-color-scheme__background-dark" style="width:41%;"></span>
+                        </h3>
+                        <p class="af-goal__info">
+                            With 22 weeks left and <strong>45%</strong> of tickets sold we recommend increasing your marketing budget by <strong>10%</strong> to add more twitter and display ad campaigns.
+                        </p>
+                    </div>
+
+                    <div class="af-goal">
+                        <h3 class="af-goal__progress af-color-scheme__background">
+                            <span class="af-goal__progress-label">TA: Enterpreuners</span>
+                            <span class="af-goal__progress-bar af-color-scheme__background-dark" style="width:9%;"></span>
+                        </h3>
+                        <p class="af-goal__info">
+                            Entrepreneurs, Founders and CEO's make up only 9% of your audience. Most of them came through Twitter. Consider focusing on this channel to achieve your audience goal.
+                        </p>
+                    </div>
+                </article>
+                <footer class="af-box__footer text-center">
+                    <a href="#">Manage Campaigns</a>
+                </footer>
+            </section>
+        </div>
+    </section>
+</div>
+
+<script src="./eo/js/global.js"></script>
+<script src="./eo/js/knob.js"></script>
+<script src="./eo/js/widget.js"></script>
+<script src="./eo/js/marketing.js"></script>
+
+
+<script>new MarketingUI();</script>

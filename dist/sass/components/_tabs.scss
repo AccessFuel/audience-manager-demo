@@ -1,0 +1,18 @@
+.af-tabs {
+
+}
+.af-tab-item {
+    font-size: $font-size-large;
+    font-weight: 300;
+}
+
+.af-tabs > .af-tab-item > a {
+    padding: $space $space*2;
+}
+.af-tabs > .af-tab-item > a:hover {
+    color: #4dbc72;
+}
+.af-tabs > .af-tab-item.active > a {
+    color: #4dbc72;
+    font-weight: 600;
+}
