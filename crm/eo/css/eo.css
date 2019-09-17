@@ -2097,11 +2097,13 @@ h2 {
 */
 /* line 7, scss/components/_select.scss */
 .af-select-inline:after {
+  display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   transform: translate(0, 0);
   content: "\f0dd";
+  margin-top: .4em;
   margin-left: .5em;
   font-size: 18px;
   vertical-align: top;
