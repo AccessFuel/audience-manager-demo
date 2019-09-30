@@ -58,36 +58,37 @@ var MarketingUI = (function($, window) {
 
     Controller.prototype.renderTicketSalesChart = function() {
         var lineChartData = {
-            labels : ["May", "June", "July", "August", "September", "October", "November", "December"],
-            datasets : [
-                {
-                    label: "Projected Ticket Sales",
-                    fillColor : "rgba(220,220,220,0.2)",
-                    strokeColor : "rgba(220,220,220, 0.5)",
-                    pointColor : "rgba(220,220,220,0.5)",
-                    pointStrokeColor : "#fff",
-                    pointHighlightFill : "#fff",
-                    pointHighlightStroke : "rgba(220,220,220,1)",
-                    data : [300, 400, 600, 800, 800, 500, 300, 250, 200]
+            type: 'line',
+            data: {
+                labels : ["May", "June", "July", "August", "September", "October", "November", "December"],
+                datasets : [
+                    {
+                        label: "Projected Ticket Sales",
+                        backgroundColor : "rgba(220,220,220,0.2)",
+                        borderColor : "rgba(220,220,220, 0.5)",
+                        pointBackgroundColor : "rgba(220,220,220,.5)",
+                        data : [300, 400, 600, 800, 800, 500, 300, 250, 200]
+                    },
+                    {
+                        label: "Actual Ticket Sales",
+                        backgroundColor : "rgba(223,127,134,0.2)",
+                        borderColor: "rgba(223,127,134,1)",
+                        strokeColor : "rgba(223,127,134,1)",
+                        pointBackgroundColor : "rgba(223,127,134,1)",
+                        data : [170, 310, 447, 890, 440]
+                    }
+                ]
+            },
+            options: {
+                legend: {
+                    display: false,
                 },
-                {
-                    label: "Actual Ticket Sales",
-                    fillColor : "rgba(223,127,134,0.2)",
-                    strokeColor : "rgba(223,127,134,1)",
-                    pointColor : "rgba(223,127,134,1)",
-                    pointStrokeColor : "#fff",
-                    pointHighlightFill : "#fff",
-                    pointHighlightStroke : "rgba(151,187,205,1)",
-                    data : [170, 310, 447, 890, 440]
-                }
-            ]
+                responsive: true,
+            }
         };
 
         var ctx = document.getElementById("ticketSalesChart").getContext("2d");
-
-        setTimeout(() => new Chart(ctx).Line(lineChartData, {
-            responsive: true
-        }), 1000);
+        setTimeout(() => new Chart(ctx, lineChartData));
     }
 
     Controller.prototype.bindHandlers = function() {
