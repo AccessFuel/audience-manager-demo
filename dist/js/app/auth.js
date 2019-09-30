@@ -1,4 +1,4 @@
-var ADMIN_HASH = '557576f2c3cfbe89acdec82616079275b9accbc6e96673ea29ce6ac49a0baa8c';
+var ADMIN_HASH = '433d524d180fe3925d1c2a93cfd45aad2d8edd1b313245554a57b7864eed2005';
 var ADMIN_RECOVERY_HASH = '27c4545ba62da0ade6759bfcdacca48cc84356146487d772aa12af7bf676f925';
 
 define(function (require) {
