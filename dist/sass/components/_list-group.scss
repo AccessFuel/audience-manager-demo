@@ -1,0 +1,26 @@
+/*
+    Flex list group with logo and action
+    ====================================
+*/
+
+.af-list-group__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $space;
+  background: white;
+}
+
+.af-list-group__item > * {
+    width: 100%;
+    margin: 0 2% 0;
+
+    &:first-child {
+        width: auto;
+        margin-left: 0;
+    }
+    &:last-child {
+        width: auto;
+        margin-right: 0;
+    }
+}

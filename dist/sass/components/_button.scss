@@ -12,6 +12,11 @@
 
     color: $brand-dark;
     font-weight: normal;
+    outline: none;
+
+    &:active {
+        transform: translate(1px, 1px);
+    }
 
     &[disabled] {
         pointer-events: none;
@@ -26,9 +31,15 @@
     }
 
     &.af--secondary {
-        background: $brand-dark;
-        border: $brand-dark;
-        color: white;
+        background: $brand-backgroud;
+        border: $brand-backgroud;
+        color: $grey-40;
+
+        &:active {
+            opacity: .7;
+            background: #8bb6b8;
+            color: $grey-30;
+        }
     }
 
     &.af--danger {

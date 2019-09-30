@@ -1356,6 +1356,10 @@ body.stop-scrolling {
   */
   /* .invalid class prevents CSS from automatically applying */
   /*
+      Flex list group with logo and action
+      ====================================
+  */
+  /*
       Loader
       ======
   */
@@ -1512,63 +1516,74 @@ body.stop-scrolling {
   border: solid 1px #E5E5E5;
   color: #2f4050;
   font-weight: normal;
+  outline: none;
 }
-/* line 16, ../sass/components/_button.scss */
+/* line 17, ../sass/components/_button.scss */
+.af .af-button:active {
+  transform: translate(1px, 1px);
+}
+/* line 21, ../sass/components/_button.scss */
 .af .af-button[disabled] {
   pointer-events: none;
   opacity: .33;
 }
-/* line 21, ../sass/components/_button.scss */
+/* line 26, ../sass/components/_button.scss */
 .af .af-button.af--primary {
   background: #4dbc72;
   border-color: #4dbc72;
   color: white;
   font-weight: bold;
 }
-/* line 28, ../sass/components/_button.scss */
+/* line 33, ../sass/components/_button.scss */
 .af .af-button.af--secondary {
-  background: #2f4050;
-  border: #2f4050;
-  color: white;
+  background: #cddfe0;
+  border: #cddfe0;
+  color: #444;
 }
-/* line 34, ../sass/components/_button.scss */
+/* line 38, ../sass/components/_button.scss */
+.af .af-button.af--secondary:active {
+  opacity: .7;
+  background: #8bb6b8;
+  color: #333;
+}
+/* line 45, ../sass/components/_button.scss */
 .af .af-button.af--danger {
   background: #ed5565;
   border-color: #ed5565;
   color: white;
   font-weight: bold;
 }
-/* line 41, ../sass/components/_button.scss */
+/* line 52, ../sass/components/_button.scss */
 .af .af-button.af--blank {
   background: transparent;
   border: none;
   color: inherit;
 }
-/* line 47, ../sass/components/_button.scss */
+/* line 58, ../sass/components/_button.scss */
 .af .af-button.af--wide {
   width: 100%;
 }
-/* line 51, ../sass/components/_button.scss */
+/* line 62, ../sass/components/_button.scss */
 .af .af-button.af--small {
   padding: .25em 1em;
   font-size: 9pt;
 }
-/* line 56, ../sass/components/_button.scss */
+/* line 67, ../sass/components/_button.scss */
 .af .af-button.af--large {
   padding: .5em 2em;
   font-size: 105%;
   font-weight: 500;
 }
-/* line 62, ../sass/components/_button.scss */
+/* line 73, ../sass/components/_button.scss */
 .af .af-button.af--xlarge {
   font-size: 14pt;
   padding: .75em 1em;
 }
-/* line 67, ../sass/components/_button.scss */
+/* line 78, ../sass/components/_button.scss */
 .af .af-button .fa.fa-pull-left {
   margin: .2em .5em 0 0;
 }
-/* line 70, ../sass/components/_button.scss */
+/* line 81, ../sass/components/_button.scss */
 .af .af-button .fa.fa-pull-right {
   margin: .2em 0 0 .5em;
 }
@@ -2551,6 +2566,29 @@ body.stop-scrolling {
 .af.af-fixed-header #page-wrapper {
   padding-top: 64px;
 }
+/* line 6, ../sass/components/_list-group.scss */
+.af .af-list-group__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+}
+/* line 14, ../sass/components/_list-group.scss */
+.af .af-list-group__item > * {
+  width: 100%;
+  margin: 0 2% 0;
+}
+/* line 18, ../sass/components/_list-group.scss */
+.af .af-list-group__item > *:first-child {
+  width: auto;
+  margin-left: 0;
+}
+/* line 22, ../sass/components/_list-group.scss */
+.af .af-list-group__item > *:last-child {
+  width: auto;
+  margin-right: 0;
+}
 /* line 8, ../sass/components/_loader.scss */
 .af .af-loader.af--page {
   padding: 15% 0;
@@ -2675,6 +2713,28 @@ body.stop-scrolling {
   background-size: cover;
   background-attachment: fixed;
 }
+/* line 5, ../sass/components/_modal.scss */
+.af .modal.fade .modal-dialog {
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
+  top: 300px;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 17, ../sass/components/_modal.scss */
+.af .modal.fade.in .modal-dialog {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform: translate3d(0, -300px, 0);
+  transform: translate3d(0, -300px, 0);
+  opacity: 1;
+}
 /* line 27, ../sass/components/_modal.scss */
 .af .modal-header {
   padding: 20px 40px;
@@ -2685,20 +2745,25 @@ body.stop-scrolling {
 .af .modal-header h2,
 .af .modal-header h3,
 .af .modal-header h4 {
-  color: #333;
+  margin: 0 0 .25em;
+  color: #111;
   font-size: 32px;
   font-weight: 400;
 }
-/* line 40, ../sass/components/_modal.scss */
+/* line 41, ../sass/components/_modal.scss */
 .af .modal-header .close {
   opacity: .75;
-  color: #333;
+  color: #111;
   line-height: 32px;
 }
-/* line 45, ../sass/components/_modal.scss */
+/* line 46, ../sass/components/_modal.scss */
 .af .modal-header .close .fa-close:before,
 .af .modal-header .close .fa-close-thin:before {
   content: '\00d7';
+}
+/* line 51, ../sass/components/_modal.scss */
+.af .modal-title a {
+  color: #111;
 }
 /* line 1, ../sass/components/_navigation.scss */
 .af .af-navbar {
