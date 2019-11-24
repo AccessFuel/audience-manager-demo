@@ -222,46 +222,36 @@ img {
     ======================
 */
 /* line 5, ../sass/utils/_typography.scss */
-.u-align-center {
-  text-align: center;
-}
-
-/* line 8, ../sass/utils/_typography.scss */
-.u-align-left {
-  text-align: left;
-}
-
-/* line 11, ../sass/utils/_typography.scss */
 .u-thin {
   font-weight: 300;
 }
 
-/* line 15, ../sass/utils/_typography.scss */
+/* line 9, ../sass/utils/_typography.scss */
 .u-normal {
   font-weight: normal;
 }
 
-/* line 18, ../sass/utils/_typography.scss */
+/* line 12, ../sass/utils/_typography.scss */
 .u-bold {
   font-weight: 600;
 }
 
-/* line 22, ../sass/utils/_typography.scss */
+/* line 16, ../sass/utils/_typography.scss */
 .u-top-align {
   vertical-align: top;
 }
 
-/* line 26, ../sass/utils/_typography.scss */
+/* line 20, ../sass/utils/_typography.scss */
 .u-kill-list {
   list-style: none;
 }
 
-/* line 30, ../sass/utils/_typography.scss */
+/* line 24, ../sass/utils/_typography.scss */
 .u-text-small {
   font-size: 9pt;
 }
 
-/* line 34, ../sass/utils/_typography.scss */
+/* line 28, ../sass/utils/_typography.scss */
 .u-text-medium {
   font-size: 14pt;
 }
@@ -2989,26 +2979,24 @@ body.stop-scrolling {
 /* line 19, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__title {
   margin: 0;
-  font-size: 18pt;
-  font-weight: 300;
   line-height: 1.5;
 }
-/* line 25, ../sass/components/_progress.scss */
+/* line 23, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__title strong {
   display: block;
 }
-/* line 30, ../sass/components/_progress.scss */
+/* line 28, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar {
   position: relative;
   margin: 0;
   font-family: 'Abel', sans-serif;
   text-align: center;
 }
-/* line 38, ../sass/components/_progress.scss */
+/* line 36, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar-input {
   display: none;
 }
-/* line 42, ../sass/components/_progress.scss */
+/* line 40, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar-value {
   position: absolute;
   bottom: 40%;
@@ -3016,13 +3004,13 @@ body.stop-scrolling {
   font-size: 60pt;
   line-height: 1.1;
 }
-/* line 50, ../sass/components/_progress.scss */
+/* line 48, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar-value::after {
   content: '%';
   font-size: 24pt;
   vertical-align: super;
 }
-/* line 57, ../sass/components/_progress.scss */
+/* line 55, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar-label {
   position: absolute;
   bottom: 25%;
@@ -3031,18 +3019,18 @@ body.stop-scrolling {
   font-style: italic;
   font-size: 14pt;
 }
-/* line 67, ../sass/components/_progress.scss */
+/* line 65, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps {
   padding-top: 2em;
   padding-left: 1.5em;
 }
-/* line 71, ../sass/components/_progress.scss */
+/* line 69, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step {
   opacity: .1;
   transition: all 1s .1s;
   font-size: 14pt;
 }
-/* line 77, ../sass/components/_progress.scss */
+/* line 75, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step:before {
   content: '';
   display: inline-block;
@@ -3056,33 +3044,33 @@ body.stop-scrolling {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 94, ../sass/components/_progress.scss */
+/* line 92, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--active {
   opacity: 1;
 }
-/* line 97, ../sass/components/_progress.scss */
+/* line 95, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--active:before {
   background-image: url(../images/misc/uploader/events-loader@2x.gif);
 }
-/* line 102, ../sass/components/_progress.scss */
+/* line 100, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--complete {
   opacity: 1;
   color: #4dbc72;
 }
-/* line 106, ../sass/components/_progress.scss */
+/* line 104, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--complete:before {
   background-image: url(../images/misc/uploader/check@2x.png);
 }
-/* line 111, ../sass/components/_progress.scss */
+/* line 109, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--error {
   opacity: 1;
   color: #ed5565;
 }
-/* line 115, ../sass/components/_progress.scss */
+/* line 113, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--error:before {
   background-image: url(../images/misc/uploader/error@2x.png);
 }
-/* line 125, ../sass/components/_progress.scss */
+/* line 123, ../sass/components/_progress.scss */
 .af .af-progress .af-error {
   padding: 20px 0 0;
   font-size: 10pt;
