@@ -5,17 +5,26 @@
 .af-button {
     display: inline-block;
     @include default-border-radius;
+    margin-bottom: 1em;
     padding: .75em 2em;
 
     background: $grey-95;
     border: solid 1px $border-color-light;
+    border-radius: 4px;
 
-    color: $brand-dark;
+    color: $brand-green-dark;
     font-weight: normal;
     outline: none;
 
+    &:hover {
+        background: rgba($brand-green, .05);
+        border-color: rgba($brand-green, .5);
+    }
+
     &:active {
         transform: translate(1px, 1px);
+        background: rgba($brand-green, .3);
+        border-color: rgba($brand-green, .5);
     }
 
     &[disabled] {
@@ -28,6 +37,10 @@
         border-color: $brand-green;
         color: white;
         font-weight: bold;
+
+        &:hover {
+            background: darken($brand-green, 5%);
+        }
     }
 
     &.af--secondary {

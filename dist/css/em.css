@@ -25,7 +25,7 @@
 }
 /* line 17, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item + .af-events-list__item {
-  border-top: solid 1px #E5E5E5;
+  border-top: solid 1px #d5d5d5;
 }
 /* line 21, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item:hover {
@@ -168,7 +168,7 @@ html {
 /* line 50, ../sass/em.scss */
 #em .af-widget__footer.af--bordered {
   padding-top: 10px;
-  border-top: solid 1px #E5E5E5;
+  border-top: solid 1px #d5d5d5;
 }
 /* line 59, ../sass/em.scss */
 #em .af-summary-widget .col-xs-4:first-child {

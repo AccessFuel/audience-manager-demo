@@ -17,9 +17,9 @@ define(function (require) {
     });
 
     var _bindConnectEventbride = function() {
-        $('body').on('click', '.js-connect-eventbrite', function() {
+        $('body').on('click', '.js-beta', function() {
             swal({
-                title: '<img src="./dist/images/logo/eventbrite-logo.png" alt="Eventbrite" title="Connect to Eventbrite" height="60" /><br/><small>This feature is currently in beta testing mode.</small>',
+                title: '<h3>This feature is currently in beta testing mode.</h3>',
                 text: 'Please contact us if you’d like to participate in our limited group testing initiative and try new features before they are officially released:<br/><br/><big><i class="fa fa-phone"></i> 323 844 3839</big>',
                 html: true,
                 confirmButtonText: "Close",

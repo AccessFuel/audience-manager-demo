@@ -4,30 +4,37 @@
 */
 
 .af-connect {
+    display: flex;
+    align-items: center;
+    padding: 0 5% !important;
 
-    &.af--full {
-        margin: $space*3 $space;
-
-        .af-connect__inner {
-            max-width: 520px;
-            margin: 0 auto;
-        }
+    .af-connect__image {
+        max-width: 250px;
+        width: 33%;
     }
 
-
-    .af-connect__logo {
-        float: left;
-        margin: $space/4 2% 2em 0;
+    .af-connect__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 3%;
+        padding: $space;
     }
 
-    .af-connect__action {
-        display: block;
-        font-size: $font-size-medium;
+    .af-connect__upload {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: stretch;
+        flex-shrink: 0;
+        min-width: 340px;
+        width: 30%;
     }
+}
 
-    .af-connect__comming-soon {
-        margin-top: 1em;
-        opacity: 0.75;
-        font-weight: 500;
+@media (max-width: 1100px) {
+    /* line 661, ../sass/components/_chart.scss */
+    .af-connect .af-connect__image {
+        display: none;
     }
 }

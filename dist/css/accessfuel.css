@@ -22,8 +22,29 @@ body {
 }
 
 /* line 16, ../sass/_default.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444;
+}
+
+/* line 25, ../sass/_default.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 29, ../sass/_default.scss */
+h1 > img {
+  height: 1.5em;
+}
+
+/* line 33, ../sass/_default.scss */
 img {
   image-rendering: crisp-edges;
+  max-width: 100%;
 }
 
 /*
@@ -43,7 +64,7 @@ img {
 
 /* line 16, ../sass/utils/_colors.scss */
 .u-color-grey-80 {
-  color: #ccc;
+  color: #d5d5d5;
 }
 
 /* line 21, ../sass/utils/_colors.scss */
@@ -59,6 +80,15 @@ img {
 /* line 27, ../sass/utils/_colors.scss */
 .af--low {
   color: #ed5565;
+}
+
+/* line 1, ../sass/utils/_flex.scss */
+.u-flex {
+  display: flex;
+}
+/* line 4, ../sass/utils/_flex.scss */
+.u-flex.u--align-center {
+  align-items: center;
 }
 
 /*
@@ -184,7 +214,7 @@ img {
 /* line 94, ../sass/utils/_spacing.scss */
 .u-border-top {
   padding-top: 20px;
-  border-top: solid 1px #E5E5E5;
+  border-top: solid 1px #d5d5d5;
 }
 
 /*
@@ -202,39 +232,40 @@ img {
 }
 
 /* line 11, ../sass/utils/_typography.scss */
+.u-thin {
+  font-weight: 300;
+}
+
+/* line 15, ../sass/utils/_typography.scss */
 .u-normal {
   font-weight: normal;
 }
 
-/* line 14, ../sass/utils/_typography.scss */
+/* line 18, ../sass/utils/_typography.scss */
 .u-bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* line 18, ../sass/utils/_typography.scss */
+/* line 22, ../sass/utils/_typography.scss */
 .u-top-align {
   vertical-align: top;
 }
 
-/* line 22, ../sass/utils/_typography.scss */
+/* line 26, ../sass/utils/_typography.scss */
 .u-kill-list {
   list-style: none;
 }
 
-/* line 26, ../sass/utils/_typography.scss */
+/* line 30, ../sass/utils/_typography.scss */
 .u-text-small {
   font-size: 9pt;
 }
 
-/* line 30, ../sass/utils/_typography.scss */
+/* line 34, ../sass/utils/_typography.scss */
 .u-text-medium {
   font-size: 14pt;
 }
 
-/*
-    Visibility
-    ==========
-*/
 /* line 6, ../js/plugins/sweetalert/dev/sweetalert.scss */
 body.stop-scrolling {
   height: 100%;
@@ -1396,6 +1427,10 @@ body.stop-scrolling {
       ============
   */
   /*
+      Sections
+      ========
+  */
+  /*
       Slick (reports) slider
       ======================
   
@@ -1511,79 +1546,92 @@ body.stop-scrolling {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  margin-bottom: 1em;
   padding: .75em 2em;
   background: #f2f2f2;
-  border: solid 1px #E5E5E5;
-  color: #2f4050;
+  border: solid 1px #d5d5d5;
+  border-radius: 4px;
+  color: #2c9e52;
   font-weight: normal;
   outline: none;
 }
-/* line 17, ../sass/components/_button.scss */
+/* line 19, ../sass/components/_button.scss */
+.af .af-button:hover {
+  background: rgba(77, 188, 114, 0.05);
+  border-color: rgba(77, 188, 114, 0.5);
+}
+/* line 24, ../sass/components/_button.scss */
 .af .af-button:active {
   transform: translate(1px, 1px);
+  background: rgba(77, 188, 114, 0.3);
+  border-color: rgba(77, 188, 114, 0.5);
 }
-/* line 21, ../sass/components/_button.scss */
+/* line 30, ../sass/components/_button.scss */
 .af .af-button[disabled] {
   pointer-events: none;
   opacity: .33;
 }
-/* line 26, ../sass/components/_button.scss */
+/* line 35, ../sass/components/_button.scss */
 .af .af-button.af--primary {
   background: #4dbc72;
   border-color: #4dbc72;
   color: white;
   font-weight: bold;
 }
-/* line 33, ../sass/components/_button.scss */
+/* line 41, ../sass/components/_button.scss */
+.af .af-button.af--primary:hover {
+  background: #41ae66;
+}
+/* line 46, ../sass/components/_button.scss */
 .af .af-button.af--secondary {
   background: #cddfe0;
   border: #cddfe0;
   color: #444;
 }
-/* line 38, ../sass/components/_button.scss */
+/* line 51, ../sass/components/_button.scss */
 .af .af-button.af--secondary:active {
   opacity: .7;
   background: #8bb6b8;
   color: #333;
 }
-/* line 45, ../sass/components/_button.scss */
+/* line 58, ../sass/components/_button.scss */
 .af .af-button.af--danger {
   background: #ed5565;
   border-color: #ed5565;
   color: white;
   font-weight: bold;
 }
-/* line 52, ../sass/components/_button.scss */
+/* line 65, ../sass/components/_button.scss */
 .af .af-button.af--blank {
   background: transparent;
   border: none;
   color: inherit;
 }
-/* line 58, ../sass/components/_button.scss */
+/* line 71, ../sass/components/_button.scss */
 .af .af-button.af--wide {
   width: 100%;
 }
-/* line 62, ../sass/components/_button.scss */
+/* line 75, ../sass/components/_button.scss */
 .af .af-button.af--small {
   padding: .25em 1em;
   font-size: 9pt;
 }
-/* line 67, ../sass/components/_button.scss */
+/* line 80, ../sass/components/_button.scss */
 .af .af-button.af--large {
   padding: .5em 2em;
   font-size: 105%;
   font-weight: 500;
 }
-/* line 73, ../sass/components/_button.scss */
+/* line 86, ../sass/components/_button.scss */
 .af .af-button.af--xlarge {
   font-size: 14pt;
   padding: .75em 1em;
 }
-/* line 78, ../sass/components/_button.scss */
+/* line 91, ../sass/components/_button.scss */
 .af .af-button .fa.fa-pull-left {
   margin: .2em .5em 0 0;
 }
-/* line 81, ../sass/components/_button.scss */
+/* line 94, ../sass/components/_button.scss */
 .af .af-button .fa.fa-pull-right {
   margin: .2em 0 0 .5em;
 }
@@ -2169,30 +2217,44 @@ body.stop-scrolling {
     right: 0;
   }
 }
-/* line 8, ../sass/components/_connect.scss */
-.af .af-connect.af--full {
-  margin: 60px 20px;
+/* line 6, ../sass/components/_connect.scss */
+.af .af-connect {
+  display: flex;
+  align-items: center;
+  padding: 0 5% !important;
 }
 /* line 11, ../sass/components/_connect.scss */
-.af .af-connect.af--full .af-connect__inner {
-  max-width: 520px;
-  margin: 0 auto;
+.af .af-connect .af-connect__image {
+  max-width: 250px;
+  width: 33%;
 }
-/* line 18, ../sass/components/_connect.scss */
-.af .af-connect .af-connect__logo {
-  float: left;
-  margin: 5px 2% 2em 0;
+/* line 16, ../sass/components/_connect.scss */
+.af .af-connect .af-connect__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 3%;
+  padding: 20px;
 }
-/* line 23, ../sass/components/_connect.scss */
-.af .af-connect .af-connect__action {
-  display: block;
-  font-size: 14pt;
+/* line 24, ../sass/components/_connect.scss */
+.af .af-connect .af-connect__upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  min-width: 340px;
+  width: 30%;
 }
-/* line 28, ../sass/components/_connect.scss */
-.af .af-connect .af-connect__comming-soon {
-  margin-top: 1em;
-  opacity: 0.75;
-  font-weight: 500;
+@media (max-width: 1100px) {
+  /* line 19, ../sass/accessfuel.scss */
+  .af {
+    /* line 661, ../sass/components/_chart.scss */
+  }
+  /* line 37, ../sass/components/_connect.scss */
+  .af .af-connect .af-connect__image {
+    display: none;
+  }
 }
 /* line 2, ../sass/components/_connect-services.scss */
 .af .af-connect-services li h4 {
@@ -2272,7 +2334,7 @@ body.stop-scrolling {
 }
 /* line 17, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item + .af-events-list__item {
-  border-top: solid 1px #E5E5E5;
+  border-top: solid 1px #d5d5d5;
 }
 /* line 21, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item:hover {
@@ -2391,7 +2453,7 @@ body.stop-scrolling {
 .af .af-file__summary {
   margin: 40px 0;
   padding: 20px 0;
-  border-top: solid 1px #E5E5E5;
+  border-top: solid 1px #d5d5d5;
 }
 /* line 20, ../sass/components/_file.scss */
 .af .af-file__summary.af--loading {
@@ -2474,7 +2536,7 @@ body.stop-scrolling {
 /* line 15, ../sass/components/_form.scss */
 .af textarea {
   width: 100%;
-  border-color: #E5E5E5;
+  border-color: #d5d5d5;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
 }
 /* line 28, ../sass/components/_form.scss */
@@ -2854,7 +2916,7 @@ body.stop-scrolling {
   padding-left: 4vw;
   margin-top: 120px;
   margin-left: 1vw;
-  border-left: solid 1px #E5E5E5;
+  border-left: solid 1px #d5d5d5;
   font-size: 9pt;
 }
 /* line 13, ../sass/components/_panel.scss */
@@ -2865,7 +2927,7 @@ body.stop-scrolling {
 /* line 17, ../sass/components/_panel.scss */
 .af .af-panel__item + .af-panel__item {
   padding-top: 5vh;
-  border-top: solid 1px #E5E5E5;
+  border-top: solid 1px #d5d5d5;
 }
 /* line 23, ../sass/components/_panel.scss */
 .af .af-panel__item-header {
@@ -3339,7 +3401,7 @@ body.stop-scrolling {
 }
 /* line 51, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__inner.af--hint {
-  border: dotted 1px #ccc;
+  border: dotted 1px #d5d5d5;
   border-radius: 3px;
   background: #fafafa;
 }
@@ -3534,6 +3596,16 @@ body.stop-scrolling {
     margin-bottom: 20px;
   }
 }
+/* line 8, ../sass/components/_section.scss */
+.af .af-section.af--full {
+  margin: 0 -20px;
+  padding: 3em 5%;
+}
+/* line 13, ../sass/components/_section.scss */
+.af .af-section.af--gradient {
+  background: #d4e2ea;
+  background: linear-gradient(90deg, #d4e2ea 0%, #e6f4e6 100%);
+}
 /* line 10, ../sass/components/_slider.scss */
 .af .af-slider .slick-prev,
 .af .af-slider .slick-next {
@@ -3724,36 +3796,38 @@ body.stop-scrolling {
 /* line 6, ../sass/components/_upload.scss */
 .af .af-upload {
   position: relative;
+  padding: 40px 3%;
+  background: rgba(255, 255, 255, 0.75);
 }
-/* line 9, ../sass/components/_upload.scss */
+/* line 11, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__inner {
   min-height: 240px;
   margin: 0 -20px;
   padding: 3em 20px 4em;
   background: #f2f2f2;
-  border-bottom: solid 1px #E5E5E5;
+  border-bottom: solid 1px #d5d5d5;
   font-size: 12pt;
   font-weight: 300;
   text-align: center;
 }
-/* line 22, ../sass/components/_upload.scss */
+/* line 24, ../sass/components/_upload.scss */
 .af .af-upload.af--hidden {
   height: 0;
   max-height: 0;
   overflow: hidden;
 }
-/* line 28, ../sass/components/_upload.scss */
+/* line 30, ../sass/components/_upload.scss */
 .af .af-upload small {
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   opacity: .75;
   font-size: 10pt;
   font-weight: 100;
 }
-/* line 35, ../sass/components/_upload.scss */
+/* line 37, ../sass/components/_upload.scss */
 .af .af-upload strong {
   font-weight: normal;
 }
-/* line 39, ../sass/components/_upload.scss */
+/* line 41, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__overlay,
 .af .af-upload .af-upload__overlay-drop {
   position: absolute;
@@ -3766,7 +3840,7 @@ body.stop-scrolling {
   height: 100%;
   opacity: 0;
 }
-/* line 53, ../sass/components/_upload.scss */
+/* line 55, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__overlay {
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -3774,7 +3848,7 @@ body.stop-scrolling {
   transform: translateZ(0);
   background: #4dbc72;
 }
-/* line 57, ../sass/components/_upload.scss */
+/* line 59, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__overlay-text {
   position: absolute;
   left: 10%;
@@ -3785,13 +3859,13 @@ body.stop-scrolling {
   font-weight: 300;
   text-align: center;
 }
-/* line 69, ../sass/components/_upload.scss */
+/* line 71, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__button {
   position: relative;
   z-index: 10;
   margin: 0 0 10px;
 }
-/* line 78, ../sass/components/_upload.scss */
+/* line 80, ../sass/components/_upload.scss */
 .af .af-upload.af--dropover .af-upload__overlay {
   z-index: 1000;
   position: fixed;
@@ -3799,35 +3873,37 @@ body.stop-scrolling {
   box-shadow: inset 0 0 5em rgba(0, 0, 0, 0.2);
   transition: opacity .5s, box-shadow 2s;
 }
-/* line 89, ../sass/components/_upload.scss */
+/* line 91, ../sass/components/_upload.scss */
 .af .af-upload__sample {
   position: relative;
   z-index: 10;
-  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
   margin: 40px auto 0;
   padding-top: 20px;
   border-top: dashed 1px #bbb;
 }
-/* line 98, ../sass/components/_upload.scss */
+/* line 102, ../sass/components/_upload.scss */
 .af .af-upload__sample .af-upload__sample-file {
   float: left;
   margin: 5px 20px;
   color: #4dbc72;
 }
-/* line 103, ../sass/components/_upload.scss */
+/* line 107, ../sass/components/_upload.scss */
 .af .af-upload__sample .af-upload__sample-file .af-upload__sample-file-icon {
   font-size: 36px;
 }
-/* line 107, ../sass/components/_upload.scss */
+/* line 111, ../sass/components/_upload.scss */
 .af .af-upload__sample .af-upload__sample-file.af--dragging {
   color: white;
 }
-/* line 112, ../sass/components/_upload.scss */
+/* line 116, ../sass/components/_upload.scss */
 .af .af-upload__sample .af-upload__sample-content {
   font-size: 10pt;
   text-align: left;
 }
-/* line 119, ../sass/components/_upload.scss */
+/* line 123, ../sass/components/_upload.scss */
 .af .af-upload__separator {
   position: relative;
   z-index: 10;
@@ -3836,7 +3912,7 @@ body.stop-scrolling {
   margin: -70px auto 20px;
   background: #f2f2f2;
   border-radius: 30px;
-  box-shadow: 0 2px 0px #E5E5E5;
+  box-shadow: 0 2px 0px #d5d5d5;
   color: #aaa;
   font-size: 14pt;
   font-weight: 300;
