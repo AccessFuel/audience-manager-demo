@@ -2,17 +2,15 @@
     Text styling utilities
     ======================
 */
-.u-align-center {
-    text-align: center;
+.u-thin {
+    font-weight: 300;
 }
-.u-align-left {
-    text-align: left;
-}
+
 .u-normal {
     font-weight: normal;
 }
 .u-bold {
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .u-top-align {

@@ -5,6 +5,8 @@
 
 .af-upload {
     position: relative;
+    padding: $space*2 3%;
+    background: rgba(white, .75);
 
     .af-upload__inner {
         min-height: 240px;
@@ -26,7 +28,7 @@
     }
 
     small {
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
         opacity: .75;
         font-size: $font-size-small;
         font-weight: 100;
@@ -89,7 +91,9 @@
 .af-upload__sample {
     position: relative;
     z-index: 10;
-    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
     margin: $space*2 auto 0;
     padding-top: $space;
 

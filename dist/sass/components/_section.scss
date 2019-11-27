@@ -1,0 +1,17 @@
+/*
+    Sections
+    ========
+*/
+
+.af-section {
+
+    &.af--full {
+        margin: 0 -20px;
+        padding: 3em 5%;
+    }
+
+    &.af--gradient {
+        background: rgb(212,226,234);
+        background: linear-gradient(90deg, rgba(212,226,234,1) 0%, rgba(230,244,230,1) 100%);
+    }
+}

@@ -5,9 +5,11 @@ define(function (require) {
     require('chart');
     require('knob');
 
-    var Navigation = require('components/navigation');
+    const Connect = require('components/connectServices');
+    const Navigation = require('components/navigation');
 
    var init = function(timeout = 500) {
+        Connect();
         setTimeout(() => Navigation.navigate('main'), timeout);
     };
 

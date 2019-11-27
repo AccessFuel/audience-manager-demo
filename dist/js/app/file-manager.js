@@ -8,6 +8,7 @@ define(function (require) {
     // ---------
     var AdminAPI = require('adminAPI'),
         EngineAPI = require('engineAPI'),
+        Connect = require('components/connectServices'),
         Error = require('components/error'),
         Filter = require('components/filter'),
         Handlebars = require('handlebars'),
@@ -31,10 +32,6 @@ define(function (require) {
         filesFilters: Handlebars.compile($("#template-files-filters").html()),
         filesList: Handlebars.compile($("#template-files-list").html()),
         progress: Handlebars.compile($("#template-progress").html())
-    };
-
-    var _toggleUploadFormVisibility = function(toggle) {
-        $('.js-upload-form').toggleClass('af--hidden', !toggle);
     };
 
     var _getFileStats = function(projectID) {
@@ -314,7 +311,6 @@ define(function (require) {
         // Sho no files message and upload form
         if (!data || !data.length) {
             Utils.renderTemplate($('#js-file-manager__files'), Templates.filesEmpty, data);
-            _toggleUploadFormVisibility(true);
             Navigation.navigate('files-empty');
             return;
         }
@@ -330,9 +326,6 @@ define(function (require) {
         if (templateData.files.length > 5) {
             Utils.renderTemplate($('#js-file-manager__filters'), Templates.filesFilters, templateData);
         }
-
-        // Hide upload form
-        _toggleUploadFormVisibility(false);
 
         // Init filters
         var $filesList = $('.js-files-list');
@@ -354,9 +347,6 @@ define(function (require) {
         }
 
         var templateData = {
-            title: useSampleDataFile
-                ? 'Copying and Scanning Sample Data File'
-                : 'Uploading and Scanning:',
             fileName: useSampleDataFile
                 ? false
                 : files.name,
@@ -426,6 +416,7 @@ define(function (require) {
         Uploader($('.js-upload-form'), uploadFile);
 
         // Bind event handlers
+        Connect();
         HashNavigation(hashNavigationCallback);
         bindEventHandlers();
     };

@@ -7,9 +7,9 @@
 
 // Utilities
 @import "utils/colors";
+@import "utils/flex";
 @import "utils/spacing";
 @import "utils/typography";
-@import "utils/visibility";
 
 // Plugins
 @import "../js/plugins/sweetalert/dev/sweetalert";
@@ -44,6 +44,7 @@
     @import "components/report-nav";
     @import "components/report-persona";
     @import "components/report-promo";
+    @import "components/section";
     @import "components/slider";
     @import "components/stats-block";
     @import "components/tabs";

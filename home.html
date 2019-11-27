@@ -133,50 +133,81 @@
             </header>
 
             <!-- Upload Form -->
-            <section data-navigation="files-empty, files" hidden>
-                <form class="af-upload js-upload-form">
-                    <div class="af-upload__inner">
-                        <h2 class="u-normal u-promo">What is your Data Health Score?</h2>
-                        <p class="u-margin-bottom-lg">
-                            Accessfuel is a unique platform that combines all of your event data from multiple sources
-                            <br/> and then enables you to
-                            <strong>analyze</strong>,
-                            <strong>enhance</strong> and
-                            <strong>visualize</strong> your audience
-                            <br/> to create a complete view of “Who’s in the room®” and maximize your revenue.
-                        </p>
-                
-                        <button type="button" class="af-button af--primary af-upload__button af--large js-upload-trigger">
-                            <i class="fa fa-cloud-upload fa-pull-left"></i>
-                            Select CSV File to Upload…
-                        </button>
-                
-                        <p class="u-text-small">
-                            You can drag and drop file anywhere on the page
-                        </p>
-                
-                        <div class="af-upload__sample">
-                            <div class="af-upload__sample-file js-sample-file" draggable="true">
-                                <i class="fa fa-file-text af-upload__sample-file-icon"></i>
-                            </div>
-                            <div class="af-upload__sample-content">
-                                <h3 class="u-margin-bottom-sm">Don't have files to upload?</h3>
-                                Drag and drop this sample data file.
+            <section data-navigation="files, files-empty" hidden>
+                <div class="text-center u-margin-bottom u-padding-v-lg">
+                    <h1>
+                        <img src="./dist/images/icons/connect@2x.png" alt="Connect & Unify" /> 
+                        Connect and Unify Your Data
+                    </h1>
+        
+                    <p class="u-thin u-text-medium">
+                        Accessfuel is a unique platform 
+                        that combines all of your event data from multiple sources<br/>
+                        and then enables you to analyze, enhance and visualize your audience<br/>
+                        to create a complete view of “Who’s in the room®”
+                        and maximize you revenue.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Upload Form -->
+            <section data-navigation="files-empty" hidden>
+                <div class="af-section af--full af--gradient">
+                    <div class="af-connect">
+                        <img class="af-connect__image" src="./dist/images/misc/af-omnichannel@2x.png" alt="AccessFuel Omnichannel" />
+
+                        <div class="af-connect__content" >
+                            <h2 class="u-bold">Sync with your favorite apps</h2>
+                            <p class="u-margin-bottom u-thin u-text-medium">
+                                AccessFuel integrates with hundreds of cloud applications 
+                                — and we’re constantly adding more to the list 
+                                so you can count on us to be your single, 
+                                omnichannel audience management platform today and in the future.
+                            </p>
+
+                            <div class="btn-group">
+                                <button type="button" data-toggle="modal" data-target="#remoteModal" data-content="./crm/modals/connect-platforms.html" class="af-button af--primary">
+                                    Connect your data
+                                </button>
+                                <button type="button" class="af-button js-beta">
+                                    Suggest platform
+                                </button>
                             </div>
                         </div>
+
+                        <form class="af-connect__upload af-upload js-upload-form text-center">
+                            <h3>… or upload raw data file</h3>
+                            <button type="button" class="af-button af-upload__button af--large js-upload-trigger">
+                                <i class="fa fa-cloud-upload fa-pull-left"></i>
+                                Select CSV File to Upload…
+                            </button>
+                            <p class="u-text-small">
+                                You can drag and drop file anywhere on the page
+                            </p>
+
+                            <div class="af-upload__sample">
+                                <div class="af-upload__sample-file js-sample-file" draggable="true">
+                                    <i class="fa fa-file-text af-upload__sample-file-icon"></i>
+                                </div>
+                                <div class="af-upload__sample-content">
+                                    <h3 class="u-margin-bottom-sm">Don't have files to upload?</h3>
+                                    Use this sample file to see what you can do.
+                                </div>
+                            </div>
+
+                            <div class="af-upload__overlay">
+                                <p class="af-upload__overlay-text">
+                                    <i class="fa fa-cloud-upload fa-5x"></i>
+                                    <br/> Drop your file here
+                                    <br/>
+                                    <small>Only CSV files accepted for now</small>
+                                </p>
+                                <input type="file" name="file" id="file" class="af-upload__overlay-drop js-upload-target" />
+                                <input type="hidden" name="useSampleDataFile" id="useSampleDataFile" value="false" />
+                            </div>
+                        </form>
                     </div>
-                
-                    <div class="af-upload__overlay">
-                        <p class="af-upload__overlay-text">
-                            <i class="fa fa-cloud-upload fa-5x"></i>
-                            <br/> Drop your file here
-                            <br/>
-                            <small>Only CSV files accepted for now</small>
-                        </p>
-                        <input type="file" name="file" id="file" class="af-upload__overlay-drop js-upload-target" />
-                        <input type="hidden" name="useSampleDataFile" id="useSampleDataFile" value="false" />
-                    </div>
-                </form>
+                </div>
             </section>
 
             <aside id="js-file-manager__progress" class="animated fadeIn" data-navigation="progress" hidden></aside>
@@ -209,7 +240,7 @@
                     </a>
                 </div>
                 <div>
-                    <strong>Copyright</strong> Accessfuel © 2016—2018
+                    Copyright Accessfuel © 2019
                 </div>
             </footer>
         </div>
@@ -244,96 +275,41 @@
     <script id="template-files" type="text/x-handlebars-template">
         <header class="row u-margin-bottom">
             <div class="col-sm-8 col-xs-12">
-                <h2>
+                <h1>
                     <span class="js-files-title-all">
-                        You have
+                        You have connected
                     </span>
                     <span class="js-files-title-filtered" hidden>
-                        Showing
-                        <span class="js-files-title-filtered-count"></span>
-                        of
+                        Showing <span class="js-files-title-filtered-count"></span> of
                     </span>
-                    {{files.length}} user list
+                    {{files.length}} data
                     {{#if_eq files.length 1}}
-                        file.
+                        source.
                     {{else}}
-                        files.
+                        sources.
                     {{/if_eq}}
-                </h2>
-                <p><em>
-                    Upload more files to combine all of your existing data from multiple sources and create a complete view of “who’s in the room®”. We’ll <strong>analyze</strong>, <strong>enhance</strong> and <strong>visualize</strong> your data then so you can make intelligent, data-driven decisions that maximize revenue.
-                </em></p>
+                </h1>
+                <p>
+                    Combine all of your existing data from multiple sources and create a complete view of “who’s in the room®”. We’ll analyze, enhance and visualize your data then so you can make intelligent, data-driven decisions that maximize revenue.
+                </p>
             </div>
     
-            <div class="col-sm-4 col-xs-12 u-align-center">
-                    <div class="btn-group" style="margin-top:-1px; margin-left: -1em;">
-                        <button type="button" data-toggle="dropdown" class="af-button dropdown-toggle" aria-expanded="true">
-                            <i class="fa fa-plug fa-pull-left"></i>
-                            <span class="caret"></span>
-                        </button>
-    
-                        <ul class="af-connect-services dropdown-menu">
-                            <li>
-                                <h4 class="text-center">Connect to…</h4>
-                            </li>
-                            <li class="af-connect-services__item">
-                                <a href="#" class="js-connect-eventbrite">
-                                    <img src="./dist/images/logo/eventbrite-logo.png" alt="Eventbrite" title="Eventbrite" height="16" />
-                                    Eventbrite
-                                </a>
-                            </li>
-                            <li class="af-connect-services__item af--disabled">
-                                <h4>Coming Soon:</h4>
-                            </li>
-                            <li class="af-connect-services__item af--disabled">
-                                <a href="#">
-                                    <img src="./dist/images/logo/mailchimp-logo.png" alt="MailChimp" title="MailChimp" height="16" />MailChimp
-                                </a>
-                            </li>
-                            <li class="af-connect-services__item af--disabled">
-                                <a href="#">
-                                    <img src="./dist/images/logo/salesforce-logo.png" alt="SalesForce" title="SalesForce" height="16" />SalesForce
-                                </a>
-                            </li>
-                            <li class="af-connect-services__item af--disabled">
-                                <a href="#">
-                                    <img src="./dist/images/logo/google-drive-logo.png" alt="Google Drive" title="Google Drive" height="16" />Google Drive
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <button type="button" class="af-button af--primary js-upload-trigger u-margin-top-lg">
-                        <i class="fa fa-cloud-upload fa-pull-left"></i>
-                        Upload Another CSV File…
+            <div class="col-sm-4 col-xs-12 text-right">
+                <div class="btn-group u-margin-top">
+                    <button type="button" data-toggle="modal" data-target="#remoteModal" data-content="./crm/modals/connect-platforms.html" class="af-button af--primary">
+                        Import more data
+                    </button>
+                    <button type="button" class="af-button af-upload__button js-upload-trigger">
+                        Upload File(s)…
                     </button>
                 </div>
+            </div>
         </header>
+        
         <section class="js-files-list">
             <nav id="js-file-manager__filters"></nav>
             <div id="js-file-manager__files-list"></div>
         </section>
-    
-        <hr/>
-
-        <div class="af-connect af--full">
-            <div class="af-connect__inner clearfix">
-                <a class="js-connect-eventbrite">
-                    <img src="./dist/images/logo/eventbrite-logo.png" alt="Eventbrite" title="Eventbrite" height="40" class="af-connect__logo" />
-                </a>
-    
-                <a class="af-connect__action js-connect-eventbrite">Connect to Eventbrite</a>
-                <p>
-                    You can pull in and analyze all of your audience data at once.
-                </p>
-
-                <h4 class="af-connect__comming-soon">Coming soon: 
-                    <img src="./dist/images/logo/mailchimp-logo.png" alt="MailChimp" title="MailChimp" height="20" />
-                    <img src="./dist/images/logo/salesforce-logo.png" alt="SalesForce" title="SalesForce" height="20" />
-                    <img src="./dist/images/logo/google-drive-logo.png" alt="Google Drive" title="Google Drive" height="20" />
-                </h4>
-            </div>
-        </div>
 
         <hr/>
 
@@ -345,33 +321,20 @@
 
     <!-- Empty Files List Template -->
     <script id="template-files-empty" type="text/x-handlebars-template">
-    
-        <p class="af-upload__separator">OR</p>
-    
-        <div class="af-connect af--full">
-            <div class="af-connect__inner clearfix">
-                <a class="js-connect-eventbrite">
-                    <img src="./dist/images/logo/eventbrite-logo.png" alt="Eventbrite" title="Eventbrite" height="40" class="af-connect__logo" />
-                </a>
-    
-                <a class="af-connect__action js-connect-eventbrite">Connect to Eventbrite</a>
-                <p>
-                    You can pull in and analyze all of your audience data at once.
-                </p>
-
-                <h4 class="af-connect__comming-soon">Coming soon: 
-                    <img src="./dist/images/logo/mailchimp-logo.png" alt="MailChimp" title="MailChimp" height="20" />
-                    <img src="./dist/images/logo/salesforce-logo.png" alt="SalesForce" title="SalesForce" height="20" />
-                    <img src="./dist/images/logo/google-drive-logo.png" alt="Google Drive" title="Google Drive" height="20" />
-                </h4>
-            </div>
-        </div>
-    
-        <hr/>
-
         <p class="text-center u-margin-v">
-            <img src="/crm/images/modals/enhance-how-it-works.png" width="100%" style="max-width: 960px;" />
+            <img src="/crm/images/modals/intro-what-we-do.png" width="100%" />
         </p>
+
+        <div class="af-section text-center u-margin-bottom u-margin-top">
+            <h1>Enhance and Visualize it!</h1>
+            <p class="u-text-medium">
+                Once your audience data has been analyzed, AccessFuel enhances your it<br/>
+                by appending each record with dozens of additional attributes that unlock insights and drive new revenues.<br/>
+                Turn your raw data into validated “personas” you can use to sell more tickets,<br/>
+                sell more sponsorships and produce better events.
+            </p>
+        </div>
+        <br/><br/>
     </script>
 
     <!-- Files Filters Template -->
@@ -449,16 +412,16 @@
                                     <span data-filter="file-year">{{formatDate ui.uploadedDate}}</span>
                                 </h6>
                             </div>
-                            <div class="col-xs-2 u-align-center js-file-stats-audiece">
+                            <div class="col-xs-2 text-center js-file-stats-audiece">
                             </div>
-                            <div class="col-xs-2 u-align-center js-file-stats-attributes">
+                            <div class="col-xs-2 text-center js-file-stats-attributes">
                                 <div class="af-loader u-margin-top-md u-margin-bottom-md">
                                     <i class="fa fa-refresh fa-spin u-color-grey-80"></i>
                                 </div>
                             </div>
-                            <div class="col-xs-2 u-align-center js-file-stats-quality">
+                            <div class="col-xs-2 text-center js-file-stats-quality">
                             </div>
-                            <div class="col-xs-1 u-padding-v-md u-align-center af-events-list__item-actions">
+                            <div class="col-xs-1 u-padding-v-md text-center af-events-list__item-actions">
                                 <a href="./report.html?{{fileInfo.project_id}}/upload" class="u-color-grey-80" title="View Initial Audience Report">
                                     <i class="fa fa-pie-chart"></i>
                                 </a>
@@ -479,18 +442,16 @@
     <script id="template-progress" type="text/x-handlebars-template">
         <section class="row af-progress" id="progressCanvas">
             <header class="af-progress__header">
-                <h4 class="af-progress__title">
-                    {{#if icon}}
-                        <i class="fa fa-{{icon}} u-margin-right-md"></i>
-                    {{/if}}
-
-                    {{title}}
-
+                <h1 class="af-progress__title">
+                    <img src="./dist/images/icons/upload@2x.png" alt="Uploading…" /> 
                     {{#if fileName}}
+                        Importing Audience Data:
                         <strong>{{fileName}}</strong>
+                    {{else}}
+                    Importing Audience Data…
                     {{/if}}
-                </h4>
-                <span>Please wait while we analyze your file, clean data and generate initial reports.</span>
+                </h1>
+                <p>Please wait while we analyze your file, clean data and generate initial reports.</p>
             </header>
 
             <div class="col-sm-7">
