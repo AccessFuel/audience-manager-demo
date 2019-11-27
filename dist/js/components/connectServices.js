@@ -1,18 +1,21 @@
 define(function (require) {
+
+    var State = require('state');
+
     const className = 'af-connect-services';
     const containerClassName = 'js-connect-services-ui';
     const logosPath = '/crm/images/logos/';
     const platformsDataUrl = '/dist/static/data/connect-services.json';
-    const storageKey = 'AccessFuel:ConnectedPLatforms';
+    const storageKey = 'platforms';
 
     const getConnectedPlatforms = () => {
-        const connectedPlatformsStorage = localStorage.getItem(storageKey);
+        const connectedPlatformsStorage = State.get(storageKey);
         const connectedPlatforms = connectedPlatformsStorage ? JSON.parse(connectedPlatformsStorage) : [];
         return connectedPlatforms;
     };
 
     const setConnectedPlatforms = (connectedPlatforms) => {
-        const connectedPlatformsStorage = localStorage.setItem(storageKey, JSON.stringify(connectedPlatforms));
+        State.set(storageKey, JSON.stringify(connectedPlatforms));
     };
 
     const toggleConnectedPlatform = (e, platform) => {
@@ -33,6 +36,12 @@ define(function (require) {
             }, () => {
                 connectedPlatforms.splice( $.inArray(platform, connectedPlatforms), 1 );
                 setConnectedPlatforms(connectedPlatforms);
+
+                if (!connectedPlatforms.length) {
+                    State.set('hasFiles', false);
+                    window.location = '/home.html';
+                }
+
                 $('.modal').modal('hide');
                 swal.close();
             });
