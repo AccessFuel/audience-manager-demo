@@ -47,6 +47,11 @@ img {
   max-width: 100%;
 }
 
+/* line 38, ../sass/_default.scss */
+*[hidden] {
+  display: none !important;
+}
+
 /*
     Color styling utilities
     =======================
@@ -2211,14 +2216,15 @@ body.stop-scrolling {
 .af .af-connect {
   display: flex;
   align-items: center;
-  padding: 0 5% !important;
+  max-width: 1280px;
+  margin: -3em auto;
 }
-/* line 11, ../sass/components/_connect.scss */
+/* line 12, ../sass/components/_connect.scss */
 .af .af-connect .af-connect__image {
   max-width: 250px;
   width: 33%;
 }
-/* line 16, ../sass/components/_connect.scss */
+/* line 17, ../sass/components/_connect.scss */
 .af .af-connect .af-connect__content {
   display: flex;
   flex-direction: column;
@@ -2226,7 +2232,7 @@ body.stop-scrolling {
   margin: 0 3%;
   padding: 20px;
 }
-/* line 24, ../sass/components/_connect.scss */
+/* line 25, ../sass/components/_connect.scss */
 .af .af-connect .af-connect__upload {
   display: flex;
   flex-direction: column;
@@ -2241,26 +2247,154 @@ body.stop-scrolling {
   .af {
     /* line 661, ../sass/components/_chart.scss */
   }
-  /* line 37, ../sass/components/_connect.scss */
+  /* line 38, ../sass/components/_connect.scss */
   .af .af-connect .af-connect__image {
     display: none;
   }
 }
 /* line 2, ../sass/components/_connect-services.scss */
-.af .af-connect-services li h4 {
-  margin: 0;
-  padding: 16px 20px 10px;
-  border-top: solid 1px #f2f2f2;
+.af .af-connect-services .af-connect-services__filter {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 0;
+}
+/* line 9, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__filterInput {
+  -webkit-appearance: none;
+  display: block;
+  width: 360px;
+  margin: 0 auto;
+  outline: none;
+  padding: 5px 20px;
+  background-color: #aaa;
+  background-image: url("/crm/images/icons/search.png");
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-size: 12pt;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  font-size: 12pt;
+  transition: background-color 500ms linear;
+}
+/* line 28, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__filterInput:placeholder-shown {
+  background-color: #d5d5d5;
+}
+/* line 31, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__filterInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: .8;
+  color: white;
+  font-style: italic;
+}
+/* line 37, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__filterInput:focus {
+  background-color: #aaa;
+}
+/* line 42, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__category {
+  margin-bottom: 20px;
+}
+/* line 45, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__categoryTitle {
+  margin: 0 5px;
+  font-size: 12pt;
+}
+/* line 50, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms {
+  padding: 0;
+  list-style: none;
+}
+/* line 54, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__item {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 156px;
+  width: 156px;
+  margin: 10px 5px;
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #d5d5d5;
+  vertical-align: top;
   text-align: center;
 }
-/* line 10, ../sass/components/_connect-services.scss */
-.af .af-connect-services .af-connect-services__item.af--disabled {
-  opacity: .5;
-  pointer-events: none;
+/* line 68, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--beta::before {
+  content: "Beta";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #bbb;
+  font-size: 7pt;
+  text-transform: uppercase;
 }
-/* line 15, ../sass/components/_connect-services.scss */
-.af .af-connect-services .af-connect-services__item img {
-  margin-right: 1em;
+/* line 78, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--connected {
+  background: #66c9d8;
+  background: linear-gradient(180deg, #66c9d8 0%, #80c685 100%);
+}
+/* line 82, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--connected::before {
+  content: '';
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  display: block;
+  height: 15%;
+  width: 15%;
+  background: url("/crm/images/icons/check.png") no-repeat center;
+  background-size: contain;
+}
+/* line 94, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--connected .af-connect-services__cta {
+  background: transparent;
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+  color: white;
+}
+/* line 99, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--connected .af-connect-services__cta:hover {
+  background: #ed5565;
+}
+/* line 106, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__cta {
+  -webkit-appearance: none;
+  flex-grow: 0;
+  padding: 1em;
+  width: 100%;
+  background: #f2f2f2;
+  border: none;
+  color: #333;
+  font-size: 10pt;
+  font-weight: 600;
+}
+/* line 117, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__cta:hover {
+  background: #4dbc72;
+  color: white;
+}
+/* line 123, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+/* line 129, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__logo img {
+  max-height: 48px;
+  max-width: 48px;
+  border-radius: 2px;
+}
+/* line 135, ../sass/components/_connect-services.scss */
+.af .af-connect-services .af-connect-services__platforms .af-connect-services__logo:empty {
+  background: url("/crm/images/logos/no-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px;
 }
 /* line 6, ../sass/components/_data.scss */
 .af .af-data output {
@@ -2803,17 +2937,23 @@ body.stop-scrolling {
   font-weight: 400;
 }
 /* line 41, ../sass/components/_modal.scss */
+.af .modal-close,
 .af .modal-header .close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
   opacity: .75;
   color: #111;
   line-height: 32px;
 }
-/* line 46, ../sass/components/_modal.scss */
+/* line 53, ../sass/components/_modal.scss */
+.af .modal-close .fa-close:before,
+.af .modal-close .fa-close-thin:before,
 .af .modal-header .close .fa-close:before,
 .af .modal-header .close .fa-close-thin:before {
   content: '\00d7';
 }
-/* line 51, ../sass/components/_modal.scss */
+/* line 59, ../sass/components/_modal.scss */
 .af .modal-title a {
   color: #111;
 }

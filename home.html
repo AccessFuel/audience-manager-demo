@@ -152,59 +152,61 @@
 
             <!-- Upload Form -->
             <section data-navigation="files-empty" hidden>
-                <div class="af-section af--full af--gradient af-connect">
-                    <img class="af-connect__image" src="./dist/images/misc/af-omnichannel@2x.png" alt="AccessFuel Omnichannel" />
+                <div class="af-section af--full af--gradient">
+                    <div class="af-connect">
+                        <img class="af-connect__image" src="./dist/images/misc/af-omnichannel@2x.png" alt="AccessFuel Omnichannel" />
 
-                    <div class="af-connect__content" >
-                        <h2 class="u-bold">Sync with your favorite apps</h2>
-                        <p class="u-margin-bottom u-thin u-text-medium">
-                            AccessFuel integrates with hundreds of cloud applications 
-                            — and we’re constantly adding more to the list 
-                            so you can count on us to be your single, 
-                            omnichannel audience management platform today and in the future.
-                        </p>
-
-                        <div class="btn-group">
-                            <button type="button" class="af-button af--primary">
-                                Connect your data
-                            </button>
-                            <button type="button" class="af-button js-beta">
-                                Suggest platform
-                            </button>
-                        </div>
-                    </div>
-
-                    <form class="af-connect__upload af-upload js-upload-form text-center">
-                        <h3>… or upload raw data file</h3>
-                        <button type="button" class="af-button af-upload__button af--large js-upload-trigger">
-                            <i class="fa fa-cloud-upload fa-pull-left"></i>
-                            Select CSV File to Upload…
-                        </button>
-                        <p class="u-text-small">
-                            You can drag and drop file anywhere on the page
-                        </p>
-
-                        <div class="af-upload__sample">
-                            <div class="af-upload__sample-file js-sample-file" draggable="true">
-                                <i class="fa fa-file-text af-upload__sample-file-icon"></i>
-                            </div>
-                            <div class="af-upload__sample-content">
-                                <h3 class="u-margin-bottom-sm">Don't have files to upload?</h3>
-                                Use this sample file to see what you can do.
-                            </div>
-                        </div>
-
-                        <div class="af-upload__overlay">
-                            <p class="af-upload__overlay-text">
-                                <i class="fa fa-cloud-upload fa-5x"></i>
-                                <br/> Drop your file here
-                                <br/>
-                                <small>Only CSV files accepted for now</small>
+                        <div class="af-connect__content" >
+                            <h2 class="u-bold">Sync with your favorite apps</h2>
+                            <p class="u-margin-bottom u-thin u-text-medium">
+                                AccessFuel integrates with hundreds of cloud applications 
+                                — and we’re constantly adding more to the list 
+                                so you can count on us to be your single, 
+                                omnichannel audience management platform today and in the future.
                             </p>
-                            <input type="file" name="file" id="file" class="af-upload__overlay-drop js-upload-target" />
-                            <input type="hidden" name="useSampleDataFile" id="useSampleDataFile" value="false" />
+
+                            <div class="btn-group">
+                                <button type="button" data-toggle="modal" data-target="#remoteModal" data-content="./crm/modals/connect-platforms.html" class="af-button af--primary">
+                                    Connect your data
+                                </button>
+                                <button type="button" class="af-button js-beta">
+                                    Suggest platform
+                                </button>
+                            </div>
                         </div>
-                    </form>
+
+                        <form class="af-connect__upload af-upload js-upload-form text-center">
+                            <h3>… or upload raw data file</h3>
+                            <button type="button" class="af-button af-upload__button af--large js-upload-trigger">
+                                <i class="fa fa-cloud-upload fa-pull-left"></i>
+                                Select CSV File to Upload…
+                            </button>
+                            <p class="u-text-small">
+                                You can drag and drop file anywhere on the page
+                            </p>
+
+                            <div class="af-upload__sample">
+                                <div class="af-upload__sample-file js-sample-file" draggable="true">
+                                    <i class="fa fa-file-text af-upload__sample-file-icon"></i>
+                                </div>
+                                <div class="af-upload__sample-content">
+                                    <h3 class="u-margin-bottom-sm">Don't have files to upload?</h3>
+                                    Use this sample file to see what you can do.
+                                </div>
+                            </div>
+
+                            <div class="af-upload__overlay">
+                                <p class="af-upload__overlay-text">
+                                    <i class="fa fa-cloud-upload fa-5x"></i>
+                                    <br/> Drop your file here
+                                    <br/>
+                                    <small>Only CSV files accepted for now</small>
+                                </p>
+                                <input type="file" name="file" id="file" class="af-upload__overlay-drop js-upload-target" />
+                                <input type="hidden" name="useSampleDataFile" id="useSampleDataFile" value="false" />
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
 
@@ -294,8 +296,8 @@
     
             <div class="col-sm-4 col-xs-12 text-right">
                 <div class="btn-group u-margin-top">
-                    <button type="button" class="af-button af--primary">
-                        Connect apps
+                    <button type="button" data-toggle="modal" data-target="#remoteModal" data-content="./crm/modals/connect-platforms.html" class="af-button af--primary">
+                        Import more data
                     </button>
                     <button type="button" class="af-button af-upload__button js-upload-trigger">
                         Upload File(s)…

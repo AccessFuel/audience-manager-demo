@@ -8,6 +8,7 @@ define(function (require) {
     // ---------
     var AdminAPI = require('adminAPI'),
         EngineAPI = require('engineAPI'),
+        Connect = require('components/connectServices'),
         Error = require('components/error'),
         Filter = require('components/filter'),
         Handlebars = require('handlebars'),
@@ -415,6 +416,7 @@ define(function (require) {
         Uploader($('.js-upload-form'), uploadFile);
 
         // Bind event handlers
+        Connect();
         HashNavigation(hashNavigationCallback);
         bindEventHandlers();
     };

@@ -38,14 +38,22 @@
     font-size: 32px;
     font-weight: 400;
 }
+.modal-close,
 .modal-header .close {
+    position: absolute;
+    top: $space;
+    right: $space * 2;
     opacity: .75;
     color: $grey-10;
     line-height: 32px;
 }
-.modal-header .close .fa-close:before,
-.modal-header .close .fa-close-thin:before {
-    content: '\00d7';
+
+.modal-close,
+.modal-header .close {
+    .fa-close:before,
+    .fa-close-thin:before {
+        content: '\00d7';
+    }
 }
 
 .modal-title a {

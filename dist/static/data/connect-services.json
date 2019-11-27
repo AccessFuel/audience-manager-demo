@@ -1,0 +1,62 @@
+{
+    "categories": [
+        {
+            "name": "Social",
+            "type": "social"
+        }, {
+            "name": "Email Campaings",
+            "type": "email"
+        }, {
+            "name": "CRMs",
+            "type": "crm"
+        }, {
+            "name": "Advertisement",
+            "type": "digital"
+        }
+    ],
+    "platforms": [
+        {
+            "name": "Facebook",
+            "type": ["social"],
+            "logo": "facebook.png"
+        }, {
+            "name": "Google AdSense",
+            "type": ["digital"],
+            "logo": "google-adsense.png"
+        }, {
+            "name": "Google Analytics",
+            "type": ["digital"],
+            "logo": "google-analytics.png"
+        }, {
+            "name": "HubSpot",
+            "type": ["crm"],
+            "link": "https://app.hubspot.com/login",
+            "modal": "/crm/modals/auth-hubspot.html",
+            "logo": "hubspot.png"
+        }, {
+            "name": "LinkedIn",
+            "type": ["social"],
+            "logo": "linkedin.png"
+        }, {
+            "name": "MailChimp",
+            "type": ["email"],
+            "link": "https://login.mailchimp.com",
+            "modal": "/crm/modals/auth-mailchimp.html",
+            "logo": "mailchimp.png"
+        }, {
+            "name": "SalesForce",
+            "type": ["crm"],
+            "link": "https://login.salesforce.com",
+            "modal": "/crm/modals/auth-salesforce.html",
+            "logo": "salesforce.png"
+        }, {
+            "name": "Twitter",
+            "type": ["social"],
+            "logo": "twitter.png"
+        }, {
+            "name": "YouTube",
+            "type": ["digital"],
+            "logo": "youtube.png"
+        }
+    ]
+}

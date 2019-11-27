@@ -66,21 +66,28 @@ define(function (require) {
         });
     };
 
-    var _bindSampleFile = function($form) {
+    var _bindSampleFile = ($form) => {
+        var $document = $('html');
+        var $inputUseSampleDataFile = $form.find('#useSampleDataFile');
         var $sampleFileDraggable = $('.js-sample-file');
 
         $sampleFileDraggable
-            .on('dragstart', function(e) {
-                $(this).addClass('af--dragging');
+            .on('dragstart', (e) => {
+                $(e.target).addClass('af--dragging');
                 e.originalEvent.dataTransfer.setData(SAMPLE_FILE_DATA, true);
                 setTimeout(function() {
                     _decorateDragOver($form, true);
                 });
             })
-            .on('dragend', function(e) {
-                $(this).removeClass('af--dragging');
+            .on('dragend', (e) => {
+                $(thie.targets).removeClass('af--dragging');
                 e.originalEvent.dataTransfer.setData(SAMPLE_FILE_DATA, false);
             });
+
+        $document.on('click', '.js-sample-connect', (e) => {
+            $inputUseSampleDataFile.val(true);
+            $form.submit();
+        });
     };
 
     var init = function($form, callback) {
