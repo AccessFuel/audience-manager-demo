@@ -11,6 +11,12 @@ python -m SimpleHTTPServer 8000
 
 You can the access Audience Manager Demo at http://localhost:8000
 
+## Dependencies
+- Bootstrap v3.0.2
+- Handlebars v4.0.5
+- JQuery v2.1.1
+- RequireJS v2.1.22
+
 ## Development
 This demo UI is using Compas Authoring Framework for CSS compilations.
 To setup compass execute:

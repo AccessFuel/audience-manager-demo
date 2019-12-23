@@ -3,6 +3,10 @@
     position: relative;
     min-height: 100%;
     padding-bottom: $space;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 20px $grey-90;
 }
 
 .nav>li {

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Audience Report — Take Action</title>
+    <title>Audience Report — Persona: The Hustler</title>
 
     <!-- include common/_meta -->
     <meta charset="utf-8" />
@@ -19,11 +19,6 @@
     <link href="../dist/css/animate.css" rel="stylesheet">
     <link href="../dist/css/style.min.css" rel="stylesheet">
     <link href="../dist/css/accessfuel.css" rel="stylesheet">
-
-    <!-- EO Pages CSS -->
-    <link href="./eo/css/eo.css" rel="stylesheet" />
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
 </head>
 
 <body class="af top-navigation">
@@ -130,8 +125,8 @@
             <main class="af-main animated fadeIn">
                 <!-- Progress -->
                 <section class="animated fadeInDown">
-                    <a href="./personas.html">
-                        <img src="./images/progress/step-4.png" width="100%"/>
+                    <a href="./enhanced.html">
+                        <img src="./images/progress/step-3.png" width="100%"/>
                     </a>
                 </section>
                 
@@ -142,41 +137,81 @@
                     </div>
                 </section>
 
-                <section class="wrapper-content animated fadeIn" id="js-file-manager__main" data-navigation="main" hidden>
-                    <a href="#" data-toggle="modal" data-target="#remoteModal" data-content="./modals/persona-action.html">
-                        <img src="./images/crm-take-action-summary.png" width="100%"/>
+                <section class="animated fadeIn" id="js-file-manager__main" data-navigation="main" hidden>
+                    <br/>
+                    <a href="./personas.html">
+                        <img src="./images/crm-persona-hustler-title.png" width="100%"/>
                     </a>
 
-                    <div class="af-main wrapper">
-                        <ul class="nav nav-tabs af-tabs">
-                            <li class="nav-item af-tab-item">
-                                <a href="./eo/analytics.html" data-target="#ajaxTab" data-toggle="ajaxTab" rel="tooltip">
-                                    Analytics
-                                </a>
-                            </li>
-                            <li class="nav-item af-tab-item">
-                                <a href="./eo/marketing.html" data-target="#ajaxTab" data-toggle="ajaxTab" rel="tooltip">
-                                    Marketing
-                                </a>
-                            </li>
-                            <li class="nav-item af-tab-item">
-                                <a href="./eo/sponsors.html" data-target="#ajaxTab" data-toggle="ajaxTab" rel="tooltip">
-                                    Sponsors
-                                </a>
-                            </li>
-                            <li class="nav-item af-tab-item">
-                                <a href="./eo/experience.html" data-target="#ajaxTab" data-toggle="ajaxTab" rel="tooltip">
-                                    Experience
-                                </a>
-                            </li>
-                        </ul>
+                    <img src="./images/crm-persona-hustler-details.png" width="100%"/>
+                    <img src="./images/crm-persona-hustler-audience-distribution.png" width="100%"/>
+                    <img src="./images/crm-persona-hustler-performance.png" width="100%"/>
+                    <img src="./images/crm-persona-hustler-content-development-title.png" width="100%"/>
 
-                        <div class="tab-content">
-                            <div class="tab-pane u-padding-v" id="ajaxTab"></div>
+                    <section class="af-main wrapper wrapper-content">
+                        <div class="af-keywords">
+                            <div class="af-keywords-block js-copy-click">
+                                <h3>Interests</h3>
+                                <ul class="af-keywords-list">
+                                    <li>Beyonce</li>
+                                    <li>Jay Z</li>
+                                    <li>Childish Gambino</li> 
+                                    <li>Football</li>
+                                    <li>Premiere League</li>
+                                    <li>Brett Favre</li>
+                                    <li>Chicago Bears</li>
+                                    <li>Bernie Sanders</li>
+                                    <li>Pete Buttigieg</li>
+                                    <li>New York Time</li>
+                                </ul>
+                            </div>
+                            <div class="af-keywords-block js-copy-click">
+                                <h3>Favorite Brands</h3>
+                                <ul class="af-keywords-list">
+                                    <li>Nike</li>
+                                    <li>Addidas</li>
+                                    <li>Apple</li>
+                                    <li>Samsung</li>
+                                    <li>Google</li>
+                                    <li>Playstation</li>
+                                    <li>XBox</li>
+                                    <li>Nintendo</li>
+                                    <li>Lululemon</li>
+                                    <li>Gap</li>
+                                    <li>Zappos</li>
+                                    <li>eBay</li>
+                                    <li>Gucci</li>
+                                    <li>Chanel</li>
+                                    <li>Fitbit</li>
+                                    <li>Netflix</li>
+                                    <li>Hulu</li>
+                                </ul>
+                            </div>
+                            <div class="af-keywords-block js-copy-click">
+                                <h3>Keywords</h3>
+                                <ul class="af-keywords-list">
+                                    <li>Beyonce</li>
+                                    <li>Jay Z</li>
+                                    <li>Childish Gambino</li> 
+                                    <li>Football</li>
+                                    <li>Premiere League</li>
+                                    <li>Brett Favre</li>
+                                    <li>Chicago Bears</li>
+                                    <li>Bernie Sanders</li>
+                                    <li>Pete Buttigieg</li>
+                                    <li>New York Time</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </section>
+
+                    <!-- <a href="#" data-toggle="modal" data-target="#remoteModal" data-content="./modals/persona-action.html"> -->
+                    <a href="./take-action.html"><
+                        <img src="./images/crm-persona-hustler-take-action.png" width="100%"/>
+                    </a>
                 </section>
             </main>
+            <br/><br/>
 
             <!-- Footer -->
             <!-- include common/footer -->
@@ -208,6 +243,8 @@
             </div>
         </div>
     </div>
+    
+
 
     <!-- include common/_scripts -->
     <!-- Core Scripts -->
@@ -216,7 +253,7 @@
     <script>
         requirejs(['../dist/js/common.js'], function (common) {
             requirejs(['app/static'], function (app) {
-                app(1000);
+                app(2000);
             });
         });
     </script>
