@@ -30,6 +30,21 @@ define(function (require) {
         });
     };
 
+    const _bindCopyOnClick = () => $('body')
+        .on('click', '.js-copy-click', function () {
+            const animationClasses = 'animated pulse';
+            const $container = $(this);
+            const $input = $('<input />')
+            const text = $container.text().replace(/[ ]+/g, ' ');
+            $input.val(text).appendTo('body');
+            $input.get(0).select();
+            $input.get(0).setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            $input.remove();
+            $container.addClass(animationClasses);
+            setTimeout(() => $container.removeClass(animationClasses), 300);
+        })
+
     var _bindEnhanceRequest = function() {
         $('body').on('initEnhanceRequest', function() {
             $('.js-enhance-request-form').each(function(_, form) {
@@ -204,6 +219,7 @@ define(function (require) {
 
     var init = function() {
         _isLogin();
+        _bindCopyOnClick();
         _bindConnectEventbride();
         _bindEnhanceRequest();
         _bindRemoteModal();

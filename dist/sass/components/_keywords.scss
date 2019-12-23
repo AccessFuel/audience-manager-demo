@@ -1,0 +1,66 @@
+/*
+    Keywords block with copy feature
+    ================================
+*/
+
+.af-keywords {
+    display: flex;
+    justify-content: space-between;
+}
+
+.af-keywords-block {
+    width: 32%;
+    padding: 1.5em 3%;
+    background: $grey-98;
+    text-align: center;
+    transition: all 1s;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 64px;
+        height: 24px;
+        margin-bottom: -8px;
+        opacity: 0;
+        transition: opacity 1s;
+        background: url(/crm/images/icons/copy.png) no-repeat;
+        background-size: contain;
+    }
+
+    h3 {
+        margin: 1em 0;
+        font-size: $font-size-large;
+    }
+
+    &:hover {
+        background: rgb(224,244,247);
+
+        &::after {
+            opacity: 1;
+        }
+    }
+}
+.af-keywords-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+    font-size: $font-size;
+    line-height: 1.7;
+
+    li {
+        display: inline;
+
+        &::after {
+            content: ', ';
+        }
+
+        &:last-child::after {
+            content: '';
+        }
+
+        &:nth-child(odd) {
+            font-weight: 600;
+        }
+    }
+}
+
