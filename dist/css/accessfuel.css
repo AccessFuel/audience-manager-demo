@@ -9,19 +9,16 @@
     Normalize default styling
     (overwrite style.css)
 */
-/* line 6, ../sass/_default.scss */
 html {
   -webkit-font-smoothing: antialiased;
   min-width: 960px;
 }
 
-/* line 11, ../sass/_default.scss */
 body {
   background: #f2f2f2;
   font-size: 14px;
 }
 
-/* line 16, ../sass/_default.scss */
 h1,
 h2,
 h3,
@@ -31,23 +28,19 @@ h6 {
   color: #444;
 }
 
-/* line 25, ../sass/_default.scss */
 h1 {
   font-size: 36px;
 }
 
-/* line 29, ../sass/_default.scss */
 h1 > img {
   height: 1.5em;
 }
 
-/* line 33, ../sass/_default.scss */
 img {
   image-rendering: crisp-edges;
   max-width: 100%;
 }
 
-/* line 38, ../sass/_default.scss */
 *[hidden] {
   display: none !important;
 }
@@ -56,42 +49,34 @@ img {
     Color styling utilities
     =======================
 */
-/* line 6, ../sass/utils/_colors.scss */
 .u-error-text,
 .u-important-text {
   color: #ed5565;
 }
 
-/* line 11, ../sass/utils/_colors.scss */
 .u-brand-color {
   color: #4dbc72;
 }
 
-/* line 16, ../sass/utils/_colors.scss */
 .u-color-grey-80 {
   color: #d5d5d5;
 }
 
-/* line 21, ../sass/utils/_colors.scss */
 .af--hi {
   color: #4dbc72;
 }
 
-/* line 24, ../sass/utils/_colors.scss */
 .af--med {
   color: #f0ad4e;
 }
 
-/* line 27, ../sass/utils/_colors.scss */
 .af--low {
   color: #ed5565;
 }
 
-/* line 1, ../sass/utils/_flex.scss */
 .u-flex {
   display: flex;
 }
-/* line 4, ../sass/utils/_flex.scss */
 .u-flex.u--align-center {
   align-items: center;
 }
@@ -100,123 +85,100 @@ img {
     Spacing
     =======
 */
-/* line 5, ../sass/utils/_spacing.scss */
 .u-margin-h {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-/* line 9, ../sass/utils/_spacing.scss */
 .u-margin-v {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* line 17, ../sass/utils/_spacing.scss */
 .u-margin-top-0 {
   margin-top: 0;
 }
 
-/* line 20, ../sass/utils/_spacing.scss */
 .u-margin-top-sm {
   margin-top: 4px;
 }
 
-/* line 23, ../sass/utils/_spacing.scss */
 .u-margin-top-md {
   margin-top: 10px;
 }
 
-/* line 26, ../sass/utils/_spacing.scss */
 .u-margin-top {
   margin-top: 20px;
 }
 
-/* line 29, ../sass/utils/_spacing.scss */
 .u-margin-top-lg {
   margin-top: 40px;
 }
 
-/* line 35, ../sass/utils/_spacing.scss */
 .u-margin-bottom-0 {
   margin-bottom: 0;
 }
 
-/* line 38, ../sass/utils/_spacing.scss */
 .u-margin-bottom-sm {
   margin-bottom: 4px;
 }
 
-/* line 41, ../sass/utils/_spacing.scss */
 .u-margin-bottom-md {
   margin-bottom: 10px;
 }
 
-/* line 44, ../sass/utils/_spacing.scss */
 .u-margin-bottom {
   margin-bottom: 20px;
 }
 
-/* line 47, ../sass/utils/_spacing.scss */
 .u-margin-bottom-lg {
   margin-bottom: 40px;
 }
 
-/* line 52, ../sass/utils/_spacing.scss */
 .u-margin-left-sm {
   margin-left: 4px;
 }
 
-/* line 56, ../sass/utils/_spacing.scss */
 .u-margin-left-md {
   margin-left: 10px;
 }
 
-/* line 61, ../sass/utils/_spacing.scss */
 .u-margin-right-md {
   margin-right: 10px;
 }
 
-/* line 64, ../sass/utils/_spacing.scss */
 .u-margin-right {
   margin-right: 20px;
 }
 
-/* line 67, ../sass/utils/_spacing.scss */
 .u-margin-right-lg {
   margin-right: 40px;
 }
 
-/* line 73, ../sass/utils/_spacing.scss */
 .u-padding {
   padding: 20px;
 }
 
-/* line 76, ../sass/utils/_spacing.scss */
 .u-padding-h {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-/* line 80, ../sass/utils/_spacing.scss */
 .u-padding-v {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 84, ../sass/utils/_spacing.scss */
 .u-padding-v-md {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-/* line 88, ../sass/utils/_spacing.scss */
 .u-padding-v-lg {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-/* line 94, ../sass/utils/_spacing.scss */
 .u-border-top {
   padding-top: 20px;
   border-top: solid 1px #d5d5d5;
@@ -226,48 +188,39 @@ img {
     Text styling utilities
     ======================
 */
-/* line 5, ../sass/utils/_typography.scss */
 .u-thin {
   font-weight: 300;
 }
 
-/* line 9, ../sass/utils/_typography.scss */
 .u-normal {
   font-weight: normal;
 }
 
-/* line 12, ../sass/utils/_typography.scss */
 .u-bold {
   font-weight: 600;
 }
 
-/* line 16, ../sass/utils/_typography.scss */
 .u-top-align {
   vertical-align: top;
 }
 
-/* line 20, ../sass/utils/_typography.scss */
 .u-kill-list {
   list-style: none;
 }
 
-/* line 24, ../sass/utils/_typography.scss */
 .u-text-small {
   font-size: 9pt;
 }
 
-/* line 28, ../sass/utils/_typography.scss */
 .u-text-medium {
   font-size: 14pt;
 }
 
-/* line 6, ../js/plugins/sweetalert/dev/sweetalert.scss */
 body.stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
 
-/* line 11, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-overlay {
   background-color: black;
   /* IE8 */
@@ -283,7 +236,6 @@ body.stop-scrolling {
   z-index: 10000;
 }
 
-/* line 26, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert {
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -301,7 +253,6 @@ body.stop-scrolling {
   z-index: 99999;
 }
 @media all and (max-width: 540px) {
-  /* line 26, ../js/plugins/sweetalert/dev/sweetalert.scss */
   .sweet-alert {
     width: auto;
     margin-left: 0;
@@ -310,7 +261,6 @@ body.stop-scrolling {
     right: 15px;
   }
 }
-/* line 56, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert h2 {
   color: #575757;
   font-size: 30px;
@@ -323,7 +273,6 @@ body.stop-scrolling {
   line-height: 40px;
   display: block;
 }
-/* line 69, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert p {
   color: #797979;
   font-size: 16px;
@@ -336,12 +285,10 @@ body.stop-scrolling {
   padding: 0;
   line-height: normal;
 }
-/* line 82, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert fieldset {
   border: none;
   position: relative;
 }
-/* line 87, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-error-container {
   background-color: #f1f1f1;
   margin-left: -17px;
@@ -352,14 +299,12 @@ body.stop-scrolling {
   webkit-transition: padding 0.15s, max-height 0.15s;
   transition: padding 0.15s, max-height 0.15s;
 }
-/* line 96, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-error-container.show {
   padding: 10px 0;
   max-height: 100px;
   webkit-transition: padding 0.2s, max-height 0.2s;
   transition: padding 0.25s, max-height 0.25s;
 }
-/* line 103, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-error-container .icon {
   display: inline-block;
   width: 24px;
@@ -371,11 +316,9 @@ body.stop-scrolling {
   text-align: center;
   margin-right: 3px;
 }
-/* line 114, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-error-container p {
   display: inline-block;
 }
-/* line 119, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-input-error {
   position: absolute;
   top: 29px;
@@ -390,7 +333,6 @@ body.stop-scrolling {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-/* line 132, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-input-error::before, .sweet-alert .sa-input-error::after {
   content: "";
   width: 20px;
@@ -403,23 +345,19 @@ body.stop-scrolling {
   left: 50%;
   margin-left: -9px;
 }
-/* line 144, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-input-error::before {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 148, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-input-error::after {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 152, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-input-error.show {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
-/* line 159, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert input {
   width: 100%;
   box-sizing: border-box;
@@ -435,49 +373,39 @@ body.stop-scrolling {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 173, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert input:focus {
   outline: none;
   box-shadow: 0px 0px 3px #c4e6f5;
   border: 1px solid #b4dbed;
 }
-/* line 177, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert input:focus::-moz-placeholder {
   transition: opacity 0.3s 0.03s ease;
   opacity: 0.5;
 }
-/* line 181, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert input:focus:-ms-input-placeholder {
   transition: opacity 0.3s 0.03s ease;
   opacity: 0.5;
 }
-/* line 185, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert input:focus::-webkit-input-placeholder {
   transition: opacity 0.3s 0.03s ease;
   opacity: 0.5;
 }
-/* line 190, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert input::-moz-placeholder {
   color: #bdbdbd;
 }
-/* line 193, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert input:-ms-input-placeholder {
   color: #bdbdbd;
 }
-/* line 196, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert input::-webkit-input-placeholder {
   color: #bdbdbd;
 }
-/* line 200, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert.show-input input {
   display: block;
 }
-/* line 204, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-confirm-button-container {
   display: inline-block;
   position: relative;
 }
-/* line 209, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .la-ball-fall {
   position: absolute;
   left: 50%;
@@ -487,7 +415,6 @@ body.stop-scrolling {
   opacity: 0;
   visibility: hidden;
 }
-/* line 219, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button {
   background-color: #8CD4F5;
   color: white;
@@ -501,63 +428,49 @@ body.stop-scrolling {
   margin: 26px 5px 0 5px;
   cursor: pointer;
 }
-/* line 234, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button:focus {
   outline: none;
   box-shadow: 0 0 2px rgba(128, 179, 235, 0.5), inset 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
-/* line 238, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button:hover {
   background-color: #7ecff4;
 }
-/* line 241, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button:active {
   background-color: #5dc2f1;
 }
-/* line 244, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button.cancel {
   background-color: #C1C1C1;
 }
-/* line 246, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button.cancel:hover {
   background-color: #b9b9b9;
 }
-/* line 249, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button.cancel:active {
   background-color: #a8a8a8;
 }
-/* line 253, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button.cancel:focus {
   box-shadow: rgba(197, 205, 211, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.04706) 0px 0px 0px 1px inset !important;
 }
-/* line 258, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button[disabled] {
   opacity: .6;
   cursor: default;
 }
-/* line 263, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button.confirm[disabled] {
   color: transparent;
 }
-/* line 265, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button.confirm[disabled] ~ .la-ball-fall {
   opacity: 1;
   visibility: visible;
   transition-delay: 0s;
 }
-/* line 273, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert button::-moz-focus-inner {
   border: 0;
 }
-/* line 279, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert[data-has-cancel-button=false] button {
   box-shadow: none !important;
 }
-/* line 283, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert[data-has-confirm-button=false][data-has-cancel-button=false] {
   padding-bottom: 40px;
 }
-/* line 287, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon {
   width: 80px;
   height: 80px;
@@ -570,16 +483,13 @@ body.stop-scrolling {
   position: relative;
   box-sizing: content-box;
 }
-/* line 304, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-error {
   border-color: #F27474;
 }
-/* line 307, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-error .sa-x-mark {
   position: relative;
   display: block;
 }
-/* line 312, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-error .sa-line {
   position: absolute;
   height: 5px;
@@ -589,23 +499,19 @@ body.stop-scrolling {
   top: 37px;
   border-radius: 2px;
 }
-/* line 321, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-error .sa-line.sa-left {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 17px;
 }
-/* line 326, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-error .sa-line.sa-right {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   right: 16px;
 }
-/* line 333, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-warning {
   border-color: #F8BB86;
 }
-/* line 336, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-warning .sa-body {
   position: absolute;
   width: 5px;
@@ -617,7 +523,6 @@ body.stop-scrolling {
   margin-left: -2px;
   background-color: #F8BB86;
 }
-/* line 347, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-warning .sa-dot {
   position: absolute;
   width: 7px;
@@ -629,11 +534,9 @@ body.stop-scrolling {
   bottom: 10px;
   background-color: #F8BB86;
 }
-/* line 359, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-info {
   border-color: #C9DAE1;
 }
-/* line 362, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-info::before {
   content: "";
   position: absolute;
@@ -645,7 +548,6 @@ body.stop-scrolling {
   margin-left: -2px;
   background-color: #C9DAE1;
 }
-/* line 373, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-info::after {
   content: "";
   position: absolute;
@@ -656,11 +558,9 @@ body.stop-scrolling {
   top: 19px;
   background-color: #C9DAE1;
 }
-/* line 384, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success {
   border-color: #A5DC86;
 }
-/* line 387, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success::before, .sweet-alert .sa-icon.sa-success::after {
   content: '';
   -webkit-border-radius: 40px;
@@ -673,7 +573,6 @@ body.stop-scrolling {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 399, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success::before {
   -webkit-border-radius: 120px 0 0 120px;
   border-radius: 120px 0 0 120px;
@@ -684,7 +583,6 @@ body.stop-scrolling {
   -webkit-transform-origin: 60px 60px;
   transform-origin: 60px 60px;
 }
-/* line 410, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success::after {
   -webkit-border-radius: 0 120px 120px 0;
   border-radius: 0 120px 120px 0;
@@ -695,7 +593,6 @@ body.stop-scrolling {
   -webkit-transform-origin: 0px 60px;
   transform-origin: 0px 60px;
 }
-/* line 422, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success .sa-placeholder {
   width: 80px;
   height: 80px;
@@ -709,7 +606,6 @@ body.stop-scrolling {
   top: -4px;
   z-index: 2;
 }
-/* line 437, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success .sa-fix {
   width: 5px;
   height: 90px;
@@ -721,7 +617,6 @@ body.stop-scrolling {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 451, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success .sa-line {
   height: 5px;
   background-color: #A5DC86;
@@ -730,7 +625,6 @@ body.stop-scrolling {
   position: absolute;
   z-index: 2;
 }
-/* line 460, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success .sa-line.sa-tip {
   width: 25px;
   left: 14px;
@@ -738,7 +632,6 @@ body.stop-scrolling {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 469, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-success .sa-line.sa-long {
   width: 47px;
   right: 8px;
@@ -746,7 +639,6 @@ body.stop-scrolling {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 480, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sweet-alert .sa-icon.sa-custom {
   background-size: contain;
   border-radius: 0;
@@ -878,43 +770,35 @@ body.stop-scrolling {
     top: 70%;
   }
 }
-/* line 541, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .showSweetAlert[data-animation=pop] {
   -webkit-animation: showSweetAlert 0.3s;
   animation: showSweetAlert 0.3s;
 }
-/* line 544, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .showSweetAlert[data-animation=none] {
   -webkit-animation: none;
   animation: none;
 }
-/* line 547, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .showSweetAlert[data-animation=slide-from-top] {
   -webkit-animation: slideFromTop 0.3s;
   animation: slideFromTop 0.3s;
 }
-/* line 550, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .showSweetAlert[data-animation=slide-from-bottom] {
   -webkit-animation: slideFromBottom 0.3s;
   animation: slideFromBottom 0.3s;
 }
 
-/* line 556, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .hideSweetAlert[data-animation=pop] {
   -webkit-animation: hideSweetAlert 0.2s;
   animation: hideSweetAlert 0.2s;
 }
-/* line 559, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .hideSweetAlert[data-animation=none] {
   -webkit-animation: none;
   animation: none;
 }
-/* line 562, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .hideSweetAlert[data-animation=slide-from-top] {
   -webkit-animation: slideToTop 0.4s;
   animation: slideToTop 0.4s;
 }
-/* line 565, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .hideSweetAlert[data-animation=slide-from-bottom] {
   -webkit-animation: slideToBottom 0.3s;
   animation: slideToBottom 0.3s;
@@ -1054,19 +938,16 @@ body.stop-scrolling {
     -webkit-transform: rotate(-405deg);
   }
 }
-/* line 594, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .animateSuccessTip {
   -webkit-animation: animateSuccessTip 0.75s;
   animation: animateSuccessTip 0.75s;
 }
 
-/* line 597, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .animateSuccessLong {
   -webkit-animation: animateSuccessLong 0.75s;
   animation: animateSuccessLong 0.75s;
 }
 
-/* line 600, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .sa-icon.sa-success.animate::after {
   -webkit-animation: rotatePlaceholder 4.25s ease-in;
   animation: rotatePlaceholder 4.25s ease-in;
@@ -1096,7 +977,6 @@ body.stop-scrolling {
     opacity: 1;
   }
 }
-/* line 611, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .animateErrorIcon {
   -webkit-animation: animateErrorIcon 0.5s;
   animation: animateErrorIcon 0.5s;
@@ -1152,7 +1032,6 @@ body.stop-scrolling {
     opacity: 1;
   }
 }
-/* line 620, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .animateXMark {
   -webkit-animation: animateXMark 0.5s;
   animation: animateXMark 0.5s;
@@ -1174,7 +1053,6 @@ body.stop-scrolling {
     border-color: #F8BB86;
   }
 }
-/* line 628, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .pulseWarning {
   -webkit-animation: pulseWarning 0.75s infinite alternate;
   animation: pulseWarning 0.75s infinite alternate;
@@ -1196,7 +1074,6 @@ body.stop-scrolling {
     background-color: #F8BB86;
   }
 }
-/* line 636, ../js/plugins/sweetalert/dev/sweetalert.scss */
 .pulseWarningIns {
   -webkit-animation: pulseWarningIns 0.75s infinite alternate;
   animation: pulseWarningIns 0.75s infinite alternate;
@@ -1219,7 +1096,6 @@ body.stop-scrolling {
   }
 }
 /* Slider */
-/* line 3, ../js/plugins/slick/slick.scss */
 .slick-slider {
   position: relative;
   display: block;
@@ -1236,7 +1112,6 @@ body.stop-scrolling {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 18, ../js/plugins/slick/slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -1244,17 +1119,14 @@ body.stop-scrolling {
   margin: 0;
   padding: 0;
 }
-/* line 25, ../js/plugins/slick/slick.scss */
 .slick-list:focus {
   outline: none;
 }
-/* line 29, ../js/plugins/slick/slick.scss */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
-/* line 34, ../js/plugins/slick/slick.scss */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -1264,71 +1136,57 @@ body.stop-scrolling {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 43, ../js/plugins/slick/slick.scss */
 .slick-track {
   position: relative;
   left: 0;
   top: 0;
   display: block;
 }
-/* line 49, ../js/plugins/slick/slick.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
-/* line 55, ../js/plugins/slick/slick.scss */
 .slick-track:after {
   clear: both;
 }
-/* line 59, ../js/plugins/slick/slick.scss */
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
-/* line 63, ../js/plugins/slick/slick.scss */
 .slick-slide {
   float: left;
   height: 100%;
   min-height: 1px;
   display: none;
 }
-/* line 67, ../js/plugins/slick/slick.scss */
 [dir="rtl"] .slick-slide {
   float: right;
 }
-/* line 70, ../js/plugins/slick/slick.scss */
 .slick-slide img {
   display: block;
 }
-/* line 73, ../js/plugins/slick/slick.scss */
 .slick-slide.slick-loading img {
   display: none;
 }
-/* line 79, ../js/plugins/slick/slick.scss */
 .slick-slide.dragging img {
   pointer-events: none;
 }
-/* line 83, ../js/plugins/slick/slick.scss */
 .slick-initialized .slick-slide {
   display: block;
 }
-/* line 87, ../js/plugins/slick/slick.scss */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
-/* line 91, ../js/plugins/slick/slick.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
 }
 
-/* line 97, ../js/plugins/slick/slick.scss */
 .slick-arrow.slick-hidden {
   display: none;
 }
 
-/* line 19, ../sass/accessfuel.scss */
 .af {
   /* Bootstrap defaults override */
   /* Alert Success */
@@ -1443,7 +1301,6 @@ body.stop-scrolling {
       =========
   */
 }
-/* line 2, ../sass/_overrides.scss */
 .af #wrapper {
   position: relative;
   min-height: 100%;
@@ -1453,11 +1310,9 @@ body.stop-scrolling {
   background: white;
   box-shadow: 0 0 20px #E5E5E5;
 }
-/* line 12, ../sass/_overrides.scss */
 .af .nav > li {
   vertical-align: top;
 }
-/* line 17, ../sass/_overrides.scss */
 .af .alert-success {
   background: #4dbc72;
   border-color: #4dbc72;
@@ -1465,11 +1320,9 @@ body.stop-scrolling {
   font-size: 12pt;
   font-weight: bold;
 }
-/* line 25, ../sass/_overrides.scss */
 .af .alert-success.alert-dismissable .close {
   top: 0;
 }
-/* line 31, ../sass/_overrides.scss */
 .af #intercom-container .intercom-launcher-button {
   margin-bottom: -13px;
   border: none;
@@ -1478,16 +1331,13 @@ body.stop-scrolling {
   background-size: 36px 36px !important;
   box-shadow: none;
 }
-/* line 40, ../sass/_overrides.scss */
 .af input.form-control {
   height: auto;
   user-select: auto;
 }
-/* line 45, ../sass/_overrides.scss */
 .af .clearfix {
   clear: both;
 }
-/* line 5, ../sass/components/_baseline.scss */
 .af .af-baseline {
   max-width: 1400px;
   margin-bottom: 40px;
@@ -1496,54 +1346,43 @@ body.stop-scrolling {
   font-size: 12pt;
   text-align: left;
 }
-/* line 14, ../sass/components/_baseline.scss */
 .af .af-baseline__header {
   display: inline-block;
   width: 100%;
   font-weight: 500;
 }
-/* line 21, ../sass/components/_baseline.scss */
 .af .af-baseline__toggle .af-baseline__toggle-collapsed {
   display: none;
 }
-/* line 24, ../sass/components/_baseline.scss */
 .af .af-baseline__toggle .af-baseline__toggle-expanded {
   display: inline;
 }
-/* line 30, ../sass/components/_baseline.scss */
 .af .af-baseline__toggle.collapsed .af-baseline__toggle-collapsed {
   display: inline;
 }
-/* line 33, ../sass/components/_baseline.scss */
 .af .af-baseline__toggle.collapsed .af-baseline__toggle-expanded {
   display: none;
 }
-/* line 38, ../sass/components/_baseline.scss */
 .af .af-baseline__content {
   margin-top: 10px;
   border-top: solid 1px #E5E5E5;
 }
-/* line 43, ../sass/components/_baseline.scss */
 .af .af-baseline__title {
   margin-top: 20px;
 }
-/* line 47, ../sass/components/_baseline.scss */
 .af .af-baseline__list {
   list-style: decimal;
   margin: 0 0 0 20px;
   padding: 0;
 }
-/* line 52, ../sass/components/_baseline.scss */
 .af .af-baseline__item {
   padding: 5px 0;
   margin-right: 5%;
 }
-/* line 56, ../sass/components/_baseline.scss */
 .af .af-baseline__item .af-report__quality {
   font-size: 10px;
   vertical-align: baseline;
 }
-/* line 5, ../sass/components/_button.scss */
 .af .af-button {
   display: inline-block;
   -moz-border-radius: 2px;
@@ -1558,141 +1397,113 @@ body.stop-scrolling {
   font-weight: normal;
   outline: none;
 }
-/* line 19, ../sass/components/_button.scss */
 .af .af-button:hover {
   background: rgba(77, 188, 114, 0.05);
   border-color: rgba(77, 188, 114, 0.5);
 }
-/* line 24, ../sass/components/_button.scss */
 .af .af-button:active {
   transform: translate(1px, 1px);
   background: rgba(77, 188, 114, 0.3);
   border-color: rgba(77, 188, 114, 0.5);
 }
-/* line 30, ../sass/components/_button.scss */
 .af .af-button[disabled] {
   pointer-events: none;
   opacity: .33;
 }
-/* line 35, ../sass/components/_button.scss */
 .af .af-button.af--primary {
   background: #4dbc72;
   border-color: #4dbc72;
   color: white;
   font-weight: bold;
 }
-/* line 41, ../sass/components/_button.scss */
 .af .af-button.af--primary:hover {
   background: #41ae66;
 }
-/* line 46, ../sass/components/_button.scss */
 .af .af-button.af--secondary {
   background: #cddfe0;
   border: #cddfe0;
   color: #444;
 }
-/* line 51, ../sass/components/_button.scss */
 .af .af-button.af--secondary:active {
   opacity: .7;
   background: #8bb6b8;
   color: #333;
 }
-/* line 58, ../sass/components/_button.scss */
 .af .af-button.af--danger {
   background: #ed5565;
   border-color: #ed5565;
   color: white;
   font-weight: bold;
 }
-/* line 65, ../sass/components/_button.scss */
 .af .af-button.af--blank {
   background: transparent;
   border: none;
   color: inherit;
 }
-/* line 71, ../sass/components/_button.scss */
 .af .af-button.af--wide {
   width: 100%;
 }
-/* line 75, ../sass/components/_button.scss */
 .af .af-button.af--small {
   padding: .25em 1em;
   font-size: 9pt;
 }
-/* line 80, ../sass/components/_button.scss */
 .af .af-button.af--large {
   padding: .5em 2em;
   font-size: 105%;
   font-weight: 500;
 }
-/* line 86, ../sass/components/_button.scss */
 .af .af-button.af--xlarge {
   font-size: 14pt;
   padding: .75em 1em;
 }
-/* line 91, ../sass/components/_button.scss */
 .af .af-button .fa.fa-pull-left {
   margin: .2em .5em 0 0;
 }
-/* line 94, ../sass/components/_button.scss */
 .af .af-button .fa.fa-pull-right {
   margin: .2em 0 0 .5em;
 }
-/* line 6, ../sass/components/_chart.scss */
 .af .af-chart {
   position: absolute;
   font-family: 'Helvetica';
 }
-/* line 10, ../sass/components/_chart.scss */
 .af .af-chart * {
   -webkit-text-size-adjust: none;
   font-size-adjust: none;
 }
-/* line 16, ../sass/components/_chart.scss */
 .af .af-chart__bar {
   padding: 10px 20px;
   background: #4dbc72;
 }
-/* line 21, ../sass/components/_chart.scss */
 .af .af-chart__bar.af--weight-10, .af .af-chart__bar.af--weight-9 {
   background: #4dbc72;
 }
-/* line 26, ../sass/components/_chart.scss */
 .af .af-chart__bar.af--weight-8, .af .af-chart__bar.af--weight-7 {
   background: #60c381;
 }
-/* line 31, ../sass/components/_chart.scss */
 .af .af-chart__bar.af--weight-6, .af .af-chart__bar.af--weight-5 {
   background: #72ca8f;
 }
-/* line 36, ../sass/components/_chart.scss */
 .af .af-chart__bar.af--weight-4, .af .af-chart__bar.af--weight-3 {
   background: #85d19e;
 }
-/* line 41, ../sass/components/_chart.scss */
 .af .af-chart__bar.af--weight-2, .af .af-chart__bar.af--weight-1 {
   background: #97d8ad;
 }
-/* line 46, ../sass/components/_chart.scss */
 .af .af-chart__bar.af--weight-0 {
   display: none !important;
 }
-/* line 51, ../sass/components/_chart.scss */
 .af .af-chart__label,
 .af .af-chart__value {
   padding: 0;
   margin: 0;
   color: #2f4050;
 }
-/* line 58, ../sass/components/_chart.scss */
 .af .af-chart__label {
   font-size: 10pt;
 }
-/* line 61, ../sass/components/_chart.scss */
 .af .af-chart__value {
   font-size: 14pt;
 }
-/* line 68, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal {
   left: 10%;
   right: 10%;
@@ -1702,20 +1513,17 @@ body.stop-scrolling {
   border-right: solid 1px #f2f2f2;
   text-align: right;
 }
-/* line 79, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__bar {
   position: relative;
   clear: right;
   float: right;
   margin: 2px 0;
 }
-/* line 87, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__label,
 .af .af-chart.af--horizontal .af-chart__value {
   position: absolute;
   color: #2f4050;
 }
-/* line 94, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__label {
   top: 50%;
   right: 20px;
@@ -1731,17 +1539,14 @@ body.stop-scrolling {
   vertical-align: top;
   white-space: nowrap;
 }
-/* line 110, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__label.af--medium-text {
   font-size: 10pt;
   line-height: 16pt;
 }
-/* line 114, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__label.af--long-text {
   font-size: 9pt;
   line-height: 16pt;
 }
-/* line 119, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__value {
   right: 100%;
   top: 50%;
@@ -1751,17 +1556,14 @@ body.stop-scrolling {
   line-height: 0;
   vertical-align: middle;
 }
-/* line 132, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__bar.af--weight-4 .af-chart__label {
   font-size: 10pt;
   line-height: 16pt;
 }
-/* line 139, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__bar.af--weight-3 .af-chart__label {
   font-size: 9pt;
   line-height: 16pt;
 }
-/* line 147, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__bar.af--weight-2 .af-chart__label,
 .af .af-chart.af--horizontal .af-chart__bar.af--weight-1 .af-chart__label {
   left: auto;
@@ -1773,17 +1575,14 @@ body.stop-scrolling {
   font-size: 8pt;
   line-height: 12pt;
 }
-/* line 158, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__bar.af--weight-2 .af-chart__label:after,
 .af .af-chart.af--horizontal .af-chart__bar.af--weight-1 .af-chart__label:after {
   content: ':';
 }
-/* line 163, ../sass/components/_chart.scss */
 .af .af-chart.af--horizontal .af-chart__bar.af--weight-2 .af-chart__value,
 .af .af-chart.af--horizontal .af-chart__bar.af--weight-1 .af-chart__value {
   font-size: 12pt;
 }
-/* line 172, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical {
   height: 50%;
   top: 15%;
@@ -1791,7 +1590,6 @@ body.stop-scrolling {
   max-width: 75%;
   white-space: nowrap;
 }
-/* line 180, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical .af-chart__bar {
   position: relative;
   bottom: 0;
@@ -1799,7 +1597,6 @@ body.stop-scrolling {
   padding: 0;
   vertical-align: bottom;
 }
-/* line 189, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical .af-chart__label,
 .af .af-chart.af--vertical .af-chart__value {
   position: absolute;
@@ -1807,44 +1604,36 @@ body.stop-scrolling {
   width: 100%;
   text-align: center;
 }
-/* line 196, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical .af-chart__value {
   margin-bottom: 1em;
 }
-/* line 203, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-1 .af-chart__label,
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-1 .af-chart__value {
   zoom: 10%;
 }
-/* line 210, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-2 .af-chart__label,
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-2 .af-chart__value {
   zoom: 20%;
 }
-/* line 218, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-3 .af-chart__label,
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-3 .af-chart__value, .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-4 .af-chart__label,
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-4 .af-chart__value {
   zoom: 30%;
 }
-/* line 226, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-5 .af-chart__label,
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-5 .af-chart__value, .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-6 .af-chart__label,
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-6 .af-chart__value {
   zoom: 50%;
 }
-/* line 233, ../sass/components/_chart.scss */
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-7 .af-chart__label,
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-7 .af-chart__value, .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-8 .af-chart__label,
 .af .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-8 .af-chart__value {
   zoom: 75%;
 }
-/* line 243, ../sass/components/_chart.scss */
 .af .af-chart.af--age {
   width: 75%;
   right: 12%;
 }
-/* line 247, ../sass/components/_chart.scss */
 .af .af-chart.af--age:before, .af .af-chart.af--age:after {
   content: '';
   position: absolute;
@@ -1854,12 +1643,10 @@ body.stop-scrolling {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 259, ../sass/components/_chart.scss */
 .af .af-chart.af--age:before {
   right: 103%;
   background-image: url("../images/icons/report-age-baby@2x.png");
 }
-/* line 263, ../sass/components/_chart.scss */
 .af .af-chart.af--age:after {
   left: 103%;
   bottom: 0px;
@@ -1868,7 +1655,6 @@ body.stop-scrolling {
   margin-bottom: -8px;
   background-image: url("../images/icons/report-age-old@2x.png");
 }
-/* line 272, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__label {
   bottom: 50%;
   height: auto;
@@ -1876,7 +1662,6 @@ body.stop-scrolling {
   overflow: hidden;
   text-indent: -10000px;
 }
-/* line 281, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__label:after {
   display: block;
   color: white;
@@ -1884,25 +1669,20 @@ body.stop-scrolling {
   text-indent: 0;
   white-space: pre;
 }
-/* line 290, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__value {
   margin-bottom: 0;
   font-size: 18pt;
   font-weight: 100;
 }
-/* line 296, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar {
   border-right: solid 1px white;
 }
-/* line 303, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--weight-1 .af-chart__label, .af .af-chart.af--age .af-chart__bar.af--weight-2 .af-chart__label, .af .af-chart.af--age .af-chart__bar.af--weight-3 .af-chart__label, .af .af-chart.af--age .af-chart__bar.af--weight-4 .af-chart__label {
   display: none;
 }
-/* line 308, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--weight-1 .af-chart__value {
   display: none;
 }
-/* line 313, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar:after {
   position: absolute;
   left: 100%;
@@ -1911,120 +1691,91 @@ body.stop-scrolling {
   margin-top: 5px;
   font-size: 8pt;
 }
-/* line 323, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--0-20:after {
   content: '20';
 }
-/* line 327, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--0-20 .af-chart__label:after {
   content: 'Teens';
 }
-/* line 333, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--13-17:after {
   content: '18';
 }
-/* line 337, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--13-17 .af-chart__label:after {
   content: 'Teens';
 }
-/* line 343, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--20-30:after {
   content: '30';
 }
-/* line 346, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--20-30 .af-chart__label:after {
   content: 'Millennials,\aIn their 20s';
 }
-/* line 352, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--18-24:after {
   content: '25';
 }
-/* line 355, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--18-24 .af-chart__label:after {
   content: 'Millennials,\aIn their early 20s';
 }
-/* line 361, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--25-34:after {
   content: '35';
 }
-/* line 364, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--25-34 .af-chart__label:after {
   content: 'Millennials,\aIn their 30s';
 }
-/* line 370, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--30-40:after {
   content: '40';
 }
-/* line 373, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--30-40 .af-chart__label:after {
   content: 'Millennials,\aIn their 30s';
 }
-/* line 379, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--35-44:after {
   content: '45';
 }
-/* line 382, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--35-44 .af-chart__label:after {
   content: 'Middle age, in their 40s';
 }
-/* line 388, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--40-50:after {
   content: '50';
 }
-/* line 391, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--40-50 .af-chart__label:after {
   content: 'In their 40s';
 }
-/* line 397, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--45-54:after {
   content: '55';
 }
-/* line 400, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--45-54 .af-chart__label:after {
   content: 'In their 50s';
 }
-/* line 406, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--50-60:after {
   content: '60';
 }
-/* line 409, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--50-60 .af-chart__label:after {
   content: 'Millenials';
 }
-/* line 415, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--55-64:after {
   content: '65';
 }
-/* line 418, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--55-64 .af-chart__label:after {
   content: 'Middle age, in their 60s';
 }
-/* line 424, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--60-70:after {
   content: '70+';
   margin-left: 0;
 }
-/* line 428, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--60-70 .af-chart__label:after {
   content: 'In their 60s';
 }
-/* line 434, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--65-75:after {
   content: '75';
 }
-/* line 437, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--65-75 .af-chart__label:after {
   content: 'Aging, in their 70s';
 }
-/* line 443, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--70 .af-chart__label:after {
   content: 'In their 70s';
 }
-/* line 449, ../sass/components/_chart.scss */
 .af .af-chart.af--age .af-chart__bar.af--75 .af-chart__label:after {
   content: 'Aging';
 }
-/* line 458, ../sass/components/_chart.scss */
 .af .af-chart.af--gender {
   bottom: 0;
   top: 20%;
@@ -2033,11 +1784,9 @@ body.stop-scrolling {
   width: 45%;
   min-width: 250px;
 }
-/* line 467, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__bar {
   margin: 0 1px;
 }
-/* line 470, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__bar:before {
   content: '';
   position: absolute;
@@ -2051,7 +1800,6 @@ body.stop-scrolling {
   background-position: center bottom;
   background-size: contain;
 }
-/* line 488, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__label,
 .af .af-chart.af--gender .af-chart__value {
   left: 45%;
@@ -2059,61 +1807,48 @@ body.stop-scrolling {
   width: auto;
   text-align: left;
 }
-/* line 497, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__label {
   margin-bottom: .25em;
   font-size: 16pt;
   text-transform: capitalize;
 }
-/* line 502, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__value {
   margin-bottom: 1em;
   font-size: 24pt;
   font-weight: 600;
 }
-/* line 509, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__bar.af--female {
   background: #ed66cf;
 }
-/* line 512, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__bar.af--female:before {
   background-image: url(../images/icons/report-gender-female@2x.png);
 }
-/* line 516, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__bar.af--female .af-chart__label,
 .af .af-chart.af--gender .af-chart__bar.af--female .af-chart__value {
   color: #ed66cf;
 }
-/* line 522, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__bar.af--male {
   background: #43b8c8;
 }
-/* line 525, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__bar.af--male:before {
   background-image: url(../images/icons/report-gender-male@2x.png);
 }
-/* line 529, ../sass/components/_chart.scss */
 .af .af-chart.af--gender .af-chart__bar.af--male .af-chart__label,
 .af .af-chart.af--gender .af-chart__bar.af--male .af-chart__value {
   color: #43b8c8;
 }
-/* line 539, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter {
   width: 75%;
 }
-/* line 542, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar {
   border-right: solid 1px white;
 }
-/* line 545, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar .af-chart__label {
   display: none;
 }
-/* line 549, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar .af-chart__value {
   margin-bottom: 0;
 }
-/* line 554, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar:before, .af .af-chart.af--twitter .af-chart__bar:after {
   position: absolute;
   left: 100%;
@@ -2122,73 +1857,57 @@ body.stop-scrolling {
   margin-top: 5px;
   font-size: 8pt;
 }
-/* line 565, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar:before {
   left: auto;
   right: 70%;
 }
-/* line 570, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--0-10 {
   width: 3% !important;
   background-color: #deedf8;
 }
-/* line 574, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--0-10:before {
   content: 'Followers:';
 }
-/* line 578, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--0-10:after {
   content: '10';
 }
-/* line 582, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--0-10 .af-chart__value {
   zoom: 25%;
 }
-/* line 587, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--10-100 {
   width: 7% !important;
   background-color: #cae2f3;
 }
-/* line 591, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--10-100:after {
   content: '100';
 }
-/* line 595, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--10-100 .af-chart__value {
   zoom: 50%;
 }
-/* line 600, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--100-1000 {
   width: 15% !important;
   background-color: #b5d7ee;
 }
-/* line 604, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--100-1000:after {
   content: '1K';
 }
-/* line 608, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--100-1000 .af-chart__value {
   zoom: 75%;
 }
-/* line 613, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--1000-10000 {
   width: 25% !important;
   background-color: #8bc0e5;
 }
-/* line 617, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--1000-10000:after {
   content: '10K';
 }
-/* line 621, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--1000-10000 .af-chart__value {
   zoom: 100%;
 }
-/* line 625, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--10000 {
   width: 50% !important;
   background-color: #62aadb;
 }
-/* line 629, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--10000 .af-chart__value {
   width: 100%;
   padding-top: 25%;
@@ -2199,7 +1918,6 @@ body.stop-scrolling {
   font-size: 18pt;
   line-height: 1;
 }
-/* line 641, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--10000 .af-chart__value:after {
   content: 'Influential';
   display: block;
@@ -2207,7 +1925,6 @@ body.stop-scrolling {
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 650, ../sass/components/_chart.scss */
 .af .af-chart.af--twitter .af-chart__bar.af--10000:after {
   content: 'Highly Influential';
   left: auto;
@@ -2215,24 +1932,20 @@ body.stop-scrolling {
   margin-right: .5em;
 }
 @media (max-width: 640px) {
-  /* line 661, ../sass/components/_chart.scss */
   .af .af-chart.af--horizontal {
     right: 0;
   }
 }
-/* line 6, ../sass/components/_connect.scss */
 .af .af-connect {
   display: flex;
   align-items: center;
   max-width: 1280px;
   margin: -3em auto;
 }
-/* line 12, ../sass/components/_connect.scss */
 .af .af-connect .af-connect__image {
   max-width: 250px;
   width: 33%;
 }
-/* line 17, ../sass/components/_connect.scss */
 .af .af-connect .af-connect__content {
   display: flex;
   flex-direction: column;
@@ -2240,7 +1953,6 @@ body.stop-scrolling {
   margin: 0 3%;
   padding: 20px;
 }
-/* line 25, ../sass/components/_connect.scss */
 .af .af-connect .af-connect__upload {
   display: flex;
   flex-direction: column;
@@ -2251,23 +1963,19 @@ body.stop-scrolling {
   width: 30%;
 }
 @media (max-width: 1100px) {
-  /* line 19, ../sass/accessfuel.scss */
   .af {
     /* line 661, ../sass/components/_chart.scss */
   }
-  /* line 38, ../sass/components/_connect.scss */
   .af .af-connect .af-connect__image {
     display: none;
   }
 }
-/* line 2, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__filter {
   display: inline-block;
   width: 100%;
   margin: 0 0 20px;
   padding: 10px 0;
 }
-/* line 9, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__filterInput {
   -webkit-appearance: none;
   display: block;
@@ -2286,36 +1994,29 @@ body.stop-scrolling {
   font-size: 12pt;
   transition: background-color 500ms linear;
 }
-/* line 28, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__filterInput:placeholder-shown {
   background-color: #d5d5d5;
 }
-/* line 31, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__filterInput::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   opacity: .8;
   color: white;
   font-style: italic;
 }
-/* line 37, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__filterInput:focus {
   background-color: #aaa;
 }
-/* line 42, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__category {
   margin-bottom: 20px;
 }
-/* line 45, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__categoryTitle {
   margin: 0 5px;
   font-size: 12pt;
 }
-/* line 50, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms {
   padding: 0;
   list-style: none;
 }
-/* line 54, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__item {
   position: relative;
   display: inline-flex;
@@ -2330,7 +2031,6 @@ body.stop-scrolling {
   vertical-align: top;
   text-align: center;
 }
-/* line 68, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--beta::before {
   content: "Beta";
   position: absolute;
@@ -2340,12 +2040,10 @@ body.stop-scrolling {
   font-size: 7pt;
   text-transform: uppercase;
 }
-/* line 78, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--connected {
   background: #66c9d8;
   background: linear-gradient(180deg, #66c9d8 0%, #80c685 100%);
 }
-/* line 82, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--connected::before {
   content: '';
   position: absolute;
@@ -2357,17 +2055,14 @@ body.stop-scrolling {
   background: url("/crm/images/icons/check.png") no-repeat center;
   background-size: contain;
 }
-/* line 94, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--connected .af-connect-services__cta {
   background: transparent;
   border-top: solid 1px rgba(255, 255, 255, 0.2);
   color: white;
 }
-/* line 99, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__item.af--connected .af-connect-services__cta:hover {
   background: #ed5565;
 }
-/* line 106, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__cta {
   -webkit-appearance: none;
   flex-grow: 0;
@@ -2379,104 +2074,84 @@ body.stop-scrolling {
   font-size: 10pt;
   font-weight: 600;
 }
-/* line 117, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__cta:hover {
   background: #4dbc72;
   color: white;
 }
-/* line 123, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__logo {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
-/* line 129, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__logo img {
   max-height: 48px;
   max-width: 48px;
   border-radius: 2px;
 }
-/* line 135, ../sass/components/_connect-services.scss */
 .af .af-connect-services .af-connect-services__platforms .af-connect-services__logo:empty {
   background: url("/crm/images/logos/no-logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 48px;
 }
-/* line 6, ../sass/components/_data.scss */
 .af .af-data output {
   font-size: 10pt;
   font-weight: 600;
 }
-/* line 11, ../sass/components/_data.scss */
 .af .af-data label {
   margin-top: .5em;
   font-size: 9pt;
   font-weight: 300;
 }
-/* line 17, ../sass/components/_data.scss */
 .af .af-data small {
   font-size: 8pt;
   font-weight: 300;
 }
-/* line 10, ../sass/components/_data-table.scss */
 .af .af-data-table td {
   padding: 20px 10px;
   vertical-align: middle;
 }
-/* line 14, ../sass/components/_data-table.scss */
 .af .af-data-table td h4 {
   margin: 0 0 .5em;
 }
-/* line 18, ../sass/components/_data-table.scss */
 .af .af-data-table td h6 {
   margin: 1em 0 0;
 }
-/* line 24, ../sass/components/_data-table.scss */
 .af .af-data-table__status--Processing {
   opacity: .5;
 }
-/* line 5, ../sass/components/_error.scss */
 .af .af-error {
   padding: 15% 20px 5%;
   color: #ed5565;
 }
 @media (max-width: 480px) {
-  /* line 11, ../sass/components/_error.scss */
   .af .af-error {
     padding-top: 35%;
   }
 }
-/* line 17, ../sass/components/_error.scss */
 .af .af-error-message {
   color: #ed5565;
 }
-/* line 7, ../sass/components/_event-list.scss */
 .af .af-events-list {
   list-style: none;
   margin: 0 -15px;
   padding: 0;
 }
-/* line 12, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item {
   position: relative;
   margin: 0;
   padding: 20px 0;
 }
-/* line 17, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item + .af-events-list__item {
   border-top: solid 1px #d5d5d5;
 }
-/* line 21, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item:hover {
   background: rgba(77, 188, 114, 0.05);
 }
-/* line 26, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-link {
   color: inherit;
 }
-/* line 30, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-title {
   margin: 0;
   margin: 10px 0;
@@ -2486,19 +2161,16 @@ body.stop-scrolling {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 40, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-title .fa {
   margin-right: 3.33333px;
   font-size: 75%;
   vertical-align: 2px;
 }
-/* line 46, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-info {
   margin: 0;
   color: #777;
   font-size: 9pt;
 }
-/* line 51, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-value {
   display: block;
   margin: 10px 0;
@@ -2506,36 +2178,30 @@ body.stop-scrolling {
   line-height: 1;
   text-align: center;
 }
-/* line 58, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-value small {
   color: #aaa;
   font-size: 10pt;
 }
-/* line 63, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-label {
   display: block;
   font-size: 7pt;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 70, ../sass/components/_event-list.scss */
 .af .af-events-list .af-events-list__item-actions {
   padding: 10px 0;
   font-size: 18pt;
   line-height: 1;
   text-align: center;
 }
-/* line 78, ../sass/components/_event-list.scss */
 .af .af-events-list.af--compact .col-xs-3,
 .af .af-events-list.af--compact .col-xs-4,
 .af .af-events-list.af--compact .col-xs-5 {
   padding: 0;
 }
-/* line 86, ../sass/components/_event-list.scss */
 .af .af-events-list__sort {
   background: #f2f2f2;
 }
-/* line 89, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item {
   padding: 15px;
   padding-bottom: 15px;
@@ -2544,12 +2210,10 @@ body.stop-scrolling {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 98, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--active {
   color: #111;
   font-weight: 600;
 }
-/* line 103, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--asc:after, .af .af-events-list__sort-item.af--desc:after {
   margin-left: 5px;
   font-family: 'FontAwesome';
@@ -2558,125 +2222,100 @@ body.stop-scrolling {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 113, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--asc:after {
   content: "\f0d8";
 }
-/* line 116, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--desc:after {
   content: "\f0d7";
 }
-/* line 120, ../sass/components/_event-list.scss */
 .af .af-events-list__sort-item.af--center {
   text-align: center;
 }
-/* line 5, ../sass/components/_file.scss */
 .af .af-file {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
-/* line 10, ../sass/components/_file.scss */
 .af .af-file__title {
   font-size: 18pt;
   font-weight: 700;
 }
-/* line 14, ../sass/components/_file.scss */
 .af .af-file__summary {
   margin: 40px 0;
   padding: 20px 0;
   border-top: solid 1px #d5d5d5;
 }
-/* line 20, ../sass/components/_file.scss */
 .af .af-file__summary.af--loading {
   padding: 40px 20px;
   color: #bbb;
 }
-/* line 25, ../sass/components/_file.scss */
 .af .af-file__actions {
   font-size: 14pt;
   vertical-align: middle;
 }
-/* line 29, ../sass/components/_file.scss */
 .af .af-file__actions small {
   font-size: 8pt;
   vertical-align: middle;
 }
-/* line 34, ../sass/components/_file.scss */
 .af .af-file__report {
   margin: 40px 0;
 }
-/* line 37, ../sass/components/_file.scss */
 .af .af-file__report dt {
   margin: 20px 0 10px;
   font-size: 14pt;
 }
-/* line 41, ../sass/components/_file.scss */
 .af .af-file__report dd {
   margin: 10px 0 20px;
   line-height: 1.5;
   text-align: left;
 }
-/* line 46, ../sass/components/_file.scss */
 .af .af-file__report em {
   font-style: normal;
   font-weight: 300;
 }
-/* line 52, ../sass/components/_file.scss */
 .af .af-file__cta {
   margin-top: 40px;
 }
-/* line 55, ../sass/components/_file.scss */
 .af .af-file__cta .af-button {
   padding: .5em 1em;
 }
-/* line 5, ../sass/components/_filter.scss */
 .af .af-filter {
   margin-left: -4px;
   margin-right: -4px;
 }
-/* line 9, ../sass/components/_filter.scss */
 .af .af-filter__item {
   padding-left: 4px;
   padding-right: 4px;
 }
-/* line 13, ../sass/components/_filter.scss */
 .af .af-filter__input,
 .af .af-filter__select {
   background: #f2f2f2;
   border: solid 1px #f2f2f2;
 }
-/* line 19, ../sass/components/_filter.scss */
 .af .af-filter__no-results {
   padding: 60px 20px;
   font-style: italic;
   text-align: center;
 }
-/* line 1, ../sass/components/_footer.scss */
 .af .af-footer {
   padding-right: 90px;
 }
-/* line 6, ../sass/components/_form.scss */
 .af label {
   font-weight: 300;
 }
-/* line 10, ../sass/components/_form.scss */
 .af input[type=checkbox],
 .af input[type=radio] {
   margin-right: .5em;
 }
-/* line 15, ../sass/components/_form.scss */
 .af textarea {
   width: 100%;
   border-color: #d5d5d5;
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 5px;
 }
-/* line 28, ../sass/components/_form.scss */
 .af .user-error {
   border-color: #ed5565;
   box-shadow: inset 0 0 2px #ed5565;
 }
-/* line 33, ../sass/components/_form.scss */
 .af .af-checkboxes-list {
   list-style: none;
   margin: 0;
@@ -2684,11 +2323,9 @@ body.stop-scrolling {
   margin-bottom: 10px;
   padding-left: 0;
 }
-/* line 38, ../sass/components/_form.scss */
 .af .af-checkboxes-list.af--nested {
   padding-left: 1.7em;
 }
-/* line 43, ../sass/components/_form.scss */
 .af .af-large-input {
   display: block;
   width: 50%;
@@ -2698,22 +2335,18 @@ body.stop-scrolling {
   font-weight: 500;
   text-align: center;
 }
-/* line 53, ../sass/components/_form.scss */
 .af .af-large-input::-webkit-input-placeholder {
   font-weight: 300;
 }
-/* line 1, ../sass/components/_header.scss */
 .af .af-header {
   position: relative;
   z-index: 99;
   box-shadow: 0 0px 3px rgba(0, 0, 0, 0.33);
 }
-/* line 6, ../sass/components/_header.scss */
 .af .af-header .navbar-fixed-top,
 .af .af-header .navbar-static-top {
   background: #4dbc72;
 }
-/* line 12, ../sass/components/_header.scss */
 .af.af-fixed-header .af-header,
 .af .af-header.af--fixed {
   position: fixed;
@@ -2727,18 +2360,15 @@ body.stop-scrolling {
   -webkit-transform: translzteZ(0);
   transform: translzteZ(0);
 }
-/* line 23, ../sass/components/_header.scss */
 .af .af-header__logo {
   display: block;
   padding: 16px 20px;
   background: #4dbc72;
 }
-/* line 28, ../sass/components/_header.scss */
 .af .af-header__logo img {
   height: 32px;
   width: 32px;
 }
-/* line 34, ../sass/components/_header.scss */
 .af .af-header__title {
   display: inline-block;
   margin: 0 20px;
@@ -2749,23 +2379,19 @@ body.stop-scrolling {
   line-height: 32px;
   text-align: center;
 }
-/* line 45, ../sass/components/_header.scss */
 .af .af-header__menu {
   margin: 0;
   padding: 16px 20px;
   background: transparent;
   font-size: 18pt;
 }
-/* line 53, ../sass/components/_header.scss */
 .af.af-fixed-header #page-wrapper {
   padding-top: 64px;
 }
-/* line 6, ../sass/components/_keywords.scss */
 .af .af-keywords {
   display: flex;
   justify-content: space-between;
 }
-/* line 11, ../sass/components/_keywords.scss */
 .af .af-keywords-block {
   width: 32%;
   padding: 1.5em 3%;
@@ -2773,7 +2399,6 @@ body.stop-scrolling {
   text-align: center;
   transition: all 1s;
 }
-/* line 18, ../sass/components/_keywords.scss */
 .af .af-keywords-block::after {
   content: '';
   display: inline-block;
@@ -2785,20 +2410,16 @@ body.stop-scrolling {
   background: url(/crm/images/icons/copy.png) no-repeat;
   background-size: contain;
 }
-/* line 30, ../sass/components/_keywords.scss */
 .af .af-keywords-block h3 {
   margin: 1em 0;
   font-size: 16pt;
 }
-/* line 35, ../sass/components/_keywords.scss */
 .af .af-keywords-block:hover {
   background: #e0f4f7;
 }
-/* line 38, ../sass/components/_keywords.scss */
 .af .af-keywords-block:hover::after {
   opacity: 1;
 }
-/* line 43, ../sass/components/_keywords.scss */
 .af .af-keywords-list {
   list-style: none;
   padding: 0;
@@ -2806,23 +2427,18 @@ body.stop-scrolling {
   font-size: 12pt;
   line-height: 1.7;
 }
-/* line 50, ../sass/components/_keywords.scss */
 .af .af-keywords-list li {
   display: inline;
 }
-/* line 53, ../sass/components/_keywords.scss */
 .af .af-keywords-list li::after {
   content: ', ';
 }
-/* line 57, ../sass/components/_keywords.scss */
 .af .af-keywords-list li:last-child::after {
   content: '';
 }
-/* line 61, ../sass/components/_keywords.scss */
 .af .af-keywords-list li:nth-child(odd) {
   font-weight: 600;
 }
-/* line 6, ../sass/components/_list-group.scss */
 .af .af-list-group__item {
   display: flex;
   align-items: center;
@@ -2830,47 +2446,39 @@ body.stop-scrolling {
   padding: 20px;
   background: white;
 }
-/* line 14, ../sass/components/_list-group.scss */
 .af .af-list-group__item > * {
   width: 100%;
   margin: 0 2% 0;
 }
-/* line 18, ../sass/components/_list-group.scss */
 .af .af-list-group__item > *:first-child {
   width: auto;
   margin-left: 0;
 }
-/* line 22, ../sass/components/_list-group.scss */
 .af .af-list-group__item > *:last-child {
   width: auto;
   margin-right: 0;
 }
-/* line 8, ../sass/components/_loader.scss */
 .af .af-loader.af--page {
   padding: 15% 0;
   text-align: center;
   opacity: .33;
 }
-/* line 14, ../sass/components/_loader.scss */
 .af .af-loader.af--block {
   padding: 5em;
   text-align: center;
   opacity: .66;
 }
-/* line 5, ../sass/components/_login.scss */
 .af .af-login {
   width: auto !important;
   min-width: 300px;
   max-width: 480px;
 }
-/* line 10, ../sass/components/_login.scss */
 .af .af-login .af-login__container {
   padding: 40px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 30px;
   background: rgba(95, 113, 130, 0.5);
 }
 @media (max-width: 480px) {
-  /* line 10, ../sass/components/_login.scss */
   .af .af-login .af-login__container {
     padding: 20px;
     box-shadow: none;
@@ -2878,23 +2486,19 @@ body.stop-scrolling {
     border: none;
   }
 }
-/* line 24, ../sass/components/_login.scss */
 .af .af-login .af-login__logo {
   width: 160px;
   margin-bottom: 10px;
 }
-/* line 29, ../sass/components/_login.scss */
 .af .af-login .af-login__form-group {
   position: relative;
 }
-/* line 33, ../sass/components/_login.scss */
 .af .af-login .af-login__forgot-password {
   position: absolute;
   top: 50%;
   right: 30px;
   line-height: 1;
 }
-/* line 40, ../sass/components/_login.scss */
 .af .af-login .af-login__version {
   margin: 0;
   margin-bottom: 20px;
@@ -2903,21 +2507,17 @@ body.stop-scrolling {
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-/* line 50, ../sass/components/_login.scss */
 .af .af-login .af-login__alternative-cta {
   color: white;
 }
-/* line 53, ../sass/components/_login.scss */
 .af .af-login .af-login__alternative-cta a {
   color: white;
   margin: 0 .5em;
 }
-/* line 59, ../sass/components/_login.scss */
 .af .af-login .af-login__alternative-cta-link {
   font-weight: bold;
   text-decoration: underline;
 }
-/* line 65, ../sass/components/_login.scss */
 .af .af-login input[type=email],
 .af .af-login input[type=text],
 .af .af-login input[type=password],
@@ -2928,48 +2528,39 @@ body.stop-scrolling {
   font-size: 14pt;
   font-weight: 100;
 }
-/* line 76, ../sass/components/_login.scss */
 .af .af-login label {
   color: white;
 }
-/* line 79, ../sass/components/_login.scss */
 .af .af-login label a {
   color: white;
   text-decoration: underline;
 }
-/* line 84, ../sass/components/_login.scss */
 .af .af-login label [class*="icheckbox"] + span {
   display: inline-block;
   margin-left: .5em;
   vertical-align: middle;
 }
-/* line 91, ../sass/components/_login.scss */
 .af .af-login header {
   color: #4dbc72;
 }
-/* line 94, ../sass/components/_login.scss */
 .af .af-login header h1 {
   font-size: 24pt;
   font-weight: 100;
 }
-/* line 100, ../sass/components/_login.scss */
 .af .af-login footer {
   padding: 20px;
   opacity: .3;
   color: white;
 }
-/* line 107, ../sass/components/_login.scss */
 .af .af-login__error {
   margin-top: -10px;
 }
-/* line 112, ../sass/components/_login.scss */
 .af.af-login__bg {
   min-height: 100%;
   background: #2f4050 url(../images/background/auth.jpg) center center;
   background-size: cover;
   background-attachment: fixed;
 }
-/* line 5, ../sass/components/_modal.scss */
 .af .modal.fade .modal-dialog {
   -webkit-transform: scale(0.1);
   -moz-transform: scale(0.1);
@@ -2981,7 +2572,6 @@ body.stop-scrolling {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 17, ../sass/components/_modal.scss */
 .af .modal.fade.in .modal-dialog {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -2991,13 +2581,11 @@ body.stop-scrolling {
   transform: translate3d(0, -300px, 0);
   opacity: 1;
 }
-/* line 27, ../sass/components/_modal.scss */
 .af .modal-header {
   padding: 20px 40px;
   text-align: left;
   border-bottom: none;
 }
-/* line 33, ../sass/components/_modal.scss */
 .af .modal-header h2,
 .af .modal-header h3,
 .af .modal-header h4 {
@@ -3006,7 +2594,6 @@ body.stop-scrolling {
   font-size: 32px;
   font-weight: 400;
 }
-/* line 41, ../sass/components/_modal.scss */
 .af .modal-close,
 .af .modal-header .close {
   position: absolute;
@@ -3016,102 +2603,83 @@ body.stop-scrolling {
   color: #111;
   line-height: 32px;
 }
-/* line 53, ../sass/components/_modal.scss */
 .af .modal-close .fa-close:before,
 .af .modal-close .fa-close-thin:before,
 .af .modal-header .close .fa-close:before,
 .af .modal-header .close .fa-close-thin:before {
   content: '\00d7';
 }
-/* line 59, ../sass/components/_modal.scss */
 .af .modal-title a {
   color: #111;
 }
-/* line 1, ../sass/components/_navigation.scss */
 .af .af-navbar {
   text-align: center;
   white-space: nowrap;
 }
-/* line 8, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__item h4 {
   margin: 0;
   padding: 16px 20px 10px;
   border-top: solid 1px #f2f2f2;
 }
-/* line 13, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__item > a {
   padding: 16px 20px;
   line-height: 32px;
   vertical-align: middle;
 }
-/* line 18, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__item > a, .af .af-nav .af-nav__item > a:active, .af .af-nav .af-nav__item > a:link, .af .af-nav .af-nav__item > a:visited {
   background: transparent;
   color: white;
 }
-/* line 26, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__item > a:hover {
   background: rgba(229, 229, 229, 0.33);
   color: white;
 }
-/* line 32, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__item.af--active > a {
   font-weight: bold;
 }
-/* line 36, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__item.af--disabled > a {
   color: rgba(255, 255, 255, 0.33);
   pointer-events: none;
 }
-/* line 42, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__dropdown {
   -moz-box-shadow: 0 5px 6px #bbb;
   -webkit-box-shadow: 0 5px 6px #bbb;
   box-shadow: 0 5px 6px #bbb;
   min-width: 100%;
 }
-/* line 47, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__dropdown a:hover {
   background: rgba(229, 229, 229, 0.33);
   color: #2f4050;
 }
-/* line 53, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__dropdown .fa {
   margin: 7px 0 0 .5em;
 }
-/* line 60, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav {
   display: inline-block;
   text-align: left;
 }
-/* line 64, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav.af--multiline {
   line-height: 1.1 !important;
 }
-/* line 68, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav .caret {
   float: right;
   margin-top: 16px;
   margin-left: 10px;
 }
-/* line 74, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav strong:after {
   content: '\A';
   white-space: pre;
 }
-/* line 79, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav small {
   font-size: 9pt;
   font-weight: 300;
 }
-/* line 85, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-avatar {
   float: left;
   height: 32px;
   width: 32px;
   margin-right: 10px;
 }
-/* line 5, ../sass/components/_panel.scss */
 .af .af-panel {
   padding-left: 4vw;
   margin-top: 120px;
@@ -3119,22 +2687,18 @@ body.stop-scrolling {
   border-left: solid 1px #d5d5d5;
   font-size: 9pt;
 }
-/* line 13, ../sass/components/_panel.scss */
 .af .af-panel__item {
   display: inline-block;
   width: 100%;
 }
-/* line 17, ../sass/components/_panel.scss */
 .af .af-panel__item + .af-panel__item {
   padding-top: 5vh;
   border-top: solid 1px #d5d5d5;
 }
-/* line 23, ../sass/components/_panel.scss */
 .af .af-panel__item-header {
   font-weight: 600;
   line-height: 1.3;
 }
-/* line 27, ../sass/components/_panel.scss */
 .af .af-panel__item-header strong {
   display: block;
   color: #111;
@@ -3142,12 +2706,10 @@ body.stop-scrolling {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 37, ../sass/components/_panel.scss */
 .af .af-panel__item-image {
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 41, ../sass/components/_panel.scss */
 .af .af-panel__item-image.af--aside {
   float: right;
   width: 12vw;
@@ -3155,30 +2717,25 @@ body.stop-scrolling {
   margin-left: 20px;
   margin-right: -90px;
 }
-/* line 50, ../sass/components/_panel.scss */
 .af .af-panel__item-image img {
   display: block;
   max-width: 100%;
   opacity: .5;
 }
-/* line 57, ../sass/components/_panel.scss */
 .af .af-panel__item-list {
   list-style: none;
   margin: 0;
   padding: 0;
   margin: 20px 0;
 }
-/* line 62, ../sass/components/_panel.scss */
 .af .af-panel__item-list li::before {
   content: '—';
   padding-right: .5em;
 }
-/* line 6, ../sass/components/_progress.scss */
 .af .af-progress {
   margin: 7vh auto 2vh auto;
   max-width: 720px;
 }
-/* line 10, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__header {
   margin-bottom: 7vh;
   padding: 20px;
@@ -3186,27 +2743,22 @@ body.stop-scrolling {
   color: #111;
   text-align: center;
 }
-/* line 19, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__title {
   margin: 0;
   line-height: 1.5;
 }
-/* line 23, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__title strong {
   display: block;
 }
-/* line 28, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar {
   position: relative;
   margin: 0;
   font-family: 'Abel', sans-serif;
   text-align: center;
 }
-/* line 36, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar-input {
   display: none;
 }
-/* line 40, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar-value {
   position: absolute;
   bottom: 40%;
@@ -3214,13 +2766,11 @@ body.stop-scrolling {
   font-size: 60pt;
   line-height: 1.1;
 }
-/* line 48, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar-value::after {
   content: '%';
   font-size: 24pt;
   vertical-align: super;
 }
-/* line 55, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__bar-label {
   position: absolute;
   bottom: 25%;
@@ -3229,18 +2779,15 @@ body.stop-scrolling {
   font-style: italic;
   font-size: 14pt;
 }
-/* line 65, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps {
   padding-top: 2em;
   padding-left: 1.5em;
 }
-/* line 69, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step {
   opacity: .1;
   transition: all 1s .1s;
   font-size: 14pt;
 }
-/* line 75, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step:before {
   content: '';
   display: inline-block;
@@ -3254,38 +2801,30 @@ body.stop-scrolling {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 92, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--active {
   opacity: 1;
 }
-/* line 95, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--active:before {
   background-image: url(../images/misc/uploader/events-loader@2x.gif);
 }
-/* line 100, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--complete {
   opacity: 1;
   color: #4dbc72;
 }
-/* line 104, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--complete:before {
   background-image: url(../images/misc/uploader/check@2x.png);
 }
-/* line 109, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--error {
   opacity: 1;
   color: #ed5565;
 }
-/* line 113, ../sass/components/_progress.scss */
 .af .af-progress .af-progress__steps .af-progress__step.af--error:before {
   background-image: url(../images/misc/uploader/error@2x.png);
 }
-/* line 123, ../sass/components/_progress.scss */
 .af .af-progress .af-error {
   padding: 20px 0 0;
   font-size: 10pt;
 }
-/* line 5, ../sass/components/_report.scss */
 .af .af-report {
   outline: none;
   position: relative;
@@ -3293,7 +2832,6 @@ body.stop-scrolling {
   min-height: 86vh;
   overflow: hidden;
 }
-/* line 13, ../sass/components/_report.scss */
 .af .af-report__caption {
   position: absolute;
   left: 60px;
@@ -3304,17 +2842,14 @@ body.stop-scrolling {
   max-width: 640px;
   background: rgba(255, 255, 255, 0.33);
 }
-/* line 25, ../sass/components/_report.scss */
 .af .af-report__caption p {
   font-size: 12pt;
 }
-/* line 30, ../sass/components/_report.scss */
 .af .af-report__title {
   font-size: 40pt;
   font-weight: 500;
   white-space: nowrap;
 }
-/* line 36, ../sass/components/_report.scss */
 .af .af-report__quality {
   display: inline-block;
   margin-left: 1em;
@@ -3326,24 +2861,19 @@ body.stop-scrolling {
   font-weight: bold;
   vertical-align: super;
 }
-/* line 50, ../sass/components/_report.scss */
 .af .af-report__quality.af--low {
   background: #ed5565;
 }
-/* line 54, ../sass/components/_report.scss */
 .af .af-report__quality.af--medium {
   background: #f0ad4e;
 }
-/* line 58, ../sass/components/_report.scss */
 .af .af-report__quality.af--high {
   background: #4dbc72;
 }
-/* line 63, ../sass/components/_report.scss */
 .af .af-report__canvas {
   width: 100%;
   height: 75%;
 }
-/* line 76, ../sass/components/_report.scss */
 .af .af-report.af--google-map .af-report__caption {
   left: 0;
   bottom: 0;
@@ -3354,62 +2884,51 @@ body.stop-scrolling {
   padding-left: 60px;
   background: rgba(255, 255, 255, 0.75);
 }
-/* line 88, ../sass/components/_report.scss */
 .af .af-report.af--google-map .af-report__canvas {
   height: 100%;
 }
-/* line 91, ../sass/components/_report.scss */
 .af .af-report.af--google-map .af-google-map {
   width: 100%;
   height: 100%;
 }
-/* line 99, ../sass/components/_report.scss */
 .af .af-report.af--map .af-map {
   margin: 20px;
   height: 100%;
 }
-/* line 107, ../sass/components/_report.scss */
 .af .af-report.af--wordcloud .af-wordcloud {
   margin: 20px auto;
   position: relative;
 }
 @media (max-width: 640px) {
-  /* line 115, ../sass/components/_report.scss */
   .af .af-report {
     min-height: 90vh;
   }
-  /* line 118, ../sass/components/_report.scss */
   .af .af-report__caption {
     width: 100%;
     min-width: none;
   }
 }
 @media (max-width: 480px) {
-  /* line 124, ../sass/components/_report.scss */
   .af .af-report {
     min-height: 120vh;
   }
 }
 @media (max-width: 320px) {
-  /* line 129, ../sass/components/_report.scss */
   .af .af-report {
     min-height: 180vh;
   }
 }
-/* line 5, ../sass/components/_report-nav.scss */
 .af .af-report-nav {
   margin: 0;
   padding: 0;
   list-style: none;
   white-space: nowrap;
 }
-/* line 11, ../sass/components/_report-nav.scss */
 .af .af-report-nav.af--primary {
   position: relative;
   margin-bottom: 58px;
   background: #4dbc72;
 }
-/* line 17, ../sass/components/_report-nav.scss */
 .af .af-report-nav.af--secondary {
   position: absolute;
   top: 100%;
@@ -3419,7 +2938,6 @@ body.stop-scrolling {
   background: #f2f2f2;
   z-index: 10;
 }
-/* line 27, ../sass/components/_report-nav.scss */
 .af .af-report-nav.af--fast {
   padding: 10px;
   background: #f2f2f2;
@@ -3428,57 +2946,45 @@ body.stop-scrolling {
   font-weight: 100;
   text-align: center;
 }
-/* line 37, ../sass/components/_report-nav.scss */
 .af .af-report-nav__item {
   display: inline-block;
 }
-/* line 40, ../sass/components/_report-nav.scss */
 .af .af-report-nav__item a, .af .af-report-nav__item span {
   display: block;
   padding: 20px;
   color: white;
 }
-/* line 46, ../sass/components/_report-nav.scss */
 .af .af-report-nav__item a:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 51, ../sass/components/_report-nav.scss */
 .af .af-report-nav__item.af--active a {
   color: #2f4050;
 }
-/* line 54, ../sass/components/_report-nav.scss */
 .af .af-report-nav__item.af--active a:hover {
   background: transparent;
 }
-/* line 59, ../sass/components/_report-nav.scss */
 .af .af-report-nav__item.af--active .af-report-nav.af--secondary {
   display: block;
 }
-/* line 64, ../sass/components/_report-nav.scss */
 .af .af-report-nav__item.af--disabled {
   opacity: .5;
 }
-/* line 68, ../sass/components/_report-nav.scss */
 .af .af-report-nav__item.af--icon {
   padding: 0 0 0 20px;
   color: #4dbc72;
   font-size: 18pt;
   vertical-align: middle;
 }
-/* line 80, ../sass/components/_report-nav.scss */
 .af .af-report-nav.af--secondary .af-report-nav__item a {
   color: #2f4050;
 }
-/* line 83, ../sass/components/_report-nav.scss */
 .af .af-report-nav.af--secondary .af-report-nav__item span {
   color: #bbb;
 }
-/* line 88, ../sass/components/_report-nav.scss */
 .af .af-report-nav.af--secondary .af-report-nav__item.af--active a {
   color: #4dbc72;
   font-weight: bold;
 }
-/* line 98, ../sass/components/_report-nav.scss */
 .af .af-report-nav__prev,
 .af .af-report-nav__next {
   position: absolute;
@@ -3487,39 +2993,31 @@ body.stop-scrolling {
   padding: 20px;
   color: #333;
 }
-/* line 106, ../sass/components/_report-nav.scss */
 .af .af-report-nav__prev.af--disabled,
 .af .af-report-nav__next.af--disabled {
   pointer-events: none;
   color: #E5E5E5;
 }
-/* line 111, ../sass/components/_report-nav.scss */
 .af .af-report-nav__prev {
   left: 0;
 }
-/* line 114, ../sass/components/_report-nav.scss */
 .af .af-report-nav__next {
   right: 0;
 }
 @media (max-width: 640px) {
-  /* line 120, ../sass/components/_report-nav.scss */
   .af .af-report-nav.af--fast {
     padding: 0;
   }
-  /* line 123, ../sass/components/_report-nav.scss */
   .af .af-report-nav__prev,
   .af .af-report-nav__next {
     top: 0;
   }
-  /* line 127, ../sass/components/_report-nav.scss */
   .af .af-report-nav__prev {
     float: left;
   }
-  /* line 130, ../sass/components/_report-nav.scss */
   .af .af-report-nav__next {
     float: right;
   }
-  /* line 133, ../sass/components/_report-nav.scss */
   .af .af-report-nav__current {
     display: block;
     padding: 40px;
@@ -3527,7 +3025,6 @@ body.stop-scrolling {
     font-size: 14pt;
   }
 }
-/* line 7, ../sass/components/_report-persona.scss */
 .af .af-report-persona .af-report-persona__inner {
   position: relative;
   max-height: 90vh;
@@ -3535,134 +3032,108 @@ body.stop-scrolling {
   margin: 10px auto -5vw;
   overflow-y: auto;
 }
-/* line 15, ../sass/components/_report-persona.scss */
 .af .af-report-persona .af-report-persona__caption {
   position: absolute;
   top: 0;
   left: 10%;
 }
-/* line 21, ../sass/components/_report-persona.scss */
 .af .af-report-persona .af-report-persona__title {
   font-size: 3vw;
 }
-/* line 25, ../sass/components/_report-persona.scss */
 .af .af-report-persona .af-report-persona__image {
   width: 100%;
 }
-/* line 5, ../sass/components/_report-promo.scss */
 .af .af-report-promo {
   line-height: 1.5;
   overflow-y: auto;
 }
-/* line 9, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__header {
   margin: 40px 80px 20px;
   text-align: center;
 }
-/* line 13, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__header h1 {
   color: #111;
   font-size: 24pt;
   font-weight: normal;
 }
-/* line 19, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__header h2 {
   margin: .5em 0;
   font-size: 18pt;
   font-weight: 300;
 }
-/* line 25, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__header p {
   margin: .5em 0 1em;
   font-size: 12pt;
 }
-/* line 31, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__summary {
   margin: 20px 0 60px;
   line-height: 1.5;
   text-align: center;
 }
-/* line 36, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__summary h2 {
   margin: 1em 0;
   line-height: 1.5;
 }
-/* line 42, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__image {
   width: 300px;
   height: 300px;
 }
-/* line 47, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__inner {
   margin: 20px 80px;
   padding: 20px 80px 30px;
 }
-/* line 51, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__inner.af--hint {
   border: dotted 1px #d5d5d5;
   border-radius: 3px;
   background: #fafafa;
 }
-/* line 57, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__inner h2 {
   margin: .25em 0 0;
   line-height: 1.3;
   text-align: center;
 }
-/* line 62, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__inner h2 .fa {
   margin-right: .25em;
 }
-/* line 67, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__inner h3 {
   margin: 40px 0 0.5em;
 }
-/* line 71, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__inner .row > div:first-child {
   padding-right: 5%;
 }
-/* line 76, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__data-quality {
   float: left;
   width: 180px;
   height: auto;
   margin: -0.1em 1em 1em -20px;
 }
-/* line 83, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__footer {
   margin: 20px 80px;
   padding: 20px 60px;
 }
-/* line 87, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__footer.af--accent {
   margin-top: 40px;
   text-align: center;
 }
-/* line 91, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__footer.af--accent p {
   margin: 1em 0;
 }
-/* line 95, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__footer.af--accent h2 {
   margin-bottom: .5em;
 }
-/* line 100, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__footer h2 {
   margin: 0 0 1em;
   font-size: 24pt;
   line-height: 1.3;
   font-weight: 300;
 }
-/* line 107, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__footer h3 {
   margin-top: 0;
   line-height: 1.5;
 }
-/* line 111, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__footer h3 big {
   font-size: 150%;
 }
-/* line 117, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__support {
   position: relative;
   float: right;
@@ -3670,7 +3141,6 @@ body.stop-scrolling {
   margin-right: -40px;
   margin-bottom: 30px;
 }
-/* line 124, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__support:after {
   content: '';
   position: absolute;
@@ -3683,13 +3153,11 @@ body.stop-scrolling {
   background: url(../images/misc/intercom-background@2x.png) no-repeat center center;
   background-size: contain;
 }
-/* line 139, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__support h3 {
   position: relative;
   display: inline-block;
   margin-bottom: 0;
 }
-/* line 144, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__support h3:after {
   content: '';
   position: absolute;
@@ -3704,107 +3172,86 @@ body.stop-scrolling {
   background-size: contain;
   transform: rotate(15deg);
 }
-/* line 163, ../sass/components/_report-promo.scss */
 .af .af-report-promo .af-report-promo__support p {
   font-size: 9pt;
 }
 @media (max-width: 640px) {
-  /* line 172, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__header {
     margin: 40px 40px 40px;
   }
-  /* line 175, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__header h1 {
     font-size: 18pt;
     font-weight: normal;
   }
-  /* line 180, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__header h2 {
     font-size: 14pt;
     font-weight: 300;
   }
-  /* line 185, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__header p {
     margin-top: 1em;
     font-size: 10pt;
   }
-  /* line 191, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__inner {
     margin: 20px 0;
     padding: 20px 40px;
   }
-  /* line 195, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__inner.af--hint {
     border-left: none;
     border-right: none;
     border-radius: none;
   }
-  /* line 201, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__inner h2 {
     font-size: 16pt;
   }
-  /* line 205, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__inner strong {
     font-weight: 600;
   }
-  /* line 209, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__inner .row > div:first-child {
     padding-right: 0;
   }
-  /* line 214, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__data-quality {
     width: 180px;
     height: auto;
     margin: -0.2em 1em 1em -5px;
   }
-  /* line 220, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__footer {
     margin: 20px 40px;
     padding: 0;
   }
-  /* line 224, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__footer .col-sm-12 {
     padding: 0;
   }
-  /* line 228, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__footer.af--accent {
     margin-top: 40px;
     text-align: center;
   }
-  /* line 232, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__footer.af--accent p {
     margin: 1em 0;
   }
-  /* line 236, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__footer.af--accent h2 {
     color: #111;
     font-size: 16pt;
     font-weight: 500;
   }
-  /* line 242, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__footer.af--accent img {
     width: 100%;
     max-width: 300px;
     height: auto;
   }
-  /* line 250, ../sass/components/_report-promo.scss */
   .af .af-report-promo .af-report-promo__support {
     margin-top: 20px;
     margin-right: 0;
     margin-bottom: 20px;
   }
 }
-/* line 8, ../sass/components/_section.scss */
 .af .af-section.af--full {
   margin: 0 -20px;
   padding: 3em 5%;
 }
-/* line 13, ../sass/components/_section.scss */
 .af .af-section.af--gradient {
   background: #d4e2ea;
   background: linear-gradient(90deg, #d4e2ea 0%, #e6f4e6 100%);
 }
-/* line 10, ../sass/components/_slider.scss */
 .af .af-slider .slick-prev,
 .af .af-slider .slick-next {
   -webkit-appearance: none;
@@ -3821,7 +3268,6 @@ body.stop-scrolling {
   border-radius: 40px;
   color: transparent;
 }
-/* line 29, ../sass/components/_slider.scss */
 .af .af-slider .slick-prev:before,
 .af .af-slider .slick-next:before {
   display: block;
@@ -3833,40 +3279,32 @@ body.stop-scrolling {
   line-height: 40px;
   text-align: center;
 }
-/* line 40, ../sass/components/_slider.scss */
 .af .af-slider .slick-prev.slick-disabled:before,
 .af .af-slider .slick-next.slick-disabled:before {
   color: #bbb;
 }
-/* line 45, ../sass/components/_slider.scss */
 .af .af-slider .slick-prev {
   left: -20px;
 }
-/* line 48, ../sass/components/_slider.scss */
 .af .af-slider .slick-prev:before {
   content: "\f053";
   text-indent: -5px;
 }
-/* line 53, ../sass/components/_slider.scss */
 .af .af-slider .slick-next {
   right: -20px;
 }
-/* line 56, ../sass/components/_slider.scss */
 .af .af-slider .slick-next:before {
   content: "\f054";
   text-indent: 5px;
 }
-/* line 64, ../sass/components/_slider.scss */
 .af .af-slider__slide {
   margin: 10px 20px;
 }
-/* line 67, ../sass/components/_slider.scss */
 .af .af-slider__slide img {
   display: block;
   width: 100%;
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
 }
-/* line 5, ../sass/components/_stats-block.scss */
 .af .af-stats-block-container {
   display: -webkit-flex;
   display: flex;
@@ -3877,7 +3315,6 @@ body.stop-scrolling {
   -webkit-justify-content: center;
   justify-content: center;
 }
-/* line 12, ../sass/components/_stats-block.scss */
 .af .af-stats-block {
   display: -webkit-flex;
   display: flex;
@@ -3895,24 +3332,20 @@ body.stop-scrolling {
   color: #111;
   line-height: 1.3;
 }
-/* line 31, ../sass/components/_stats-block.scss */
 .af .af-stats-block__label {
   display: block;
   font-size: 9pt;
 }
-/* line 36, ../sass/components/_stats-block.scss */
 .af .af-stats-block__value {
   display: block;
   font-family: 'Abel', sans-serif;
   font-size: 40pt;
   white-space: nowrap;
 }
-/* line 43, ../sass/components/_stats-block.scss */
 .af .af-stats-block__value small {
   margin-left: -.4em;
   font-size: 18pt;
 }
-/* line 51, ../sass/components/_stats-block.scss */
 .af .af-stats-block__share {
   position: absolute;
   top: -5px;
@@ -3929,75 +3362,59 @@ body.stop-scrolling {
   vertical-align: middle;
   text-align: center;
 }
-/* line 69, ../sass/components/_stats-block.scss */
 .af .af-stats-block__share.af--share-low {
   background: #ed5565;
 }
-/* line 72, ../sass/components/_stats-block.scss */
 .af .af-stats-block__share.af--share-med {
   background: #f0ad4e;
 }
-/* line 75, ../sass/components/_stats-block.scss */
 .af .af-stats-block__share.af--share-hi {
   background: #4dbc72;
 }
-/* line 82, ../sass/components/_stats-block.scss */
 .af .af-stats-block.af--audience {
   background: #3d85c6;
   color: white;
 }
-/* line 87, ../sass/components/_stats-block.scss */
 .af .af-stats-block.af--totalRows,
 .af .af-stats-block.af--duplicateRows,
 .af .af-stats-block.af--emptyRows {
   background: #cfe2f3;
 }
-/* line 94, ../sass/components/_stats-block.scss */
 .af .af-stats-block.af--usefulAttributes {
   background: #2f4050;
   color: white;
 }
-/* line 99, ../sass/components/_stats-block.scss */
 .af .af--quality {
   color: white;
 }
-/* line 102, ../sass/components/_stats-block.scss */
 .af .af--quality-hi {
   background-color: #4dbc72;
 }
-/* line 105, ../sass/components/_stats-block.scss */
 .af .af--quality-med {
   background-color: #f0ad4e;
 }
-/* line 108, ../sass/components/_stats-block.scss */
 .af .af--quality-low {
   background-color: #ed5565;
 }
-/* line 4, ../sass/components/_tabs.scss */
 .af .af-tab-item {
   font-size: 16pt;
   font-weight: 300;
 }
-/* line 9, ../sass/components/_tabs.scss */
 .af .af-tabs > .af-tab-item > a {
   padding: 20px 40px;
 }
-/* line 12, ../sass/components/_tabs.scss */
 .af .af-tabs > .af-tab-item > a:hover {
   color: #4dbc72;
 }
-/* line 15, ../sass/components/_tabs.scss */
 .af .af-tabs > .af-tab-item.active > a {
   color: #4dbc72;
   font-weight: 600;
 }
-/* line 6, ../sass/components/_upload.scss */
 .af .af-upload {
   position: relative;
   padding: 40px 3%;
   background: rgba(255, 255, 255, 0.75);
 }
-/* line 11, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__inner {
   min-height: 240px;
   margin: 0 -20px;
@@ -4008,24 +3425,20 @@ body.stop-scrolling {
   font-weight: 300;
   text-align: center;
 }
-/* line 24, ../sass/components/_upload.scss */
 .af .af-upload.af--hidden {
   height: 0;
   max-height: 0;
   overflow: hidden;
 }
-/* line 30, ../sass/components/_upload.scss */
 .af .af-upload small {
   backface-visibility: hidden;
   opacity: .75;
   font-size: 10pt;
   font-weight: 100;
 }
-/* line 37, ../sass/components/_upload.scss */
 .af .af-upload strong {
   font-weight: normal;
 }
-/* line 41, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__overlay,
 .af .af-upload .af-upload__overlay-drop {
   position: absolute;
@@ -4038,7 +3451,6 @@ body.stop-scrolling {
   height: 100%;
   opacity: 0;
 }
-/* line 55, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__overlay {
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -4046,7 +3458,6 @@ body.stop-scrolling {
   transform: translateZ(0);
   background: #4dbc72;
 }
-/* line 59, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__overlay-text {
   position: absolute;
   left: 10%;
@@ -4057,13 +3468,11 @@ body.stop-scrolling {
   font-weight: 300;
   text-align: center;
 }
-/* line 71, ../sass/components/_upload.scss */
 .af .af-upload .af-upload__button {
   position: relative;
   z-index: 10;
   margin: 0 0 10px;
 }
-/* line 80, ../sass/components/_upload.scss */
 .af .af-upload.af--dropover .af-upload__overlay {
   z-index: 1000;
   position: fixed;
@@ -4071,7 +3480,6 @@ body.stop-scrolling {
   box-shadow: inset 0 0 5em rgba(0, 0, 0, 0.2);
   transition: opacity .5s, box-shadow 2s;
 }
-/* line 91, ../sass/components/_upload.scss */
 .af .af-upload__sample {
   position: relative;
   z-index: 10;
@@ -4082,26 +3490,21 @@ body.stop-scrolling {
   padding-top: 20px;
   border-top: dashed 1px #bbb;
 }
-/* line 102, ../sass/components/_upload.scss */
 .af .af-upload__sample .af-upload__sample-file {
   float: left;
   margin: 5px 20px;
   color: #4dbc72;
 }
-/* line 107, ../sass/components/_upload.scss */
 .af .af-upload__sample .af-upload__sample-file .af-upload__sample-file-icon {
   font-size: 36px;
 }
-/* line 111, ../sass/components/_upload.scss */
 .af .af-upload__sample .af-upload__sample-file.af--dragging {
   color: white;
 }
-/* line 116, ../sass/components/_upload.scss */
 .af .af-upload__sample .af-upload__sample-content {
   font-size: 10pt;
   text-align: left;
 }
-/* line 123, ../sass/components/_upload.scss */
 .af .af-upload__separator {
   position: relative;
   z-index: 10;

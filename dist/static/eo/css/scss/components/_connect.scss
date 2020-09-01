@@ -1,14 +1,13 @@
 /*
-    Connect Apps
-    ============
+    Connect Apps Widget
+    ===================
 */
 
-.af-connect {
+.af-connect-widget {
     margin: 0 (-$space/2);
-
     text-align: center;
 
-    .af-connect__item {
+    .af-connect-widget__item {
         @include default-border-radius;
 
         position: relative;
