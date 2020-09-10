@@ -43,6 +43,12 @@
             "type": ["digital"],
             "logo": "google-analytics.png"
         }, {
+            "name": "Gooten",
+            "type": ["ecommerce"],
+            "link": "https://www.gooten.com/Admin/Account/Login",
+            "modal": "/crm/modals/auth-gooten.html",
+            "logo": "gooten.png"
+        }, {
             "name": "HubSpot",
             "type": ["crm"],
             "link": "https://app.hubspot.com/login",
@@ -68,6 +74,18 @@
             "link": "https://login.salesforce.com",
             "modal": "/crm/modals/auth-salesforce.html",
             "logo": "salesforce.png"
+        }, {
+            "name": "Shopify",
+            "type": ["ecommerce"],
+            "link": "https://accounts.shopify.com/store-login",
+            "modal": "/crm/modals/auth-shopify.html",
+            "logo": "shopify.png"
+        }, {
+            "name": "Stripe",
+            "type": ["ecommerce"],
+            "link": "https://dashboard.stripe.com/login",
+            "modal": "/crm/modals/auth-stripe.html",
+            "logo": "stripe.png"
         }, {
             "name": "Treez",
             "type": ["pos"],
