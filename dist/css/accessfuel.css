@@ -3027,6 +3027,10 @@ body.stop-scrolling {
 .af .modal-title a {
   color: #111;
 }
+/* line 63, ../sass/components/_modal.scss */
+.af .af-modal-image {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
 /* line 1, ../sass/components/_navigation.scss */
 .af .af-navbar {
   text-align: center;
