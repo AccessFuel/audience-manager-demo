@@ -12,7 +12,8 @@
         <div class="col-sm-3">
             <aside class="widget af-widget af--data af--marketing" data-widget="daysLeft">
                 <header>
-                    <h2>Days Left</h2>
+                    <h2 data-industry-only="events">Days Remaining</h2>
+                    <h2 data-industry-only="ecommerce">Campaign Duration</h2>
                 </header>
                 <div class="af-data" data-widget-field="0">0</div>
                 <label><span data-widget-field="1">0</span> Weeks</label>
@@ -366,6 +367,12 @@
 <script src="./eo/js/knob.js"></script>
 <script src="./eo/js/widget.js"></script>
 <script src="./eo/js/marketing.js"></script>
+<script>
+    const State = require('state');
+    const industry = State.get('industry', 'events');
+    $(`[data-industry-only]`).hide();
+    $(`[data-industry-only="${industry}"]`).show();
+</script>
 
 
 <script>new MarketingUI();</script>
