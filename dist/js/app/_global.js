@@ -184,6 +184,8 @@ define(function (require) {
 
         const industry = State.get('industry', 'events');
         $(`[data-industry="${industry}"]`).addClass('af--active');
+        $(`[data-industry-only]`).hide();
+        $(`[data-industry-only="${industry}"]`).show();
     }
 
     var _bindLogout = function() {

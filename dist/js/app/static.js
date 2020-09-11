@@ -1,5 +1,5 @@
 define(function (require) {
-    var $ = require('jquery');
+    const $ = require('jquery');
 
     require('global');
     require('chart');
