@@ -14,7 +14,7 @@
         <br/> to acquire meaningful in-depth insights for your event.
     </p>
 </header>          
-<img src="/crm/images/modals/enhance-bundles.png" width="100%" />
+<img id="image-enhance-bundle" src="/crm/images/modals/enhance-bundles-skeleton.png" width="100%" />
 <br/>
 <form action="." class="js-enhance-request-form">
     <article class="modal-body">
@@ -267,5 +267,10 @@
 <img src="/crm/images/modals/enhance-benefits.png" width="100%" />
 
 <script>
+    const State = require('state');
+    const industry = State.get('industry', 'events');
+    setTimeout(() => {
+        $('#image-enhance-bundle').attr('src', `/crm/images/modals/enhance-bundles-${industry}.png`);
+    }, 200);
     $('body').trigger('initEnhanceRequest');
 </script>
