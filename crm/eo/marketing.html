@@ -12,7 +12,8 @@
         <div class="col-sm-3">
             <aside class="widget af-widget af--data af--marketing" data-widget="daysLeft">
                 <header>
-                    <h2>Days Left</h2>
+                    <h2 data-industry-only="events">Days Remaining</h2>
+                    <h2 data-industry-only="ecommerce">Campaign Duration</h2>
                 </header>
                 <div class="af-data" data-widget-field="0">0</div>
                 <label><span data-widget-field="1">0</span> Weeks</label>
@@ -273,28 +274,28 @@
                     <h2>Connect Apps</h2>
                 </header>
                 <article class="ibox-content">
-                    <div class="af-connect">
-                        <a href="apps.html" class="af-connect__item af--active">
+                    <div class="af-connect-widget">
+                        <a href="apps.html" class="af-connect-widget__item af--active">
                             <big>1</big>
                             <small>Registration</small>
                         </a>
-                        <a href="apps.html" class="af-connect__item af--inactive">
+                        <a href="apps.html" class="af-connect-widget__item af--inactive">
                             <big>+</big>
                             <small>CRM</small>
                         </a>
-                        <a href="apps.html" class="af-connect__item af--inactive">
+                        <a href="apps.html" class="af-connect-widget__item af--inactive">
                             <big>+</big>
                             <small>Surveys</small>
                         </a>
-                        <a href="apps.html" class="af-connect__item af--active">
+                        <a href="apps.html" class="af-connect-widget__item af--active">
                             <big>3</big>
                             <small>Social</small>
                         </a>
-                        <a href="apps.html" class="af-connect__item af--active">
+                        <a href="apps.html" class="af-connect-widget__item af--active">
                             <big>2</big>
                             <small>Analytics</small>
                         </a>
-                        <a href="apps.html" class="af-connect__item af--inactive">
+                        <a href="apps.html" class="af-connect-widget__item af--inactive">
                             <big>+</big>
                             <small>Email</small>
                         </a>
@@ -366,6 +367,12 @@
 <script src="./eo/js/knob.js"></script>
 <script src="./eo/js/widget.js"></script>
 <script src="./eo/js/marketing.js"></script>
+<script>
+    const State = require('state');
+    const industry = State.get('industry', 'events');
+    $(`[data-industry-only]`).hide();
+    $(`[data-industry-only="${industry}"]`).show();
+</script>
 
 
 <script>new MarketingUI();</script>

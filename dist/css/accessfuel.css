@@ -3027,6 +3027,10 @@ body.stop-scrolling {
 .af .modal-title a {
   color: #111;
 }
+/* line 63, ../sass/components/_modal.scss */
+.af .af-modal-image {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
 /* line 1, ../sass/components/_navigation.scss */
 .af .af-navbar {
   text-align: center;
@@ -3035,7 +3039,7 @@ body.stop-scrolling {
 /* line 8, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__item h4 {
   margin: 0;
-  padding: 16px 20px 10px;
+  padding: 16px 40px 10px 20px;
   border-top: solid 1px #f2f2f2;
 }
 /* line 13, ../sass/components/_navigation.scss */
@@ -3071,40 +3075,52 @@ body.stop-scrolling {
   min-width: 100%;
 }
 /* line 47, ../sass/components/_navigation.scss */
+.af .af-nav .af-nav__dropdown a.af--active {
+  background: rgba(229, 229, 229, 0.1);
+  color: #777;
+  pointer-events: none;
+}
+/* line 52, ../sass/components/_navigation.scss */
+.af .af-nav .af-nav__dropdown a.af--active:before {
+  content: '✔︎';
+  float: right;
+  margin-left: 1em;
+}
+/* line 58, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__dropdown a:hover {
   background: rgba(229, 229, 229, 0.33);
   color: #2f4050;
 }
-/* line 53, ../sass/components/_navigation.scss */
+/* line 64, ../sass/components/_navigation.scss */
 .af .af-nav .af-nav__dropdown .fa {
   margin: 7px 0 0 .5em;
 }
-/* line 60, ../sass/components/_navigation.scss */
+/* line 71, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav {
   display: inline-block;
   text-align: left;
 }
-/* line 64, ../sass/components/_navigation.scss */
+/* line 75, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav.af--multiline {
   line-height: 1.1 !important;
 }
-/* line 68, ../sass/components/_navigation.scss */
+/* line 79, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav .caret {
   float: right;
   margin-top: 16px;
   margin-left: 10px;
 }
-/* line 74, ../sass/components/_navigation.scss */
+/* line 85, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav strong:after {
   content: '\A';
   white-space: pre;
 }
-/* line 79, ../sass/components/_navigation.scss */
+/* line 90, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-nav small {
   font-size: 9pt;
   font-weight: 300;
 }
-/* line 85, ../sass/components/_navigation.scss */
+/* line 96, ../sass/components/_navigation.scss */
 .af .af-nav .af-user-avatar {
   float: left;
   height: 32px;

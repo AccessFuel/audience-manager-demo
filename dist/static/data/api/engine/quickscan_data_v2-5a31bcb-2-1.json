@@ -1,0 +1,1831 @@
+{
+    "sheets": [
+        {
+            "sheet_duplicate": 21422,
+            "sheet_emails": 96821,
+            "sheet_empty": 2547,
+            "sheet_name": "",
+            "sheet_report": [
+                {
+                    "Column": "\ufeffUnnamed: 0",
+                    "Complete": 1756,
+                    "Complete %": 1.0,
+                    "Unique": 1756,
+                    "Unique/Complete %": 1.0,
+                    "Unique/Total %": 1.0,
+                    "name": ""
+                },
+                {
+                    "Column": "checked_in",
+                    "Complete": 1755,
+                    "Complete %": 0.09994305239179955,
+                    "Unique": 6,
+                    "Unique/Complete %": 0.003418803418803419,
+                    "Unique/Total %": 0.003416856492027335,
+                    "name": ""
+                },
+                {
+                    "Column": "barcodes_0_created",
+                    "Complete": 1755,
+                    "Complete %": 0.09994305239179955,
+                    "Unique": 1284,
+                    "Unique/Complete %": 0.7316239316239316,
+                    "Unique/Total %": 0.7312072892938497,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_1_question",
+                    "Complete": 1133,
+                    "Complete %": 0.06452164009111617,
+                    "Unique": 6,
+                    "Unique/Complete %": 0.00529567519858782,
+                    "Unique/Total %": 0.003416856492027335,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_gross_value",
+                    "Complete": 1755,
+                    "Complete %": 0.09994305239179955,
+                    "Unique": 25,
+                    "Unique/Complete %": 0.014245014245014245,
+                    "Unique/Total %": 0.014236902050113895,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_2_answer",
+                    "Complete": 816,
+                    "Complete %": 0.04646924829157175,
+                    "Unique": 440,
+                    "Unique/Complete %": 0.5392156862745098,
+                    "Unique/Total %": 0.2505694760820046,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_1_type",
+                    "Complete": 1134,
+                    "Complete %": 0.06457858769931663,
+                    "Unique": 6,
+                    "Unique/Complete %": 0.005291005291005291,
+                    "Unique/Total %": 0.003416856492027335,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_4_type",
+                    "Complete": 657,
+                    "Complete %": 0.037414578587699315,
+                    "Unique": 4,
+                    "Unique/Complete %": 0.0060882800608828,
+                    "Unique/Total %": 0.002277904328018223,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_addresses_bill_region",
+                    "Complete": 264,
+                    "Complete %": 0.15034168564920272,
+                    "Unique": 14,
+                    "Unique/Complete %": 0.05303030303030303,
+                    "Unique/Total %": 0.007972665148063782,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_3_answer",
+                    "Complete": 525,
+                    "Complete %": 0.2989749430523918,
+                    "Unique": 229,
+                    "Unique/Complete %": 0.4361904761904762,
+                    "Unique/Total %": 0.1304100227790433,
+                    "name": ""
+                },
+                {
+                    "Column": "resource_uri",
+                    "Complete": 1753,
+                    "Complete %": 0.09982915717539863,
+                    "Unique": 1753,
+                    "Unique/Complete %": 1.0,
+                    "Unique/Total %": 0.9982915717539863,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_base_price_value",
+                    "Complete": 1752,
+                    "Complete %": 0.09977220956719818,
+                    "Unique": 20,
+                    "Unique/Complete %": 0.01141552511415525,
+                    "Unique/Total %": 0.011389521640091117,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_addresses_bill_city",
+                    "Complete": 261,
+                    "Complete %": 0.14863325740318906,
+                    "Unique": 69,
+                    "Unique/Complete %": 0.26436781609195403,
+                    "Unique/Total %": 0.03929384965831435,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "Santa Monica",
+                                "pct": 0.41899441340782123,
+                                "value": 75
+                            },
+                            {
+                                "label": "Los Angeles",
+                                "pct": 0.27932960893854747,
+                                "value": 50
+                            },
+                            {
+                                "label": "santa monica",
+                                "pct": 0.0893854748603352,
+                                "value": 16
+                            },
+                            {
+                                "label": "los angeles",
+                                "pct": 0.061452513966480445,
+                                "value": 11
+                            },
+                            {
+                                "label": "Venice",
+                                "pct": 0.027932960893854747,
+                                "value": 5
+                            },
+                            {
+                                "label": "Marina del Rey",
+                                "pct": 0.027932960893854747,
+                                "value": 5
+                            },
+                            {
+                                "label": "Marina Del Rey",
+                                "pct": 0.027932960893854747,
+                                "value": 5
+                            },
+                            {
+                                "label": "Malibu",
+                                "pct": 0.0223463687150838,
+                                "value": 4
+                            },
+                            {
+                                "label": "LOS ANGELES",
+                                "pct": 0.0223463687150838,
+                                "value": 4
+                            },
+                            {
+                                "label": "Marina del Rey ",
+                                "pct": 0.0223463687150838,
+                                "value": 4
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are from Santa Monica, Los Angeles and santa monica.",
+                            "favorite": true,
+                            "id": "city",
+                            "quality": 261,
+                            "quality_pct": 0.14863325740318906,
+                            "title": "City",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "answers_4_question_id",
+                    "Complete": 657,
+                    "Complete %": 0.037414578587699315,
+                    "Unique": 8,
+                    "Unique/Complete %": 0.0121765601217656,
+                    "Unique/Total %": 0.004555808656036446,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_4_question",
+                    "Complete": 657,
+                    "Complete %": 0.037414578587699315,
+                    "Unique": 7,
+                    "Unique/Complete %": 0.0106544901065449,
+                    "Unique/Total %": 0.003986332574031891,
+                    "name": ""
+                },
+                {
+                    "Column": "team",
+                    "Complete": 1753,
+                    "Complete %": 0.09982915717539863,
+                    "Unique": 5,
+                    "Unique/Complete %": 0.002852253280091272,
+                    "Unique/Total %": 0.0028473804100227792,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_2_question_id",
+                    "Complete": 950,
+                    "Complete %": 0.0541002277904328,
+                    "Unique": 10,
+                    "Unique/Complete %": 0.010526315789473684,
+                    "Unique/Total %": 0.0056947608200455585,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_base_price_display",
+                    "Complete": 1753,
+                    "Complete %": 0.09982915717539863,
+                    "Unique": 21,
+                    "Unique/Complete %": 0.011979463776383342,
+                    "Unique/Total %": 0.011958997722095672,
+                    "name": ""
+                },
+                {
+                    "Column": "last_name",
+                    "Complete": 1752,
+                    "Complete %": 0.09977220956719818,
+                    "Unique": 1110,
+                    "Unique/Complete %": 0.6335616438356164,
+                    "Unique/Total %": 0.6321184510250569,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_0_answer",
+                    "Complete": 846,
+                    "Complete %": 0.048177676537585423,
+                    "Unique": 246,
+                    "Unique/Complete %": 0.2907801418439716,
+                    "Unique/Total %": 0.14009111617312073,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_gross_currency",
+                    "Complete": 1752,
+                    "Complete %": 0.09977220956719818,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.0017123287671232876,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_base_price_currency",
+                    "Complete": 1752,
+                    "Complete %": 0.09977220956719818,
+                    "Unique": 5,
+                    "Unique/Complete %": 0.0028538812785388126,
+                    "Unique/Total %": 0.0028473804100227792,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_eventbrite_fee_value",
+                    "Complete": 1751,
+                    "Complete %": 0.09971526195899773,
+                    "Unique": 19,
+                    "Unique/Complete %": 0.010850942318675044,
+                    "Unique/Total %": 0.01082004555808656,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_gender",
+                    "Complete": 52,
+                    "Complete %": 0.029612756264236904,
+                    "Unique": 6,
+                    "Unique/Complete %": 0.11538461538461539,
+                    "Unique/Total %": 0.003416856492027335,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "male",
+                                "pct": 0.4807692307692308,
+                                "value": 25
+                            },
+                            {
+                                "label": "female",
+                                "pct": 0.4423076923076923,
+                                "value": 23
+                            },
+                            {
+                                "label": "ejohnson@ignitedusa.com",
+                                "pct": 0.019230769230769232,
+                                "value": 1
+                            },
+                            {
+                                "label": "Eric  Johnson",
+                                "pct": 0.019230769230769232,
+                                "value": 1
+                            },
+                            {
+                                "label": "FALSE",
+                                "pct": 0.019230769230769232,
+                                "value": 1
+                            },
+                            {
+                                "label": "2011-07-25T21:31:52Z",
+                                "pct": 0.019230769230769232,
+                                "value": 1
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are male, female and ejohnson@ignitedusa.com.",
+                            "favorite": true,
+                            "id": "gender",
+                            "quality": 52,
+                            "quality_pct": 0.029612756264236904,
+                            "title": "Gender",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "costs_payment_fee_value",
+                    "Complete": 1752,
+                    "Complete %": 0.09977220956719818,
+                    "Unique": 18,
+                    "Unique/Complete %": 0.010273972602739725,
+                    "Unique/Total %": 0.010250569476082005,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_eventbrite_fee_display",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 18,
+                    "Unique/Complete %": 0.010285714285714285,
+                    "Unique/Total %": 0.010250569476082005,
+                    "name": ""
+                },
+                {
+                    "Column": "affiliate",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 29,
+                    "Unique/Complete %": 0.01657142857142857,
+                    "Unique/Total %": 0.01651480637813212,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_eventbrite_fee_currency",
+                    "Complete": 1751,
+                    "Complete %": 0.09971526195899773,
+                    "Unique": 4,
+                    "Unique/Complete %": 0.002284408909194746,
+                    "Unique/Total %": 0.002277904328018223,
+                    "name": ""
+                },
+                {
+                    "Column": "cancelled",
+                    "Complete": 1751,
+                    "Complete %": 0.09971526195899773,
+                    "Unique": 5,
+                    "Unique/Complete %": 0.0028555111364934323,
+                    "Unique/Total %": 0.0028473804100227792,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_2_question",
+                    "Complete": 948,
+                    "Complete %": 0.5398633257403189,
+                    "Unique": 7,
+                    "Unique/Complete %": 0.007383966244725738,
+                    "Unique/Total %": 0.003986332574031891,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_0_question",
+                    "Complete": 1130,
+                    "Complete %": 0.643507972665148,
+                    "Unique": 6,
+                    "Unique/Complete %": 0.005309734513274336,
+                    "Unique/Total %": 0.003416856492027335,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_addresses_bill_postal_code",
+                    "Complete": 261,
+                    "Complete %": 0.14863325740318906,
+                    "Unique": 81,
+                    "Unique/Complete %": 0.3103448275862069,
+                    "Unique/Total %": 0.04612756264236902,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_name",
+                    "Complete": 1751,
+                    "Complete %": 0.09971526195899773,
+                    "Unique": 1326,
+                    "Unique/Complete %": 0.7572815533980582,
+                    "Unique/Total %": 0.755125284738041,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_4_answer",
+                    "Complete": 518,
+                    "Complete %": 0.2949886104783599,
+                    "Unique": 216,
+                    "Unique/Complete %": 0.416988416988417,
+                    "Unique/Total %": 0.12300683371298406,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_payment_fee_display",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 15,
+                    "Unique/Complete %": 0.008571428571428572,
+                    "Unique/Total %": 0.008542141230068337,
+                    "name": ""
+                },
+                {
+                    "Column": "id",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 1750,
+                    "Unique/Complete %": 1.0,
+                    "Unique/Total %": 0.9965831435079726,
+                    "name": ""
+                },
+                {
+                    "Column": "first_name",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 909,
+                    "Unique/Complete %": 0.5194285714285715,
+                    "Unique/Total %": 0.5176537585421412,
+                    "name": ""
+                },
+                {
+                    "Column": "event_id",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 15,
+                    "Unique/Complete %": 0.008571428571428572,
+                    "Unique/Total %": 0.008542141230068337,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_3_question",
+                    "Complete": 654,
+                    "Complete %": 0.3724373576309795,
+                    "Unique": 5,
+                    "Unique/Complete %": 0.00764525993883792,
+                    "Unique/Total %": 0.0028473804100227792,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_tax_currency",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.0011435105774728416,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "ticket_class_id",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 44,
+                    "Unique/Complete %": 0.025142857142857144,
+                    "Unique/Total %": 0.025056947608200455,
+                    "name": ""
+                },
+                {
+                    "Column": "status",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 6,
+                    "Unique/Complete %": 0.0034285714285714284,
+                    "Unique/Total %": 0.003416856492027335,
+                    "name": ""
+                },
+                {
+                    "Column": "email",
+                    "Complete": 1705,
+                    "Complete %": 0.9709567198177677,
+                    "Unique": 1159,
+                    "Unique/Complete %": 0.6797653958944282,
+                    "Unique/Total %": 0.6600227790432802,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_1_answer",
+                    "Complete": 843,
+                    "Complete %": 0.48006833712984054,
+                    "Unique": 25,
+                    "Unique/Complete %": 0.02965599051008304,
+                    "Unique/Total %": 0.014236902050113895,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_addresses_bill_country",
+                    "Complete": 262,
+                    "Complete %": 0.1492027334851936,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.011450381679389313,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "order_id",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 1254,
+                    "Unique/Complete %": 0.7165714285714285,
+                    "Unique/Total %": 0.714123006833713,
+                    "name": ""
+                },
+                {
+                    "Column": "refunded",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 4,
+                    "Unique/Complete %": 0.002285714285714286,
+                    "Unique/Total %": 0.002277904328018223,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_3_question_id",
+                    "Complete": 654,
+                    "Complete %": 0.3724373576309795,
+                    "Unique": 6,
+                    "Unique/Complete %": 0.009174311926605505,
+                    "Unique/Total %": 0.003416856492027335,
+                    "name": ""
+                },
+                {
+                    "Column": "barcodes_0_changed",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 1431,
+                    "Unique/Complete %": 0.8181818181818182,
+                    "Unique/Total %": 0.8149202733485194,
+                    "name": ""
+                },
+                {
+                    "Column": "barcodes_0_status",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 5,
+                    "Unique/Complete %": 0.002858776443682104,
+                    "Unique/Total %": 0.0028473804100227792,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_gross_display",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 22,
+                    "Unique/Complete %": 0.012578616352201259,
+                    "Unique/Total %": 0.012528473804100227,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_tax_value",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.0011435105774728416,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_0_question_id",
+                    "Complete": 1129,
+                    "Complete %": 0.6429384965831435,
+                    "Unique": 9,
+                    "Unique/Complete %": 0.007971656333038087,
+                    "Unique/Total %": 0.005125284738041002,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_payment_fee_currency",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.0011435105774728416,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "created",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 1259,
+                    "Unique/Complete %": 0.7198399085191538,
+                    "Unique/Total %": 0.7169703872437357,
+                    "name": ""
+                },
+                {
+                    "Column": "barcodes_0_checkin_type",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 4,
+                    "Unique/Complete %": 0.002287021154945683,
+                    "Unique/Total %": 0.002277904328018223,
+                    "name": ""
+                },
+                {
+                    "Column": "changed",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 1398,
+                    "Unique/Complete %": 0.7993138936535163,
+                    "Unique/Total %": 0.7961275626423691,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_0_type",
+                    "Complete": 1129,
+                    "Complete %": 0.6429384965831435,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.002657218777679362,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "costs_tax_display",
+                    "Complete": 1748,
+                    "Complete %": 0.09954441913439636,
+                    "Unique": 1,
+                    "Unique/Complete %": 0.0005720823798627002,
+                    "Unique/Total %": 0.0005694760820045558,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_2_type",
+                    "Complete": 947,
+                    "Complete %": 0.5392938496583144,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.0031678986272439284,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_1_question_id",
+                    "Complete": 1130,
+                    "Complete %": 0.643507972665148,
+                    "Unique": 10,
+                    "Unique/Complete %": 0.008849557522123894,
+                    "Unique/Total %": 0.0056947608200455585,
+                    "name": ""
+                },
+                {
+                    "Column": "barcodes_0_barcode",
+                    "Complete": 1750,
+                    "Complete %": 0.09965831435079726,
+                    "Unique": 160,
+                    "Unique/Complete %": 0.09142857142857143,
+                    "Unique/Total %": 0.09111617312072894,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_company",
+                    "Complete": 84,
+                    "Complete %": 0.04783599088838269,
+                    "Unique": 71,
+                    "Unique/Complete %": 0.8452380952380952,
+                    "Unique/Total %": 0.040432801822323464,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "UCLA",
+                                "pct": 0.14285714285714285,
+                                "value": 3
+                            },
+                            {
+                                "label": "LHB",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            },
+                            {
+                                "label": "thinkLA",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            },
+                            {
+                                "label": "CEB",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            },
+                            {
+                                "label": "CLARE Foundation",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            },
+                            {
+                                "label": "Body Inspired Fitness",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            },
+                            {
+                                "label": "RAPP",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            },
+                            {
+                                "label": "Lumen Specto",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            },
+                            {
+                                "label": "Santa Monica - Malibu Unified School District",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            },
+                            {
+                                "label": "LHB & Alliott Group",
+                                "pct": 0.09523809523809523,
+                                "value": 2
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are from UCLA, LHB and thinkLA.",
+                            "favorite": true,
+                            "id": "employment_domain",
+                            "quality": 84,
+                            "quality_pct": 0.04783599088838269,
+                            "title": "Employment Domain",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "profile_addresses_bill_address_1",
+                    "Complete": 259,
+                    "Complete %": 0.14749430523917995,
+                    "Unique": 182,
+                    "Unique/Complete %": 0.7027027027027027,
+                    "Unique/Total %": 0.10364464692482915,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_3_type",
+                    "Complete": 652,
+                    "Complete %": 0.3712984054669704,
+                    "Unique": 1,
+                    "Unique/Complete %": 0.0015337423312883436,
+                    "Unique/Total %": 0.0005694760820045558,
+                    "name": ""
+                },
+                {
+                    "Column": "quantity",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.0011435105774728416,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "event_date",
+                    "Complete": 1749,
+                    "Complete %": 0.09960136674259681,
+                    "Unique": 14,
+                    "Unique/Complete %": 0.008004574042309892,
+                    "Unique/Total %": 0.007972665148063782,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_addresses_bill_address_2",
+                    "Complete": 68,
+                    "Complete %": 0.0387243735763098,
+                    "Unique": 47,
+                    "Unique/Complete %": 0.6911764705882353,
+                    "Unique/Total %": 0.026765375854214124,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_7_question",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.011049723756906077,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_8_question_id",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.016574585635359115,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_6_answer",
+                    "Complete": 32,
+                    "Complete %": 0.018223234624145785,
+                    "Unique": 27,
+                    "Unique/Complete %": 0.84375,
+                    "Unique/Total %": 0.015375854214123007,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_7_answer",
+                    "Complete": 24,
+                    "Complete %": 0.01366742596810934,
+                    "Unique": 22,
+                    "Unique/Complete %": 0.9166666666666666,
+                    "Unique/Total %": 0.012528473804100227,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_job_title",
+                    "Complete": 69,
+                    "Complete %": 0.03929384965831435,
+                    "Unique": 56,
+                    "Unique/Complete %": 0.8115942028985508,
+                    "Unique/Total %": 0.03189066059225513,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "CFO",
+                                "pct": 0.17391304347826086,
+                                "value": 4
+                            },
+                            {
+                                "label": "Founder",
+                                "pct": 0.13043478260869565,
+                                "value": 3
+                            },
+                            {
+                                "label": "Executive Director",
+                                "pct": 0.13043478260869565,
+                                "value": 3
+                            },
+                            {
+                                "label": "Landscape Designer",
+                                "pct": 0.08695652173913043,
+                                "value": 2
+                            },
+                            {
+                                "label": "Director of Communications",
+                                "pct": 0.08695652173913043,
+                                "value": 2
+                            },
+                            {
+                                "label": "CEO",
+                                "pct": 0.08695652173913043,
+                                "value": 2
+                            },
+                            {
+                                "label": "Physician",
+                                "pct": 0.08695652173913043,
+                                "value": 2
+                            },
+                            {
+                                "label": "Senior Director",
+                                "pct": 0.08695652173913043,
+                                "value": 2
+                            },
+                            {
+                                "label": "Producer",
+                                "pct": 0.08695652173913043,
+                                "value": 2
+                            },
+                            {
+                                "label": "dr",
+                                "pct": 0.043478260869565216,
+                                "value": 1
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are CFO, Founder and Executive Director.",
+                            "favorite": true,
+                            "id": "job_title",
+                            "quality": 69,
+                            "quality_pct": 0.03929384965831435,
+                            "title": "Job Title",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "answers_5_question",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.011049723756906077,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_8_type",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.011049723756906077,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_5_answer",
+                    "Complete": 135,
+                    "Complete %": 0.07687927107061504,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.022222222222222223,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_7_question_id",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.016574585635359115,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_8_answer",
+                    "Complete": 23,
+                    "Complete %": 0.013097949886104784,
+                    "Unique": 20,
+                    "Unique/Complete %": 0.8695652173913043,
+                    "Unique/Total %": 0.011389521640091117,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_8_question",
+                    "Complete": 180,
+                    "Complete %": 0.10250569476082004,
+                    "Unique": 1,
+                    "Unique/Complete %": 0.005555555555555556,
+                    "Unique/Total %": 0.0005694760820045558,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_5_type",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.011049723756906077,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_7_type",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.011049723756906077,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_6_question",
+                    "Complete": 180,
+                    "Complete %": 0.10250569476082004,
+                    "Unique": 1,
+                    "Unique/Complete %": 0.005555555555555556,
+                    "Unique/Total %": 0.0005694760820045558,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_6_type",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 2,
+                    "Unique/Complete %": 0.011049723756906077,
+                    "Unique/Total %": 0.0011389521640091116,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_6_question_id",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.016574585635359115,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "answers_5_question_id",
+                    "Complete": 181,
+                    "Complete %": 0.1030751708428246,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.016574585635359115,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "barcodes_0_checkin_method",
+                    "Complete": 403,
+                    "Complete %": 0.22949886104783598,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.007444168734491315,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_addresses_work_country",
+                    "Complete": 8,
+                    "Complete %": 0.004555808656036446,
+                    "Unique": 1,
+                    "Unique/Complete %": 0.125,
+                    "Unique/Total %": 0.0005694760820045558,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_addresses_home_country",
+                    "Complete": 8,
+                    "Complete %": 0.004555808656036446,
+                    "Unique": 1,
+                    "Unique/Complete %": 0.125,
+                    "Unique/Total %": 0.0005694760820045558,
+                    "name": ""
+                },
+                {
+                    "Column": "profile_addresses_ship_country",
+                    "Complete": 8,
+                    "Complete %": 0.004555808656036446,
+                    "Unique": 1,
+                    "Unique/Complete %": 0.125,
+                    "Unique/Total %": 0.0005694760820045558,
+                    "name": ""
+                },
+                {
+                    "Column": "age",
+                    "Complete": 156,
+                    "Complete %": 0.0888382687927107,
+                    "Unique": 39,
+                    "Unique/Complete %": 0.25,
+                    "Unique/Total %": 0.022209567198177675,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "13-17",
+                                "pct": 0.0,
+                                "value": 0
+                            },
+                            {
+                                "label": "18-24",
+                                "pct": 0.10256410256410256,
+                                "value": 16
+                            },
+                            {
+                                "label": "25-34",
+                                "pct": 0.21153846153846154,
+                                "value": 33
+                            },
+                            {
+                                "label": "35-44",
+                                "pct": 0.22435897435897437,
+                                "value": 35
+                            },
+                            {
+                                "label": "45-54",
+                                "pct": 0.1794871794871795,
+                                "value": 28
+                            },
+                            {
+                                "label": "55-64",
+                                "pct": 0.07692307692307693,
+                                "value": 12
+                            },
+                            {
+                                "label": "65-75",
+                                "pct": 0.01282051282051282,
+                                "value": 2
+                            },
+                            {
+                                "label": "75+",
+                                "pct": 0.19230769230769232,
+                                "value": 30
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are 35-44, 25-34 and 75+ years old.",
+                            "favorite": true,
+                            "id": "age",
+                            "quality": 156,
+                            "quality_pct": 0.0888382687927107,
+                            "title": "Age",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "city",
+                    "Complete": 1050,
+                    "Complete %": 0.5979498861047836,
+                    "Unique": 230,
+                    "Unique/Complete %": 0.21904761904761905,
+                    "Unique/Total %": 0.13097949886104784,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "Los Angeles",
+                                "pct": 0.6076335877862595,
+                                "value": 398
+                            },
+                            {
+                                "label": "Santa Monica",
+                                "pct": 0.20458015267175572,
+                                "value": 134
+                            },
+                            {
+                                "label": "New York",
+                                "pct": 0.05648854961832061,
+                                "value": 37
+                            },
+                            {
+                                "label": "San Francisco",
+                                "pct": 0.025954198473282442,
+                                "value": 17
+                            },
+                            {
+                                "label": "Venice",
+                                "pct": 0.021374045801526718,
+                                "value": 14
+                            },
+                            {
+                                "label": "San Diego",
+                                "pct": 0.01984732824427481,
+                                "value": 13
+                            },
+                            {
+                                "label": "Beverly Hills",
+                                "pct": 0.0183206106870229,
+                                "value": 12
+                            },
+                            {
+                                "label": "Glendale",
+                                "pct": 0.016793893129770993,
+                                "value": 11
+                            },
+                            {
+                                "label": "los angeles",
+                                "pct": 0.015267175572519083,
+                                "value": 10
+                            },
+                            {
+                                "label": "Brooklyn",
+                                "pct": 0.013740458015267175,
+                                "value": 9
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are from Los Angeles",
+                            "favorite": true,
+                            "id": "city",
+                            "quality": 1050,
+                            "quality_pct": 0.5979498861047836,
+                            "title": "City",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "employment_domain",
+                    "Complete": 236,
+                    "Complete %": 0.13439635535307518,
+                    "Unique": 149,
+                    "Unique/Complete %": 0.6313559322033898,
+                    "Unique/Total %": 0.08485193621867881,
+                    "name": ""
+                },
+                {
+                    "Column": "fullName",
+                    "Complete": 1312,
+                    "Complete %": 0.7471526195899773,
+                    "Unique": 857,
+                    "Unique/Complete %": 0.6532012195121951,
+                    "Unique/Total %": 0.4880410022779043,
+                    "name": ""
+                },
+                {
+                    "Column": "gender",
+                    "Complete": 1187,
+                    "Complete %": 0.6759681093394078,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.002527379949452401,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "female",
+                                "pct": 0.5585509688289806,
+                                "value": 663
+                            },
+                            {
+                                "label": "male",
+                                "pct": 0.44060657118786856,
+                                "value": 523
+                            },
+                            {
+                                "label": "927",
+                                "pct": 0.0008424599831508003,
+                                "value": 1
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are female",
+                            "favorite": true,
+                            "id": "gender",
+                            "quality": 1187,
+                            "quality_pct": 0.6759681093394078,
+                            "title": "Gender",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "job_title",
+                    "Complete": 672,
+                    "Complete %": 0.3826879271070615,
+                    "Unique": 388,
+                    "Unique/Complete %": 0.5773809523809523,
+                    "Unique/Total %": 0.22095671981776766,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "Organizer",
+                                "pct": 0.1728395061728395,
+                                "value": 14
+                            },
+                            {
+                                "label": "Principal ",
+                                "pct": 0.09876543209876543,
+                                "value": 8
+                            },
+                            {
+                                "label": "Director ",
+                                "pct": 0.09876543209876543,
+                                "value": 8
+                            },
+                            {
+                                "label": "Owner",
+                                "pct": 0.09876543209876543,
+                                "value": 8
+                            },
+                            {
+                                "label": "President ",
+                                "pct": 0.09876543209876543,
+                                "value": 8
+                            },
+                            {
+                                "label": "Writer ",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            },
+                            {
+                                "label": "President",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            },
+                            {
+                                "label": "Owner ",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            },
+                            {
+                                "label": "Independent Individual & Family Services Professional ",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            },
+                            {
+                                "label": "CEO",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are Organizer, Principal  and Director .",
+                            "favorite": true,
+                            "id": "job_title",
+                            "quality": 672,
+                            "quality_pct": 0.3826879271070615,
+                            "title": "Job Title",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "jobs__organization",
+                    "Complete": 657,
+                    "Complete %": 0.37414578587699315,
+                    "Unique": 412,
+                    "Unique/Complete %": 0.6270928462709284,
+                    "Unique/Total %": 0.23462414578587698,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "International Association for the Development of Apnea, AIDA",
+                                "pct": 0.1917808219178082,
+                                "value": 14
+                            },
+                            {
+                                "label": "thinkLA",
+                                "pct": 0.1506849315068493,
+                                "value": 11
+                            },
+                            {
+                                "label": "Family Services Professional",
+                                "pct": 0.0958904109589041,
+                                "value": 7
+                            },
+                            {
+                                "label": "northrop grumman",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Self Employed",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Snap TV, Inc.",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "SEO Capitvate",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Ethical Energy, LLC",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Equity Office Properties",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Bull in a China Shop Productions",
+                                "pct": 0.0684931506849315,
+                                "value": 5
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are International Association for the Development of Apnea, AIDA, thinkLA and Family Services Professional.",
+                            "favorite": true,
+                            "id": "job_title",
+                            "quality": 657,
+                            "quality_pct": 0.37414578587699315,
+                            "title": "Job Title",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "klout_score",
+                    "Complete": 0,
+                    "Complete %": 0.0,
+                    "Unique": 0,
+                    "Unique/Complete %": "NA",
+                    "Unique/Total %": 0.0,
+                    "name": ""
+                },
+                {
+                    "Column": "location_from_twitter",
+                    "Complete": 178,
+                    "Complete %": 0.10136674259681093,
+                    "Unique": 64,
+                    "Unique/Complete %": 0.3595505617977528,
+                    "Unique/Total %": 0.03644646924829157,
+                    "name": ""
+                },
+                {
+                    "Column": "row_id",
+                    "Complete": 1748,
+                    "Complete %": 0.09954441913439636,
+                    "Unique": 1748,
+                    "Unique/Complete %": 1.0,
+                    "Unique/Total %": 0.9954441913439636,
+                    "name": ""
+                },
+                {
+                    "Column": "skills__name",
+                    "Complete": 93,
+                    "Complete %": 0.05296127562642369,
+                    "Unique": 68,
+                    "Unique/Complete %": 0.7311827956989247,
+                    "Unique/Total %": 0.0387243735763098,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "management",
+                                "pct": 0.5246913580246914,
+                                "value": 85
+                            },
+                            {
+                                "label": "development",
+                                "pct": 0.4074074074074074,
+                                "value": 66
+                            },
+                            {
+                                "label": "business",
+                                "pct": 0.345679012345679,
+                                "value": 56
+                            },
+                            {
+                                "label": "product",
+                                "pct": 0.3148148148148148,
+                                "value": 51
+                            },
+                            {
+                                "label": "marketing",
+                                "pct": 0.3148148148148148,
+                                "value": 51
+                            },
+                            {
+                                "label": "design",
+                                "pct": 0.2716049382716049,
+                                "value": 44
+                            },
+                            {
+                                "label": "microsoft",
+                                "pct": 0.24691358024691357,
+                                "value": 40
+                            },
+                            {
+                                "label": "strategy",
+                                "pct": 0.1728395061728395,
+                                "value": 28
+                            },
+                            {
+                                "label": "adobe",
+                                "pct": 0.16049382716049382,
+                                "value": 26
+                            },
+                            {
+                                "label": "sales",
+                                "pct": 0.15432098765432098,
+                                "value": 25
+                            },
+                            {
+                                "label": "software",
+                                "pct": 0.1419753086419753,
+                                "value": 23
+                            },
+                            {
+                                "label": "financial",
+                                "pct": 0.12345679012345678,
+                                "value": 20
+                            },
+                            {
+                                "label": "project",
+                                "pct": 0.12345679012345678,
+                                "value": 20
+                            },
+                            {
+                                "label": "media",
+                                "pct": 0.11728395061728394,
+                                "value": 19
+                            },
+                            {
+                                "label": "web",
+                                "pct": 0.1111111111111111,
+                                "value": 18
+                            },
+                            {
+                                "label": "analysis",
+                                "pct": 0.1111111111111111,
+                                "value": 18
+                            },
+                            {
+                                "label": "html",
+                                "pct": 0.09876543209876543,
+                                "value": 16
+                            },
+                            {
+                                "label": "finance",
+                                "pct": 0.09259259259259259,
+                                "value": 15
+                            },
+                            {
+                                "label": "user",
+                                "pct": 0.09259259259259259,
+                                "value": 15
+                            },
+                            {
+                                "label": "social",
+                                "pct": 0.08641975308641975,
+                                "value": 14
+                            },
+                            {
+                                "label": "agile",
+                                "pct": 0.08641975308641975,
+                                "value": 14
+                            },
+                            {
+                                "label": "engineering",
+                                "pct": 0.08641975308641975,
+                                "value": 14
+                            },
+                            {
+                                "label": "building",
+                                "pct": 0.08641975308641975,
+                                "value": 14
+                            },
+                            {
+                                "label": "data",
+                                "pct": 0.08024691358024691,
+                                "value": 13
+                            },
+                            {
+                                "label": "research",
+                                "pct": 0.08024691358024691,
+                                "value": 13
+                            },
+                            {
+                                "label": "partnerships",
+                                "pct": 0.08024691358024691,
+                                "value": 13
+                            },
+                            {
+                                "label": "modeling",
+                                "pct": 0.08024691358024691,
+                                "value": 13
+                            },
+                            {
+                                "label": "css",
+                                "pct": 0.07407407407407407,
+                                "value": 12
+                            },
+                            {
+                                "label": "office",
+                                "pct": 0.07407407407407407,
+                                "value": 12
+                            },
+                            {
+                                "label": "windows",
+                                "pct": 0.07407407407407407,
+                                "value": 12
+                            },
+                            {
+                                "label": "javascript",
+                                "pct": 0.07407407407407407,
+                                "value": 12
+                            },
+                            {
+                                "label": "operations",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "photoshop",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "video",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "technology",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "leadership",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "team",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "experience",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "systems",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "strategic",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "php",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "computing",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "excel",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "sql",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "investing",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "private",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "information",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "entrepreneurship",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "recruiting",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "relations",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience have management, development and business skills.",
+                            "favorite": true,
+                            "id": "skills__name",
+                            "quality": 93,
+                            "quality_pct": 0.05296127562642369,
+                            "title": "Skills",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "state",
+                    "Complete": 1125,
+                    "Complete %": 0.6406605922551253,
+                    "Unique": 53,
+                    "Unique/Complete %": 0.04711111111111111,
+                    "Unique/Total %": 0.03018223234624146,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "California",
+                                "pct": 0.8432760364004045,
+                                "value": 834
+                            },
+                            {
+                                "label": "New York",
+                                "pct": 0.06066734074823053,
+                                "value": 60
+                            },
+                            {
+                                "label": "Pennsylvania",
+                                "pct": 0.020222446916076844,
+                                "value": 20
+                            },
+                            {
+                                "label": "Illinois",
+                                "pct": 0.016177957532861477,
+                                "value": 16
+                            },
+                            {
+                                "label": "Florida",
+                                "pct": 0.012133468149646108,
+                                "value": 12
+                            },
+                            {
+                                "label": "Texas",
+                                "pct": 0.012133468149646108,
+                                "value": 12
+                            },
+                            {
+                                "label": "Louisiana",
+                                "pct": 0.010111223458038422,
+                                "value": 10
+                            },
+                            {
+                                "label": "Massachusetts",
+                                "pct": 0.00910010111223458,
+                                "value": 9
+                            },
+                            {
+                                "label": "Washington",
+                                "pct": 0.008088978766430738,
+                                "value": 8
+                            },
+                            {
+                                "label": "Minnesota",
+                                "pct": 0.008088978766430738,
+                                "value": 8
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are from California",
+                            "favorite": true,
+                            "id": "state",
+                            "quality": 1125,
+                            "quality_pct": 0.6406605922551253,
+                            "title": "State",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "twitter_followers",
+                    "Complete": 199,
+                    "Complete %": 0.1133257403189066,
+                    "Unique": 124,
+                    "Unique/Complete %": 0.6231155778894473,
+                    "Unique/Total %": 0.07061503416856492,
+                    "name": ""
+                },
+                {
+                    "Column": "zip_code",
+                    "Complete": 549,
+                    "Complete %": 0.31264236902050113,
+                    "Unique": 244,
+                    "Unique/Complete %": 0.4444444444444444,
+                    "Unique/Total %": 0.13895216400911162,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "90405",
+                                "pct": 0.1891891891891892,
+                                "value": 28
+                            },
+                            {
+                                "label": "90049",
+                                "pct": 0.14864864864864866,
+                                "value": 22
+                            },
+                            {
+                                "label": "90403",
+                                "pct": 0.12837837837837837,
+                                "value": 19
+                            },
+                            {
+                                "label": "90066",
+                                "pct": 0.10810810810810811,
+                                "value": 16
+                            },
+                            {
+                                "label": "90265",
+                                "pct": 0.10810810810810811,
+                                "value": 16
+                            },
+                            {
+                                "label": "90404",
+                                "pct": 0.08783783783783784,
+                                "value": 13
+                            },
+                            {
+                                "label": "90291",
+                                "pct": 0.06756756756756757,
+                                "value": 10
+                            },
+                            {
+                                "label": "90035",
+                                "pct": 0.060810810810810814,
+                                "value": 9
+                            },
+                            {
+                                "label": "90401",
+                                "pct": 0.05405405405405406,
+                                "value": 8
+                            },
+                            {
+                                "label": "91406",
+                                "pct": 0.0472972972972973,
+                                "value": 7
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are from 90405, 90049 and 90403.",
+                            "favorite": true,
+                            "id": "zip_code",
+                            "quality": 549,
+                            "quality_pct": 0.31264236902050113,
+                            "title": "Zip Code",
+                            "type": "wordcloud"
+                        }
+                    }
+                }
+            ],
+            "sheet_rows": 1756
+        }
+    ]
+}

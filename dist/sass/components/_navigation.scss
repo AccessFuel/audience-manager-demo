@@ -7,7 +7,7 @@
     .af-nav__item {
         h4 {
             margin: 0;
-            padding: $unit*1.6 $space $unit;
+            padding: $unit*1.6 $space*2 $unit $space;
             border-top: solid 1px $grey-95;
         }
         > a {
@@ -44,6 +44,17 @@
         min-width: 100%;
 
         a {
+            &.af--active {
+                background: rgba($grey-90, .1);
+                color: $grey-50;
+                pointer-events: none;
+                
+                &:before {
+                    content: '✔︎';
+                    float: right;
+                    margin-left: 1em;
+                }
+            }
             &:hover {
                 background: rgba($grey-90, .33);
                 color: $brand-dark;

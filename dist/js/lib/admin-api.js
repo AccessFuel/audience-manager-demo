@@ -49,7 +49,7 @@ define(function (require) {
             });
         },
         getFiles: function() {
-            var url = (State.get('hasFiles') == 'true') ?'uploads/all.json' : 'uploads/empty.json';
+            const url = State.get('hasFiles') ? 'mocks/files.json' : 'mocks/empty.json';
 
             return _requestAPI(url, {
                 type: 'GET'

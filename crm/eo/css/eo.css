@@ -8,138 +8,115 @@
     Normalize default styling
     (overwrite style.css)
 */
-/* line 6, scss/_default.scss */
 body {
   color: #333;
 }
 
-/* line 9, scss/_default.scss */
 h2 {
   font-size: 24px;
   font-weight: normal;
 }
 
-/* line 14, scss/_default.scss */
 *[hidden] {
   display: none !important;
 }
 
 /* Bootstrap defaults override */
-/* line 3, scss/_bootstrap.scss */
 .row {
   margin-right: -10px;
   margin-left: -10px;
 }
 
-/* line 8, scss/_bootstrap.scss */
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   padding-right: 10px;
   padding-left: 10px;
 }
 
-/* line 14, scss/_bootstrap.scss */
 .ibox {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 18, scss/_bootstrap.scss */
 .widget {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 25, scss/_bootstrap.scss */
 .i-checks div {
   margin-right: .5em;
 }
 
-/* line 3, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--events a,
 .af-color-scheme.af--events .af-button.af--white,
 .af-color-scheme.af--events .af-brand-color {
   color: #81c684;
 }
-/* line 9, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--events a:hover,
 .af-color-scheme.af--events .af-button.af--white {
   color: #2c9e52;
 }
-/* line 14, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--events .af-color-scheme__background,
 .af-color-scheme.af--events .af-button:not(.af--white) {
   background-color: #81c684;
   border-color: #81c684;
   color: white;
 }
-/* line 20, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--events .af-color-scheme__background-dark,
 .af-color-scheme.af--events .af-button:not(.af--white):hover {
   background-color: #2c9e52;
   border-color: #2c9e52;
   color: white;
 }
-/* line 29, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--audience a,
 .af-color-scheme.af--audience .af-brand-color {
   color: #43b8c8;
 }
-/* line 34, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--audience .af-color-scheme__background,
 .af-color-scheme.af--audience .af-button:not(.af--white) {
   background-color: #43b8c8;
   border-color: #43b8c8;
   color: white;
 }
-/* line 40, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--audience .af-color-scheme__background-dark,
 .af-color-scheme.af--audience .af-button:not(.af--white):hover {
   background-color: #11a0b1;
   border-color: #11a0b1;
   color: white;
 }
-/* line 49, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--marketing a,
 .af-color-scheme.af--marketing .af-brand-color {
   color: #df7f86;
 }
-/* line 54, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--marketing a:hover,
 .af-color-scheme.af--marketing .af-button.af--white {
   color: #cd3741;
 }
-/* line 60, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--marketing .af-color-scheme__background,
 .af-color-scheme.af--marketing .af-button:not(.af--white) {
   background-color: #df7f86;
   border-color: #df7f86;
   color: white;
 }
-/* line 66, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--marketing .af-color-scheme__background-dark,
 .af-color-scheme.af--marketing .af-button:not(.af--white):hover {
   background-color: #cd3741;
   border-color: #cd3741;
   color: white;
 }
-/* line 75, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--sponsors a,
 .af-color-scheme.af--sponsors .af-brand-color {
   color: #a284bf;
 }
-/* line 80, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--sponsors a:hover,
 .af-color-scheme.af--sponsors .af-button.af--white {
   color: #9065ba;
 }
-/* line 85, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--sponsors .af-color-scheme__background,
 .af-color-scheme.af--sponsors .af-button:not(.af--white) {
   background-color: #a284bf;
   border-color: #a284bf;
   color: white;
 }
-/* line 91, scss/utils/_color-scheme.scss */
 .af-color-scheme.af--sponsors .af-color-scheme__background-dark,
 .af-color-scheme.af--sponsors .af-button:not(.af--white):hover {
   background-color: #9065ba;
@@ -155,7 +132,6 @@ h2 {
     Sprite Icons
     ============
 */
-/* line 51, scss/utils/_icons.scss */
 .af-icon-unlock {
   display: inline-block;
   height: 32px;
@@ -170,56 +146,50 @@ h2 {
     Spacing
     =======
 */
-/* line 8, scss/utils/_spacing.scss */
 .u-margin-top-sm {
   margin-top: 4px;
 }
 
-/* line 11, scss/utils/_spacing.scss */
 .u-margin-top-md {
   margin-top: 10px;
 }
 
-/* line 14, scss/utils/_spacing.scss */
 .u-margin-top {
   margin-top: 20px;
 }
 
-/* line 20, scss/utils/_spacing.scss */
 .u-margin-bottom-sm {
   margin-bottom: 4px;
 }
 
-/* line 23, scss/utils/_spacing.scss */
 .u-margin-bottom-md {
   margin-bottom: 10px;
 }
 
-/* line 26, scss/utils/_spacing.scss */
 .u-margin-bottom {
   margin-bottom: 20px;
 }
 
-/* line 31, scss/utils/_spacing.scss */
 .u-margin-left-md {
   margin-left: 10px;
+}
+
+.u-margin-right {
+  margin-right: 20px;
 }
 
 /*
     Text styling utilities
     ======================
 */
-/* line 6, scss/utils/_typography.scss */
 .u-text-huge {
   font-size: 48px !important;
 }
 
-/* line 11, scss/utils/_typography.scss */
 .u-text-lite {
   font-weight: 100;
 }
 
-/* line 16, scss/utils/_typography.scss */
 .u-text-pale {
   color: #bbb;
 }
@@ -228,32 +198,26 @@ h2 {
     Visibility
     ==========
 */
-/* line 6, scss/utils/_visibility.scss */
 .u-block {
   display: block;
 }
 
-/* line 10, scss/utils/_visibility.scss */
 .u-opacity-0 {
   opacity: 0;
 }
 
-/* line 13, scss/utils/_visibility.scss */
 .u-opacity-20 {
   opacity: 0.2;
 }
 
-/* line 16, scss/utils/_visibility.scss */
 .u-opacity-50 {
   opacity: 0.5;
 }
 
-/* line 19, scss/utils/_visibility.scss */
 .u-opacity-100 {
   opacity: 1;
 }
 
-/* line 23, scss/utils/_visibility.scss */
 .u-blur-2 {
   -webkit-filter: blur(2px);
   filter: blur(2px);
@@ -263,68 +227,55 @@ h2 {
     Boxes
     =====
 */
-/* line 6, scss/components/_box.scss */
 .af-box {
   box-shadow: #aaa 0 1px 4px;
 }
-/* line 9, scss/components/_box.scss */
 .af-box + .af-box {
   margin-top: 15px;
 }
-/* line 13, scss/components/_box.scss */
 .af-box .af-box__title {
   min-height: auto;
   padding: 10px 20px;
   color: white;
   border: none;
 }
-/* line 20, scss/components/_box.scss */
 .af-box .af-box__title.af--empty {
   min-height: 4px;
   padding-top: 0;
   padding-bottom: 0;
 }
-/* line 26, scss/components/_box.scss */
 .af-box .af-box__title h1, .af-box .af-box__title h2, .af-box .af-box__title h3, .af-box .af-box__title h4 {
   margin: 5px 0 2px;
 }
-/* line 30, scss/components/_box.scss */
 .af-box .af-box__title h2 {
   font-size: 18px;
   font-weight: 600;
 }
-/* line 35, scss/components/_box.scss */
 .af-box .af-box__title .af-button {
   margin-top: -2px;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 41, scss/components/_box.scss */
 .af-box .ibox-content {
   padding: 20px;
 }
-/* line 45, scss/components/_box.scss */
 .af-box .af-box__footer {
   padding: 0 20px 20px;
   background: white;
   font-size: 16px;
 }
-/* line 53, scss/components/_box.scss */
 .af-box .af-box__carousel {
   list-style: none;
   margin: 0;
   padding: 0;
   border-top: solid 1px white !important;
 }
-/* line 57, scss/components/_box.scss */
 .af-box .af-box__carousel li {
   overflow: hidden;
 }
-/* line 62, scss/components/_box.scss */
 .af-box .af-box__footer.af-box__carousel-controls {
   padding: 10px 20px;
   text-align: center;
 }
-/* line 67, scss/components/_box.scss */
 .af-box .af-box__carousel-control {
   display: inline-block;
   width: 12px;
@@ -336,24 +287,19 @@ h2 {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
-/* line 82, scss/components/_box.scss */
 .af-box .af-box__carousel-control.af--active {
   background: #df7f86;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
-/* line 91, scss/components/_box.scss */
 .af-color-scheme.af--events .af-box .af-box__title {
   background: #81c684;
 }
-/* line 95, scss/components/_box.scss */
 .af-color-scheme.af--audience .af-box .af-box__title {
   background: #43b8c8;
 }
-/* line 99, scss/components/_box.scss */
 .af-color-scheme.af--marketing .af-box .af-box__title {
   background: #df7f86;
 }
-/* line 103, scss/components/_box.scss */
 .af-color-scheme.af--sponsors .af-box .af-box__title {
   background: #a284bf;
 }
@@ -362,46 +308,37 @@ h2 {
     Buttons
     =======
 */
-/* line 7, scss/components/_button.scss */
 .af-button.af--wide {
   width: 100%;
 }
-/* line 11, scss/components/_button.scss */
 .af-button.af--wide25 {
   min-width: 25%;
 }
-/* line 15, scss/components/_button.scss */
 .af-button.af--white {
   background: white;
   opacity: 1;
 }
-/* line 19, scss/components/_button.scss */
 .af-button.af--white:hover {
   background: rgba(255, 255, 255, 0.8);
 }
-/* line 23, scss/components/_button.scss */
 .af-button.af--white.af--secondary {
   background: rgba(255, 255, 255, 0.3);
   color: white !important;
 }
-/* line 27, scss/components/_button.scss */
 .af-button.af--white.af--secondary:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 34, scss/components/_button.scss */
 .btn.btn-primary,
 .btn.btn-default,
 .btn.btn-danger {
   color: white !important;
 }
 
-/* line 40, scss/components/_button.scss */
 .btn.btn-primary {
   background-color: #81c684;
   border-color: #81c684;
 }
-/* line 45, scss/components/_button.scss */
 .btn.btn-primary:hover {
   background-color: #2c9e52;
   border-color: #2c9e52;
@@ -411,25 +348,21 @@ h2 {
     Channels custom bar chart
     =========================
 */
-/* line 9, scss/components/_channels.scss */
 .af-channels__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 12, scss/components/_channels.scss */
 .af-channels__list .af-channels__item {
   margin: 10px 0;
   padding: 0 15% 0 50px;
 }
 
-/* line 18, scss/components/_channels.scss */
 .af-channels__item {
   position: relative;
   height: 50px;
   vertical-align: middle;
 }
-/* line 23, scss/components/_channels.scss */
 .af-channels__item:before {
   position: absolute;
   left: 0;
@@ -438,15 +371,12 @@ h2 {
   font-size: 30px !important;
   text-align: center;
 }
-/* line 33, scss/components/_channels.scss */
 .af-channels__item footer {
   margin-top: 10px;
 }
-/* line 38, scss/components/_channels.scss */
 .af-channels__item.af--facebook .af-channels__bar {
   background: #3f5c96;
 }
-/* line 42, scss/components/_channels.scss */
 .af-channels__item.af--facebook:before {
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
@@ -455,11 +385,9 @@ h2 {
   content: "\f09a";
   color: #3f5c96;
 }
-/* line 49, scss/components/_channels.scss */
 .af-channels__item.af--email .af-channels__bar {
   background: #df7f86;
 }
-/* line 53, scss/components/_channels.scss */
 .af-channels__item.af--email:before {
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
@@ -468,11 +396,9 @@ h2 {
   content: "\f0e0";
   color: #df7f86;
 }
-/* line 60, scss/components/_channels.scss */
 .af-channels__item.af--twitter .af-channels__bar {
   background: #61aadb;
 }
-/* line 64, scss/components/_channels.scss */
 .af-channels__item.af--twitter:before {
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
@@ -481,11 +407,9 @@ h2 {
   content: "\f099";
   color: #61aadb;
 }
-/* line 71, scss/components/_channels.scss */
 .af-channels__item.af--more .af-channels__bar {
   background: #aaa;
 }
-/* line 75, scss/components/_channels.scss */
 .af-channels__item.af--more:before {
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
@@ -495,21 +419,17 @@ h2 {
   color: #aaa;
 }
 
-/* line 83, scss/components/_channels.scss */
 .af-channels__chart h2 {
   margin-bottom: 20px;
 }
 
-/* line 88, scss/components/_channels.scss */
 .af-channels__budget {
   border-left: dashed 1px #aaa;
   text-align: right;
 }
-/* line 92, scss/components/_channels.scss */
 .af-channels__budget h4 {
   margin: 0;
 }
-/* line 96, scss/components/_channels.scss */
 .af-channels__budget .af-channels__item {
   padding: 10% 0;
   font-size: 18px;
@@ -517,7 +437,6 @@ h2 {
   vertical-align: middle;
 }
 
-/* line 105, scss/components/_channels.scss */
 .af-channels__bar {
   position: relative;
   display: inline-block;
@@ -527,14 +446,12 @@ h2 {
   text-align: right;
 }
 
-/* line 116, scss/components/_channels.scss */
 .af-channels__bar-value {
   color: white;
   font-size: 18px;
   line-height: 18px;
 }
 
-/* line 121, scss/components/_channels.scss */
 .af-channels__bar-label {
   position: absolute;
   left: 100%;
@@ -549,52 +466,41 @@ h2 {
     Custom Data Visualization
     =========================
 */
-/* line 6, scss/components/_chart.scss */
 .af-chart {
   position: absolute;
   font-family: 'Helvetica';
 }
-/* line 10, scss/components/_chart.scss */
 .af-chart * {
   -webkit-text-size-adjust: none;
   font-size-adjust: none;
 }
 
-/* line 16, scss/components/_chart.scss */
 .af-chart__bar {
   padding: 10px 20px;
   background: #81c684;
 }
-/* line 21, scss/components/_chart.scss */
 .af-chart__bar.af--weight-10, .af-chart__bar.af--weight-9 {
   background: #81c684;
 }
-/* line 26, scss/components/_chart.scss */
 .af-chart__bar.af--weight-8, .af-chart__bar.af--weight-7 {
   background: #93ce95;
 }
-/* line 31, scss/components/_chart.scss */
 .af-chart__bar.af--weight-6, .af-chart__bar.af--weight-5 {
   background: #a4d6a6;
 }
-/* line 36, scss/components/_chart.scss */
 .af-chart__bar.af--weight-4, .af-chart__bar.af--weight-3 {
   background: #b6deb7;
 }
-/* line 41, scss/components/_chart.scss */
 .af-chart__bar.af--weight-2, .af-chart__bar.af--weight-1 {
   background: #c7e6c9;
 }
-/* line 46, scss/components/_chart.scss */
 .af-chart__bar.af--weight-0 {
   display: none;
 }
-/* line 50, scss/components/_chart.scss */
 .af-chart__bar:hover {
   box-shadow: 0px 0 10px rgba(129, 198, 132, 0.5);
 }
 
-/* line 55, scss/components/_chart.scss */
 .af-chart__label,
 .af-chart__value {
   padding: 0;
@@ -602,17 +508,14 @@ h2 {
   color: #2f4050;
 }
 
-/* line 62, scss/components/_chart.scss */
 .af-chart__label {
   font-size: 18px;
 }
 
-/* line 65, scss/components/_chart.scss */
 .af-chart__value {
   font-size: 21px;
 }
 
-/* line 72, scss/components/_chart.scss */
 .af-chart.af--horizontal {
   right: 0;
   top: 15%;
@@ -620,20 +523,17 @@ h2 {
   width: 88%;
   text-align: right;
 }
-/* line 81, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__bar {
   position: relative;
   clear: right;
   float: right;
   margin: 2px 0;
 }
-/* line 89, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__label,
 .af-chart.af--horizontal .af-chart__value {
   position: absolute;
   color: #2f4050;
 }
-/* line 96, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__label {
   top: 50%;
   right: 20px;
@@ -649,17 +549,14 @@ h2 {
   vertical-align: top;
   white-space: nowrap;
 }
-/* line 112, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__label.af--medium-text {
   font-size: 14px;
   line-height: 21px;
 }
-/* line 116, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__label.af--long-text {
   font-size: 12px;
   line-height: 21px;
 }
-/* line 121, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__value {
   right: 100%;
   top: 50%;
@@ -669,17 +566,14 @@ h2 {
   line-height: 0;
   vertical-align: middle;
 }
-/* line 134, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__bar.af--weight-4 .af-chart__label {
   font-size: 14px;
   line-height: 21px;
 }
-/* line 141, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__bar.af--weight-3 .af-chart__label {
   font-size: 12px;
   line-height: 21px;
 }
-/* line 149, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__bar.af--weight-2 .af-chart__label,
 .af-chart.af--horizontal .af-chart__bar.af--weight-1 .af-chart__label {
   left: auto;
@@ -691,20 +585,17 @@ h2 {
   font-size: 10px;
   line-height: 24px;
 }
-/* line 160, scss/components/_chart.scss */
 .af-chart.af--horizontal .af-chart__bar.af--weight-2 .af-chart__label:after,
 .af-chart.af--horizontal .af-chart__bar.af--weight-1 .af-chart__label:after {
   content: ':';
 }
 
-/* line 170, scss/components/_chart.scss */
 .af-chart.af--vertical {
   height: 50%;
   top: 15%;
   right: 7%;
   max-width: 75%;
 }
-/* line 177, scss/components/_chart.scss */
 .af-chart.af--vertical .af-chart__bar {
   position: relative;
   bottom: 0;
@@ -712,7 +603,6 @@ h2 {
   padding: 0;
   vertical-align: bottom;
 }
-/* line 186, scss/components/_chart.scss */
 .af-chart.af--vertical .af-chart__label,
 .af-chart.af--vertical .af-chart__value {
   position: absolute;
@@ -720,45 +610,37 @@ h2 {
   width: 100%;
   text-align: center;
 }
-/* line 193, scss/components/_chart.scss */
 .af-chart.af--vertical .af-chart__value {
   margin-bottom: 1em;
 }
-/* line 200, scss/components/_chart.scss */
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-1 .af-chart__label,
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-1 .af-chart__value {
   zoom: 10%;
 }
-/* line 207, scss/components/_chart.scss */
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-2 .af-chart__label,
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-2 .af-chart__value {
   zoom: 20%;
 }
-/* line 215, scss/components/_chart.scss */
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-3 .af-chart__label,
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-3 .af-chart__value, .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-4 .af-chart__label,
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-4 .af-chart__value {
   zoom: 30%;
 }
-/* line 223, scss/components/_chart.scss */
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-5 .af-chart__label,
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-5 .af-chart__value, .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-6 .af-chart__label,
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-6 .af-chart__value {
   zoom: 50%;
 }
-/* line 230, scss/components/_chart.scss */
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-7 .af-chart__label,
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-7 .af-chart__value, .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-8 .af-chart__label,
 .af-chart.af--vertical .af-chart__bar.af--weight-axis.af--weight-8 .af-chart__value {
   zoom: 75%;
 }
 
-/* line 240, scss/components/_chart.scss */
 .af-chart.af--age {
   width: 75%;
   right: 12%;
 }
-/* line 244, scss/components/_chart.scss */
 .af-chart.af--age:before, .af-chart.af--age:after {
   content: '';
   position: absolute;
@@ -768,12 +650,10 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 256, scss/components/_chart.scss */
 .af-chart.af--age:before {
   right: 103%;
   background-image: url("../af_img/icons/report-age-baby@2x.png");
 }
-/* line 260, scss/components/_chart.scss */
 .af-chart.af--age:after {
   left: 103%;
   height: 48px;
@@ -781,7 +661,6 @@ h2 {
   margin-bottom: -8px;
   background-image: url("../af_img/icons/report-age-old@2x.png");
 }
-/* line 268, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__label {
   bottom: 50%;
   height: auto;
@@ -789,7 +668,6 @@ h2 {
   overflow: hidden;
   text-indent: -10000px;
 }
-/* line 277, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__label:after {
   display: block;
   color: white;
@@ -797,25 +675,20 @@ h2 {
   text-indent: 0;
   white-space: pre;
 }
-/* line 286, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__value {
   margin-bottom: 0;
   font-size: 24px;
   font-weight: 100;
 }
-/* line 292, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar {
   border-right: solid 1px white;
 }
-/* line 299, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--weight-1 .af-chart__label, .af-chart.af--age .af-chart__bar.af--weight-2 .af-chart__label, .af-chart.af--age .af-chart__bar.af--weight-3 .af-chart__label, .af-chart.af--age .af-chart__bar.af--weight-4 .af-chart__label {
   display: none;
 }
-/* line 304, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--weight-1 .af-chart__value {
   display: none;
 }
-/* line 309, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar:after {
   position: absolute;
   left: 100%;
@@ -824,61 +697,47 @@ h2 {
   margin-top: 5px;
   font-size: 10px;
 }
-/* line 319, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--0-20:after {
   content: '20';
 }
-/* line 323, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--0-20 .af-chart__label:after {
   content: 'Teens';
 }
-/* line 329, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--20-30:after {
   content: '30';
 }
-/* line 332, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--20-30 .af-chart__label:after {
   content: 'Millennials,\aIn their 20s';
 }
-/* line 338, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--30-40:after {
   content: '40';
 }
-/* line 341, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--30-40 .af-chart__label:after {
   content: 'Millennials,\aIn their 30s';
 }
-/* line 347, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--40-50:after {
   content: '50';
 }
-/* line 350, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--40-50 .af-chart__label:after {
   content: 'In their 40s';
 }
-/* line 356, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--50-60:after {
   content: '60';
 }
-/* line 359, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--50-60 .af-chart__label:after {
   content: 'Millenials';
 }
-/* line 365, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--60-70:after {
   content: '70+';
   margin-left: 0;
 }
-/* line 369, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--60-70 .af-chart__label:after {
   content: 'In their 60s';
 }
-/* line 375, scss/components/_chart.scss */
 .af-chart.af--age .af-chart__bar.af--70 .af-chart__label:after {
   content: 'In their 70s';
 }
 
-/* line 384, scss/components/_chart.scss */
 .af-chart.af--gender {
   bottom: 0;
   top: 20%;
@@ -887,11 +746,9 @@ h2 {
   width: 45%;
   min-width: 250px;
 }
-/* line 393, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__bar {
   margin: 0 1px;
 }
-/* line 396, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__bar:before {
   content: '';
   position: absolute;
@@ -905,7 +762,6 @@ h2 {
   background-position: center bottom;
   background-size: contain;
 }
-/* line 414, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__label,
 .af-chart.af--gender .af-chart__value {
   left: 45%;
@@ -913,58 +769,46 @@ h2 {
   width: auto;
   text-align: left;
 }
-/* line 423, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__label {
   margin-bottom: .25em;
   font-size: 21px;
   text-transform: capitalize;
 }
-/* line 428, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__value {
   margin-bottom: 1em;
   font-size: 30px;
   font-weight: 600;
 }
-/* line 435, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__bar.af--female {
   background: #ed66cf;
 }
-/* line 438, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__bar.af--female:before {
   background-image: url(../af_img/icons/report-gender-female@2x.png);
 }
-/* line 442, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__bar.af--female .af-chart__label,
 .af-chart.af--gender .af-chart__bar.af--female .af-chart__value {
   color: #ed66cf;
 }
-/* line 448, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__bar.af--male {
   background: #43b8c8;
 }
-/* line 451, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__bar.af--male:before {
   background-image: url(../af_img/icons/report-gender-male@2x.png);
 }
-/* line 455, scss/components/_chart.scss */
 .af-chart.af--gender .af-chart__bar.af--male .af-chart__label,
 .af-chart.af--gender .af-chart__bar.af--male .af-chart__value {
   color: #43b8c8;
 }
 
-/* line 467, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar {
   border-right: solid 1px white;
 }
-/* line 470, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar .af-chart__label {
   display: none;
 }
-/* line 474, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar .af-chart__value {
   margin-bottom: 0;
 }
-/* line 479, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar:before, .af-chart.af--twitter .af-chart__bar:after {
   position: absolute;
   left: 100%;
@@ -973,73 +817,57 @@ h2 {
   margin-top: 5px;
   font-size: 10px;
 }
-/* line 490, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar:before {
   left: auto;
   right: 70%;
 }
-/* line 495, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--0-10 {
   width: 3% !important;
   background-color: #deedf8;
 }
-/* line 499, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--0-10:before {
   content: 'Followers:';
 }
-/* line 503, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--0-10:after {
   content: '10';
 }
-/* line 507, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--0-10 .af-chart__value {
   zoom: 25%;
 }
-/* line 512, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--10-100 {
   width: 7% !important;
   background-color: #cae2f3;
 }
-/* line 516, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--10-100:after {
   content: '100';
 }
-/* line 520, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--10-100 .af-chart__value {
   zoom: 50%;
 }
-/* line 525, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--100-1000 {
   width: 15% !important;
   background-color: #b5d7ee;
 }
-/* line 529, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--100-1000:after {
   content: '1K';
 }
-/* line 533, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--100-1000 .af-chart__value {
   zoom: 75%;
 }
-/* line 538, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--1000-10000 {
   width: 25% !important;
   background-color: #8bc0e5;
 }
-/* line 542, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--1000-10000:after {
   content: '10K';
 }
-/* line 546, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--1000-10000 .af-chart__value {
   zoom: 100%;
 }
-/* line 550, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--10000 {
   width: 50% !important;
   background-color: #62aadb;
 }
-/* line 554, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--10000 .af-chart__value {
   width: 100%;
   padding-top: 25%;
@@ -1050,7 +878,6 @@ h2 {
   font-size: 24px;
   line-height: 1;
 }
-/* line 566, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--10000 .af-chart__value:after {
   content: 'Influitive';
   display: block;
@@ -1058,7 +885,6 @@ h2 {
   font-weight: 300;
   text-transform: uppercase;
 }
-/* line 575, scss/components/_chart.scss */
 .af-chart.af--twitter .af-chart__bar.af--10000:after {
   content: 'Highly Influitive';
   left: auto;
@@ -1067,16 +893,14 @@ h2 {
 }
 
 /*
-    Connect Apps
-    ============
+    Connect Apps Widget
+    ===================
 */
-/* line 6, scss/components/_connect.scss */
-.af-connect {
+.af-connect-widget {
   margin: 0 -10px;
   text-align: center;
 }
-/* line 11, scss/components/_connect.scss */
-.af-connect .af-connect__item {
+.af-connect-widget .af-connect-widget__item {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
@@ -1089,12 +913,10 @@ h2 {
   margin: 1%;
   background: #f2f2f2;
 }
-/* line 27, scss/components/_connect.scss */
-.af-connect .af-connect__item:hover {
+.af-connect-widget .af-connect-widget__item:hover {
   background: #E5E5E5;
 }
-/* line 31, scss/components/_connect.scss */
-.af-connect .af-connect__item big {
+.af-connect-widget .af-connect-widget__item big {
   font-size: 48px;
   font-weight: 100;
   line-height: 1.1;
@@ -1104,13 +926,11 @@ h2 {
   width: 100%;
 }
 @media (min-width: 960px) {
-  /* line 31, scss/components/_connect.scss */
-  .af-connect .af-connect__item big {
+  .af-connect-widget .af-connect-widget__item big {
     font-size: 3.6vw;
   }
 }
-/* line 45, scss/components/_connect.scss */
-.af-connect .af-connect__item small {
+.af-connect-widget .af-connect-widget__item small {
   position: absolute;
   bottom: 15%;
   display: block;
@@ -1120,48 +940,38 @@ h2 {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 59, scss/components/_connect.scss */
-.af-connect .af-connect__item.af--inactive big {
+.af-connect-widget .af-connect-widget__item.af--inactive big {
   font-size: 60px;
   font-weight: 100;
   line-height: 1.1;
   font-weight: 100;
   line-height: .9;
 }
-/* line 67, scss/components/_connect.scss */
-.af-connect .af-connect__item.af--active, .af-connect .af-connect__item.af--active:hover {
+.af-connect-widget .af-connect-widget__item.af--active, .af-connect-widget .af-connect-widget__item.af--active:hover {
   color: white;
 }
-/* line 73, scss/components/_connect.scss */
-.af-color-scheme.af--events .af-connect .af-connect__item.af--active {
+.af-color-scheme.af--events .af-connect-widget .af-connect-widget__item.af--active {
   background: #81c684;
 }
-/* line 76, scss/components/_connect.scss */
-.af-color-scheme.af--events .af-connect .af-connect__item.af--active:hover {
+.af-color-scheme.af--events .af-connect-widget .af-connect-widget__item.af--active:hover {
   background: #2c9e52;
 }
-/* line 81, scss/components/_connect.scss */
-.af-color-scheme.af--audience .af-connect .af-connect__item.af--active {
+.af-color-scheme.af--audience .af-connect-widget .af-connect-widget__item.af--active {
   background: #43b8c8;
 }
-/* line 84, scss/components/_connect.scss */
-.af-color-scheme.af--audience .af-connect .af-connect__item.af--active:hover {
+.af-color-scheme.af--audience .af-connect-widget .af-connect-widget__item.af--active:hover {
   background: #11a0b1;
 }
-/* line 89, scss/components/_connect.scss */
-.af-color-scheme.af--marketing .af-connect .af-connect__item.af--active {
+.af-color-scheme.af--marketing .af-connect-widget .af-connect-widget__item.af--active {
   background: #df7f86;
 }
-/* line 92, scss/components/_connect.scss */
-.af-color-scheme.af--marketing .af-connect .af-connect__item.af--active:hover {
+.af-color-scheme.af--marketing .af-connect-widget .af-connect-widget__item.af--active:hover {
   background: #cd3741;
 }
-/* line 97, scss/components/_connect.scss */
-.af-color-scheme.af--sponsors .af-connect .af-connect__item.af--active {
+.af-color-scheme.af--sponsors .af-connect-widget .af-connect-widget__item.af--active {
   background: #a284bf;
 }
-/* line 100, scss/components/_connect.scss */
-.af-color-scheme.af--sponsors .af-connect .af-connect__item.af--active:hover {
+.af-color-scheme.af--sponsors .af-connect-widget .af-connect-widget__item.af--active:hover {
   background: #9065ba;
 }
 
@@ -1169,37 +979,31 @@ h2 {
     Data representation
     ===================
 */
-/* line 8, scss/components/_data.scss */
 .af-data.af--medium {
   font-size: 36px;
   font-weight: 300;
   line-height: 1.1;
 }
-/* line 11, scss/components/_data.scss */
 .af-data.af--large {
   font-size: 48px;
   font-weight: 100;
   line-height: 1.1;
 }
-/* line 14, scss/components/_data.scss */
 .af-data.af--xlarge {
   font-size: 60px;
   font-weight: 100;
   line-height: 1.1;
 }
-/* line 17, scss/components/_data.scss */
 .af-data.af--xxlarge {
   font-size: 100px;
   font-weight: 100;
   line-height: 1;
 }
-/* line 22, scss/components/_data.scss */
 .af-data.af--share sub {
   font-size: 40%;
   vertical-align: baseline;
   bottom: 0;
 }
-/* line 30, scss/components/_data.scss */
 .af-data.af--percent:after {
   content: '%';
   margin-left: .1em;
@@ -1212,21 +1016,17 @@ h2 {
     Errors
     =======
 */
-/* line 5, scss/components/_error.scss */
 .af-error {
   margin-bottom: 1em;
   color: #ed5565;
 }
-/* line 9, scss/components/_error.scss */
 .af-error a {
   color: #43b8c8 !important;
   text-decoration: underline;
 }
-/* line 13, scss/components/_error.scss */
 .af-error a:hover {
   color: #11a0b1 !important;
 }
-/* line 17, scss/components/_error.scss */
 .af-error a:before {
   content: '\a';
   white-space: pre;
@@ -1236,31 +1036,26 @@ h2 {
     Event Navigation
     ================
 */
-/* line 9, scss/components/_event-navigation.scss */
 .af-event-navigation.af--bottom-border {
   padding-bottom: 1em;
   margin-bottom: 1em;
   border-bottom: solid 1px #aaa;
 }
 
-/* line 17, scss/components/_event-navigation.scss */
 .af-event-navigation__icon {
   float: left;
   margin-right: .25em;
   font-size: 21px;
 }
-/* line 23, scss/components/_event-navigation.scss */
 .af-event-navigation__icon.af--xlarge {
   font-size: 40px;
 }
 
-/* line 28, scss/components/_event-navigation.scss */
 .af-event-navigation__title {
   margin: 0 0 4px;
   line-height: 1;
 }
 
-/* line 33, scss/components/_event-navigation.scss */
 .af-event-navigation__info {
   color: #bbb;
 }
@@ -1269,25 +1064,21 @@ h2 {
     Goal
     ====
 */
-/* line 7, scss/components/_goal.scss */
 .af-goal + .af-goal {
   margin-top: 20px;
   padding-top: 20px;
   border-top: solid 1px #E5E5E5;
 }
 
-/* line 14, scss/components/_goal.scss */
 .af-goal__progress {
   position: relative;
   padding: 6.66667px 20px;
   overflow: hidden;
   background: #81c684;
   border-radius: 20px;
-  font-size: 14pt;
   vertical-align: middle;
 }
 
-/* line 26, scss/components/_goal.scss */
 .af-goal__progress-bar {
   position: absolute;
   background: #2c9e52;
@@ -1297,13 +1088,11 @@ h2 {
   z-index: 0;
 }
 
-/* line 34, scss/components/_goal.scss */
 .af-goal__progress-label {
   position: relative;
   z-index: 1;
 }
 
-/* line 39, scss/components/_goal.scss */
 .af-goal__info {
   font-size: 14px;
 }
@@ -1312,34 +1101,28 @@ h2 {
     Knob Chart
     ==========
 */
-/* line 5, scss/components/_knob.scss */
 .af-knob {
   text-align: center;
 }
-/* line 9, scss/components/_knob.scss */
 .af-knob.af--empty .af-knob__label {
   top: auto;
   bottom: 30%;
   color: #aaa;
 }
-/* line 16, scss/components/_knob.scss */
 .af-knob.af--empty .af-knob__legend {
   font-size: 14px;
 }
 
-/* line 22, scss/components/_knob.scss */
 .af-knob__inner {
   position: relative;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 28, scss/components/_knob.scss */
 .af-knob__input {
   display: none;
 }
 
-/* line 31, scss/components/_knob.scss */
 .af-knob__label {
   position: absolute;
   top: 55%;
@@ -1352,7 +1135,6 @@ h2 {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 45, scss/components/_knob.scss */
 .af-knob__legend {
   display: block;
   margin-top: 20px;
@@ -1361,18 +1143,15 @@ h2 {
   font-size: 12px;
 }
 
-/* line 54, scss/components/_knob.scss */
 .af-knob__link {
   display: block;
 }
-/* line 57, scss/components/_knob.scss */
 .af-knob__link * {
   color: #43b8c8 !important;
   opacity: 1;
   cursor: pointer;
 }
 
-/* line 64, scss/components/_knob.scss */
 .af-knob__value {
   position: absolute;
   bottom: 45%;
@@ -1390,7 +1169,6 @@ h2 {
     Labels
     ======
 */
-/* line 8, scss/components/_label.scss */
 .af-label.af--quality {
   opacity: .66;
   transition: all 1s;
@@ -1399,32 +1177,26 @@ h2 {
   font-size: 10px;
   line-height: 1;
 }
-/* line 18, scss/components/_label.scss */
 .af-label.af--quality:after {
   content: '%';
 }
-/* line 21, scss/components/_label.scss */
 .af-label.af--quality:hover {
   opacity: 1;
 }
-/* line 26, scss/components/_label.scss */
 .af-label.af--pdf {
   display: inline-block;
   padding: 3px 5px;
   margin-bottom: 4px;
   vertical-align: middle;
 }
-/* line 33, scss/components/_label.scss */
 .af-label.af--good {
   background-color: #81c684;
   color: white;
 }
-/* line 37, scss/components/_label.scss */
 .af-label.af--avg {
   background-color: #f0ad4e;
   color: white;
 }
-/* line 41, scss/components/_label.scss */
 .af-label.af--poor {
   background-color: #ed5565;
   color: white;
@@ -1434,18 +1206,15 @@ h2 {
     Lists
     =====
 */
-/* line 6, scss/components/_list.scss */
 .af-list {
   padding: 0;
   list-style: none;
 }
-/* line 10, scss/components/_list.scss */
 .af-list > li,
 .af-list .af-list__item {
   padding: 5px 0;
   font-size: 18px;
 }
-/* line 15, scss/components/_list.scss */
 .af-list > li h3,
 .af-list > li h4,
 .af-list > li h5,
@@ -1454,42 +1223,34 @@ h2 {
 .af-list .af-list__item h5 {
   margin: 0;
 }
-/* line 21, scss/components/_list.scss */
 .af-list > li a,
 .af-list .af-list__item a {
   color: #333;
 }
-/* line 25, scss/components/_list.scss */
 .af-list > li em,
 .af-list .af-list__item em {
   color: #bbb;
   font-size: 12px;
   font-style: normal;
 }
-/* line 34, scss/components/_list.scss */
 .af-list.af--collapsed .af-list__item:nth-of-type(n+9) {
   display: none;
 }
-/* line 40, scss/components/_list.scss */
 .af-list.af--separated .af-list__item {
   padding: 10px 0;
   border-bottom: solid 1px #E5E5E5;
 }
-/* line 44, scss/components/_list.scss */
 .af-list.af--separated .af-list__item:last-child {
   border-bottom: none;
 }
-/* line 48, scss/components/_list.scss */
 .af-list.af--separated .af-list__item input[type="checkbox"],
 .af-list.af--separated .af-list__item input[type="radio"],
 .af-list.af--separated .af-list__item .fa {
   margin-right: .5em;
 }
-/* line 54, scss/components/_list.scss */
 .af-list.af--separated .af-list__item .af-label {
   float: right;
 }
-/* line 62, scss/components/_list.scss */
 .af-list.af--drill .af-list__item a:after {
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
@@ -1503,28 +1264,23 @@ h2 {
   color: #bbb;
   font-size: 30px;
 }
-/* line 77, scss/components/_list.scss */
 .af-list.af--events .af-list__item {
   padding: 0;
 }
-/* line 80, scss/components/_list.scss */
 .af-list.af--events .af-list__item a {
   display: block;
   position: relative;
   padding: 10px 0;
 }
-/* line 85, scss/components/_list.scss */
 .af-list.af--events .af-list__item a h3 {
   font-size: 14px;
   font-weight: 800;
 }
-/* line 95, scss/components/_list.scss */
 .af-list.af--files .af-list__item {
   position: relative;
   overflow: hidden;
   padding-right: 250px;
 }
-/* line 101, scss/components/_list.scss */
 .af-list.af--files .af-list__item .af-list__actions,
 .af-list.af--files .af-list__item .af-list__data {
   position: absolute;
@@ -1533,64 +1289,52 @@ h2 {
   transform: translateZ(0);
   padding: .5em 0;
 }
-/* line 112, scss/components/_list.scss */
 .af-list.af--files .af-list__item .af-list__actions {
   top: 101%;
   opacity: 0;
   padding: .75em 0;
 }
-/* line 117, scss/components/_list.scss */
 .af-list.af--files .af-list__item .af-list__data {
   top: 0;
   opacity: 1;
 }
-/* line 124, scss/components/_list.scss */
 .af-list.af--files .af-list__item:hover .af-list__actions, .af-list.af--files .af-list__item:active .af-list__actions {
   top: 0%;
   opacity: 1;
 }
-/* line 128, scss/components/_list.scss */
 .af-list.af--files .af-list__item:hover .af-list__data, .af-list.af--files .af-list__item:active .af-list__data {
   top: -101%;
   opacity: 0;
 }
-/* line 136, scss/components/_list.scss */
 .af-list.af--files ul.af-list__data {
   list-style: none;
   margin: 0;
   padding: 0;
   color: #bbb;
 }
-/* line 140, scss/components/_list.scss */
 .af-list.af--files ul.af-list__data li {
   display: inline-block;
   padding: 0 .5em;
   font-size: 16px;
   text-align: center;
 }
-/* line 147, scss/components/_list.scss */
 .af-list.af--files ul.af-list__data li + li {
   border-left: solid 1px #E5E5E5;
 }
-/* line 154, scss/components/_list.scss */
 .af-list.af--files ul.af-list__data small {
   display: block;
   font-size: 11px;
 }
-/* line 163, scss/components/_list.scss */
 .af-list.af--sponsors .af-list__item {
   position: relative;
   padding-right: 100px;
 }
-/* line 167, scss/components/_list.scss */
 .af-list.af--sponsors .af-list__item h3 {
   font-weight: normal;
 }
-/* line 171, scss/components/_list.scss */
 .af-list.af--sponsors .af-list__item .fa {
   color: #bbb;
 }
-/* line 175, scss/components/_list.scss */
 .af-list.af--sponsors .af-list__item .af-list__actions,
 .af-list.af--sponsors .af-list__item .af-list__data {
   position: absolute;
@@ -1598,17 +1342,14 @@ h2 {
   top: 0;
   padding: .75em 0;
 }
-/* line 184, scss/components/_list.scss */
 .af-list.af--sponsors .af-list__item .af-list__data {
   padding: 1em 0;
   color: #bbb;
   font-weight: 300;
 }
-/* line 191, scss/components/_list.scss */
 .af-list.af--sponsors .af-list__item.af--active .fa {
   color: #333;
 }
-/* line 196, scss/components/_list.scss */
 .af-list.af--sponsors .af-list__item.af--complete * {
   color: #81c684;
 }
@@ -1617,13 +1358,11 @@ h2 {
     Loader
     ======
 */
-/* line 8, scss/components/_loader.scss */
 .af-loader.af--page {
   padding: 20% 0;
   text-align: center;
   opacity: .33;
 }
-/* line 14, scss/components/_loader.scss */
 .af-loader.af--block {
   padding: 5em;
   text-align: center;
@@ -1634,12 +1373,10 @@ h2 {
     Locked Reports List
     ===================
 */
-/* line 5, scss/components/_locked-reports.scss */
 .af-locked-reports {
   padding: 0;
   margin: 0;
 }
-/* line 9, scss/components/_locked-reports.scss */
 .af-locked-reports .af-locked-reports__item {
   display: inline-block;
   width: 30%;
@@ -1649,11 +1386,9 @@ h2 {
   box-shadow: #aaa 0 1px 3px;
   text-align: center;
 }
-/* line 20, scss/components/_locked-reports.scss */
 .af-locked-reports .af-locked-reports__item:nth-child(3n+1) {
   margin-left: 0;
 }
-/* line 24, scss/components/_locked-reports.scss */
 .af-locked-reports .af-locked-reports__item h3 {
   padding: 10px;
   border-bottom: solid 1px #E5E5E5;
@@ -1661,13 +1396,11 @@ h2 {
   font-size: 21px;
   font-weight: 100;
 }
-/* line 32, scss/components/_locked-reports.scss */
 .af-locked-reports .af-locked-reports__item big {
   font-size: 48px;
   font-weight: 100;
   line-height: 1.1;
 }
-/* line 36, scss/components/_locked-reports.scss */
 .af-locked-reports .af-locked-reports__item .af-locked-reports__thumbnail {
   display: block;
   width: 100%;
@@ -1676,36 +1409,65 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 46, scss/components/_locked-reports.scss */
 .af-locked-reports .af-locked-reports__item.af--job_title .af-locked-reports__thumbnail {
   background-image: url(../af_img/reports/thumbnails/job_title@2x.jpg);
 }
-/* line 49, scss/components/_locked-reports.scss */
 .af-locked-reports .af-locked-reports__item.af--education .af-locked-reports__thumbnail {
   background-image: url(../af_img/reports/thumbnails/education@2x.jpg);
 }
-/* line 52, scss/components/_locked-reports.scss */
 .af-locked-reports .af-locked-reports__item.af--location .af-locked-reports__thumbnail {
   background-image: url(../af_img/reports/thumbnails/location@2x.jpg);
 }
-/* line 24, scss/components/_login.scss */
+@media (max-width: 768px) {
+  .af-locked-reports .af-locked-reports__item {
+    width: 48%;
+    margin-left: 3%;
+  }
+  .af-locked-reports .af-locked-reports__item:nth-child(3n+1) {
+    margin-left: 4%;
+  }
+  .af-locked-reports .af-locked-reports__item:nth-child(odd) {
+    margin-left: 0;
+  }
+}
+
+/*
+    Login/Register form
+    ===================
+*/
+.af-login {
+  width: auto !important;
+  min-width: 300px;
+  max-width: 480px;
+}
+.af-login .af-login__container {
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 30px;
+  background: #fbfbfb;
+  border: solid 1px #E5E5E5;
+}
+@media (max-width: 480px) {
+  .af-login .af-login__container {
+    padding: 20px;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+  }
+}
 .af-login .af-login__logo {
   width: 160px;
   margin-bottom: 20px;
 }
-/* line 30, scss/components/_login.scss */
 .af-login input {
   margin: 1em 0;
   padding: 1.4em 1em;
   font-size: 18px;
   font-weight: 100;
 }
-/* line 38, scss/components/_login.scss */
 .af-login header h1 {
   font-size: 30px;
   font-weight: 100;
 }
-/* line 44, scss/components/_login.scss */
 .af-login footer {
   margin-top: 20px;
   padding-top: 20px;
@@ -1716,7 +1478,6 @@ h2 {
     Labels
     ======
 */
-/* line 6, scss/components/_nav-widget.scss */
 .af-nav-widget {
   width: 100%;
   margin-top: 40px;
@@ -1728,22 +1489,18 @@ h2 {
   transition: all .3s;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
 }
-/* line 20, scss/components/_nav-widget.scss */
 .af-nav-widget h3 {
   font-weight: bold;
 }
-/* line 24, scss/components/_nav-widget.scss */
 .af-nav-widget ul {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 }
-/* line 28, scss/components/_nav-widget.scss */
 .af-nav-widget ul li {
   margin: 10px 0;
 }
-/* line 33, scss/components/_nav-widget.scss */
 .af-nav-widget.af--sticky {
   position: fixed;
   bottom: 0;
@@ -1752,7 +1509,6 @@ h2 {
   box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.1);
   transform: translateZ(0);
 }
-/* line 43, scss/components/_nav-widget.scss */
 .mini-navbar .af-nav-widget {
   opacity: 0;
 }
@@ -1761,19 +1517,16 @@ h2 {
     Page Title
     ====
 */
-/* line 6, scss/components/_page-title.scss */
 .af-page-title {
   color: #2f4050;
   text-align: center;
 }
 
-/* line 11, scss/components/_page-title.scss */
 .af-page-title__title {
   font-size: 36px;
   font-weight: 300;
 }
 
-/* line 16, scss/components/_page-title.scss */
 .af-page-title__subtitle {
   display: inline-block;
   min-width: 33%;
@@ -1784,11 +1537,9 @@ h2 {
   font-size: 18px;
   font-weight: 100;
 }
-/* line 29, scss/components/_page-title.scss */
 .af-page-title__subtitle small {
   margin-left: 1em;
 }
-/* line 33, scss/components/_page-title.scss */
 .af-page-title__subtitle strong {
   font-weight: 500;
   color: #444;
@@ -1798,7 +1549,6 @@ h2 {
     Persona Cards
     =============
 */
-/* line 6, scss/components/_persona-card.scss */
 .af-persona-card {
   position: relative;
   min-height: 80px;
@@ -1807,7 +1557,6 @@ h2 {
   font-size: 12px;
 }
 
-/* line 15, scss/components/_persona-card.scss */
 .af-persona-card__avatar {
   position: absolute;
   left: 16px;
@@ -1815,14 +1564,12 @@ h2 {
   width: 66px;
 }
 
-/* line 22, scss/components/_persona-card.scss */
 .af-persona-card__name {
   margin: 0 0 6.66667px;
   margin-left: 75px;
   font-size: 16px;
 }
 
-/* line 27, scss/components/_persona-card.scss */
 .af-persona-card__info {
   margin-left: 75px;
   margin-bottom: 0;
@@ -1834,31 +1581,26 @@ h2 {
     Profile Cards
     =============
 */
-/* line 6, scss/components/_profile-card.scss */
 .af-profile-cards-list {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: auto;
 }
-/* line 10, scss/components/_profile-card.scss */
 .af-profile-cards-list .af-profile-card {
   float: left;
   width: 45%;
   margin: 20px 0;
 }
-/* line 15, scss/components/_profile-card.scss */
 .af-profile-cards-list .af-profile-card:nth-of-type(odd) {
   margin-right: 10%;
   clear: both;
 }
 
-/* line 22, scss/components/_profile-card.scss */
 .af-profile-card {
   font-size: 12px;
 }
 
-/* line 26, scss/components/_profile-card.scss */
 .af-profile-card__avatar {
   float: left;
   height: 90px;
@@ -1866,51 +1608,43 @@ h2 {
   margin: 0 20px 10px 0;
 }
 
-/* line 33, scss/components/_profile-card.scss */
 .af-profile-card__name {
   margin-top: 0;
   margin-bottom: 4px;
   font-weight: bold;
 }
 
-/* line 39, scss/components/_profile-card.scss */
 .af-profile-card__link {
   color: #333 !important;
   font-weight: 600;
 }
 
-/* line 43, scss/components/_profile-card.scss */
 .af-profile-card__address {
   margin-left: 5px;
   font-weight: 300;
 }
 
-/* line 47, scss/components/_profile-card.scss */
 .af-profile-card__info {
   clear: both;
   color: #777;
   font-size: 12px;
 }
 
-/* line 53, scss/components/_profile-card.scss */
 .af-profile-card__stats {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-/* line 57, scss/components/_profile-card.scss */
 .af-profile-card__stats li {
   float: left;
   width: 33%;
   margin: 10px 0;
   text-align: center;
 }
-/* line 63, scss/components/_profile-card.scss */
 .af-profile-card__stats li:first-of-type {
   text-align: left;
 }
-/* line 66, scss/components/_profile-card.scss */
 .af-profile-card__stats li:last-of-type {
   text-align: right;
 }
@@ -1919,17 +1653,14 @@ h2 {
     Upload Progress UI
     ==================
 */
-/* line 7, scss/components/_progress.scss */
 .af-progress .af-progress__bar {
   position: relative;
   margin: 3em 0;
   text-align: center;
 }
-/* line 13, scss/components/_progress.scss */
 .af-progress .af-progress__bar-input {
   display: none;
 }
-/* line 17, scss/components/_progress.scss */
 .af-progress .af-progress__bar-value {
   font-size: 100px;
   font-weight: 100;
@@ -1938,7 +1669,6 @@ h2 {
   bottom: 40%;
   width: 100%;
 }
-/* line 25, scss/components/_progress.scss */
 .af-progress .af-progress__bar-label {
   position: absolute;
   bottom: 25%;
@@ -1947,18 +1677,15 @@ h2 {
   font-style: italic;
   font-size: 18px;
 }
-/* line 35, scss/components/_progress.scss */
 .af-progress .af-progress__steps {
   padding-top: 5em;
   padding-left: 1.5em;
 }
-/* line 39, scss/components/_progress.scss */
 .af-progress .af-progress__steps .af-progress__step {
   opacity: .1;
   transition: all 1s .1s;
   font-size: 21px;
 }
-/* line 45, scss/components/_progress.scss */
 .af-progress .af-progress__steps .af-progress__step:before {
   content: '';
   display: inline-block;
@@ -1971,29 +1698,23 @@ h2 {
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 61, scss/components/_progress.scss */
 .af-progress .af-progress__steps .af-progress__step.af--active {
   opacity: 1;
 }
-/* line 64, scss/components/_progress.scss */
 .af-progress .af-progress__steps .af-progress__step.af--active:before {
   background-image: url(../af_img/loaders/events-loader@2x.gif);
 }
-/* line 69, scss/components/_progress.scss */
 .af-progress .af-progress__steps .af-progress__step.af--complete {
   opacity: 1;
   color: #81c684;
 }
-/* line 73, scss/components/_progress.scss */
 .af-progress .af-progress__steps .af-progress__step.af--complete:before {
   background-image: url(../af_img/icons/check@2x.png);
 }
-/* line 78, scss/components/_progress.scss */
 .af-progress .af-progress__steps .af-progress__step.af--error {
   opacity: 1;
   color: #ed5565;
 }
-/* line 82, scss/components/_progress.scss */
 .af-progress .af-progress__steps .af-progress__step.af--error:before {
   background-image: url(../af_img/icons/error@2x.png);
 }
@@ -2002,7 +1723,6 @@ h2 {
     Reports
     =======
 */
-/* line 5, scss/components/_report.scss */
 .af-report {
   outline: none;
   position: relative;
@@ -2010,7 +1730,6 @@ h2 {
   overflow: hidden;
 }
 
-/* line 12, scss/components/_report.scss */
 .af-report__caption {
   position: absolute;
   left: 60px;
@@ -2021,14 +1740,12 @@ h2 {
   max-width: 400px;
 }
 
-/* line 23, scss/components/_report.scss */
 .af-report__title {
   font-size: 40px;
   font-weight: 500;
   white-space: nowrap;
 }
 
-/* line 29, scss/components/_report.scss */
 .af-report__quality {
   display: inline-block;
   margin-left: 1em;
@@ -2039,21 +1756,17 @@ h2 {
   font-size: 10px;
   vertical-align: super;
 }
-/* line 42, scss/components/_report.scss */
 .af-report__quality.af--medium {
   background: #f0ad4e;
 }
-/* line 45, scss/components/_report.scss */
 .af-report__quality.af--low {
   background: #ed5565;
 }
 
-/* line 50, scss/components/_report.scss */
 .af-report__canvas {
   width: 100%;
   height: 100%;
 }
-/* line 54, scss/components/_report.scss */
 .af-report__canvas.af--chart {
   position: relative;
   width: 90%;
@@ -2062,7 +1775,6 @@ h2 {
   left: 2%;
   right: 2%;
 }
-/* line 63, scss/components/_report.scss */
 .af-report__canvas.af--map {
   position: relative;
   width: 80%;
@@ -2070,7 +1782,6 @@ h2 {
   top: 5%;
   margin-left: 15%;
 }
-/* line 71, scss/components/_report.scss */
 .af-report__canvas.af--wordcloud {
   position: relative;
   width: 80%;
@@ -2079,7 +1790,6 @@ h2 {
   margin-left: 20%;
 }
 
-/* line 82, scss/components/_report.scss */
 .af-report.af--zip_code .af-report__caption {
   left: 0;
   bottom: 0;
@@ -2095,15 +1805,12 @@ h2 {
     Dropdown Select
     ===============
 */
-/* line 7, scss/components/_select.scss */
 .af-select-inline:after {
-  display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   transform: translate(0, 0);
   content: "\f0dd";
-  margin-top: .4em;
   margin-left: .5em;
   font-size: 18px;
   vertical-align: top;
@@ -2114,13 +1821,11 @@ h2 {
     ======================
 
 */
-/* line 7, scss/components/_slider.scss */
 .af-slider {
   position: relative;
   background: white;
   box-shadow: #aaa 0 1px 4px;
 }
-/* line 14, scss/components/_slider.scss */
 .af-slider .slick-dots {
   position: absolute;
   left: 0;
@@ -2134,16 +1839,13 @@ h2 {
   list-style: none;
   white-space: nowrap;
 }
-/* line 31, scss/components/_slider.scss */
 .af-slider .slick-dots li {
   display: inline-block;
 }
-/* line 36, scss/components/_slider.scss */
 .af-slider .slick-list {
   padding-top: 38px;
 }
 
-/* line 41, scss/components/_slider.scss */
 .af-slider__tab {
   padding: 10px 1em;
   border: none;
@@ -2152,12 +1854,10 @@ h2 {
   color: white;
 }
 
-/* line 48, scss/components/_slider.scss */
 .slick-active .af-slider__tab {
   color: #2f4050;
 }
 
-/* line 52, scss/components/_slider.scss */
 .af-slider__control {
   position: absolute;
   top: 75%;
@@ -2170,11 +1870,9 @@ h2 {
   font-weight: 100;
   line-height: 1;
 }
-/* line 67, scss/components/_slider.scss */
 .af-slider__control.af--previous {
   left: 20px;
 }
-/* line 70, scss/components/_slider.scss */
 .af-slider__control.af--next {
   right: 20px;
 }
@@ -2184,19 +1882,15 @@ h2 {
     =====
 
 */
-/* line 11, scss/components/_stack.scss */
 .af-stack__item {
   padding: 40px 0;
 }
-/* line 14, scss/components/_stack.scss */
 .af-stack__item:first-child {
   padding-top: 0;
 }
-/* line 18, scss/components/_stack.scss */
 .af-stack__item:last-child {
   padding-bottom: 0;
 }
-/* line 22, scss/components/_stack.scss */
 .af-stack__item + .af-stack__item {
   border-top: solid 1px #aaa;
 }
@@ -2206,24 +1900,20 @@ h2 {
     =======================
 
 */
-/* line 7, scss/components/_stats.scss */
 .af-stats {
   display: inline-block;
   line-height: 1.3;
   text-align: center;
 }
 
-/* line 14, scss/components/_stats.scss */
 .af-stats__label {
   display: block;
 }
 
-/* line 18, scss/components/_stats.scss */
 .af-stats__value {
   display: block;
   font-size: 24px;
 }
-/* line 22, scss/components/_stats.scss */
 .af-stats__value big {
   line-height: 0.1;
   font-size: 48px;
@@ -2231,18 +1921,15 @@ h2 {
   vertical-align: sub;
 }
 
-/* line 31, scss/components/_stats.scss */
 .af-stats.af--social .af-stats__label {
   font-size: 10px;
   text-transform: uppercase;
 }
-/* line 35, scss/components/_stats.scss */
 .af-stats.af--social .af-stats__value {
   color: #61aadb;
   font-size: 18px;
 }
 
-/* line 42, scss/components/_stats.scss */
 .af-stats.af--large .af-stats__value {
   font-size: 30px;
   font-weight: 100;
@@ -2257,7 +1944,6 @@ h2 {
         <span class="af-switch__knob">
     </label>
 */
-/* line 10, scss/components/_switch.scss */
 .af-switch {
   position: relative;
   display: inline-block;
@@ -2271,7 +1957,6 @@ h2 {
   line-height: 1;
   vertical-align: text-top;
 }
-/* line 24, scss/components/_switch.scss */
 .af-switch:before, .af-switch:after {
   display: inline-block;
   width: 50%;
@@ -2281,40 +1966,33 @@ h2 {
   text-shadow: rgba(0, 0, 0, 0.25) 0 1px 1px;
   text-transform: uppercase;
 }
-/* line 35, scss/components/_switch.scss */
 .af-switch:before {
   content: 'On';
   padding-left: 10px;
   background: linear-gradient(#95d33f, #73b11d);
   color: white;
 }
-/* line 42, scss/components/_switch.scss */
 .af-switch:after {
   content: 'Off';
   padding-right: 10px;
   background: #bbb;
   color: white;
 }
-/* line 51, scss/components/_switch.scss */
 .af-switch.af--small:before, .af-switch.af--small:after {
   padding: 5px;
   font-size: 10px;
 }
-/* line 57, scss/components/_switch.scss */
 .af-switch.af--small:before {
   padding-left: 6.66667px;
 }
-/* line 60, scss/components/_switch.scss */
 .af-switch.af--small:after {
   padding-right: 6.66667px;
 }
 
-/* line 66, scss/components/_switch.scss */
 .af-switch__input {
   display: none;
 }
 
-/* line 70, scss/components/_switch.scss */
 .af-switch__knob {
   position: absolute;
   left: 0;
@@ -2327,7 +2005,6 @@ h2 {
   transition: all 0.15s;
 }
 
-/* line 83, scss/components/_switch.scss */
 .af-switch input:checked + .af-switch__knob {
   left: 48%;
 }
@@ -2336,14 +2013,12 @@ h2 {
     Upload UI
     =========
 */
-/* line 6, scss/components/_upload.scss */
 .af-upload {
   position: relative;
   min-height: 240px;
   margin: 2em -20px;
   background: #f2f2f2;
 }
-/* line 14, scss/components/_upload.scss */
 .af-upload .af-upload__overlay {
   position: absolute;
   z-index: 10;
@@ -2356,19 +2031,16 @@ h2 {
   background: red;
   opacity: 0;
 }
-/* line 28, scss/components/_upload.scss */
 .af-upload .af-upload__inner {
   padding: 3em;
   font-size: 18px;
   text-align: center;
 }
-/* line 34, scss/components/_upload.scss */
 .af-upload .af-upload__inner small {
   display: block;
   margin: .5em 0;
   color: #aaa;
 }
-/* line 42, scss/components/_upload.scss */
 .af-upload .af-upload__button {
   position: relative;
   z-index: 11;
@@ -2379,7 +2051,6 @@ h2 {
     Welcome Widget
     ==============
 */
-/* line 5, scss/components/_welcome.scss */
 .af-welcome {
   box-shadow: #aaa 0 1px 3px;
   /* Intro */
@@ -2389,53 +2060,43 @@ h2 {
   /* Sponsors */
   /* Floating widget */
 }
-/* line 8, scss/components/_welcome.scss */
 .af-welcome, .af-welcome .widget-head-color-box {
   background-color: white;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 16, scss/components/_welcome.scss */
 .af-welcome h1 {
   margin: .2em 0;
   font-size: 48px;
   font-weight: 100;
 }
-/* line 22, scss/components/_welcome.scss */
 .af-welcome h1 strong {
   font-weight: 500;
 }
-/* line 27, scss/components/_welcome.scss */
 .af-welcome h6 {
   margin: 2em 0 1em;
   font-size: 21px;
   font-weight: 600;
 }
-/* line 34, scss/components/_welcome.scss */
 .af-welcome p {
   margin: 0;
   font-size: 16px;
   line-height: 1.8;
 }
-/* line 40, scss/components/_welcome.scss */
 .af-welcome .btn {
   vertical-align: baseline;
 }
-/* line 45, scss/components/_welcome.scss */
 .af-welcome .af--light-text, .af-welcome.af--light-text, .af-welcome.af--light-text h1 {
   color: white;
 }
-/* line 51, scss/components/_welcome.scss */
 .af-welcome .af--dark-text, .af-welcome.af--dark-text, .af-welcome.af--dark-text h1 {
   color: #333;
 }
-/* line 58, scss/components/_welcome.scss */
 .af-welcome.af--intro {
   margin-bottom: 1em;
   background: transparent;
 }
-/* line 62, scss/components/_welcome.scss */
 .af-welcome.af--intro .widget-head-color-box {
   margin: 0;
   margin-top: -2px;
@@ -2443,17 +2104,14 @@ h2 {
   background-image: url("../af_img/welcome/events@2x.jpg");
   background-position: center top;
 }
-/* line 72, scss/components/_welcome.scss */
 .af-welcome.af--audience {
   background-color: #43b8c8;
   background-image: url("../af_img/welcome/audience@2x.jpg");
 }
-/* line 78, scss/components/_welcome.scss */
 .af-welcome.af--events {
   background-color: #81c684;
   background-image: url("../af_img/welcome/events@2x.jpg");
 }
-/* line 85, scss/components/_welcome.scss */
 .af-welcome.af--marketing .widget-head-color-box {
   margin: 0;
   margin-top: -2px;
@@ -2461,16 +2119,13 @@ h2 {
   background-image: url("../af_img/welcome/marketing@2x.jpg");
   background-position: center center;
 }
-/* line 93, scss/components/_welcome.scss */
 .af-welcome.af--marketing .widget-text-box {
   text-align: left;
 }
-/* line 99, scss/components/_welcome.scss */
 .af-welcome.af--sponsors {
   background-color: #a284bf;
   background-image: url("../af_img/welcome/sponsors@2x.jpg");
 }
-/* line 105, scss/components/_welcome.scss */
 .af-welcome.af--float {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
@@ -2484,14 +2139,12 @@ h2 {
   box-shadow: #aaa 0 5px 10px;
 }
 @media (max-width: 1024px) {
-  /* line 105, scss/components/_welcome.scss */
   .af-welcome.af--float {
     left: 20px;
     right: 20px;
   }
 }
 @media (max-width: 768px) {
-  /* line 105, scss/components/_welcome.scss */
   .af-welcome.af--float {
     margin-left: 0;
   }
@@ -2501,42 +2154,39 @@ h2 {
     Widgets
     =======
 */
-/* line 6, scss/components/_widget.scss */
 .af-widget.af--data {
   text-align: center;
 }
-/* line 10, scss/components/_widget.scss */
 .af-widget.af--data footer {
   margin-top: 20px;
 }
-/* line 14, scss/components/_widget.scss */
 .af-widget.af--data h2 {
   margin-bottom: 10px;
+  font-size: 27px;
+  font-weight: 100;
+  line-height: 1.3;
 }
-/* line 20, scss/components/_widget.scss */
 .af-widget.af--data label {
   display: block;
-  font-weight: 500;
-  line-height: 21px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: .05em;
+  line-height: 1.3;
 }
-/* line 28, scss/components/_widget.scss */
 .af-widget.af--data .af-button {
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 32, scss/components/_widget.scss */
 .af-widget.af--data .af-data {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 100;
   line-height: 1.1;
   padding: 10px 0;
 }
-/* line 37, scss/components/_widget.scss */
 .af-widget.af--data.af--data-large .af-data {
   font-size: 48px;
   font-weight: 100;
   line-height: 1.1;
 }
-/* line 41, scss/components/_widget.scss */
 .af-widget.af--data.af--data-xlarge .af-data {
   font-size: 60px;
   font-weight: 100;
@@ -2544,7 +2194,6 @@ h2 {
   padding: 0 0 10px;
   line-height: .9;
 }
-/* line 47, scss/components/_widget.scss */
 .af-widget.af--data.af--data-xxlarge .af-data {
   font-size: 100px;
   font-weight: 100;
@@ -2552,68 +2201,55 @@ h2 {
   padding: 0 0 10px;
   line-height: .75;
 }
-/* line 55, scss/components/_widget.scss */
 .af-widget.af--promo p {
-  margin: 0 0 14px;
-  font-size: 21px;
-  font-weight: 400;
+  margin: 0 0 6.66667px;
+  font-size: 24px;
+  font-weight: 100;
   line-height: 1.3;
 }
-/* line 64, scss/components/_widget.scss */
 .af-widget.af--knob .af-knob__inner {
   margin: -4px;
   margin-bottom: -10px;
 }
-/* line 69, scss/components/_widget.scss */
 .af-widget.af--knob .af-knob__label {
   padding-top: .5em;
   opacity: 1;
 }
-/* line 74, scss/components/_widget.scss */
 .af-widget.af--knob .af-knob__value {
   font-size: 36px;
   font-weight: 300;
   line-height: 1.1;
   font-weight: 300;
 }
-/* line 80, scss/components/_widget.scss */
 .af-widget.af--audience {
   background-color: #43b8c8;
   color: white;
 }
-/* line 84, scss/components/_widget.scss */
 .af-widget.af--audience .af-button {
   color: #43b8c8;
 }
-/* line 89, scss/components/_widget.scss */
 .af-widget.af--events {
   background-color: #81c684;
   color: white;
 }
-/* line 93, scss/components/_widget.scss */
 .af-widget.af--events .af-button {
   color: #81c684;
 }
-/* line 98, scss/components/_widget.scss */
 .af-widget.af--marketing {
   background-color: #df7f86;
   color: white;
 }
-/* line 102, scss/components/_widget.scss */
 .af-widget.af--marketing .af-button {
   color: #df7f86;
 }
-/* line 107, scss/components/_widget.scss */
 .af-widget.af--sponsors {
   background-color: #a284bf;
   color: white;
 }
-/* line 111, scss/components/_widget.scss */
 .af-widget.af--sponsors .af-button {
   color: #a284bf;
 }
 
-/* line 118, scss/components/_widget.scss */
 .af-widget__progress {
   position: relative;
   display: block;
@@ -2627,7 +2263,6 @@ h2 {
   overflow: hidden;
 }
 
-/* line 134, scss/components/_widget.scss */
 .af-widget__progress-bar {
   display: inline-block;
   height: 7px;
@@ -2635,7 +2270,6 @@ h2 {
 }
 
 /* Slider */
-/* line 3, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-slider {
   position: relative;
   display: block;
@@ -2652,7 +2286,6 @@ h2 {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 18, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -2660,17 +2293,14 @@ h2 {
   margin: 0;
   padding: 0;
 }
-/* line 25, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-list:focus {
   outline: none;
 }
-/* line 29, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
-/* line 34, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -2680,66 +2310,53 @@ h2 {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 43, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-track {
   position: relative;
   left: 0;
   top: 0;
   display: block;
 }
-/* line 49, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
-/* line 55, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-track:after {
   clear: both;
 }
-/* line 59, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
-/* line 63, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-slide {
   float: left;
   height: 100%;
   min-height: 1px;
   display: none;
 }
-/* line 67, ../js/plugins/slick-1.5.9/slick/slick.scss */
 [dir="rtl"] .slick-slide {
   float: right;
 }
-/* line 70, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-slide img {
   display: block;
 }
-/* line 73, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-slide.slick-loading img {
   display: none;
 }
-/* line 79, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-slide.dragging img {
   pointer-events: none;
 }
-/* line 83, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-initialized .slick-slide {
   display: block;
 }
-/* line 87, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
-/* line 91, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
 }
 
-/* line 97, ../js/plugins/slick-1.5.9/slick/slick.scss */
 .slick-arrow.slick-hidden {
   display: none;
 }

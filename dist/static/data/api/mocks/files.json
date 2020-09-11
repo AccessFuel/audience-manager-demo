@@ -1,0 +1,24 @@
+{
+    "events": [{
+        "createdAt": "2020-07-21T02:30:13.091Z",
+        "fileName": "Ticket Purchase Export",
+        "status": "Initial Upload",
+        "uuid": "5a31bcb-1-1"
+    }, {
+        "createdAt": "2020-09-08T02:30:13.091Z",
+        "fileName": "Enriched Ticket Purchase Export",
+        "status": "Initial Upload",
+        "uuid": "5a31bcb-1-2"
+    }],
+    "ecommerce": [{
+        "createdAt": "2020-07-21T02:30:13.091Z",
+        "fileName": "POS Purchase Export",
+        "status": "Initial Upload",
+        "uuid": "5a31bcb-2-1"
+    }, {
+        "createdAt": "2020-09-08T02:30:13.091Z",
+        "fileName": "Enriched POS Purchase Export",
+        "status": "Initial Upload",
+        "uuid": "5a31bcb-2-2"
+    }] 
+}

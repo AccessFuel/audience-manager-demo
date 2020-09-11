@@ -99,6 +99,15 @@
                                             <i class="fa fa-bookmark-o pull-right u-margin-top-md"></i>
                                         </a>
                                     </li>
+                                    <li>
+                                        <h4>Industry</h4>
+                                        <a href="" data-industry="events">
+                                            Events
+                                        </a>
+                                        <a href="" data-industry="ecommerce">
+                                            ECommerce
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -142,7 +151,7 @@
         
                     <p class="u-thin u-text-medium">
                         Accessfuel is a unique platform 
-                        that combines all of your event data from multiple sources<br/>
+                        that combines all of your audience data from multiple sources<br/>
                         and then enables you to analyze, enhance and visualize your audience<br/>
                         to create a complete view of “Who’s in the room®”
                         and maximize you revenue.
@@ -383,7 +392,7 @@
         <article class="animated fadeIn js-files-list-sort">
             <header class="row af-events-list__sort">
                 <div class="col-xs-5 af-events-list__sort-item js-sort-toggle" data-sort="name">
-                    File / Event Name
+                    Source Name
                 </div>
                 <div class="col-xs-2 af-events-list__sort-item af--center js-sort-toggle" data-sort="audience">
                     Audience
@@ -422,7 +431,7 @@
                             <div class="col-xs-2 text-center js-file-stats-quality">
                             </div>
                             <div class="col-xs-1 u-padding-v-md text-center af-events-list__item-actions">
-                                <a href="./report.html?{{fileInfo.project_id}}/upload" class="u-color-grey-80" title="View Initial Audience Report">
+                                <a href="./report.html?{{fileInfo.uuid}}/upload" class="u-color-grey-80" title="View Initial Audience Report">
                                     <i class="fa fa-pie-chart"></i>
                                 </a>
     
@@ -524,7 +533,7 @@
                             <a href="./download/A1-tedx_all.csv" target="_blank" class="u-margin-left-md" title="Download Original File">
                                 <i class="fa fa-cloud-download"></i>
                             </a>
-                            <a href="./report.html?{{fileInfo.project_id}}/upload" class="u-margin-left-md" title="View Initial Audience Report">
+                            <a href="./report.html?{{fileInfo.uuid}}/upload" class="u-margin-left-md" title="View Initial Audience Report">
                                 <i class="fa fa-pie-chart"></i>
                             </a>
     
@@ -596,7 +605,7 @@
                     <dl class="af-panel__item af--report">
                         <dt>
                             <h4 class="af-panel__item-header">
-                                <a href="./crm/initial.html?{{fileInfo.project_id}}/upload#crm">
+                                <a href="./crm/initial.html?{{fileInfo.uuid}}/upload#crm">
                                     View Master Data
                                     <i class="fa fa-angle-right u-margin-left-sm"></i>
                                 </a>
@@ -615,7 +624,7 @@
                     <dl class="af-panel__item af--report">
                         <dt>
                             <h4 class="af-panel__item-header">
-                                <a href="./report.html?{{fileInfo.project_id}}/upload">
+                                <a href="./report.html?{{fileInfo.uuid}}/upload">
                                     View Initial Audience Report
                                     <i class="fa fa-angle-right u-margin-left-sm"></i>
                                 </a>

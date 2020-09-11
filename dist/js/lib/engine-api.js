@@ -42,9 +42,7 @@ define(function (require) {
                 project.status = 'upload';
             }
 
-            return _requestAPI('job_results_get_v2.json?' + project.id + '/' + project.status + '/agg_json/true', {
-                cache: true
-            });
+            return _requestAPI('engine/job_results_get_v2.json?' + project.id + '/' + project.status + '/agg_json/true');
         },
 
         getStats: function(projectId) {
@@ -52,9 +50,7 @@ define(function (require) {
                 return false;
             }
 
-            return _requestAPI('quickscan_data_v2-' + projectId + '.json', {
-                cache: true
-            });
+            return _requestAPI('quickscan_data_v2-' + projectId + '.json');
         }
 
     };
