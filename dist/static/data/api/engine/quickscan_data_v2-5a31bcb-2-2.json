@@ -1,0 +1,717 @@
+{
+    "sheets": [
+        {
+            "sheet_duplicate": 310,
+            "sheet_emails": 9332,
+            "sheet_empty": 0,
+            "sheet_name": "",
+            "sheet_report": [
+                {
+                    "Column": "age",
+                    "Complete": 156,
+                    "Complete %": 0.0888382687927107,
+                    "Unique": 39,
+                    "Unique/Complete %": 0.25,
+                    "Unique/Total %": 0.022209567198177675,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "13-17",
+                                "pct": 0.0,
+                                "value": 0
+                            },
+                            {
+                                "label": "18-24",
+                                "pct": 0.10256410256410256,
+                                "value": 16
+                            },
+                            {
+                                "label": "25-34",
+                                "pct": 0.21153846153846154,
+                                "value": 33
+                            },
+                            {
+                                "label": "35-44",
+                                "pct": 0.22435897435897437,
+                                "value": 35
+                            },
+                            {
+                                "label": "45-54",
+                                "pct": 0.1794871794871795,
+                                "value": 28
+                            },
+                            {
+                                "label": "55-64",
+                                "pct": 0.07692307692307693,
+                                "value": 12
+                            },
+                            {
+                                "label": "65-75",
+                                "pct": 0.01282051282051282,
+                                "value": 2
+                            },
+                            {
+                                "label": "75+",
+                                "pct": 0.19230769230769232,
+                                "value": 30
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are 35-44, 25-34 and 75+ years old.",
+                            "favorite": true,
+                            "id": "age",
+                            "quality": 156,
+                            "quality_pct": 0.0888382687927107,
+                            "title": "Age",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "city",
+                    "Complete": 1050,
+                    "Complete %": 0.5979498861047836,
+                    "Unique": 230,
+                    "Unique/Complete %": 0.21904761904761905,
+                    "Unique/Total %": 0.13097949886104784,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "Los Angeles",
+                                "pct": 0.6076335877862595,
+                                "value": 398
+                            },
+                            {
+                                "label": "Santa Monica",
+                                "pct": 0.20458015267175572,
+                                "value": 134
+                            },
+                            {
+                                "label": "New York",
+                                "pct": 0.05648854961832061,
+                                "value": 37
+                            },
+                            {
+                                "label": "San Francisco",
+                                "pct": 0.025954198473282442,
+                                "value": 17
+                            },
+                            {
+                                "label": "Venice",
+                                "pct": 0.021374045801526718,
+                                "value": 14
+                            },
+                            {
+                                "label": "San Diego",
+                                "pct": 0.01984732824427481,
+                                "value": 13
+                            },
+                            {
+                                "label": "Beverly Hills",
+                                "pct": 0.0183206106870229,
+                                "value": 12
+                            },
+                            {
+                                "label": "Glendale",
+                                "pct": 0.016793893129770993,
+                                "value": 11
+                            },
+                            {
+                                "label": "los angeles",
+                                "pct": 0.015267175572519083,
+                                "value": 10
+                            },
+                            {
+                                "label": "Brooklyn",
+                                "pct": 0.013740458015267175,
+                                "value": 9
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are from Los Angeles",
+                            "favorite": true,
+                            "id": "city",
+                            "quality": 1050,
+                            "quality_pct": 0.5979498861047836,
+                            "title": "City",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "employment_domain",
+                    "Complete": 236,
+                    "Complete %": 0.13439635535307518,
+                    "Unique": 149,
+                    "Unique/Complete %": 0.6313559322033898,
+                    "Unique/Total %": 0.08485193621867881,
+                    "name": ""
+                },
+                {
+                    "Column": "fullName",
+                    "Complete": 1312,
+                    "Complete %": 0.7471526195899773,
+                    "Unique": 857,
+                    "Unique/Complete %": 0.6532012195121951,
+                    "Unique/Total %": 0.4880410022779043,
+                    "name": ""
+                },
+                {
+                    "Column": "gender",
+                    "Complete": 1187,
+                    "Complete %": 0.6759681093394078,
+                    "Unique": 3,
+                    "Unique/Complete %": 0.002527379949452401,
+                    "Unique/Total %": 0.0017084282460136675,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "female",
+                                "pct": 0.5585509688289806,
+                                "value": 663
+                            },
+                            {
+                                "label": "male",
+                                "pct": 0.44060657118786856,
+                                "value": 523
+                            },
+                            {
+                                "label": "927",
+                                "pct": 0.0008424599831508003,
+                                "value": 1
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are female",
+                            "favorite": true,
+                            "id": "gender",
+                            "quality": 1187,
+                            "quality_pct": 0.6759681093394078,
+                            "title": "Gender",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "job_title",
+                    "Complete": 672,
+                    "Complete %": 0.3826879271070615,
+                    "Unique": 388,
+                    "Unique/Complete %": 0.5773809523809523,
+                    "Unique/Total %": 0.22095671981776766,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "Organizer",
+                                "pct": 0.1728395061728395,
+                                "value": 14
+                            },
+                            {
+                                "label": "Principal ",
+                                "pct": 0.09876543209876543,
+                                "value": 8
+                            },
+                            {
+                                "label": "Director ",
+                                "pct": 0.09876543209876543,
+                                "value": 8
+                            },
+                            {
+                                "label": "Owner",
+                                "pct": 0.09876543209876543,
+                                "value": 8
+                            },
+                            {
+                                "label": "President ",
+                                "pct": 0.09876543209876543,
+                                "value": 8
+                            },
+                            {
+                                "label": "Writer ",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            },
+                            {
+                                "label": "President",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            },
+                            {
+                                "label": "Owner ",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            },
+                            {
+                                "label": "Independent Individual & Family Services Professional ",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            },
+                            {
+                                "label": "CEO",
+                                "pct": 0.08641975308641975,
+                                "value": 7
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are Organizer, Principal  and Director .",
+                            "favorite": true,
+                            "id": "job_title",
+                            "quality": 672,
+                            "quality_pct": 0.3826879271070615,
+                            "title": "Job Title",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "jobs__organization",
+                    "Complete": 657,
+                    "Complete %": 0.37414578587699315,
+                    "Unique": 412,
+                    "Unique/Complete %": 0.6270928462709284,
+                    "Unique/Total %": 0.23462414578587698,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "International Association for the Development of Apnea, AIDA",
+                                "pct": 0.1917808219178082,
+                                "value": 14
+                            },
+                            {
+                                "label": "thinkLA",
+                                "pct": 0.1506849315068493,
+                                "value": 11
+                            },
+                            {
+                                "label": "Family Services Professional",
+                                "pct": 0.0958904109589041,
+                                "value": 7
+                            },
+                            {
+                                "label": "northrop grumman",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Self Employed",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Snap TV, Inc.",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "SEO Capitvate",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Ethical Energy, LLC",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Equity Office Properties",
+                                "pct": 0.0821917808219178,
+                                "value": 6
+                            },
+                            {
+                                "label": "Bull in a China Shop Productions",
+                                "pct": 0.0684931506849315,
+                                "value": 5
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are International Association for the Development of Apnea, AIDA, thinkLA and Family Services Professional.",
+                            "favorite": true,
+                            "id": "job_title",
+                            "quality": 657,
+                            "quality_pct": 0.37414578587699315,
+                            "title": "Job Title",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "klout_score",
+                    "Complete": 0,
+                    "Complete %": 0.0,
+                    "Unique": 0,
+                    "Unique/Complete %": "NA",
+                    "Unique/Total %": 0.0,
+                    "name": ""
+                },
+                {
+                    "Column": "location_from_twitter",
+                    "Complete": 178,
+                    "Complete %": 0.10136674259681093,
+                    "Unique": 64,
+                    "Unique/Complete %": 0.3595505617977528,
+                    "Unique/Total %": 0.03644646924829157,
+                    "name": ""
+                },
+                {
+                    "Column": "row_id",
+                    "Complete": 1748,
+                    "Complete %": 0.9954441913439636,
+                    "Unique": 1748,
+                    "Unique/Complete %": 1.0,
+                    "Unique/Total %": 0.9954441913439636,
+                    "name": ""
+                },
+                {
+                    "Column": "skills__name",
+                    "Complete": 93,
+                    "Complete %": 0.05296127562642369,
+                    "Unique": 68,
+                    "Unique/Complete %": 0.7311827956989247,
+                    "Unique/Total %": 0.0387243735763098,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "management",
+                                "pct": 0.5246913580246914,
+                                "value": 85
+                            },
+                            {
+                                "label": "development",
+                                "pct": 0.4074074074074074,
+                                "value": 66
+                            },
+                            {
+                                "label": "business",
+                                "pct": 0.345679012345679,
+                                "value": 56
+                            },
+                            {
+                                "label": "product",
+                                "pct": 0.3148148148148148,
+                                "value": 51
+                            },
+                            {
+                                "label": "marketing",
+                                "pct": 0.3148148148148148,
+                                "value": 51
+                            },
+                            {
+                                "label": "design",
+                                "pct": 0.2716049382716049,
+                                "value": 44
+                            },
+                            {
+                                "label": "microsoft",
+                                "pct": 0.24691358024691357,
+                                "value": 40
+                            },
+                            {
+                                "label": "strategy",
+                                "pct": 0.1728395061728395,
+                                "value": 28
+                            },
+                            {
+                                "label": "adobe",
+                                "pct": 0.16049382716049382,
+                                "value": 26
+                            },
+                            {
+                                "label": "sales",
+                                "pct": 0.15432098765432098,
+                                "value": 25
+                            },
+                            {
+                                "label": "software",
+                                "pct": 0.1419753086419753,
+                                "value": 23
+                            },
+                            {
+                                "label": "financial",
+                                "pct": 0.12345679012345678,
+                                "value": 20
+                            },
+                            {
+                                "label": "project",
+                                "pct": 0.12345679012345678,
+                                "value": 20
+                            },
+                            {
+                                "label": "media",
+                                "pct": 0.11728395061728394,
+                                "value": 19
+                            },
+                            {
+                                "label": "web",
+                                "pct": 0.1111111111111111,
+                                "value": 18
+                            },
+                            {
+                                "label": "analysis",
+                                "pct": 0.1111111111111111,
+                                "value": 18
+                            },
+                            {
+                                "label": "html",
+                                "pct": 0.09876543209876543,
+                                "value": 16
+                            },
+                            {
+                                "label": "finance",
+                                "pct": 0.09259259259259259,
+                                "value": 15
+                            },
+                            {
+                                "label": "user",
+                                "pct": 0.09259259259259259,
+                                "value": 15
+                            },
+                            {
+                                "label": "social",
+                                "pct": 0.08641975308641975,
+                                "value": 14
+                            },
+                            {
+                                "label": "agile",
+                                "pct": 0.08641975308641975,
+                                "value": 14
+                            },
+                            {
+                                "label": "engineering",
+                                "pct": 0.08641975308641975,
+                                "value": 14
+                            },
+                            {
+                                "label": "building",
+                                "pct": 0.08641975308641975,
+                                "value": 14
+                            },
+                            {
+                                "label": "data",
+                                "pct": 0.08024691358024691,
+                                "value": 13
+                            },
+                            {
+                                "label": "research",
+                                "pct": 0.08024691358024691,
+                                "value": 13
+                            },
+                            {
+                                "label": "partnerships",
+                                "pct": 0.08024691358024691,
+                                "value": 13
+                            },
+                            {
+                                "label": "modeling",
+                                "pct": 0.08024691358024691,
+                                "value": 13
+                            },
+                            {
+                                "label": "css",
+                                "pct": 0.07407407407407407,
+                                "value": 12
+                            },
+                            {
+                                "label": "office",
+                                "pct": 0.07407407407407407,
+                                "value": 12
+                            },
+                            {
+                                "label": "windows",
+                                "pct": 0.07407407407407407,
+                                "value": 12
+                            },
+                            {
+                                "label": "javascript",
+                                "pct": 0.07407407407407407,
+                                "value": 12
+                            },
+                            {
+                                "label": "operations",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "photoshop",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "video",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "technology",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "leadership",
+                                "pct": 0.06172839506172839,
+                                "value": 10
+                            },
+                            {
+                                "label": "team",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "experience",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "systems",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "strategic",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "php",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "computing",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "excel",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "sql",
+                                "pct": 0.05555555555555555,
+                                "value": 9
+                            },
+                            {
+                                "label": "investing",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "private",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "information",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "entrepreneurship",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "recruiting",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            },
+                            {
+                                "label": "relations",
+                                "pct": 0.04938271604938271,
+                                "value": 8
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience have management, development and business skills.",
+                            "favorite": true,
+                            "id": "skills__name",
+                            "quality": 93,
+                            "quality_pct": 0.05296127562642369,
+                            "title": "Skills",
+                            "type": "wordcloud"
+                        }
+                    }
+                },
+                {
+                    "Column": "state",
+                    "Complete": 1125,
+                    "Complete %": 0.6406605922551253,
+                    "Unique": 53,
+                    "Unique/Complete %": 0.04711111111111111,
+                    "Unique/Total %": 0.03018223234624146,
+                    "name": "",
+                    "results": {
+                        "data": [
+                            {
+                                "label": "California",
+                                "pct": 0.8432760364004045,
+                                "value": 834
+                            },
+                            {
+                                "label": "New York",
+                                "pct": 0.06066734074823053,
+                                "value": 60
+                            },
+                            {
+                                "label": "Pennsylvania",
+                                "pct": 0.020222446916076844,
+                                "value": 20
+                            },
+                            {
+                                "label": "Illinois",
+                                "pct": 0.016177957532861477,
+                                "value": 16
+                            },
+                            {
+                                "label": "Florida",
+                                "pct": 0.012133468149646108,
+                                "value": 12
+                            },
+                            {
+                                "label": "Texas",
+                                "pct": 0.012133468149646108,
+                                "value": 12
+                            },
+                            {
+                                "label": "Louisiana",
+                                "pct": 0.010111223458038422,
+                                "value": 10
+                            },
+                            {
+                                "label": "Massachusetts",
+                                "pct": 0.00910010111223458,
+                                "value": 9
+                            },
+                            {
+                                "label": "Washington",
+                                "pct": 0.008088978766430738,
+                                "value": 8
+                            },
+                            {
+                                "label": "Minnesota",
+                                "pct": 0.008088978766430738,
+                                "value": 8
+                            }
+                        ],
+                        "summary": {
+                            "description": "The majority of your audience are from California",
+                            "favorite": true,
+                            "id": "state",
+                            "quality": 1125,
+                            "quality_pct": 0.6406605922551253,
+                            "title": "State",
+                            "type": "wordcloud"
+                        }
+                    }
+                }
+            ],
+            "sheet_rows": 9332
+        }
+    ]
+}

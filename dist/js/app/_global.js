@@ -175,6 +175,17 @@ define(function (require) {
         });
     };
 
+    const _bindIndustry = () => {
+        $('body').on('click', '[data-industry]', function() {
+            const industry = $(this).data('industry');
+            console.log('Setting industry', industry);
+            State.set('industry', industry);
+        });
+
+        const industry = State.get('industry', 'events');
+        $(`[data-industry="${industry}"]`).addClass('af--active');
+    }
+
     var _bindLogout = function() {
         $('.js-logout').on('click', function(e) {
             State.set('isAuthorized', false);
@@ -222,6 +233,7 @@ define(function (require) {
         _bindCopyOnClick();
         _bindConnectEventbride();
         _bindEnhanceRequest();
+        _bindIndustry();
         _bindRemoteModal();
         _bindLogout();
         _bindTabs();

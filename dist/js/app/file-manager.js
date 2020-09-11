@@ -4,6 +4,8 @@ define(function (require) {
     // Template scripts
     require('global');
 
+    var State = require('state');
+
     // Libraries
     // ---------
     var AdminAPI = require('adminAPI'),
@@ -50,6 +52,8 @@ define(function (require) {
                     parsedData.stats.usefulAttributes.value = parsedData.dataPoints.matched.length;
                     parsedData.stats.usefulAttributes.share = Utils.getTotalValueShare(parsedData.stats.usefulAttributes.value, parsedData.stats.attributes.value);
                 }
+
+                console.log('>>>>', parsedData);
 
                 // Set useful attributes to other placeholders
                 $('.js-file-details-matched-attributes').text(parsedData.stats.usefulAttributes.value);
@@ -209,8 +213,8 @@ define(function (require) {
             .resolve(AdminAPI.getFile(fileID))
             .then(function(data) {
                 showFileDetails(data, showSuccessMessage);
-                showFileDetailsStats(data.project_id, showSuccessMessage);
-                showFileDetailsDatapoints(data.project_id);
+                showFileDetailsStats(data.uuid, showSuccessMessage);
+                showFileDetailsDatapoints(data.uuid);
             }).catch(function() {
                 Error({
                     error: 'File not found.'
@@ -239,7 +243,7 @@ define(function (require) {
     };
 
     var showFileInTheListStats = function(file) {
-        var projectID = file.fileInfo.project_id;
+        var projectID = file.fileInfo.uuid;
         var $fileRow = $('#file-' + file.fileInfo.uuid);
 
         var _renderPartialData = function(partialContainerSelctor, partialData) {
@@ -308,21 +312,25 @@ define(function (require) {
     };
 
     var showFilesList = function(data) {
-        // Sho no files message and upload form
-        if (!data || !data.length) {
-            Utils.renderTemplate($('#js-file-manager__files'), Templates.filesEmpty, data);
+        const industry = State.get('industry', 'events');
+        const industryData = data[industry];
+        
+        // Show no files message and upload form
+        if (!industryData || !industryData.length) {
+            Utils.renderTemplate($('#js-file-manager__files'), Templates.filesEmpty, industryData);
             Navigation.navigate('files-empty');
             return;
         }
 
         var templateData = {
-            files: _parseFiles(data),
-            filters: _parseFilters(data)
+            files: _parseFiles(industryData),
+            filters: _parseFilters(industryData)
         };
 
         Utils.renderTemplate($('#js-file-manager__files'), Templates.files, templateData);
         Utils.renderTemplate($('#js-file-manager__files-list'), Templates.filesList, templateData);
 
+        // Filters are broken
         if (templateData.files.length > 5) {
             Utils.renderTemplate($('#js-file-manager__filters'), Templates.filesFilters, templateData);
         }
@@ -370,7 +378,7 @@ define(function (require) {
                 Error(response);
             } else {
                 window.location.pathname = '/crm/initial.html';
-                window.location.hash = response.project_id;
+                window.location.hash = response.uuid;
                 // loadFileDetails(response.uuid, true);
             }
         })
