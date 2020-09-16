@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./dist/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./dist/js/plugins/slick/slick.css" rel="stylesheet" />
     <link href="./dist/css/animate.css" rel="stylesheet">
     <link href="./dist/css/style.min.css" rel="stylesheet">
     <link href="./dist/css/accessfuel.css" rel="stylesheet">
@@ -855,19 +856,65 @@
                             </header>
                         
                             <article class="ibox-content af-persona-widget">
-                                <img src="./dist/images/em/persona/executive.png" class="af-persona-widget__image" />
-                                <h3 class="af-persona-widget__title">The Executive</h3>
-                        
-                                <p class="af-persona-widget__primary">
-                                    Male, 36 – 47 y/o
-                                    <br/> C-Level, VP’s, Directors
-                                    <br/> Southern California
-                                </p>
-                        
-                                <p class="af-persona-widget__secondary">
-                                    Educational background in Business
-                                    <br/> Works in Finance
-                                </p>
+                                <div class="af-slider js-persona-widget-carousel">
+                                    <div class="af-slider__slide">
+                                        <img src="./dist/images/em/persona/hustler.png" class="af-persona-widget__image" />
+                                        <h3 class="af-persona-widget__title">The Hustler</h3>
+                                
+                                        <p class="af-persona-widget__primary">
+                                            Male, 25 – 35 y/o
+                                            <br/> West Coast (Urban Areas)
+                                        </p>
+                                
+                                        <p class="af-persona-widget__secondary">
+                                            Works in Environment
+                                        </p>
+                                    </div>
+
+                                    <div class="af-slider__slide">
+                                        <img src="./dist/images/em/persona/millennial.png" class="af-persona-widget__image" />
+                                        <h3 class="af-persona-widget__title">Festive Millennial</h3>
+                                
+                                        <p class="af-persona-widget__primary">
+                                            Female, 25 – 35 y/o
+                                            <br/> California
+                                        </p>
+                                
+                                        <p class="af-persona-widget__secondary">
+                                            Income: $40k–$60k
+                                        </p>
+                                    </div>
+
+                                    <div class="af-slider__slide">
+                                        <img src="./dist/images/em/persona/urbanite.png" class="af-persona-widget__image" />
+                                        <h3 class="af-persona-widget__title">Aspirational Urbanite</h3>
+                                
+                                        <p class="af-persona-widget__primary">
+                                            Male, 25 – 40 y/o
+                                            <br/> West Coast (Metropolitan Areas)
+                                        </p>
+                                
+                                        <p class="af-persona-widget__secondary">
+                                            Income: $20–$60k
+                                        </p>
+                                    </div>
+
+                                    <div class="af-slider__slide">
+                                        <img src="./dist/images/em/persona/executive.png" class="af-persona-widget__image" />
+                                        <h3 class="af-persona-widget__title">The Executive</h3>
+                                
+                                        <p class="af-persona-widget__primary">
+                                            Male, 36 – 47 y/o
+                                            <br/> C-Level, VP’s, Directors
+                                            <br/> Southern California
+                                        </p>
+                                
+                                        <p class="af-persona-widget__secondary">
+                                            Education in Business
+                                            <br/> Works in Finance
+                                        </p>
+                                    </div>
+                                </div>
                             </article>
                         
                             <footer>
@@ -881,7 +928,7 @@
                         <!-- include em-widget-events-survey -->
                         <section class="ibox af-widget">
                             <header class="ibox-title">
-                                <h2>Past Events Survey</h2>
+                                <h2>Survey</h2>
                                 <div class="ibox-tools">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                         <i class="fa fa-cog"></i>
@@ -899,8 +946,8 @@
                         
                             <article class="ibox-content af-persona-widget">
                                 <p>
-                                    To set up a baseline in often subjective ROI for your events, run a survey among your team members to see how they fill the
-                                    past events performed.
+                                    To set up a baseline in often subjective ROI for your events, run a survey among your team members 
+                                    to see how they feel the past events performed.
                                 </p>
                         
                                 <ul class="af-events-list af--compact js-sort-list">
@@ -985,7 +1032,7 @@
                     </a>
                 </div>
                 <div>
-                    Copyright Accessfuel © 2019
+                    Copyright Accessfuel © 2020
                 </div>
             </footer>
         </div>
@@ -998,7 +1045,7 @@
     <div hidden>
         <!-- Enhance modal options -->
         <!-- include ../common/modals/insights-sample-modal -->
-        <div class="modal inmodal fade" id="insightsSampleModalContent" role="dialog" aria-hidden="true" tabindex="-1" hidden>
+        <div class="modal inmodal fade" id="insightsSampleModalContent" role="dialog" aria-hidden="true" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <header class="modal-header">
@@ -1029,7 +1076,7 @@
         </div>
 
         <!-- include modals/event-modal -->
-        <div class="modal inmodal js-event-modal" role="dialog" aria-hidden="true" tabindex="-1" hidden>
+        <div class="modal inmodal js-event-modal" role="dialog" aria-hidden="true" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content animated bounceInUp af-event-modal">
                     <div class="animated fadeIn js-event-modal-content" hidden>

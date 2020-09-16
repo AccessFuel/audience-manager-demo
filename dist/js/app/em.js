@@ -4,6 +4,7 @@ define(function (require) {
     // Template scripts
     require('global');
     require('knob');
+    require('slick');
 
     // Libraries
     // ---------
@@ -136,10 +137,18 @@ define(function (require) {
         Sort($('.js-sort'));
     };
 
+    const initCarousel = () => {
+        $('.js-persona-widget-carousel').slick({
+            infinite: false,
+            speed: 100,
+        });
+    }
+
     var init = function() {
         initEvents();
         initEventModal();
         //initCharts();
+        initCarousel();
         initSort();
     };
 

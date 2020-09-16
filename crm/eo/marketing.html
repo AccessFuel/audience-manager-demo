@@ -59,13 +59,15 @@
                     <div class="af-stack__item">
                         <div class="row">
                             <div class="col-sm-9">
-                                <h2 class="u-margin-bottom-sm">Launch Festival Tickets Sales</h2>
+                                <h2 class="u-margin-bottom-sm" data-industry-only="ecommerce">Sales</h2>
+                                <h2 class="u-margin-bottom-sm" data-industry-only="events">Launch Festival Tickets Sales</h2>
                                 <p><span class="af-brand-color">Actual</span> vs <span class="u-text-pale">Projected</span>: <big class="u-margin-left-md af-brand-color">-8%</big></p>
                             </div>
                             <div class="col-sm-3 text-right">
                                 <div class="af-stats af-brand-color af--large u-margin-top-sm">
                                     <span class="af-stats__value">2,743</span>
-                                    <span class="af-stats__label">Tickets Remaining</span>
+                                    <span class="af-stats__label" data-industry-only="ecommerce">Items Remaining</span>
+                                    <span class="af-stats__label" data-industry-only="events">Tickets Remaining</span>
                                 </div>
                             </div>
                         </div>
@@ -337,11 +339,15 @@
                 <article class="ibox-content">
                     <div class="af-goal">
                         <h3 class="af-goal__progress af-color-scheme__background">
-                            <span class="af-goal__progress-label">5,000 Tickets Sold</span>
+                            <span class="af-goal__progress-label" data-industry-only="ecommerce">5,000 Products Sold</span>
+                            <span class="af-goal__progress-label" data-industry-only="events">5,000 Tickets Sold</span>
                             <span class="af-goal__progress-bar af-color-scheme__background-dark" style="width:41%;"></span>
                         </h3>
-                        <p class="af-goal__info">
-                            With 22 weeks left and <strong>45%</strong> of tickets sold we recommend increasing your marketing budget by <strong>10%</strong> to add more twitter and display ad campaigns.
+                        <p class="af-goal__info" data-industry-only="ecommerce">
+                            With 22 weeks left and <strong>45%</strong> of products sold we recommend increasing your marketing budget by <strong>10%</strong> to add more Twitter and display ad campaigns.
+                        </p>
+                        <p class="af-goal__info" data-industry-only="events">
+                            With 22 weeks left and <strong>45%</strong> of tickets sold we recommend increasing your marketing budget by <strong>10%</strong> to add more Twitter and display ad campaigns.
                         </p>
                     </div>
 
@@ -367,12 +373,5 @@
 <script src="./eo/js/knob.js"></script>
 <script src="./eo/js/widget.js"></script>
 <script src="./eo/js/marketing.js"></script>
-<script>
-    const State = require('state');
-    const industry = State.get('industry', 'events');
-    $(`[data-industry-only]`).hide();
-    $(`[data-industry-only="${industry}"]`).show();
-</script>
-
 
 <script>new MarketingUI();</script>

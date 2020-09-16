@@ -132,10 +132,21 @@ html {
 
     // Persona Widget
     .af-persona-widget {
+
+        .af-slider {
+            transition: opacity, .3s ease-in;
+            opacity: 0;
+
+            &.slick-initialized {
+                opacity: 1;
+            }
+        }
+        
         .af-persona-widget__image {
             float: right;
             max-width: 150px;
             width: 40%;
+            box-shadow: none;
         }
         .af-persona-widget__title {
             color: $grey-10;

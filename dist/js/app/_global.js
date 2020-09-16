@@ -126,8 +126,8 @@ define(function (require) {
                         .resolve(AdminAPI.notify('Enhancement Request', 'User Requested File Enhancement', data))
                         .then(function() {
                             swal({
-                                title: 'Enhancement Request is Sent',
-                                text: 'Our editors will analyze your initial audience report and suggest several options to acquire meaningful in-depth insights for your event.',
+                                title: 'Data Verification & Enrichment Request Sent',
+                                text: 'Your request has been sent to our partners. You will receive a notification once it is complete.',
                                 html: true,
                                 confirmButtonText: "Done",
                                 closeOnConfirm: true
@@ -184,8 +184,13 @@ define(function (require) {
 
         const industry = State.get('industry', 'events');
         $(`[data-industry="${industry}"]`).addClass('af--active');
-        $(`[data-industry-only]`).hide();
-        $(`[data-industry-only="${industry}"]`).show();
+        
+        setInterval(() => {    
+            $(`[data-industry-only]`)
+                .hide()
+                .filter(`[data-industry-only="${industry}"]`)
+                .show();
+        }, 50);
     }
 
     var _bindLogout = function() {
