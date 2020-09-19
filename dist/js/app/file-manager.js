@@ -208,19 +208,19 @@ define(function (require) {
     };
 
     // Get File Details
-    var loadFileDetails = function(fileID, showSuccessMessage) {
-        return Promise
-            .resolve(AdminAPI.getFile(fileID))
-            .then(function(data) {
-                showFileDetails(data, showSuccessMessage);
-                showFileDetailsStats(data.uuid, showSuccessMessage);
-                showFileDetailsDatapoints(data.uuid);
-            }).catch(function() {
-                Error({
-                    error: 'File not found.'
-                });
-            });
-    };
+    // var loadFileDetails = function(fileID, showSuccessMessage) {
+    //     return Promise
+    //         .resolve(AdminAPI.getFile(fileID))
+    //         .then(function(data) {
+    //             showFileDetails(data, showSuccessMessage);
+    //             showFileDetailsStats(data.uuid, showSuccessMessage);
+    //             showFileDetailsDatapoints(data.uuid);
+    //         }).catch(function() {
+    //             Error({
+    //                 error: 'File not found.'
+    //             });
+    //         });
+    // };
 
     var showFileDetailsStats = function(projectID, isJustUploaded) {
         return _getFileStats(projectID)
@@ -407,12 +407,11 @@ define(function (require) {
 
     var hashNavigationCallback = function(params) {
         var fileID = params[0];
-
         Navigation.navigate('loader');
 
         if (fileID && fileID !== '') {
             // Get and display file details
-            loadFileDetails(fileID);
+            // loadFileDetails(fileID);
         } else {
             // Get and display user files list
             loadFilesList();
@@ -425,8 +424,9 @@ define(function (require) {
 
         // Bind event handlers
         Connect();
-        HashNavigation(hashNavigationCallback);
+        // HashNavigation(hashNavigationCallback);
         bindEventHandlers();
+        loadFilesList();
     };
     
     return init;
