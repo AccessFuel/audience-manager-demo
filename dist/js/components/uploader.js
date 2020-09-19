@@ -80,7 +80,7 @@ define(function (require) {
                 });
             })
             .on('dragend', (e) => {
-                $(thie.targets).removeClass('af--dragging');
+                $(this.targets).removeClass('af--dragging');
                 e.originalEvent.dataTransfer.setData(SAMPLE_FILE_DATA, false);
             });
 
